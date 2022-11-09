@@ -1,0 +1,1315 @@
+@font-face {
+    font-family: 'Gill Sans Std Bold';
+    src: url(/fonts/GillSansStd-Bold.eot);
+    src: url(/fonts/GillSansStd-Bold.eot?#iefix) format('embedded-opentype'), url(/fonts/GillSansStd-Bold.woff2) format('woff2'), url(/fonts/GillSansStd-Bold.woff) format('woff'), url(/fonts/GillSansStd-Bold.ttf) format('truetype'), url(/fonts/GillSansStd-Bold.svg#GillSansStd-Bold) format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gill Sans Std Bold Italic';
+    src: url(/fonts/GillSansStd-BoldItalic.eot);
+    src: url(/fonts/GillSansStd-BoldItalic.eot?#iefix) format('embedded-opentype'), url(/fonts/GillSansStd-BoldItalic.woff2) format('woff2'), url(/fonts/GillSansStd-BoldItalic.woff) format('woff'), url(/fonts/GillSansStd-BoldItalic.ttf) format('truetype'), url(/fonts/GillSansStd-BoldItalic.svg#GillSansStd-BoldItalic) format('svg');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Gill Sans Std semi Bold';
+    src: url(/fonts/GillSans-SemiBold.eot);
+    src: url(/fonts/GillSans-SemiBold.eot?#iefix) format('embedded-opentype'), url(/fonts/GillSans-SemiBold.woff2) format('woff2'), url(/fonts/GillSans-SemiBold.woff) format('woff'), url(/fonts/GillSans-SemiBold.ttf) format('truetype'), url(/fonts/GillSans-SemiBold.svg#GillSans-SemiBold) format('svg');
+    font-weight: bold;
+    font-style: normal;
+  }
+
+@font-face {
+    font-family: 'Gill Sans Std Bold Condensed';
+    src: url(/fonts/GillSansStd-BoldCondensed.eot);
+    src: url(/fonts/GillSansStd-BoldCondensed.eot?#iefix) format('embedded-opentype'), url(/fonts/GillSansStd-BoldCondensed.woff2) format('woff2'), url(/fonts/GillSansStd-BoldCondensed.woff) format('woff'), url(/fonts/GillSansStd-BoldCondensed.ttf) format('truetype'), url(/fonts/GillSansStd-BoldCondensed.svg#GillSansStd-BoldCondensed) format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gill Sans Std Italic';
+    src: url(/fonts/GillSansStd-Italic.eot);
+    src: url(/fonts/GillSansStd-Italic.eot?#iefix) format('embedded-opentype'), url(/fonts/GillSansStd-Italic.woff2) format('woff2'), url(/fonts/GillSansStd-Italic.woff) format('woff'), url(/fonts/GillSansStd-Italic.ttf) format('truetype'), url(/fonts/GillSansStd-Italic.svg#GillSansStd-Italic) format('svg');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Gill Sans Std Light';
+    src: url(/fonts/GillSansStd-Light.eot);
+    src: url(/fonts/GillSansStd-Light.eot?#iefix) format('embedded-opentype'), url(/fonts/GillSansStd-Light.woff2) format('woff2'), url(/fonts/GillSansStd-Light.woff) format('woff'), url(/fonts/GillSansStd-Light.ttf) format('truetype'), url(/fonts/GillSansStd-Light.svg#GillSansStd-Light) format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gill Sans Std';
+    src: url(/fonts/GillSansStd.eot);
+    src: url(/fonts/GillSansStd.eot?#iefix) format('embedded-opentype'), url(/fonts/GillSansStd.woff2) format('woff2'), url(/fonts/GillSansStd.woff) format('woff'), url(/fonts/GillSansStd.ttf) format('truetype'), url(/fonts/GillSansStd.svg#GillSansStd) format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gill Sans Std Extra Bold Disp';
+    src: url(/fonts/GillSansStd-ExtraBoldDisp.eot);
+    src: url(/fonts/GillSansStd-ExtraBoldDisp.eot?#iefix) format('embedded-opentype'), url(/fonts/GillSansStd-ExtraBoldDisp.woff2) format('woff2'), url(/fonts/GillSansStd-ExtraBoldDisp.woff) format('woff'), url(/fonts/GillSansStd-ExtraBoldDisp.ttf) format('truetype'), url(/fonts/GillSansStd-ExtraBoldDisp.svg#GillSansStd-ExtraBoldDisp) format('svg');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gill Sans Std Condensed';
+    src: url(/fonts/GillSansStd-Condensed.eot);
+    src: url(/fonts/GillSansStd-Condensed.eot?#iefix) format('embedded-opentype'), url(/fonts/GillSansStd-Condensed.woff2) format('woff2'), url(/fonts/GillSansStd-Condensed.woff) format('woff'), url(/fonts/GillSansStd-Condensed.ttf) format('truetype'), url(/fonts/GillSansStd-Condensed.svg#GillSansStd-Condensed) format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gill Sans Std Extra Bold';
+    src: url(/fonts/GillSansStd-ExtraBold.eot);
+    src: url(/fonts/GillSansStd-ExtraBold.eot?#iefix) format('embedded-opentype'), url(/fonts/GillSansStd-ExtraBold.woff2) format('woff2'), url(/fonts/GillSansStd-ExtraBold.woff) format('woff'), url(/fonts/GillSansStd-ExtraBold.ttf) format('truetype'), url(/fonts/GillSansStd-ExtraBold.svg#GillSansStd-ExtraBold) format('svg');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Bodoni Moda Regular';
+    src: url(/fonts/GillSansStd-ExtraBold.eot);
+    src: url(/fonts/BodoniModa_72pt-Regular.ttf) format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+body {
+    line-height: 1.5;
+    font-family: 'Gill Sans Std';
+    font-family: "Gill Sans Std" !important;
+}
+
+button:focus {
+    outline:0;
+}
+
+.divider {
+    height: 1px;
+    background: #000;
+    width: 100%;
+    opacity: 0.2;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.divider.w-title {
+    margin-bottom: 60px;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+/*menu main*/
+.navbarigac {
+    background-color: #3C3C3B;
+    height: 60px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+}
+.navbarigac .logos {
+    display: flex;    
+}
+.navbarigac .logos .navbar-brand-igac {
+    padding: 12.8px 15px 12.8px 20px;
+    background: #2d2d2c;
+}
+.navbarigac .logos .navbar-brand-igac img {
+    max-height: 34.4px;
+    height: 34.4px;
+    min-height: 34.4px;
+    width: auto;
+}
+.navbarigac .logos .logoigac {
+    padding: 13px 15px;
+}
+.navbarigac .logos .logoigac .responsive {
+    display: none;
+}
+.navbarigac .logos .logoigac img {
+    height: 34.4px;
+    width: auto;
+}
+.navbarigac.cem .logos .logoigac {
+    padding: 13px 15px;
+    width: 312px;
+    display: flex;
+    align-items: center;
+}
+.navbarigac.cem .logos .logoigac img {
+    width: 100%;
+    height: auto;
+}
+.navbarigac .navbarnavigac {
+    display: flex;
+}
+.navbarigac .navbarnavigac li {
+    color: #fff;
+    list-style: none;
+    height: 100%;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    position: relative;       
+}
+.navbarigac .navbarnavigac li a {
+    color: #fff;
+    height: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    align-items: center;     
+}
+.navbarigac .navbarnavigac li a.active {
+    color: #F4A833;
+}
+.navbarigac .navbarnavigac li a:hover {
+    color: #F4A833;
+    cursor: pointer;
+    border-bottom: 2px solid #F4A833;
+    padding-top: 2px;    
+}
+.navbarigac .navbarnavigac li a:hover {
+    transition: color 0.2s ease;
+}
+.navbarigac .nav-bar-toggle-igac {
+    background-color: transparent;
+    border: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 9px 10px;
+    margin-right: 15px;
+}
+.navbarigac .nav-bar-toggle-igac .icon-bar {
+    background: #fff;
+    width: 22px;
+    height: 2px;
+    margin-bottom: 4px;
+    border-radius: 1px;    
+}
+.navbarigac .opinion-btn .nav-link {
+    background: #6445E1;
+    border-radius: 5px;
+    padding: 8px 20px 5px;
+    display: block;
+    height: auto;
+    margin-left: 10px;
+    font-size: 12px;
+    line-height: 1;
+    text-decoration: none;
+}
+.navbarigac .opinion-btn .nav-link:hover {
+    padding: 8px 20px 5px;
+    color: #fff;
+    border-bottom: 0;
+}
+.navbarigac #loginBtn {
+    display: flex;
+    align-items: center;
+    padding: 6px 10px 6px 15px;
+    cursor: pointer;
+    z-index: 100;
+}
+/*Dropdown*/
+.navbarigac .navbarnavigac li .dropdownToggle:after {
+    content: '';
+    box-sizing: border-box;
+    height: 5px;
+    width: 5px;
+    margin-left: 10px;
+    margin-top: -4px;
+    border-style: solid;
+    border-color: white;
+    border-width: 0px 1px 1px 0px;
+    border-top-width: 0px;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 0px;
+    transform: rotate(45deg);
+}
+.navbarigac .navbarnavigac li .dropdownToggle:hover:after {
+    border-color: #F4A833;
+}
+.navbarigac .navbarnavigac li .active.dropdownToggle:after {
+    border-color: #F4A833;
+}
+.navbarigac .navbarnavigac li .dropDown {
+    position: absolute;
+    overflow: hidden;
+    top: 100%;
+    right: 15px;
+    min-width: 160px;
+    max-height: 0;
+    padding: 0 30px;
+    background: #3C3C3B;
+    border-radius: 0 0 5px 5px;
+    float: left;
+    text-align: left;
+    display: block;
+    width: max-content;
+    transition: all 0.5s ease;
+}
+.navbarigac .navbarnavigac li .dropDown li:first-child {
+    margin-top: 30px;
+}
+.navbarigac .navbarnavigac li .dropDown li:last-child {
+    margin-bottom: 30px;
+}
+.navbarigac .navbarnavigac li .dropDown li a {
+    padding: 7px 0 7px 0;
+    line-height: 13px;
+    display: flex;
+    align-items: center;
+}
+.navbarigac .navbarnavigac li .dropDown a:hover {
+    border: 0;
+    padding: 7px 0 7px 0;
+}
+.navbarigac .navbarnavigac li .dropDown a:hover:after {
+    content: "• ";
+    color: #f4a833;
+    position: absolute;
+    left: -15px;
+    top: 8px;
+}
+.navbarigac .navbarnavigac li .dropDown.expandMenuDrop {    
+    max-height: 400px;
+    transition: all 0.5s ease;
+}
+
+/*footer main*/
+footer {
+    font-size: 1rem;
+    background: #3c3c3b;
+    color: #fff;
+    position: relative;
+    border-bottom: 9px solid #f14a37;
+}
+footer.origen {
+    border-bottom: 9px solid #f5ce44;
+}
+footer.cem {
+    border-bottom: 9px solid #4d91d3;
+}
+footer.diccionario {
+    border-bottom: 9px solid #4473fd;
+}
+footer.expediciones {
+    border-bottom: 9px solid #56A770;
+}
+footer .container {
+    max-width: 1170px !important;    
+}
+footer .footer-container {
+    padding: 145px 0 90px;  
+}
+footer .footer-container .row-footer {
+    width: 100%;
+    display: flex;
+    margin-left: -40px;
+    margin-right: -40px;
+}
+footer .footer-container .bird-image {
+    width: 85px;
+    margin-top: -212px;
+    position: absolute;
+    margin-left: 40px;
+}
+footer.cem .footer-container .bird-image {
+    width: 120px;
+}
+footer.origen .footer-container .bird-image {
+    width: 100px;
+    margin-top: -225px;
+}
+footer .footer-container .row-footer .content-footer {
+    width: 68%;
+    padding: 0 40px;
+    border-right: 0.25px solid #ffffff7a;
+    line-height: 18px;
+}
+footer .footer-container .row-footer .content-footer .title {
+    font-size: 16px;
+    line-height: 1em;
+    margin-bottom: 40px;
+    font-family: 'Gill Sans Std semi Bold';
+}
+footer .footer-container .row-footer .content-footer ul {
+    margin-bottom: 20px;
+    padding-left: 15px;
+    font-size: 14px;
+}
+footer .footer-container .row-footer .content-footer ul .underline-none {
+    text-decoration: none;
+}
+footer .footer-container .row-footer .content-footer ul li {
+    color: #fff;
+    opacity: 0.6;
+    margin: 0;
+    line-height: 18px;
+}
+footer .footer-container .row-footer .content-footer ul li a {
+    color: #fff;
+    text-decoration: underline;
+}
+footer .footer-container .row-footer .content-footer ul li a.link {
+    text-decoration: underline;
+}
+footer .footer-container .row-footer .content-footer.cla-a {
+    width: 25%;
+    font-size: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+footer .footer-container .row-footer .content-footer.cla-a a {
+    color: #fff;
+    opacity: 0.9;
+    display: block;
+    margin-bottom: 15px;
+    line-height: 1em;
+    text-align: left;    
+}
+footer .footer-container .row-footer .content-footer.cla-a .sub-title {
+    margin-bottom: 30px;
+    line-height: 16px;
+    color: #f14a37;
+    font-family: 'Gill Sans Std semi Bold';
+}
+footer.origen .footer-container .row-footer .content-footer.cla-a .sub-title {
+    color: #f5ce44;
+}
+footer.cem .footer-container .row-footer .content-footer.cla-a .sub-title {
+    color: #4d91d3;
+}
+footer.diccionario .footer-container .row-footer .content-footer.cla-a .sub-title {
+    color: #4473fd;
+}
+footer.expediciones .footer-container .row-footer .content-footer.cla-a .sub-title {
+    color: #56A770;
+}
+footer .footer-container .row-footer .content-footer.cla-b {
+    border-right: 0;
+    position: relative;
+}
+footer .footer-container .row-footer .content-footer.cla-b .sub-title {
+    color: #fff !important;
+}
+footer .footer-container .row-footer .content-footer.cla-b .logo-colombiot-footer {
+    position: absolute;
+    padding-right: 40px;
+    bottom: 0;
+    width: 235px;
+}
+footer.cem .footer-container .row-footer .content-footer.cla-b .logo-colombiot-footer {
+    width: 150px;
+}
+footer .footer-container .row-footer .content-footer.cla-b .logo-colombiot-footer img {
+    width: 100%;
+}
+footer .footer-container .row-footer .content-footer .fa, .fab {
+    margin-right: 10px;
+    width: 15px;
+}
+footer .footer-container .row-footer .content-footer .sub-title {
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+footer .footer-container .botonAccesoContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    height: 20px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    right: 0;
+    left: 0;
+    padding: 0 40px;
+}
+
+footer .footer-container .botonAcceso {
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid #fff;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: normal;
+    opacity: 0.4;
+    font-size: 13px;
+    padding: 5px 20px 2px;
+    transition: all 0.5s ease;
+}
+
+footer .footer-container .botonAcceso:hover {
+    background: #f5ce43;
+    opacity: 1;
+    color: #3c3c3b;
+    border-color: #3c3c3b;
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.343);
+    transition: all 0.5s ease;
+}
+
+/*bloque igac*/
+.block-igac {
+    max-width: 1170px;
+    height: 100%;
+    padding: 0;
+}
+
+/*portada*/
+.section-portada {
+    background-color: #f7fdd2;
+}
+.origen .section-portada {
+    background-color: #e4f2eb;
+}
+.container-portada {
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: 50%;
+    width: 100%;
+    height: 580px;
+    display: flex;
+    align-items: center;
+}
+.origen .container-portada {
+    background-image: url('/images/bg-portada.svg');
+}
+.colombiaMapas .container-portada {
+    background-image: url('/images/home/bg-portada.svg');
+}
+.portada {
+    width: 1170px;
+    margin: auto;
+}
+.container-portada .text-content {
+    width: 520px;
+    color: #0052ae;
+}
+.container-portada .text-content .title{
+    font-size: 40px;
+    line-height: 1;
+    margin-bottom: 25px;
+}
+
+.container-portada .text-content .summary {
+    line-height: 1.3rem;
+    font-size: 18px;
+    color: #3595e0;
+}
+
+.colombiaMapas .container-portada .text-content .summary {
+    line-height: 1.5rem;
+}
+
+
+/*páginas portada inicio y sub sección*/
+.portada-igac.portadaSub {    
+    height: 400px;
+    display: flex;
+}
+
+.portada-igac .contenido-portada {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.portada-igac .contenido-portada .identifiers {
+    bottom: 80px;
+}
+
+.portada-igac .contenido-portada .identifiers p {
+    font-size: 18px;
+    color: #000;
+}
+
+/*colores de portadas de subsecciones*/
+.geodesicaMaestra .portada-igac.portadaSub.origen {
+    background: #fdfbf0;
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: 45%;
+}
+.guiasMaestra .portada-igac.portadaSub.origen {
+    background: #d8e8e3;
+}
+.normaMaestra .portada-igac.portadaSub.origen {
+    background: #f2dfd4;
+}
+.datosMaestra .portada-igac.portadaSub.origen {
+    background: #f3e3de;
+}
+.modelosMaestra .portada-igac.portadaSub.origen {
+    background: #e7e3fa;
+}
+.herramientasMaestra .portada-igac.portadaSub.origen {
+    background: #d3d9e5;
+}
+.aplicacionesMaestra .portada-igac.portadaSub.origen {
+    background: #d3d9e5;
+}
+.serviciosMaestra .portada-igac.portadaSub.origen {
+    background: #dbdfe1;
+}
+.geodesicaMaestra .portada-igac.portadaSub.redActiva{
+    background: #dfdaf7;
+}
+.geodesicaMaestra .portada-igac.portadaSub.redPasiva {
+    background: #e4f2ec;
+}
+.gavimetricaMaestra .portada-igac.portadaSub.redGavimetrica {
+    background: #eff5fc;
+}
+.geomagneticaMaestra .portada-igac.portadaSub.redGeomagnetica {
+    background: #f9f1f0;
+}
+.geodesicaMaestra .portada-igac.portadaSub.portadaTable.origen {
+    background-color: #e4f2ea;
+}
+.tableroMaestra .portada-igac.portadaSub.portadaTable.origen {
+    background: #f9ede0;
+}
+.portada-igac.portadaSub h1 {
+    margin-top: 0;
+    color: #0052ae;
+    font-size: 40px;
+    line-height: 1;
+    margin-bottom: 0;
+}
+.portada-igac.portadaSub p {
+    color: #3a80c2;
+    margin-top: 20px;
+    margin-bottom: 0;
+    font-size: 18px;
+    line-height: normal;
+}
+.portada-igac .texto-portada {
+    width: 485px;
+}
+.portada-igac .ilustracion {
+    position: absolute;
+    width: 533px;
+    right: 0;
+    bottom: 0;
+}
+
+/*tabs*/
+.tabs-hojas {
+    background: transparent;
+    padding-top: 110px;
+    padding-bottom: 200px;
+}
+.container-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: auto;
+    margin-bottom: 40px;
+    position: relative;
+}
+.colombiaMapas .container-tabs {
+    align-items: center;
+}
+.tab-cont {
+    width: 20%;
+    background: #fff;
+    box-shadow: 4px 0px 5px #d6d6d647;
+    border-radius: 5px;
+    position: sticky;
+    border-left: 5px solid #f1685a;
+    padding: 40px 30px;
+}
+.colombiaMapas .tab-cont {
+    width: 28%;
+    height: -webkit-fill-available;
+}
+.tab-cont label {
+    font-size: 15px;
+    height: 15px;
+    color: #000;
+    margin-bottom: 40px;
+    font-family: 'Gill Sans Std semi Bold';
+}
+.tab-cont button {
+    width: 100%;
+    border: inherit;
+    background: #fff;
+    text-align: inherit;
+    padding: 20px 4px;
+    border-top: 1px solid #00000038;
+}
+.tab-cont button:last-child {
+    padding-bottom: 0;
+}
+.tab-cont button p {
+    font-size: 23px;    
+    height: 23px;
+    margin-bottom: 0;
+    color: #58595b;
+}
+.colombiaMapas .tab-cont button p {
+    line-height: 23px;
+    height: auto;
+}
+.tab-cont button:hover {
+    color: #3595e0;
+}
+.tab-content {
+    padding: 0 20px;
+    width: 80%;
+    animation: anime 1s;
+    padding: 0 0 0 40px;
+}
+.nav-tabs .nav-item {
+    margin-bottom: 0;
+}
+.tab-content li {
+    list-style: none;
+}
+.tab-content .nav-link {
+    color: #fff;
+    border: 0;
+    padding-bottom: 30px;
+}
+.tab-content .nav-link:hover {
+    border: 0;
+    text-decoration: none;
+}
+.tab-content .nav-link.active {
+    color: #2abbff;
+    border: 0;
+}
+.colombiaMapas .tab-content {
+    width: 72%;
+}
+.tab-content h2 {
+    font-size: 24px;
+    font-weight: 400;
+    margin: 20px 0 10px 0;    
+}
+.tab-content p {
+    font-weight: 100;
+    margin-top: 20px
+}
+.tab-cont .but {
+    border-left: 0;
+}
+.colombiaMapas .tab-cont .but {
+    display: flex;
+    align-items: center;
+}
+.colombiaMapas .tab-cont .but .icono {
+    width: 30px;
+    min-width: 30px;
+    max-width: 30px;
+    margin-right: 15px;
+}
+.tab-cont .but.active p {
+    color: #3595e0;
+}
+.colombiaMapas .tab-cont .but.active .icono {
+    filter: saturate(100%);
+}
+.colombiaMapas .tab-cont .but .icono {
+    filter: saturate(0%);
+}
+@keyframes anime {
+    from{opacity: 0}
+    to{opacity: 1}
+}
+/*Escalas*/
+.escala {
+    width: 100%;
+    background: transparent;
+}
+.escala.tipo-b {
+    margin-top: 90px;
+}
+.escala .escala-content {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.colombiaMapas .escala .escala-content {
+    justify-content: center;
+}
+.escala .escala-content .title {
+    font-size: 32px;
+    color: #414042;
+    margin-bottom: 40px;
+}
+.escala .escala-content .text {
+    width: 30%;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.escala.tipo-b .escala-content .text {
+    width: 70%;
+}
+.escala .escala-content .text .img {
+    width: 130px;
+    order: 1;
+    padding: 0;
+}
+.escala .escala-content .text h2 {
+    color: #414042;
+    font-size: 32px;
+    height: 32px;
+    line-height: 32px;
+    font-family: 'Gill Sans Std semi Bold';
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+.escala .escala-content .text .divider {
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+.escala .escala-content .text .divider.no2 {
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+.escala .escala-content .text .divider.no3 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.escala .escala-content .text p {
+   color: #58595b;
+   font-size: 19px;
+   line-height: 22px;
+}
+.escala .escala-content .text .check {
+    display: flex;
+}
+.escala .escala-content .text .check .icon {
+    width: 20px;    
+    margin-right: 10px;
+}
+.escala .escala-content .text .check .icon img {
+    box-shadow: 0px 0px 10px #00000057;
+    border-radius: 50px;
+    overflow: hidden;
+    margin-top: -5px;
+}
+.escala .escala-content .text .check h3 {
+    color: #1a2e35;
+    opacity: 1;
+    font-size: 16px;
+    height: 16px;
+    margin-bottom: 15px;
+    font-family: 'Gill Sans Std semi Bold';
+}
+.escala .escala-content .text .check p {
+    color: #000;
+    opacity: 0.6;
+    margin: 0;
+}
+.escala .escala-content .img {
+    width: 70%;
+    order: 1;
+    padding: 0 0 0 40px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.colombiaMapas .escala .escala-content .img {
+    width: 75%;
+}
+.escala .escala-content .img img {
+    width: 100%;
+}
+.escala .escala-content .check-row {
+    display: flex;
+}
+.escala .escala-content .check-row .check-column {
+    width: 50%;
+}
+/*side bar preguntas frecuentes acerca-de*/
+.acerca-de-body .container-main .row-main .side-bar {
+    width: 35%;
+}
+.acerca-de-body .container-main .row-main .side-bar .top {
+    background: #fff;
+    padding: 50px 50px 0 50px;
+    height: calc(100vh - 60px);
+    position: sticky;
+    position: -webkit-sticky;
+    top: 60px;
+}
+.acerca-de-body .container-main .row-main .side-bar .tittle h1 {
+    line-height: 1.1;    
+    font-size: 35px;
+    font-weight: 300;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.acerca-de-body .container-main .row-main .side-bar .tittle h1 .active.active1 {
+    color: #0069b3;
+}
+.acerca-de-body .container-main .row-main .side-bar .tittle h1 .active.active2 {
+    color: #f4a833;
+}
+.acerca-de-body .container-main .row-main .side-bar .tittle h1 .active.active3 {
+    color: #f14a36;
+}
+.acerca-de-body .container-main .row-main .side-bar .tittle h1 .active.active4 {
+    color: #5045b3;
+}
+.acerca-de-body .container-main .row-main .side-bar .tittle h1 .active.active5 {
+    color: #5045b3;
+}
+.acerca-de-body .container-main .row-main .side-bar .tittle b, a {
+    color: #a5a5a4;
+}
+.acerca-de-body .container-main .row-main .side-bar .tittle a:hover {
+    color: #636363;
+    text-decoration: none;
+}
+.acerca-de-body .container-main .row-main .side-bar .tittle a:hover {
+    transition: color 0.3s ease;
+}
+.acerca-de-body .container-main .row-main .side-bar .ilustracion {
+    margin-left: -50px;
+    margin-right: -50px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    margin-bottom: -6px;
+}
+
+/*header mediaqueris*/
+@media (max-width: 1002px) {
+    .navbarigac .logos .navbar-brand-igac {
+        display: none;
+    }
+}
+@media (min-width: 768px) {
+    .navbarigac .nav-bar-toggle-igac {
+        display: none;
+    }
+}
+@media (max-width: 768px) {
+    .navbarigac .nav-bar-toggle-igac {
+        display: block;
+    }
+    .navbarigac .navbarnavigac {
+        display: block;
+        position: absolute;
+        top: 60px;
+        width: 100%;
+        background-color: #3C3C3B;
+        max-height: 0;       
+        overflow: hidden;
+        padding: 0;        
+        transition: all 0.2s;        
+    }
+    .navbarigac .navbarnavigac.expandMenu {
+        border-top: 1px solid #ffffff38;
+        padding: 7px 0;        
+        max-height: 500px;        
+        transition: all 0.3s;
+    }
+    .navbarigac .navbarnavigac li {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .navbarigac .navbarnavigac li a {
+        padding: 10px 15px;
+        width: 100%;
+    }
+    .navbarigac .navbarnavigac li .opinion-btn {
+        padding: 10px 0px;
+    }
+    .navbarigac .navbarnavigac li a:hover {
+        border-bottom: 0;
+        padding-top: 10px;
+    }
+    .navbarigac .logos .logoigac .descktop {
+        display: none;
+    }
+    .navbarigac .logos .logoigac .responsive {
+        display: block;
+    }
+    /*Dropdown*/
+    .navbarigac .navbarnavigac li .dropDown {
+        position: relative;
+        background-color: #464646;
+        width: 100%;
+        right: 0;
+        padding: 0 15px;        
+    }
+    .navbarigac .navbarnavigac li .dropDown li a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .navbarigac .navbarnavigac li .dropDown.expandMenuDrop {
+        padding: 15px 15px;
+    }
+    .navbarigac .navbarnavigac li .dropDown li:first-child {
+        margin-top: 0;
+    }
+    .navbarigac .navbarnavigac li .dropDown li:last-child {
+        margin-bottom: 0;
+    }
+    .navbarigac .navbarnavigac li .dropDown a:hover:after {
+        content: '';
+    }
+}
+/*media querys portadas*/
+@media (max-width: 992px) {
+    /*media querys portada principal*/
+    .container-portada .text-content .title {
+        font-size: 32px;
+    }
+    .container-portada .text-content .summary {
+        font-size: 16px;
+        line-height: 18px;
+    }
+    /*media querys portada secundaria*/
+    .portada-igac .texto-portada {
+        width: 50%;
+    }
+    .portada-igac.portadaSub h1 {
+        font-size: 32px;
+        line-height: 1;
+    }
+    .portada-igac.portadaSub.origen.herramientas {
+        background-size: 50%;
+    }
+    .portada-igac.portadaSub.origen.documentos {
+        background-size: 50%;
+    }
+    .portada-igac.portadaSub.origen.hojas-cartograficas {
+        background-size: 50%;
+    }
+    .portada-igac .contenido-portada p {
+        font-size: 16px;
+        line-height: 18px;
+    }
+}
+
+/*páginas portada inicio y sub sección media querys*/
+@media (max-width: 1192px) {
+    .portada {
+        padding: 0 30px;
+    }
+    .portada-igac .contenido-portada {
+        padding: 0 30px;
+    }
+}
+@media (max-width: 1024px) {
+    .container-portada {
+        height: 450px;
+        background-size: 48%;        
+    }
+    .origen .container-portada {
+        background-size: 45%;
+    }
+    .colombiaMapas .container-portada {
+        background-size: 50%;
+    }
+    .portada {
+        padding: 0 30px;
+    }
+    .container-portada .text-content {
+        width: 50%;
+    }
+}
+@media (max-width: 576px) {
+    .container-portada {
+        height: 600px;
+        background-size: 70%;
+    }
+    .origen .container-portada {
+        background-size: 80%;
+    }
+    .colombiaMapas .container-portada {
+        height: 500px;
+        background-size: 90%;
+    }
+    .portada {
+        margin-top: 50px;
+        padding: 0 15px;
+    }
+    .container-portada .text-content {
+        width: 100%;
+    }
+    .container-portada .text-content .title br {
+        display: none;
+    }
+    /*sub sección media querys*/
+    .portada-igac.portadaSub {
+        height: 420px;
+    }
+    .portada-igac .contenido-portada {
+        padding: 0 15px;
+    }
+    .portada-igac .contenido-portada {
+        align-items: inherit;
+    }
+    .portada-igac .texto-portada {
+        width: 100%;
+        margin-top: 40px;
+    }
+    .portada-igac.portadaSub.origen.herramientas {
+        background-size: 70%;
+    }
+    .portada-igac.portadaSub.origen.documentos {
+        background-size: 70%;
+    }
+    .portada-igac.portadaSub.origen.hojas-cartograficas {
+        background-size: 70%;
+    }
+}
+
+/*media querys tabs*/
+@media (max-width: 1192px) {
+    /*media querys tabs hojas*/
+    .tabs-hojas {
+        padding-top: 80px;
+        padding-bottom: 80px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .tab-cont {
+        width: 15%;
+        padding: 40px 15px;
+    }
+    .tab-cont button {
+        padding: 10px 4px;
+    }
+    .tab-cont button p {
+        font-size: 16px;
+    }
+}
+@media (max-width: 992px) {
+    /*media querys tabs hojas*/
+    .tab-cont {
+        width: 100%;
+        overflow: auto;
+        position: relative;
+        padding: 20px 15px;
+        margin-bottom: 40px;
+    }
+    .container-tabs {
+        width: 100%;
+    }
+    .colombiaMapas .tab-cont {
+        width: 100%;
+    }
+    .colombiaMapas .tab-content {
+        width: 100%;
+    }
+    .escala.tipo-b {
+        margin-top: 0;
+    }
+    .escala.tipo-b .escala-content .text {
+        width: 100%;
+    }
+    .tab-cont label {
+        width: 100%;
+        position: sticky;
+        top: 0;
+        left: 0;
+        margin-bottom: 20px;
+    }
+    .tab-cont .but {
+        width: auto;
+        border-top: 0;
+        padding-right: 20px;
+        margin-right: 20px;
+        border-right: 1px solid #00000038;
+    }
+    .tab-cont button:last-child {
+        padding-bottom: 10px;
+    }
+    .tab-cont .but:last-child {
+        border-right: 0;
+    }
+    .tab-cont .content-but {
+        display: flex;
+        
+    }
+    .tab-content {
+        width: 100%;
+        padding-left: 0;
+    }
+    .escala .escala-content .text {
+        margin-bottom: 0;
+        width: 40%;
+    }
+}
+@media (max-width: 576px) {
+    /*media querys tabs hojas*/
+    .tabs-hojas {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .escala .escala-content {
+        flex-wrap: wrap;
+    }
+    .escala .escala-content .text {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    .escala .escala-content .img {
+        width: 100%;
+        padding-left: 0;
+    }
+    .colombiaMapas .escala .escala-content .img {
+        width: 100%;
+    }
+    .escala .escala-content .check-row {
+        flex-wrap: wrap;
+    }
+    .escala .escala-content .check-row .check-column {
+        width: 100%;
+    }
+    .block-page-form {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .content-pagina-hojas .form-hojas .container-form {
+        flex-wrap: wrap;
+    }
+    .content-pagina-hojas .form-hojas .container-form .sumary {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .content-pagina-hojas .form-hojas .container-form .form-content {
+        padding-left: 0;
+    }
+}
+
+/*footer mediaqueris*/
+@media (max-width: 1192px) {
+    footer .footer-container {
+        overflow: hidden;
+    }
+    footer .footer-container .row-footer {
+        padding: 0;
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+@media (max-width: 1024px) {        
+    footer .footer-container .row-footer .content-footer {
+        width: 50%;
+        padding: 30px;
+    }
+    footer .footer-container .row-footer .content-footer.cla-b .logo-colombiot-footer {
+        width: 207px;
+    }
+}
+@media (max-width: 768px) {
+    footer .footer-container .bird-image {
+        margin-left: 20px;
+    }
+    footer .footer-container .row-footer .content-footer {
+        padding: 0 20px;
+        overflow: hidden;
+    }
+    footer .footer-container .row-footer .content-footer.cla-b .logo-colombiot-footer {
+        width: 100%;
+    }
+    footer .footer-container .row-footer .content-footer.cla-b .logo-colombiot-footer img {
+        width: 100%;
+    }
+}
+@media (max-width: 576px) {
+    footer .footer-container {
+        padding: 70px 0 50px;
+    }
+    footer .footer-container .row-footer {
+        flex-wrap: wrap;
+        padding: 15px;
+        width: 100%;
+        margin: auto;
+    }
+    footer.origen .footer-container .bird-image {
+        width: 86px;
+        margin-top: -138px;
+        margin-left: 0px;
+    }
+    footer.cem .footer-container .bird-image {
+        width: 94px;
+        margin-top: -139px;
+        margin-left: -7px;
+    }
+    footer .footer-container .row-footer .content-footer {
+        width: 100%;
+        border-right: 0;
+        padding: 0;        
+    }
+    footer .footer-container .row-footer .content-footer ul:last-child {
+        border-bottom: 1px solid #fff;
+        padding-bottom: 40px;
+        margin-bottom: 40px;
+    }
+    footer .footer-container .row-footer .content-footer.cla-a {
+        width: 100%;
+    }
+    footer .footer-container .row-footer .content-footer.cla-b {
+        position: inherit;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    footer .footer-container .row-footer .content-footer.cla-b .sub-title {
+        width: 100%;
+    }
+    footer .footer-container .row-footer .content-footer.cla-a a:last-child {
+        margin-bottom: 50px;
+    }
+    footer .footer-container .row-footer .content-footer.cla-b .logo-colombiot-footer {
+        display: none;
+    }
+    footer .footer-container .row-footer .content-footer .fa, .fab {
+        margin-right: 30px;
+        font-size: 1.3rem;
+    }
+    footer .footer-container .row-footer .content-footer span {
+        display: none;
+    }
+}
+/*side bar preguntas frecuentes acerca-de*/
+@media (max-width: 768px) {
+    /*global*/
+    .acerca-de-body .container-main .row-main .side-bar {
+        display: none;
+    }
+    .acerca-de-body .main-content {
+        width: 100%;
+    }
+    .acerca-de-body .main-content .sumary .text-content {
+        padding-right: 0;
+    }
+}
