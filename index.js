@@ -213,28 +213,15 @@ function listCofan() {
     }
     $("#expeditonTermsList ol").html(strHTML);
 
-    
+    /*--- list button---*/
     $(".list__item").click(function () {
         $(this).toggleClass("active").prevAll().removeClass("active").addClass("done");
         if ($(this).hasClass("active")) {
             $(this).nextAll().removeClass("active").removeClass("done");
         }
-    });
-
-    $("#listItem_0").click(function () {
-        window.open("/interna.html");
-    });
-    
+    });    
 
 };
-
-
-
-/*--- list button
-
-
----*/
-
 
 /*--- toggle button ---*/
 $(".content").addClass("unexpanded")
@@ -252,4 +239,20 @@ function functionToggle () {
         document.querySelector(".content").style.width = "75%";      
         $(".content").addClass("unexpanded")       
     }           
-} 
+}
+
+/*--- youtube apear ---*/
+
+function youtubeApear() {
+    $('#iframeYoutube').toggleClass('expand')
+    if ($('#iframeYoutubeAudio').hasClass('expand')) {
+        $('#iframeYoutubeAudio').removeClass('expand');
+    }
+}
+
+function youtubeApearAudio() {
+    $('#iframeYoutubeAudio').toggleClass('expand')
+    if ($('#iframeYoutube').hasClass('expand')) {
+        $('#iframeYoutube').removeClass('expand');
+    }
+}

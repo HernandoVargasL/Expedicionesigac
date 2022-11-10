@@ -506,11 +506,12 @@ footer .footer-container .botonAcceso:hover {
 }
 .portada {
     width: 1170px;
-    height: 300px;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: auto;
+    padding-top: 80px !important;
+    padding-bottom: 80px !important;
 }
 .container-portada .text-content {
     width: 520px;
@@ -1032,7 +1033,6 @@ footer .footer-container .botonAcceso:hover {
 }
 @media (max-width: 1024px) {
     .container-portada {
-        height: 450px;
         background-size: 48%;        
     }
     .origen .container-portada {

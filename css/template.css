@@ -361,35 +361,71 @@
 }
 
 .content__banner .content__banner__context {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 
-.content__banner .content__banner__context a:hover {
-    color: #000;
-    opacity: 0.7;
-    transition: 1s all ease;
+.content__banner .content__banner__context button {
+    border: 0;
+    background: transparent;
 }
 
 .content__banner .play-button p {
     font-size: 14px;
     height: 18px;
+    opacity: 0.6;
 }
 
-.tooltip-arrow, .tooltip-inner {
-    background-color: #3595E0;
-    color: #fff;
-    font-size: 11px;
-    opacity: 1;
+.popover-body {
+    font-size: 12px;
+    padding: 5px 10px;
 }
-
-.tooltip.bs-tether-element-attached-bottom .tooltip-inner::before {
-    border-top-color: red !important;
-}
-
 
 .content__banner .content__banner__context .icon{
     width: 20px;
     margin-right: 7px;
+}
+
+/** youtube video **/
+.iframeyoutube {
+    max-height: 0;
+    max-width: 560px;
+    width: 560px;
+    height: 315px;
+    overflow: hidden;
+    transition: 0.5s all ease;
+}
+
+.iframeyoutube.expand {
+    max-height: 560px;
+    transition: 0.5s all ease;
+}
+
+.iframeyoutube iframe {
+	height: 100%;
+	left: 0;
+	top: 0;
+	width: 100%;
+}
+
+.iframeyoutubeaudio {
+    max-height: 0;
+    max-width: 560px;
+    width: 560px;
+    height: 315px;
+    overflow: hidden;
+    transition: 0.5s all ease;
+}
+
+.iframeyoutubeaudio.expand {
+    max-height: 560px;
+    transition: 0.5s all ease;
+}
+
+.iframeyoutubeaudio iframe {
+	height: 100%;
+	left: 0;
+	top: 0;
+	width: 100%;
 }
 
 /** pills **/
@@ -809,16 +845,12 @@
     }
 
     .container-portada {
-        height: inherit;
+        height: auto;
     }
 
     .portada {
         margin-top: 0;
         margin-bottom: 0;        
-    }
-
-    .container-portada {
-        height: 400px;
     }
 
     .etnohistoria::before {
@@ -898,5 +930,14 @@
     .team .credit__item {
         padding: 0;
         margin-bottom: 40px;
+    }
+
+    .iframeyoutube {
+        width: 100%;
+        height: 200px;
+    }
+    .iframeyoutubeaudio {
+        width: 100%;
+        height: 200px;
     }
 }

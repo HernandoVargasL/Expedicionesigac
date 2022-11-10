@@ -58,23 +58,23 @@
                                 </li>
                                 <li>
                                     Sitios sagrados:
-                                    <span>37</span>
+                                    <span>30</span>
                                 </li>
                                 <li>
                                     Sitios arqueológicos:
-                                    <span>37</span>
+                                    <span>7</span>
                                 </li>
                                 <li>
                                     kilometros recorridos
-                                    <span>37</span>
+                                    <span>5 km</span>
                                 </li>
                                 <li>
                                     Tiempo de expedición:
-                                    <span>37</span>
+                                    <span>6 días</span>
                                 </li>
                                 <li>
                                     Fecha de expedición:
-                                    <span>37</span>
+                                    <span>3/08/2022</span>
                                 </li>
                             </ul>
                         </div>
@@ -118,15 +118,21 @@
                             Casa del Duende Blanco
                         </div>
                         <div class="content__banner__context d-flex justify-content-center"> 
-                            <a  class="color-tooltip play-button d-flex align-items-center px-2" data-toggle="tooltip" data-placement="bottom" title="Audio pronunciación" href="">
+                            <button onclick="youtubeApearAudio()" class="play-button d-flex align-items-center px-2" data-container="body" data-toggle="popover" data-placement="top" data-content="Audio pronunciación">
                                 <img class="icon" src="images/iconos/soundIcon.svg" alt="">
                                 <p class="mb-0">Ñutshia bahu tsaʼu</p>
-                            </a>
-                            <a class="color-tooltip play-button d-flex align-items-center px-2" data-toggle="tooltip" data-placement="bottom" title="Video pronunciación" href="https://www.youtube.com/watch?v=3KnBtRv5m-Y" class="play-button d-flex align-items-center px-2" href="">
+                            </button>
+                            <button onclick="youtubeApear()" class="color-tooltip play-button d-flex align-items-center px-2" data-container="body" data-toggle="popover" data-placement="top" data-content="Video pronunciación">
                                 <img class="icon" src="images/iconos/playIcon.svg" alt="">
                                 <p class="mb-0">Ñutshia bahu tsaʼu</p>
-                            </a>
+                            </button>
                         </div>
+                        <div id="iframeYoutubeAudio" class="iframeyoutubeaudio">
+                            <iframe src="https://www.youtube.com/embed/3KnBtRv5m-Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <div id="iframeYoutube" class="iframeyoutube">
+                            <iframe src="https://www.youtube.com/embed/3KnBtRv5m-Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>                        
                     </div>                    
                 </div>                
             </div>
@@ -331,7 +337,24 @@
     <script src="/index.js"></script>
 
     <script>
-        $(".color-tooltip").tooltip();
+        $(function () {
+            $('[data-toggle="popover"]').popover({ 
+                trigger: "hover" 
+            });
+        })
+
+        var vid = document.getElementById('myVideo')
+        vid.play() //play video on start
+        vid.onpause = (event) => {
+            callPlayer('whateverID', 'pauseVideo')
+            console.log('paused')
+        }
+        vid.onplay = (event) => {
+            callPlayer('whateverID', 'playVideo')
+        console.log('played')
+        }
+
+
         const swiper = new Swiper('.swiper', {
             speed: 600,
             parallax: true,
