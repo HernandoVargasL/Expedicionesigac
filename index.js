@@ -237,17 +237,19 @@ function listCofan() {
 
 
 /*--- toggle button ---*/
-
+$(".content").addClass("unexpanded")
 function functionToggle () {
-    let element = document.getElementById("aside");
-    element.classList.toggle("collapseAside");
+    let element = document.getElementById("aside");    
+    element.classList.toggle("collapseAside");      
     $("#contentMap").toggleClass("collapseAside");
     if ($("#aside").hasClass("collapseAside")) {
         document.querySelector("#asideToggle img").style.transform = "rotate(180deg)";
-        document.querySelector(".content").style.width = "100%";              
+        document.querySelector(".content").style.width = "100%";  
+        $(".content").removeClass("unexpanded")          
 
     } else {
         document.querySelector("#asideToggle img").style.transform = "rotate(0)";
-        document.querySelector(".content").style.width = "75%";             
+        document.querySelector(".content").style.width = "75%";      
+        $(".content").addClass("unexpanded")       
     }           
 } 
