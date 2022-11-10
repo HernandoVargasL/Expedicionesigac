@@ -341,18 +341,7 @@
             $('[data-toggle="popover"]').popover({ 
                 trigger: "hover" 
             });
-        })
-
-        var vid = document.getElementById('myVideo')
-        vid.play() //play video on start
-        vid.onpause = (event) => {
-            callPlayer('whateverID', 'pauseVideo')
-            console.log('paused')
-        }
-        vid.onplay = (event) => {
-            callPlayer('whateverID', 'playVideo')
-        console.log('played')
-        }
+        });
 
 
         const swiper = new Swiper('.swiper', {
