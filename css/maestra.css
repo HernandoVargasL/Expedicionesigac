@@ -1050,7 +1050,6 @@ footer .footer-container .botonAcceso:hover {
 }
 @media (max-width: 576px) {
     .container-portada {
-        height: 600px;
         background-size: 70%;
     }
     .origen .container-portada {
