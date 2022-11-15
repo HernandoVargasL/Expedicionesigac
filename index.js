@@ -332,12 +332,10 @@ function gotoVerMas(){
             $("div.resume").html(dato.Aspectos_Etnicos.Etnohistoria);
 
             console.log(dato);
-            $("#viewDiv").hide()
-            $("#includedContent").show()
+            $("#viewDiv").hide();
+            $("#includedContent").show();
         }
     }
-
-
 }
 
 function listCofan() {
@@ -361,6 +359,11 @@ function listCofan() {
 
         popup.hide();
         popup.clearFeatures();
+
+        if ($("#includedContent").is(":visible")) {
+            $("#includedContent").hide();
+            $("#viewDiv").show();
+        }
 
         for (let idx = 0; idx < cofanLayer.graphics.length; idx++) {
             if (cofanLayer.graphics[idx].attributes.ID == idCofan) {
