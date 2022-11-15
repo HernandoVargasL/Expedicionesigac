@@ -256,6 +256,9 @@ function mapCofan() {
         popup.pagingInfo = true;
         popup.pagingControls = true;
 
+        $(".titleButton.maximize").addClass("hidden")
+        $("a.action.zoomTo > span").html("Acercar");
+
         if (popup_links) {
             popup_links = false;
             $(".actionList").append("<a href='#' class='action vermas-link' onclick='gotoVerMas();'>&nbsp;Ver más...</a>");
@@ -287,8 +290,8 @@ function mapCofan() {
             "attributes": {
                 "ID": dato.ID,
                 "ID_Nombre_Geografico": dato.ID_Nombre_Geografico,
-                "Nombre": dato.Nombre_COF,
-                "Video": dato.Aspectos_Linguisticos.Registro_Audiovisual_URL
+                "Nombre_COF": dato.Nombre_COF,
+                "Nombre_ESP": dato.Nombre_ESP,
             },
 
             "symbol": {
@@ -309,7 +312,7 @@ function mapCofan() {
 
             "infoTemplate": {
                 "title": ["<div class='d-flex align-items-center'>" + "<div class='identificador'>" + dato.ID + "</div>" + dato.Nombre_ESP + "</div>"],
-                "content": "Nombre:${Nombre} <div class='d-flex'> Video:<a href='${Video}' target='_blank'>${Video}<a><div>"
+                "content": "${Nombre_COF}"
             }
         };
 
@@ -319,7 +322,22 @@ function mapCofan() {
 }
 
 function gotoVerMas(){
-    popup.getSelectedFeature();
+    const graphic = popup.getSelectedFeature();
+
+    for (let idx = 0; idx < datosCofan.length; idx++) {
+        if (graphic.attributes.ID == datosCofan[idx].ID) {
+            const dato = datosCofan[idx]; 
+
+            $("div.content__banner__title").html(dato.Nombre_ESP);
+            $("div.resume").html(dato.Aspectos_Etnicos.Etnohistoria);
+
+            console.log(dato);
+            $("#viewDiv").hide()
+            $("#includedContent").show()
+        }
+    }
+
+
 }
 
 function listCofan() {

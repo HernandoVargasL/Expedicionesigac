@@ -106,7 +106,221 @@
                 <img src="/images/icon-toggle.svg" alt="">
             </div>
             <div id="viewDiv"></div>
-            <!-- <div id="includedContent" class="p-5"></div> -->
+            
+            <div id="includedContent" style="display: none;">
+                <div class="content__banner container-portada">
+                    <div class="portada">
+                        <div class="text-center">
+                            <div class="content__banner number">
+                                <p class="mb-0">
+                                    1
+                                </p>                            
+                            </div>
+                            <div class="content__banner__title">
+                                Casa del Duende Blanco
+                            </div>
+                            <div class="content__banner__context d-flex justify-content-center"> 
+                                <button onclick="youtubeApearAudio()" class="play-button d-flex align-items-center px-2" data-container="body" data-toggle="popover" data-placement="top" data-content="Audio pronunciación">
+                                    <img class="icon" src="images/iconos/soundIcon.svg" alt="">
+                                    <p class="mb-0">Ñutshia bahu tsaʼu</p>
+                                </button>
+                                <button onclick="youtubeApear()" class="color-tooltip play-button d-flex align-items-center px-2" data-container="body" data-toggle="popover" data-placement="top" data-content="Video pronunciación">
+                                    <img class="icon" src="images/iconos/playIcon.svg" alt="">
+                                    <p class="mb-0">Ñutshia bahu tsaʼu</p>
+                                </button>
+                            </div>
+                            <div id="iframeYoutubeAudio" class="iframeyoutubeaudio">
+                                <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1376679568&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/david-beltran-651094845" title="David Beltran DJ" target="_blank" style="color: #cccccc; text-decoration: none;">David Beltran DJ</a> · <a href="https://soundcloud.com/david-beltran-651094845/dulce-o-truco-3-david-beltran-dj-ft-alexis-restrepo-dj" title="DULCE O TRUCO 3 - DAVID BELTRAN DJ FT ALEXIS RESTREPO DJ" target="_blank" style="color: #cccccc; text-decoration: none;">DULCE O TRUCO 3 - DAVID BELTRAN DJ FT ALEXIS RESTREPO DJ</a></div>
+                            </div>
+                            <div id="iframeYoutube" class="iframeyoutube">
+                                <iframe src="https://www.youtube.com/embed/3KnBtRv5m-Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>                        
+                        </div>                    
+                    </div>                
+                </div>
+                <section class="etnohistoria w-100" style="position: relative; justify-content: center;">
+                    <div class="container px-0">
+                        <div class="col-12 col-md-4 px-0">
+                            <div class="title">
+                                Etnohistoria
+                            </div>
+                            <div class="resume">
+                                En nuestra comunidad hay una señora que se llama Benilda Chachinoy, ella es hermana del abuelo Alfonso. Hace unos 40 años atrás, ella caminaba por la quebrada hacia arriba y vio en las playitas de arena, un niño pequeñito que bajaba, pero los pies apuntaban hacia arriba de la playa… los abuelos dicen que los pies del duende son al revés. 
+                            </div>
+                            <hr>
+                            <div class="credits">
+                                <div class="title">
+                                    Grupo de Etnohistoria y Lingüística:
+                                </div>
+                                <div class="resume">
+                                    Pueblo Cofán: Cristián Chapal, Tatiana Agüinda; José Ildefonso Chachinoy, Grupo de Etnohistoria y Lingüística: Yamit Chapal, Miriam Ortiz, Tania Agüinda, Nixon Chapal, Fanny Chapal y otros miembros de la comunidad. 
+        
+                                </div>
+                                <div class="credit">
+                                    IGAC: Egna Márquez. ACT: Edwin Jaramillo.
+                                </div>
+                            </div> 
+                        </div>                    
+                    </div>                          
+                    <div class="audio__Card">
+                        <div class="card">
+                            <div class="card-content">
+                                <div class="title">
+                                    Audio Etnohistoria Gobernador Pueblo Cofán, 
+                                </div>
+                                <div class="reference">
+                                    Casa del Duende Blanco.
+                                </div>
+                                <div class="credit">
+                                    (Chapal, Audio Etnohistoria Casa del Duende blanco, 2022) 
+                                </div>
+                            </div>
+                        </div>
+                    </div>                    
+                </section>
+                <div class="container-info">
+                    <div class="content__tabulador col-12 col-md-6 m-auto">
+                        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                            <li class="nav-item">
+                              <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Significado</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Motivación</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content" id="pills-tabContent">
+                            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                                El nombre Ñutshia bahu tsaʼu se origina de la lengua Cofán y significa "Casa del Duende Bueno".  Ñutshia es un término que significa "bueno", alude un valor positivo o una cualidad que se le atribuye a alguien por su naturaleza. Bahu es una expresión que significa "duende" como un ser que habita un lugar. Para el pueblo Cofán el duente es un ser espiritual que da sabiduría y fortaleza, ayuda a la protección y sanación del pueblo. Tsaʼu es una expresión que da cuenta de un lugar físico y espiritual para habitar.
+                            </div>
+                            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">...</div>
+                        </div>
+                    </div>
+                </div>
+                <section class="referentes">
+                    <div class="d-flex justify-content-between container">
+                        <div class="referentes__item text-center">
+                            <div class="title">
+                                Familia lingüística:     
+                            </div>
+                            <div class="sub-title">
+                                Aislada
+                            </div>
+                        </div>
+                        <div class="referentes__item text-center">
+                            <div class="title">
+                                Tipo:    
+                            </div>
+                            <div class="sub-title">
+                                Mitotopónimo
+                            </div>
+                        </div>
+                        <div class="referentes__item text-center">
+                            <div class="title">
+                                Lengua:
+                            </div>
+                            <div class="sub-title">
+                                Cofán/Kofán
+                            </div>
+                        </div> 
+                        <div class="referentes__item text-center">
+                            <div class="title">
+                                Categoría:
+                            </div>
+                            <div class="sub-title">
+                                Información indígena
+                            </div>
+                        </div> 
+                        <div class="referentes__item text-center">
+                            <div class="title">
+                                Subcategoría:
+                            </div>
+                            <div class="sub-title">
+                                Sitio sagrado (SIG)
+                            </div>
+                        </div>
+                        <div class="referentes__item text-center">
+                            <div class="title">
+                                Elemento genérico:
+                            </div>
+                            <div class="sub-title">
+                                árbol cosmogónico.
+                            </div>
+                        </div>              
+                    </div>
+                </section>
+                <section class="slider col-12">
+                    <div class="swiper container">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                          <!-- Slides -->
+                          <div class="swiper-slide">
+                            <img src="images/assets/cofan.png" alt="">
+                            <div class="text" data-swiper-parallax="-100">
+                                <p>
+                                    Nota: La fotografía muestra la Ñutshia bahu tsaʼu/Casa del Duende Blanco. Fuente: (Equipo intercultural ACT, IGAC, Pueblo Cofán, 2022) 
+                                </p>
+                              </div>
+                          </div>
+                        </div>
+                        <!-- If we need pagination -->
+                        <div class="swiper-pagination"></div>
+                      
+                        <!-- If we need navigation buttons -->
+                    </div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>              
+                </section>            
+                <section class="historical__aspects">
+                    <div class="card col-12 col-md-7 m-auto">
+                        <div class="sub-title">
+                            ASPECTOS HISTÓRICOS  
+                        </div>
+                        <div class="title">
+                            Conformación del territorio 
+                        </div>
+                        <div class="resume">
+                            El pueblo indígena se autodenomina Kofán, los nombres alternos son Cofán y Kofane (Arango y Sánchez, 2004). Los Kofán se ubican en los municipios de Valle del Guamuéz, Orito, San Miguel y Puerto Asís, en el Departamento del Putumayo, en las comunidades Nueva Isla, Santa Rosa del Guamuez, Yarinal, Tssenene, Bocana de Luzón y Villa Nueva. (AMPII CANKE, 2021). La población estimada es de 1.816 según el CNPV 2018. La conformación del territorio data de épocas anteriores a la conquista (Arango y Sánchez, 2004). 
+                        </div>
+                        <div class="title">
+                            Procesos de ocupación
+                        </div>
+                        <div class="resume">
+                            Antes de la conquista varios grupos prehispánicos se dedicaban a comercializar productos, entre ellos el pueblo Cofán. En el Siglo XVI ya se mencionaba el pueblo por los descubrimientos acuíferos. Posteriormente, al territorio llegaron misiones capuchinas, jesuitas y franciscanas. Hacia los años sesenta, inician las actividades de extracción de petróleo con la llegada de la petrolera Texas. En los años sesenta se crean las reservas indígenas y en 1998 el pueblo Cofán recibe la constitución de sus resguardos. 
+                        </div>
+                    </div>
+                </section>
+                <section class="team w-100">
+                    <div class="m-auto">
+                        <div class="title text-center">
+                            Grupo de georreferenciación:
+                        </div>
+                        <div class="credit__items d-flex justify-content-center">
+                            <div class="credit__item text-center">
+                                <div class="icon">
+                                    <img src="/images/iconos/iconoPueblo.svg" alt="">
+                                </div>
+                                <div class="title">
+                                    Pueblo Cofán
+                                </div>
+                                <div class="subtitle">
+                                    Cristián Chapal, Weimar Salazar
+                                </div>
+                            </div>
+                            <div class="credit__item text-center">
+                                <div class="icon">
+                                    <img src="/images/iconos/iconoAct.svg" alt="">
+                                </div>
+                                <div class="title">
+                                    ACT
+                                </div>
+                                <div class="subtitle">
+                                    Linda García, Jaime Burgos
+                                </div>                        
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
         </div>
     </div>
 
