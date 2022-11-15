@@ -2,6 +2,10 @@ var esri;
 var map;
 var cofanLayer;
 
+var popup;
+var popup_init = null;
+var popup_links = true;
+
 var markerSQ, markerDM;
 
 var datosCofan;
@@ -156,14 +160,18 @@ function initMap() {
         "esri/symbols/SimpleLineSymbol",
         "esri/symbols/PictureFillSymbol",
         "esri/symbols/CartographicLineSymbol",
-        
+
         "esri/graphic",
         "esri/graphicsUtils",
         "esri/geometry/Point",
         "esri/geometry/webMercatorUtils",
-        
+
+        "esri/dijit/Popup", 
+        "esri/dijit/PopupTemplate",
+
         "esri/Color",
-        
+
+        "dojo/dom-construct",
         "dojo/dom", "dojo/on", "dojo/domReady!"
     ], function (
         __Map,
@@ -175,7 +183,10 @@ function initMap() {
         __graphicsUtils,
         __Point,
         __webMercatorUtils,
+        __Popup, 
+        __PopupTemplate,
         __Color,
+        __domConstruct,
         __dom,
         __on
     ) {
@@ -191,7 +202,12 @@ function initMap() {
         esri.graphicsUtils = __graphicsUtils;
         esri.webMercatorUtils = __webMercatorUtils;
 
+        esri.Popup = __Popup;
+        esri.PopupTemplate = __PopupTemplate;
+        
         esri.Color = __Color;
+
+        esri.domConstruct = __domConstruct;
         esri.dom = __dom;
         esri.on = __on;
 
@@ -231,10 +247,26 @@ function initMap2() {
 
 function mapCofan() {
 
+    popup = new esri.Popup({
+        titleInBody: false
+    }, esri.domConstruct.create("div"));
+
+
+    popup.on("show", function () {
+        popup.pagingInfo = true;
+        popup.pagingControls = true;
+
+        if (popup_links) {
+            popup_links = false;
+            $(".actionList").append("<a href='#' class='action vermas-link' onclick='gotoVerMas();'>&nbsp;Ver más...</a>");
+        }
+    });
+
     map = new esri.Map("viewDiv", {
         basemap: "topo-vector",
         center: [-76.83, 0.52],
-        zoom: 14
+        zoom: 14,
+        infoWindow: popup
     });
 
     cofanLayer = new esri.layers.GraphicsLayer();
@@ -284,17 +316,11 @@ function mapCofan() {
         cofanLayer.add(new esri.Graphic(datoPoint));
     }
 
-    map.on("load", function(){
-        cofanLayer.on("click", recenterMap)
-    })
-
 }
 
-function recenterMap(event) {
-    //map.centerAt(event.mapPoint);
-    popupPoint(event.mapPoint);
-  }
-
+function gotoVerMas(){
+    popup.getSelectedFeature();
+}
 
 function listCofan() {
     const dato = datosCofan;
@@ -315,11 +341,19 @@ function listCofan() {
     $(".list__item").click(function () {
         let idCofan = $(this).attr('id-cofan');
 
+        popup.hide();
+        popup.clearFeatures();
+
         for (let idx = 0; idx < cofanLayer.graphics.length; idx++) {
             if (cofanLayer.graphics[idx].attributes.ID == idCofan) {
-                map.centerAndZoom(cofanLayer.graphics[idx].geometry, 16);
-                cofanLayer.graphics[idx].setSymbol(markerDM);
-                //popupPoint(cofanLayer.graphics[idx]);
+                const graphic = cofanLayer.graphics[idx];
+                graphic.setSymbol(markerDM);
+                
+                popup.setFeatures([graphic]);
+                popup.show(graphic.geometry);
+
+                map.centerAndZoom(graphic.geometry, 16);
+
             } else {
                 cofanLayer.graphics[idx].setSymbol(markerSQ);
             }
@@ -332,16 +366,6 @@ function listCofan() {
     });
 
 };
-
-function popupPoint(graphic) {
-    const popup_init = esri.webMercatorUtils.geographicToWebMercator(new esri.Point(graphic.geometry));
-    map.emit("click", {
-        bubbles: true,
-        cancelable: true,
-        screenPoint: map.toScreen(popup_init),
-        mapPoint: popup_init
-    });
-}
 
 /*--- toggle button ---*/
 function functionToggle() {
