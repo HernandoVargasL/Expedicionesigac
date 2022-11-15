@@ -1,5 +1,12 @@
+var esri;
 var map;
+var cofanLayer;
+
+var markerSQ, markerDM;
+
 var datosCofan;
+
+$(".content").addClass("unexpanded")
 
 if (document.querySelector(".navbarigac")) {
     const navbarigac = document.querySelector(".navbarigac");
@@ -28,11 +35,11 @@ if (document.querySelector(".navbarigac")) {
         </li>
     </div>
         `
-        // <li><a href='/preguntas_frecuentes/index.html'>&iquest;Por qu&eacute; tener un &uacute;nico origen?</a></li>
-        // <li><a href='/preguntas_frecuentes/cual-es-la-proyeccion.html'>&iquest;Cu&aacute;l es la proyecci&oacute;n?</a></li>
-        // <li><a href='/preguntas_frecuentes/cuales-son-sus-beneficios.html'>&iquest;Cu&aacute;les son sus beneficios?</a></li>
-        // <li><a href='/preguntas_frecuentes/quienes-deben-adoptarlo.html'>&iquest;Qui&eacute;nes deben adoptarlo?</a></li>
-        // <li><a href='/preguntas_frecuentes/otras-preguntas-frecuentes.html'>Otras preguntas frecuentes</a></li>
+    // <li><a href='/preguntas_frecuentes/index.html'>&iquest;Por qu&eacute; tener un &uacute;nico origen?</a></li>
+    // <li><a href='/preguntas_frecuentes/cual-es-la-proyeccion.html'>&iquest;Cu&aacute;l es la proyecci&oacute;n?</a></li>
+    // <li><a href='/preguntas_frecuentes/cuales-son-sus-beneficios.html'>&iquest;Cu&aacute;les son sus beneficios?</a></li>
+    // <li><a href='/preguntas_frecuentes/quienes-deben-adoptarlo.html'>&iquest;Qui&eacute;nes deben adoptarlo?</a></li>
+    // <li><a href='/preguntas_frecuentes/otras-preguntas-frecuentes.html'>Otras preguntas frecuentes</a></li>
 };
 
 if (document.querySelector(".nav-underline")) {
@@ -138,6 +145,75 @@ if (document.querySelector(".nav-bar-toggle-igac")) {
 /*--- mapa ---*/
 
 $(document).ready(function () {
+    initMap();
+});
+
+function initMap() {
+    require([
+        "esri/map",
+
+        "esri/symbols/SimpleMarkerSymbol",
+        "esri/symbols/SimpleLineSymbol",
+        "esri/symbols/PictureFillSymbol",
+        "esri/symbols/CartographicLineSymbol",
+        
+        "esri/graphic",
+        "esri/graphicsUtils",
+        "esri/geometry/Point",
+        "esri/geometry/webMercatorUtils",
+        
+        "esri/Color",
+        
+        "dojo/dom", "dojo/on", "dojo/domReady!"
+    ], function (
+        __Map,
+        __SimpleMarkerSymbol,
+        __SimpleLineSymbol,
+        __PictureFillSymbol,
+        __CartographicLineSymbol,
+        __Graphic,
+        __graphicsUtils,
+        __Point,
+        __webMercatorUtils,
+        __Color,
+        __dom,
+        __on
+    ) {
+        esri.Map = __Map;
+
+        esri.SimpleMarkerSymbol = __SimpleMarkerSymbol;
+        esri.SimpleLineSymbol = __SimpleLineSymbol;
+        esri.PictureFillSymbol = __PictureFillSymbol;
+        esri.CartographicLineSymbol = __CartographicLineSymbol;
+
+        esri.Graphic = __Graphic;
+        esri.Point = __Point;
+        esri.graphicsUtils = __graphicsUtils;
+        esri.webMercatorUtils = __webMercatorUtils;
+
+        esri.Color = __Color;
+        esri.dom = __dom;
+        esri.on = __on;
+
+        initMap2();
+    });
+}
+
+function initMap2() {
+
+    var line = new esri.SimpleLineSymbol();
+    line.setColor(new esri.Color([0, 0, 0, 0.5]));
+
+    markerSQ = new esri.SimpleMarkerSymbol();
+    markerSQ.setColor(new esri.Color([255, 0, 0, 0.5]));
+    markerSQ.setOutline(line);
+    markerSQ.setStyle(esri.SimpleMarkerSymbol.STYLE_SQUARE);
+
+    markerDM = new esri.SimpleMarkerSymbol();
+    markerDM.setColor(new esri.Color([0, 0, 255, 0.5]));
+    markerDM.setOutline(line);
+    markerDM.setStyle(esri.SimpleMarkerSymbol.STYLE_DIAMOND);
+
     $.ajax({
         url: "/data/cofan.json",
         type: 'GET',
@@ -151,59 +227,81 @@ $(document).ready(function () {
 
         }
     });
-});
+}
 
 function mapCofan() {
 
-    require([
-        "esri/map",
-        "esri/symbols/SimpleMarkerSymbol", "esri/symbols/SimpleLineSymbol",
-        "esri/symbols/PictureFillSymbol", "esri/symbols/CartographicLineSymbol",
-        "esri/graphic",
-        "esri/Color", "dojo/dom", "dojo/on", "dojo/domReady!"
-    ], function (
-        Map, 
-        SimpleMarkerSymbol, SimpleLineSymbol,
-        PictureFillSymbol, CartographicLineSymbol,
-        Graphic,
-        Color, dom, on
-    ) {
-        map = new Map("viewDiv", {
-            basemap: "topo-vector", //For full list of pre-defined basemaps, navigate to http://arcg.is/1JVo6Wd
-            center: [-76, 0], // longitude, latitude
-            zoom: 8
-        });
-
-        var selLayer = new esri.layers.GraphicsLayer();
-        map.addLayer(selLayer);
-
-        const dato = datosCofan[0];
-
-        var myPoint = {"geometry":{"x":-76,"y":1,
-        "spatialReference":{"wkid":4326}},"attributes":{"XCoord":-76,
-        "YCoord":-2,"Nombre":dato.Nombre_COF, "Video": dato.Aspectos_Linguisticos.URL_Recurso_Audiovisual},"symbol":{"color":[255,0,0,128],
-        "size":12,"angle":0,"xoffset":0,"yoffset":0,"type":"esriSMS",
-        "style":"esriSMSSquare","outline":{"color":[0,0,0,255],"width":1,
-        "type":"esriSLS","style":"esriSLSSolid"}},
-
-        "infoTemplate":{"title":["<div class='d-flex align-items-center'>"+ "<div class='identificador'>"+ dato.ID + "</div>" + dato.Nombre_ESP + "</div>"],"content":"Latitude: ${YCoord} <br/>Longitude: ${XCoord} <br/> Nombre:${Nombre} <div class='d-flex'> Video:<a href='${Video}' target='_blank'>${Video}<a><div>"}};
-
-
-
-        var graphic = new Graphic(myPoint);
-        selLayer.add(graphic);
+    map = new esri.Map("viewDiv", {
+        basemap: "topo-vector",
+        center: [-76.83, 0.52],
+        zoom: 14
     });
+
+    cofanLayer = new esri.layers.GraphicsLayer();
+    map.addLayer(cofanLayer);
+
+    for (let idx = 0; idx < datosCofan.length; idx++) {
+        const dato = datosCofan[idx];
+
+        const datoPoint = {
+            "geometry": {
+                "x": dato.Objeto_Geografico.Longitud,
+                "y": dato.Objeto_Geografico.Latitud,
+                "spatialReference": {
+                    "wkid": 4326
+                }
+            },
+
+            "attributes": {
+                "ID": dato.ID,
+                "ID_Nombre_Geografico": dato.ID_Nombre_Geografico,
+                "Nombre": dato.Nombre_COF,
+                "Video": dato.Aspectos_Linguisticos.Registro_Audiovisual_URL
+            },
+
+            "symbol": {
+                "color": [255, 0, 0, 128],
+                "size": 12,
+                "angle": 0,
+                "xoffset": 0,
+                "yoffset": 0,
+                "type": "esriSMS",
+                "style": "esriSMSSquare",
+                "outline": {
+                    "color": [0, 0, 0, 255],
+                    "width": 1,
+                    "type": "esriSLS",
+                    "style": "esriSLSSolid"
+                }
+            },
+
+            "infoTemplate": {
+                "title": ["<div class='d-flex align-items-center'>" + "<div class='identificador'>" + dato.ID + "</div>" + dato.Nombre_ESP + "</div>"],
+                "content": "Nombre:${Nombre} <div class='d-flex'> Video:<a href='${Video}' target='_blank'>${Video}<a><div>"
+            }
+        };
+
+        cofanLayer.add(new esri.Graphic(datoPoint));
+    }
+
+    map.on("load", function(){
+        cofanLayer.on("click", recenterMap)
+    })
 
 }
 
+function recenterMap(event) {
+    //map.centerAt(event.mapPoint);
+    popupPoint(event.mapPoint);
+  }
 
 
 function listCofan() {
     const dato = datosCofan;
     let strHTML = "";
-    
+
     for (var i = 0; i < datosCofan.length; i++) {
-        strHTML = strHTML + "<li id='listItem_" + i +"' class='list__item'>";
+        strHTML = strHTML + "<li id='listItem_" + i + "' class='list__item' id-cofan=" + dato[i].ID + ">";
         strHTML = strHTML + "<a >";
         strHTML = strHTML + "<div class='list__item--title'>" + dato[i].Nombre_ESP + "</div>";
         strHTML = strHTML + "<div class='list__item--title-resume'>" + dato[i].Nombre_COF + "</div>";
@@ -215,30 +313,51 @@ function listCofan() {
 
     /*--- list button---*/
     $(".list__item").click(function () {
+        let idCofan = $(this).attr('id-cofan');
+
+        for (let idx = 0; idx < cofanLayer.graphics.length; idx++) {
+            if (cofanLayer.graphics[idx].attributes.ID == idCofan) {
+                map.centerAndZoom(cofanLayer.graphics[idx].geometry, 16);
+                cofanLayer.graphics[idx].setSymbol(markerDM);
+                //popupPoint(cofanLayer.graphics[idx]);
+            } else {
+                cofanLayer.graphics[idx].setSymbol(markerSQ);
+            }
+        }
+
         $(this).toggleClass("active").prevAll().removeClass("active").addClass("done");
         if ($(this).hasClass("active")) {
             $(this).nextAll().removeClass("active").removeClass("done");
         }
-    });    
+    });
 
 };
 
+function popupPoint(graphic) {
+    const popup_init = esri.webMercatorUtils.geographicToWebMercator(new esri.Point(graphic.geometry));
+    map.emit("click", {
+        bubbles: true,
+        cancelable: true,
+        screenPoint: map.toScreen(popup_init),
+        mapPoint: popup_init
+    });
+}
+
 /*--- toggle button ---*/
-$(".content").addClass("unexpanded")
-function functionToggle () {
-    let element = document.getElementById("aside");    
-    element.classList.toggle("collapseAside");      
+function functionToggle() {
+    let element = document.getElementById("aside");
+    element.classList.toggle("collapseAside");
     $("#contentMap").toggleClass("collapseAside");
     if ($("#aside").hasClass("collapseAside")) {
         document.querySelector("#asideToggle img").style.transform = "rotate(180deg)";
-        document.querySelector(".content").style.width = "100%";  
-        $(".content").removeClass("unexpanded")          
+        document.querySelector(".content").style.width = "100%";
+        $(".content").removeClass("unexpanded")
 
     } else {
         document.querySelector("#asideToggle img").style.transform = "rotate(0)";
-        document.querySelector(".content").style.width = "75%";      
-        $(".content").addClass("unexpanded")       
-    }           
+        document.querySelector(".content").style.width = "75%";
+        $(".content").addClass("unexpanded")
+    }
 }
 
 /*--- youtube apear ---*/
