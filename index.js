@@ -8,6 +8,7 @@ var popup_init = null;
 var popup_links = true;
 
 var datosCofan;
+var callList = false;
 
 var extent = {
     "xmin": -8556103.703298075,
@@ -240,9 +241,18 @@ function mapCofan() {
             popup_links = false;
             $(".actionList").append("<a href='#' class='action vermas-link' onclick='gotoVerMas();'>&nbsp;Ver más...</a>");
         }
+
+        if (!callList) {
+            let ID = popup.getSelectedFeature().attributes.ID;
+            activateItemList(ID);
+        }
+        callList = false;
     });
 
     cofanLayer = new esri.layers.GraphicsLayer();
+    cofanLayer.on("click", function(){
+        popup.hide();
+    })
 
     for (let idx = 0; idx < datosCofan.length; idx++) {
         const dato = datosCofan[idx];
@@ -378,35 +388,40 @@ function listCofan() {
 
     /*--- list button---*/
     $(".list__item").click(function () {
-        let idCofan = $(this).attr('id-cofan');
-
-        popup.hide();
-        popup.clearFeatures();
-
-        if ($("#includedContent").is(":visible")) {
-            $("#includedContent").hide();
-            $("#viewDiv").show();
-        }
-
-        for (let idx = 0; idx < cofanLayer.graphics.length; idx++) {
-            if (cofanLayer.graphics[idx].attributes.ID == idCofan) {
-                const graphic = cofanLayer.graphics[idx];
-
-                popup.setFeatures([graphic]);
-                popup.show(graphic.geometry);
-
-                map.centerAndZoom(graphic.geometry, 16);
-
-            }
-        }
-
-        $(this).toggleClass("active").prevAll().removeClass("active").addClass("done");
-        if ($(this).hasClass("active")) {
-            $(this).nextAll().removeClass("active").removeClass("done");
-        }
+        activateItemList(this.attributes["id-cofan"].value);
     });
 
 };
+
+function activateItemList(idCofan) {
+
+    let element = $('*[id-cofan="'+idCofan+'"]');
+
+    popup.hide();
+    popup.clearFeatures();
+
+    if ($("#includedContent").is(":visible")) {
+        $("#includedContent").hide();
+        $("#viewDiv").show();
+    }
+
+    for (let idx = 0; idx < cofanLayer.graphics.length; idx++) {
+        if (cofanLayer.graphics[idx].attributes.ID == idCofan) {
+            const graphic = cofanLayer.graphics[idx];
+            callList = true;
+
+            popup.setFeatures([graphic]);
+            popup.show(graphic.geometry);
+
+            map.centerAndZoom(graphic.geometry, 16);
+        }
+    }
+
+    element.toggleClass("active").prevAll().removeClass("active").addClass("done");
+    if (element.hasClass("active")) {
+        element.nextAll().removeClass("active").removeClass("done");
+    }
+}
 
 /*--- toggle button ---*/
 function functionToggle() {
