@@ -2,13 +2,23 @@ var esri;
 var map;
 var cofanLayer;
 
+var homeBtn;
 var popup;
 var popup_init = null;
 var popup_links = true;
 
-var markerSQ, markerDM;
-
 var datosCofan;
+
+var extent = {
+    "xmin": -8556103.703298075,
+    "ymin": 55035.7288282962,
+    "xmax": -8548073.038013654,
+    "ymax": 59526.40424016861,
+    "spatialReference": {
+        "wkid": 102100,
+        "latestWkid": 3857
+    }
+}
 
 $(".content").addClass("unexpanded")
 
@@ -156,56 +166,37 @@ function initMap() {
     require([
         "esri/map",
 
-        "esri/symbols/SimpleMarkerSymbol",
-        "esri/symbols/SimpleLineSymbol",
-        "esri/symbols/PictureFillSymbol",
-        "esri/symbols/CartographicLineSymbol",
-
         "esri/graphic",
         "esri/graphicsUtils",
-        "esri/geometry/Point",
-        "esri/geometry/webMercatorUtils",
+        "esri/geometry/Extent",
 
-        "esri/dijit/Popup", 
+        "esri/dijit/HomeButton",
+        "esri/dijit/Popup",
         "esri/dijit/PopupTemplate",
-
-        "esri/Color",
 
         "dojo/dom-construct",
         "dojo/dom", "dojo/on", "dojo/domReady!"
     ], function (
         __Map,
-        __SimpleMarkerSymbol,
-        __SimpleLineSymbol,
-        __PictureFillSymbol,
-        __CartographicLineSymbol,
         __Graphic,
         __graphicsUtils,
-        __Point,
-        __webMercatorUtils,
-        __Popup, 
+        __Extent,
+        __HomeButton,
+        __Popup,
         __PopupTemplate,
-        __Color,
         __domConstruct,
         __dom,
         __on
     ) {
         esri.Map = __Map;
 
-        esri.SimpleMarkerSymbol = __SimpleMarkerSymbol;
-        esri.SimpleLineSymbol = __SimpleLineSymbol;
-        esri.PictureFillSymbol = __PictureFillSymbol;
-        esri.CartographicLineSymbol = __CartographicLineSymbol;
-
         esri.Graphic = __Graphic;
-        esri.Point = __Point;
         esri.graphicsUtils = __graphicsUtils;
-        esri.webMercatorUtils = __webMercatorUtils;
+        esri.Extent = __Extent;
 
+        esri.HomeButton = __HomeButton;
         esri.Popup = __Popup;
         esri.PopupTemplate = __PopupTemplate;
-        
-        esri.Color = __Color;
 
         esri.domConstruct = __domConstruct;
         esri.dom = __dom;
@@ -216,20 +207,6 @@ function initMap() {
 }
 
 function initMap2() {
-
-    var line = new esri.SimpleLineSymbol();
-    line.setColor(new esri.Color([0, 0, 0, 0.5]));
-
-    markerSQ = new esri.SimpleMarkerSymbol();
-    markerSQ.setColor(new esri.Color([255, 0, 0, 0.5]));
-    markerSQ.setOutline(line);
-    markerSQ.setStyle(esri.SimpleMarkerSymbol.STYLE_SQUARE);
-
-    markerDM = new esri.SimpleMarkerSymbol();
-    markerDM.setColor(new esri.Color([0, 0, 255, 0.5]));
-    markerDM.setOutline(line);
-    markerDM.setStyle(esri.SimpleMarkerSymbol.STYLE_DIAMOND);
-
     $.ajax({
         url: "/data/cofan.json",
         type: 'GET',
@@ -265,15 +242,7 @@ function mapCofan() {
         }
     });
 
-    map = new esri.Map("viewDiv", {
-        basemap: "topo-vector",
-        center: [-76.83, 0.52],
-        zoom: 14,
-        infoWindow: popup
-    });
-
     cofanLayer = new esri.layers.GraphicsLayer();
-    map.addLayer(cofanLayer);
 
     for (let idx = 0; idx < datosCofan.length; idx++) {
         const dato = datosCofan[idx];
@@ -295,19 +264,13 @@ function mapCofan() {
             },
 
             "symbol": {
-                "color": [255, 0, 0, 128],
-                "size": 12,
                 "angle": 0,
                 "xoffset": 0,
                 "yoffset": 0,
-                "type": "esriSMS",
-                "style": "esriSMSSquare",
-                "outline": {
-                    "color": [0, 0, 0, 255],
-                    "width": 1,
-                    "type": "esriSLS",
-                    "style": "esriSLSSolid"
-                }
+                "type": "esriPMS",
+                "url": "/images/numeros/" + (idx + 1) + ".png",
+                "width": 30,
+                "height": 30
             },
 
             "infoTemplate": {
@@ -319,18 +282,78 @@ function mapCofan() {
         cofanLayer.add(new esri.Graphic(datoPoint));
     }
 
+
+    map = new esri.Map("viewDiv", {
+        basemap: "topo-vector",
+        extent: new esri.Extent(extent),
+        infoWindow: popup,
+        minZoom: 12
+    });
+    map.addLayer(cofanLayer);
+
+    homeBtn = new esri.HomeButton({
+        map: map
+    }, "HomeButton");
+    homeBtn.startup();
 }
 
-function gotoVerMas(){
+function gotoVerMas() {
     const graphic = popup.getSelectedFeature();
 
     for (let idx = 0; idx < datosCofan.length; idx++) {
         if (graphic.attributes.ID == datosCofan[idx].ID) {
-            const dato = datosCofan[idx]; 
+            const dato = datosCofan[idx];
 
+            $("div#AudioCOFAN").hide();
+            $('#iframeYoutubeAudio').removeClass('expand');
+
+            $("div#VideoCOFAN").hide();
+            $('#iframeYoutube').removeClass('expand');
+
+            $("div#ID_Cofan > p").html(dato.ID);
             $("div.content__banner__title").html(dato.Nombre_ESP);
-            $("div.resume").html(dato.Aspectos_Etnicos.Etnohistoria);
 
+            if (dato.Aspectos_Linguisticos.hasOwnProperty("Registro_Audiovisual_Audio")) {
+                $("p#AudioCOFAN_Nombre").html(dato.Nombre_COF);
+
+                var audio = document.getElementById('AudioLinguistico');
+                audio.src = dato.Aspectos_Linguisticos.Registro_Audiovisual_Audio;
+                audio.load();
+                audio.pause();
+
+                $("div#AudioCOFAN").show();
+            }
+
+            if (dato.Aspectos_Linguisticos.hasOwnProperty("Registro_Audiovisual_Video")) {
+                $("p#VideoCOFAN_Nombre").html(dato.Nombre_COF);
+                $('#iframeYoutube > iframe').prop('src', dato.Aspectos_Linguisticos.Registro_Audiovisual_Video)
+                $("div#VideoCOFAN").show();
+            }
+
+            $("p#VideoCOFAN_Nombre").html(dato.Nombre_COF);
+
+            $("#EtnoHistoria").html(dato.Aspectos_Etnicos.Etnohistoria);
+            $("#GrupoCofan").html(dato.Aspectos_Etnicos.Grupo_Etnohistoria);
+
+            $("#EtnoHistoria_Credito").html(dato.Aspectos_Etnicos.Registro_Audiovisual);
+
+            $("#Significado").html(dato.Aspectos_Linguisticos.Significado_Origen);
+            $("#Motivacion").html(dato.Objeto_Geografico.Motivacion);
+
+            $("#Linguistico_Familia").html(dato.Aspectos_Linguisticos.Familia_Linguistica);
+            $("#Linguistico_Tipo").html(dato.Objeto_Geografico.Tipo_nombre);
+            $("#Linguistico_Lengua").html(dato.Aspectos_Linguisticos.Lengua);
+            $("#Linguistico_Categoria").html(dato.Objeto_Geografico.Categoria);
+            $("#Linguistico_Subcategoria").html(dato.Objeto_Geografico.Subcategoria);
+            $("#Linguistico_Elemento").html(dato.Objeto_Geografico.Elemento_generico);
+                        
+            $("#ContextoHistorico").html(dato.Aspectos_Etnicos.Contexto);
+            $("#OcupacionHistorico").html(dato.Aspectos_Etnicos.Procesos_Ocupacion);
+
+            if (dato.Objeto_Geografico.URL_Fotografia.length) {
+                $("#imageLugar").prop("src", dato.Objeto_Geografico.URL_Fotografia[0])
+            }
+            
             console.log(dato);
             $("#viewDiv").hide();
             $("#includedContent").show();
@@ -368,15 +391,12 @@ function listCofan() {
         for (let idx = 0; idx < cofanLayer.graphics.length; idx++) {
             if (cofanLayer.graphics[idx].attributes.ID == idCofan) {
                 const graphic = cofanLayer.graphics[idx];
-                graphic.setSymbol(markerDM);
-                
+
                 popup.setFeatures([graphic]);
                 popup.show(graphic.geometry);
 
                 map.centerAndZoom(graphic.geometry, 16);
 
-            } else {
-                cofanLayer.graphics[idx].setSymbol(markerSQ);
             }
         }
 
