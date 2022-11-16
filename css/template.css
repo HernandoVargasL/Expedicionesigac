@@ -117,6 +117,10 @@
 }
 
 /*expediton terms*/
+#includedContent {
+    width: 100%;
+}
+
 .expediton__terms {
     border: 1px solid #C7D8F9;
     background: #F4F6FC;    

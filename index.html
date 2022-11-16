@@ -12,6 +12,12 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
+    <!-- bootstrap tour-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-tour/0.12.0/css/bootstrap-tour-standalone.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-tour/0.12.0/js/bootstrap-tour-standalone.min.js" ></script>
+
     <link rel="stylesheet" href="https://js.arcgis.com/3.36/esri/css/esri.css">
 
     <!-- <link href="/css/style.css" rel="stylesheet"> -->
@@ -37,7 +43,7 @@
                 <div class="title">
                     Expedición COFAN, 2022
                 </div>
-                <div class="tabTable">
+                <div class="tabTable" id="tabTable">
                     <ul class="nav nav-tabs" id="myTab" role="tablist">
                         <li class="nav-item">
                             <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab"
@@ -49,7 +55,7 @@
                         </li>
                     </ul>
                     <div class="tab-content" id="myTabContent">
-                        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                        <div class="tab-pane  show active" id="home" role="tabpanel" aria-labelledby="home-tab">
                             <ul>
                                 <li>
                                     Topónimos visitados: 
@@ -77,7 +83,7 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>
+                        <div class="tab-pane " id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>
                     </div>
                 </div>
                 <hr>
@@ -130,7 +136,10 @@
                                 </button>
                             </div>
                             <div id="iframeYoutubeAudio" class="iframeyoutubeaudio">
-                                <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1376679568&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/david-beltran-651094845" title="David Beltran DJ" target="_blank" style="color: #cccccc; text-decoration: none;">David Beltran DJ</a> · <a href="https://soundcloud.com/david-beltran-651094845/dulce-o-truco-3-david-beltran-dj-ft-alexis-restrepo-dj" title="DULCE O TRUCO 3 - DAVID BELTRAN DJ FT ALEXIS RESTREPO DJ" target="_blank" style="color: #cccccc; text-decoration: none;">DULCE O TRUCO 3 - DAVID BELTRAN DJ FT ALEXIS RESTREPO DJ</a></div>
+                                <audio controls class="mt-4">
+                                    <source src="/media/audio/8632015010368047_Etnohistoria.mp3" type="audio/mpeg">
+                                    Your browser does not support the audio element.
+                                </audio>
                             </div>
                             <div id="iframeYoutube" class="iframeyoutube">
                                 <iframe src="https://www.youtube.com/embed/3KnBtRv5m-Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -174,6 +183,10 @@
                                 <div class="credit">
                                     (Chapal, Audio Etnohistoria Casa del Duende blanco, 2022) 
                                 </div>
+                                <audio controls class="mt-4">
+                                    <source src="/media/audio/8632015010368047_Etnohistoria.mp3" type="audio/mpeg">
+                                    Your browser does not support the audio element.
+                                </audio>
                             </div>
                         </div>
                     </div>                    
@@ -189,10 +202,10 @@
                             </li>
                         </ul>
                         <div class="tab-content" id="pills-tabContent">
-                            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                            <div class="tab-pane  show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
                                 El nombre Ñutshia bahu tsaʼu se origina de la lengua Cofán y significa "Casa del Duende Bueno".  Ñutshia es un término que significa "bueno", alude un valor positivo o una cualidad que se le atribuye a alguien por su naturaleza. Bahu es una expresión que significa "duende" como un ser que habita un lugar. Para el pueblo Cofán el duente es un ser espiritual que da sabiduría y fortaleza, ayuda a la protección y sanación del pueblo. Tsaʼu es una expresión que da cuenta de un lugar físico y espiritual para habitar.
                             </div>
-                            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">...</div>
+                            <div class="tab-pane " id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">...</div>
                         </div>
                     </div>
                 </div>

@@ -1316,3 +1316,91 @@ footer .footer-container .botonAcceso:hover {
         padding-right: 0;
     }
 }
+
+/*intro*/
+
+.popover {
+    max-width: 350px !important;
+}
+
+.popover[class*="tour-"].orphan.main {
+    max-width: 1200px !important;
+    width: 600px;
+    display: inline-block;
+    vertical-align: middle !important;
+    border-radius: 0;
+}
+
+.tour-backdrop {
+    opacity: 0.6;
+}
+
+.modal-header {
+    padding: 15px;
+    padding-bottom: 0;
+    text-align: left;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.modal-header div {
+    float: right;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 10px;
+    color: #000;
+    text-shadow: 0 1px 0 #fff;
+    opacity: .2;   
+}
+
+.popover[class*="tour-"] .popover-navigation *[data-role="prev"].disabled, .popover[class*="tour-"] .popover-navigation *[data-role="next"].disabled, .popover[class*="tour-"] .popover-navigation *[data-role="end"].disabled {
+    display: none;
+}
+
+.popover .contentP {
+    padding: 0 15px 15px;
+    align-items: center;
+    font-family: 'Gill Sans Std';
+}
+
+.popover .contentP img {
+    padding: 15px;
+    width: 150px;
+    height: 150px;
+}
+
+.popover-title {
+    background: transparent;
+    border-bottom: 0;
+}
+
+.popover h2 {
+    color: #6445E1;
+    font-size: 22px;
+}
+
+.popover .popover-content {
+    font-size: 14px;
+    color: #4c4c4c;
+}
+
+.popover .navigation {
+    padding: 15px;
+    padding-top: 10px;
+    border-top: 1px solid #e5e5e5;
+}
+
+.popover .btn {
+    background-color: #6445E1;
+    color: #fff;
+    font-size: 12px;
+    padding: 6px 12px;
+    border-radius: 5px;
+}
+
+.popover .btn[data-role="end"] {
+    border: 1px solid #6445E1;
+    color: #6445E1;
+    background-color: transparent;
+    margin-left: 20px;
+}

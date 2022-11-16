@@ -420,3 +420,147 @@ function youtubeApearAudio() {
         $('#iframeYoutube').removeClass('expand');
     }
 }
+
+/*--- bootstrap tour ---*/
+
+// Instance the tour
+var tour = new Tour({
+    backdrop: false, 
+    storage: false        
+  });
+  
+  tour.addSteps([
+      {
+          element: "",
+          title: "title1",
+          content: "content1"
+      },
+      {
+          element: "#2",
+          title: "title2",
+          content: "content2"
+      },
+      {
+          element: "#3",
+          title: "title3",
+          content: "content3"
+      },
+      {
+          element: "#4",
+          title: "title4",
+          content: "content4"
+      }
+  
+    ]);
+
+
+
+        // Instance the tour
+var tour1 = new Tour({
+
+    steps: [
+      {        
+        orphan: true,
+        title: "Bienvenido a Colombia Expediciones IGAC",
+        content: `<h2 clas='titleIntro'>Bienvenido a Expediciones IGAC</h2>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde eveniet quaerat perferendis omnis, dignissimos soluta repellat quo numquam possimus atque esse. Ullam perspiciatis repellendus quod officia unde pariatur debitis harum?`,
+        smartPlacement: true,
+        animation: true,
+        backdrop: true,
+        template: `<div class='popover tour main'>
+        <div class='modal-header'><div data-role="end">×</div></div>
+        <div class='d-flex contentP'>
+            <img src="/images/Walkthrough_01.png" alt=""> 
+            <div class='popover-content'></div>
+        </div>
+            <div class='d-flex navigation justify-content-between'> 
+                <div class='popover-navigation p-0'>            
+                    <button class='btn' data-role='prev'>Anterior <span data-role='separator'>|</span></button>
+                    
+                    <button class='btn' data-role='next'>Siguiente</button>
+                </div>
+
+                <button class='btn' data-role='end'>Finalizar Tour</button>
+                </div>
+            </div>
+            `,
+    },
+    {
+      element: "#tabTable",
+      title: "Title of first para",
+      content: "E1 :- Content of my step",
+      smartPlacement: true,
+      backdrop: true,
+      template: `
+        <div class='popover tour secondary'>
+        <div class='arrow'></div>
+        <div class='modal-header d-flex justify-content-between'>            
+            <h3 class='popover-title p-0'></h3>
+            <div data-role="end">×</div>
+        </div>        
+        <div class='popover-content'></div>
+        <div class='popover-navigation d-flex'>
+            <button class='btn btn-default' data-role='prev'>Anterior</button>
+            <button class='btn btn-default' data-role='next'>Siguiente</button>
+            <button class='btn btn-default' data-role='end'>Finalizar Tour</button>
+            </div>
+        </div>
+        
+            `
+    },
+    {
+      element: "#listItem_0",
+      title: "Title of Second Para",
+      content: "Click here to contact US...",
+      template: `
+        <div class='popover tour secondary'>
+        <div class='arrow'></div>
+        <div class='modal-header d-flex justify-content-between'>            
+            <h3 class='popover-title p-0'></h3>
+            <div data-role="end">×</div>
+        </div>        
+        <div class='popover-content'></div>
+        <div class='popover-navigation d-flex'>
+            <button class='btn btn-default' data-role='prev'>Anterior</button>
+            <button class='btn btn-default' data-role='next'>Siguiente</button>
+            <button class='btn btn-default' data-role='end'>Finalizar Tour</button>
+            </div>
+        </div>
+        
+            `
+    },
+
+    {
+        element: "#graphicsLayer0_layer",
+        title: "Title of Second Para",
+        content: "Click here to contact US...",
+        template: `
+        <div class='popover tour secondary'>
+        <div class='arrow'></div>
+        <div class='modal-header d-flex justify-content-between'>            
+            <h3 class='popover-title p-0'></h3>
+            <div data-role="end">×</div>
+        </div>        
+        <div class='popover-content'></div>
+        <div class='popover-navigation d-flex'>
+            <button class='btn btn-default' data-role='prev'>Anterior</button>
+            <button class='btn btn-default' data-role='next'>Siguiente</button>
+            <button class='btn btn-default' data-role='end'>Finalizar Tour</button>
+            </div>
+        </div>
+        
+            `
+      }
+    
+  ]});
+  
+  // Initialize the tour
+  tour1.init();
+  
+  // Start the tour
+  tour1.start();
+
+  $(document).on("click", "html", function(event) {
+    if ($(this).hasClass("popover")) {
+        event.stopPropagation();
+    }
+});
