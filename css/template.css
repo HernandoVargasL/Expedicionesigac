@@ -946,3 +946,10 @@
         height: 200px;
     }
 }
+
+#HomeButton {
+    position: absolute;
+    top: 85px;
+    right: 20px;
+    z-index: 50;
+  }
