@@ -385,7 +385,7 @@ function listCofan() {
 
     for (var i = 0; i < datosCofan.length; i++) {
         strHTML = strHTML + "<li id='listItem_" + i + "' class='list__item' id-cofan=" + dato[i].ID + ">";
-        strHTML = strHTML + "<a >";
+        strHTML = strHTML + "<a id='anchord'>";
         strHTML = strHTML + "<div class='list__item--title'>" + dato[i].Nombre_ESP + "</div>";
         strHTML = strHTML + "<div class='list__item--title-resume'>" + dato[i].Nombre_COF + "</div>";
         strHTML = strHTML + "</a>";
