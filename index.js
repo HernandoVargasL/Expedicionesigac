@@ -31,7 +31,7 @@ if (document.querySelector(".navbarigac")) {
             <a href='https://www.igac.gov.co' target='_blank'><img alt='Logo IGAC' src='/images/logo-igac.png'/></a>
         </div>
         <div class="logoigac">
-            <a href="/index.html"><img src="/images/logo.svg" alt="Expediciones Igac"></a>
+            <a href="index.html"><img src="images/logo.svg" alt="Expediciones Igac"></a>
         </div>
     </div>
     <button class='nav-bar-toggle-igac'>
@@ -41,7 +41,7 @@ if (document.querySelector(".navbarigac")) {
     </button>
     <div class='navbarnavigac'>
         <li>
-            <a class='inicio' href='/index.html'>Pueblo Cofan</a>
+            <a class='inicio' href='index.html'>Pueblo Cofan</a>
         </li>
         <li>
             <a class='dropdownToggle' href='#'>Acerca de</a>
@@ -209,7 +209,7 @@ function initMap() {
 
 function initMap2() {
     $.ajax({
-        url: "/data/cofan.json",
+        url: "data/cofan.json",
         type: 'GET',
         success: function (data) {
             datosCofan = data;
@@ -278,7 +278,7 @@ function mapCofan() {
                 "xoffset": 0,
                 "yoffset": 0,
                 "type": "esriPMS",
-                "url": "/images/numeros/" + (idx + 1) + ".png",
+                "url": "images/numeros/" + (idx + 1) + ".png",
                 "width": 30,
                 "height": 30
             },
@@ -512,7 +512,7 @@ var tour1 = new Tour({
         template: `<div class='popover tour main'>
         <div class='modal-header'><div data-role="end">×</div></div>
         <div class='d-flex contentP'>
-            <img src="/images/Walkthrough_01.png" alt=""> 
+            <img src="images/Walkthrough_01.png" alt=""> 
             <div class='popover-content'></div>
         </div>
             <div class='d-flex navigation justify-content-between'> 

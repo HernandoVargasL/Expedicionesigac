@@ -10,7 +10,7 @@
     "Trabajo_campo": "Sí",
     "Grupo_Intercultural": "Sector comunidad: Linda García, Jaime Burgos, Luís Bernardo Cano, Cristian Chapal, Weimar Salazar.",
     "Contexto_geografico": "El Cabildo indígena Villanueva hace parte del pueblo indígena Cofán, el cual se distribuye principalmente en la frontera entre Colombia y Ecuador. Se estima que 1.816 personas son autorreconocidas como pertenecientes a este pueblo según el Censo Nacional de Población y Vivienda del 2018 de Colombia. La conformación de su territorio data de épocas anteriores a la conquista (Arango y Sánchez, 2004), dónde tenían contacto con otras culturas como los Mocoa, Pastos y Sucumbíos. Cuentan con una lengua propia denominada A'ingae o Cofán, se mantiene en la mayor parte de las comunidades. Dado que no se ha podido clasificar dentro de ninguna familia lingüística, se considera una lengua aislada.</br> Según la caracterización del Ministerio del Interior se tuvo noticias de este pueblo hasta finales del siglo XVI, pues con los descubrimientos de yacimientos auríferos se conformaron encomiendas y pueblos. Posteriormente, las misiones jesuitas, franciscanas y capuchinas llegaron a la zona. Se dio inicio a actividades extractivas de caucho y quina, asociadas a prácticas crueles e injustas que condujo a la reducción considerable de su población y a la colonización del territorio por parte de poblaciones campesinas, por lo cual se vieron obligados a refugiarse en sitios alejados.  En la década de 1960 iniciaron la perforación de diversos pozos de petróleo a cargo de Texas Petroleum Company, situación que impactó de manera profunda los valores y prácticas culturales, por lo cual a partir de 1970 se han constituido seis resguardos a favor de comunidades pertenecientes a este pueblo. En la actualidad la comunidad de Villanueva avanza en la gestión del trámite correspondiente a la Constitución de Resguardo ante la Agencia Nacional de Tierras - ANT. (AMPII CANKE, 2021).</br> El cabildo Villanueva está conformado por seis globos discontinuos, sobre las jurisdicciones de los municipios de Valle del Guamuez y Orito, departamento del Putumayo al sur de Colombia, en la denominada llanura amazónica, región caracterizada por presentar altos niveles de precipitación y humedad, un clima cálido que ha permitido el desarrollo de una cobertura vegetal densa, relieve dominado por pendientes suaves que junto a las condiciones climáticas definen sistemas aluviales sometidos a inundaciones periódicas por el desborde de los ríos, que rigen ciclos y actividades de las comunidades allí presentes (IDEAM, 2010).</br> La restricción sobre su territorio ha afectado considerablemente la cultura Cofán, para quienes la educación y cultura están cimentadas en cuatro pilares: el pensamiento de los mayores, las lenguas nativas, las plantas sagradas y las normas y valores de la cultura. Son amplios conocedores del yagé, conservan el uso tradicional en contextos rituales, toma de decisiones, resolución de conflictos y tratamiento médico; las enfermedades en la cosmogonía Cofán son divididas entre las de origen físico y mágico o sobrenatural. El taita es una figura muy importante en la organización social y tiene una cercanía muy fuerte con las plantas medicinales y mágicas.</br> Debido a la colonización del territorio, han tenido que asumir prácticas agrícolas para el comercio y autoconsumo, son agricultores a pequeña escala, pescadores y cazadores-recolectores, las mujeres principalmente se dedican a la elaboración y comercialización de artesanías en semillas, fibras naturales y barro (ONIC, 2022). En las últimas décadas se han visto afectados por el conflicto armado, siendo víctimas de los grupos armados al margen de la ley; a pesar de todo, cuentan con una organización fuerte que les ha permitido consolidar su Plan de Vida en el año 2002 y más recientemente el Plan de Manejo Ambiental y Cultural del pueblo Cofán en 2021, con el fin de contribuir a la restauración, conservación y protección del territorio ancestral.",
-    "URL_Fotografia": ["/media/images/8632015010368070_01.jpg"],
+    "URL_Fotografia": ["media/images/8632015010368070_01.jpg"],
     "Fuente": "Instituto Geográfico Agustín Codazzi-IGAC, Amazon Conservation Team Colombia-ACT. Cabildo Villanueva Asociación de Autoridades Tradicionales Mesa Permanente de trabajo por el Pueblo Cofán y Cabildos indígenas pertenecientes a los pueblos Awá, Nasa, Kichwa y Embera Chamí-AMPII CANKE",
     "Estado": "Preferente",
     "Escala_minima": "1:1000",
@@ -33,7 +33,7 @@
     "Grupo_Etnohistoria": "Pueblo Cofán: Cristián Chapal, Tatiana Agüinda; José Ildefonso Chachinoy, Yamit Chapal, Miriam Ortiz, Tania Agüinda, Nixon Chapal. Fanny Chapal y otros miembros de la comunidad.</br>IGAC: Egna Márquez. ACT: Edwin Jaramillo.",
     "Rol_Dentro_Comunidad": "Gobernador",
     "Registro_Audiovisual": "Audio Etnohistoria Gobernador Pueblo Cofán.</br>Casa del Duende Blanco</br>(Chapal, Audio Etnohistoria Casa del Duende blanco, 2022)",
-    "Registro_Audiovisual_Audio": "/media/audio/8632015010368070_Etnohistoria.mp3"
+    "Registro_Audiovisual_Audio": "media/audio/8632015010368070_Etnohistoria.mp3"
   },
   "Aspectos_Linguisticos": {
     "Familia_Linguistica": "Aislada",
@@ -42,7 +42,7 @@
     "Significado_Origen": "El nombre Ñutshia bahu tsaʼu se origina de la lengua Cofán y significa 'Casa del Duende Bueno'.  Ñutshia es un término que significa 'bueno', alude un valor positivo o una cualidad que se le atribuye a alguien por su naturaleza. Bahu es una expresión que significa 'duende' como un ser que habita un lugar. Para el pueblo Cofán el duente es un ser espiritual que da sabiduría y fortaleza, ayuda a la protección y sanación del pueblo. Tsaʼu es una expresión que da cuenta de un lugar físico y espiritual para habitar.",
     "Transcripcion_AFI": "Ver informe",
     "Registro_Audiovisual": "Audio Etnoeducadora Cofán.</br>Casa del Duende Blanco.</br>(Aguinda, Audio pronunciación Ñutshia bahu tsaʼu, 2022)",
-    "Registro_Audiovisual_Audio": "/media/audio/8632015010368070_Linguistico.mp3",
+    "Registro_Audiovisual_Audio": "media/audio/8632015010368070_Linguistico.mp3",
     "Registro_Audiovisual_Video": "https://www.youtube.com/embed/3KnBtRv5m-Y"
   }
 },
@@ -58,7 +58,7 @@
     "Trabajo_campo": "No",
     "Grupo_Intercultural": "AMPII CANKE.",
     "Contexto_geografico": "El Cabildo indígena Villanueva hace parte del pueblo indígena Cofán, el cual se distribuye principalmente en la frontera entre Colombia y Ecuador. Se estima que 1.816 personas son autorreconocidas como pertenecientes a este pueblo según el Censo Nacional de Población y Vivienda del 2018 de Colombia. La conformación de su territorio data de épocas anteriores a la conquista (Arango y Sánchez, 2004), dónde tenían contacto con otras culturas como los Mocoa, Pastos y Sucumbíos. Cuentan con una lengua propia denominada A'ingae o Cofán, se mantiene en la mayor parte de las comunidades. Dado que no se ha podido clasificar dentro de ninguna familia lingüística, se considera una lengua aislada.</br> Según la caracterización del Ministerio del Interior se tuvo noticias de este pueblo hasta finales del siglo XVI, pues con los descubrimientos de yacimientos auríferos se conformaron encomiendas y pueblos. Posteriormente, las misiones jesuitas, franciscanas y capuchinas llegaron a la zona. Se dio inicio a actividades extractivas de caucho y quina, asociadas a prácticas crueles e injustas que condujo a la reducción considerable de su población y a la colonización del territorio por parte de poblaciones campesinas, por lo cual se vieron obligados a refugiarse en sitios alejados.  En la década de 1960 iniciaron la perforación de diversos pozos de petróleo a cargo de Texas Petroleum Company, situación que impactó de manera profunda los valores y prácticas culturales, por lo cual a partir de 1970 se han constituido seis resguardos a favor de comunidades pertenecientes a este pueblo. En la actualidad la comunidad de Villanueva avanza en la gestión del trámite correspondiente a la Constitución de Resguardo ante la Agencia Nacional de Tierras - ANT. (AMPII CANKE, 2021).</br> El cabildo Villanueva está conformado por seis globos discontinuos, sobre las jurisdicciones de los municipios de Valle del Guamuez y Orito, departamento del Putumayo al sur de Colombia, en la denominada llanura amazónica, región caracterizada por presentar altos niveles de precipitación y humedad, un clima cálido que ha permitido el desarrollo de una cobertura vegetal densa, relieve dominado por pendientes suaves que junto a las condiciones climáticas definen sistemas aluviales sometidos a inundaciones periódicas por el desborde de los ríos, que rigen ciclos y actividades de las comunidades allí presentes (IDEAM, 2010).</br> La restricción sobre su territorio ha afectado considerablemente la cultura Cofán, para quienes la educación y cultura están cimentadas en cuatro pilares: el pensamiento de los mayores, las lenguas nativas, las plantas sagradas y las normas y valores de la cultura. Son amplios conocedores del yagé, conservan el uso tradicional en contextos rituales, toma de decisiones, resolución de conflictos y tratamiento médico; las enfermedades en la cosmogonía Cofán son divididas entre las de origen físico y mágico o sobrenatural. El taita es una figura muy importante en la organización social y tiene una cercanía muy fuerte con las plantas medicinales y mágicas.</br> Debido a la colonización del territorio, han tenido que asumir prácticas agrícolas para el comercio y autoconsumo, son agricultores a pequeña escala, pescadores y cazadores-recolectores, las mujeres principalmente se dedican a la elaboración y comercialización de artesanías en semillas, fibras naturales y barro (ONIC, 2022). En las últimas décadas se han visto afectados por el conflicto armado, siendo víctimas de los grupos armados al margen de la ley; a pesar de todo, cuentan con una organización fuerte que les ha permitido consolidar su Plan de Vida en el año 2002 y más recientemente el Plan de Manejo Ambiental y Cultural del pueblo Cofán en 2021, con el fin de contribuir a la restauración, conservación y protección del territorio ancestral.",
-    "URL_Fotografia": ["/media/images/8632015010368071_01.jpg"],
+    "URL_Fotografia": ["media/images/8632015010368071_01.jpg"],
     "Fuente": "Cabildo Villanueva Asociación de Autoridades Tradicionales Mesa Permanente de trabajo por el Pueblo Cofán y Cabildos indígenas pertenecientes a los pueblos Awá, Nasa, Kichwa y Embera Chamí-AMPII CANKE.",
     "Estado": "Preferente",
     "Escala_minima": "1:1000",
@@ -81,7 +81,7 @@
     "Grupo_Etnohistoria": "Pueblo Cofán: Cristián Chapal, Tatiana Agüinda; José Ildefonso Chachinoy, Yamit Chapal, Miriam Ortiz, Tania Agüinda, Nixon Chapal. Fanny Chapal y otros miembros de la comunidad.</br>IGAC: Egna Márquez. ACT: Edwin Jaramillo.",
     "Rol_Dentro_Comunidad": "Gobernador",
     "Registro_Audiovisual": "Audio Etnohistoria Gobernador Pueblo Cofán.</br>Casa del Duende Negro.</br>(Chapal, Audio Etnohistoria Casa del Duende Negro, 2022)",
-    "Registro_Audiovisual_Audio": "/media/audio/8632015010368071_Etnohistoria.mp3"
+    "Registro_Audiovisual_Audio": "media/audio/8632015010368071_Etnohistoria.mp3"
   },
   "Aspectos_Linguisticos": {
     "Familia_Linguistica": "Aislada",
@@ -90,7 +90,7 @@
     "Significado_Origen": "Los abuelos Cofán a través de la espiritualidad identificaron este lugar. El nombre Ega bahu tsa'u se origina de la lengua Cofán y significa 'Casa del Duende Negro'.  Ega es un término que significa 'malo', da cuenta de una característica de maldad. Bahu es una expresión que significa 'duende' ser que habita un lugar. El duente es un ser espiritual, que trasmite conocimientos para mantener la armonía con la naturaleza. También, es conocido por ser el maestro de la música. Tsaʼu es una expresión que da cuenta de un lugar físico y espiritual habitado.",
     "Transcripcion_AFI": "Ver informe",
     "Registro_Audiovisual": "Audio Etnoeducadora Cofán.</br>Casa del Duende Negro.</br>(Aguinda, Audio pronunciación Ega bahu tsa'u, 2022)",
-    "Registro_Audiovisual_Audio": "/media/audio/8632015010368071_Linguistico.mp3"
+    "Registro_Audiovisual_Audio": "media/audio/8632015010368071_Linguistico.mp3"
   }
 },
 {
@@ -105,7 +105,7 @@
     "Trabajo_campo": "Sí",
     "Grupo_Intercultural": "Sector de las Lagunas: Pamela Mayorga, Javier Cuellar, Carolina Bernal, Libardo Chapal, Wendy Valbuena, Carlos Chapal, Fernando Benavides, Daniel Rubio, Héctor Chapal.",
     "Contexto_geografico": "El Cabildo indígena Villanueva hace parte del pueblo indígena Cofán, el cual se distribuye principalmente en la frontera entre Colombia y Ecuador. Se estima que 1.816 personas son autorreconocidas como pertenecientes a este pueblo según el Censo Nacional de Población y Vivienda del 2018 de Colombia. La conformación de su territorio data de épocas anteriores a la conquista (Arango y Sánchez, 2004), dónde tenían contacto con otras culturas como los Mocoa, Pastos y Sucumbíos. Cuentan con una lengua propia denominada A'ingae o Cofán, se mantiene en la mayor parte de las comunidades. Dado que no se ha podido clasificar dentro de ninguna familia lingüística, se considera una lengua aislada.</br> Según la caracterización del Ministerio del Interior se tuvo noticias de este pueblo hasta finales del siglo XVI, pues con los descubrimientos de yacimientos auríferos se conformaron encomiendas y pueblos. Posteriormente, las misiones jesuitas, franciscanas y capuchinas llegaron a la zona. Se dio inicio a actividades extractivas de caucho y quina, asociadas a prácticas crueles e injustas que condujo a la reducción considerable de su población y a la colonización del territorio por parte de poblaciones campesinas, por lo cual se vieron obligados a refugiarse en sitios alejados.  En la década de 1960 iniciaron la perforación de diversos pozos de petróleo a cargo de Texas Petroleum Company, situación que impactó de manera profunda los valores y prácticas culturales, por lo cual a partir de 1970 se han constituido seis resguardos a favor de comunidades pertenecientes a este pueblo. En la actualidad la comunidad de Villanueva avanza en la gestión del trámite correspondiente a la Constitución de Resguardo ante la Agencia Nacional de Tierras - ANT. (AMPII CANKE, 2021).</br> El cabildo Villanueva está conformado por seis globos discontinuos, sobre las jurisdicciones de los municipios de Valle del Guamuez y Orito, departamento del Putumayo al sur de Colombia, en la denominada llanura amazónica, región caracterizada por presentar altos niveles de precipitación y humedad, un clima cálido que ha permitido el desarrollo de una cobertura vegetal densa, relieve dominado por pendientes suaves que junto a las condiciones climáticas definen sistemas aluviales sometidos a inundaciones periódicas por el desborde de los ríos, que rigen ciclos y actividades de las comunidades allí presentes (IDEAM, 2010).</br> La restricción sobre su territorio ha afectado considerablemente la cultura Cofán, para quienes la educación y cultura están cimentadas en cuatro pilares: el pensamiento de los mayores, las lenguas nativas, las plantas sagradas y las normas y valores de la cultura. Son amplios conocedores del yagé, conservan el uso tradicional en contextos rituales, toma de decisiones, resolución de conflictos y tratamiento médico; las enfermedades en la cosmogonía Cofán son divididas entre las de origen físico y mágico o sobrenatural. El taita es una figura muy importante en la organización social y tiene una cercanía muy fuerte con las plantas medicinales y mágicas.</br> Debido a la colonización del territorio, han tenido que asumir prácticas agrícolas para el comercio y autoconsumo, son agricultores a pequeña escala, pescadores y cazadores-recolectores, las mujeres principalmente se dedican a la elaboración y comercialización de artesanías en semillas, fibras naturales y barro (ONIC, 2022). En las últimas décadas se han visto afectados por el conflicto armado, siendo víctimas de los grupos armados al margen de la ley; a pesar de todo, cuentan con una organización fuerte que les ha permitido consolidar su Plan de Vida en el año 2002 y más recientemente el Plan de Manejo Ambiental y Cultural del pueblo Cofán en 2021, con el fin de contribuir a la restauración, conservación y protección del territorio ancestral.",
-    "URL_Fotografia": ["/media/images/8632015010368066_01.jpg"],
+    "URL_Fotografia": ["media/images/8632015010368066_01.jpg"],
     "Fuente": "Instituto Geográfico Agustín Codazzi-IGAC, Amazon Conservation Team Colombia-ACT. Cabildo Villanueva Asociación de Autoridades Tradicionales Mesa Permanente de trabajo por el Pueblo Cofán y Cabildos indígenas pertenecientes a los pueblos Awá, Nasa, Kichwa y Embera Chamí-AMPII CANKE",
     "Estado": "Preferente",
     "Escala_minima": "1:1000",
@@ -127,7 +127,7 @@
     "Etnohistoria": "Existen dos narraciones asociadas a este lugar, la primera está relacionada con el hermano de Alfonso, él se caracteriza por ser  chistoso. Un día al encontrar una boa en la arena, le dijo a uno de sus yernos que no se asustará, porqué era su mascota. El yerno. Al ver el tamaño de la boa, no le creyó y se alejó.</br>Sin embargo, el hermano de Alfonso para sostener que era su mascota, tocó a la boa y ella emitió una sonda y un gran estruendo,  que lo arrojó lejos. Después de eso, tanto el hermano de Alfonso como el yerno salieron a correr juntos. </br>La segunda historia, le ocurrió a la hija de Alfonso, ella estaba lavando en el Luzón. Después de terminar, empezó a pescar para el almuerzo. En un momento, empezó a quedarse dormida y sentía una atracción hacia el agua llena de burbujas.  El esposo estaba más arriba y al darse cuenta de lo que estaba ocurriendo le gritó. Entonces, ella se despertó, reaccionó y salió corriendo del lugar. Lo que sucedía es que la boa se la iba a comer, porque ella atrae a sus presas así, de esa forma cazan las boas.",
     "Rol_Dentro_Comunidad": "Gobernador",
     "Registro_Audiovisual": "Audio Etnohistoria Gobernador Pueblo Cofán, Laguna de la boa. (Chapal, Audio Etnohistoria Laguna de la boa, 2022)",
-    "Registro_Audiovisual_Audio": "/media/etnohistoria/8632015010368066.mp3"
+    "Registro_Audiovisual_Audio": "media/etnohistoria/8632015010368066.mp3"
   },
   "Aspectos_Linguisticos": {
     "Grupo_Etnohistoria": "Pueblo Cofán: Cristián Chapal, Tatiana Agüinda; José Ildefonso Chachinoy, Yamit Chapal, Miriam Ortiz, Tania Agüinda, Nixon Chapal. Fanny Chapal y otros miembros de la comunidad.</br>IGAC: Egna Márquez. ACT: Edwin Jaramillo.",
@@ -137,7 +137,7 @@
     "Significado_Origen": "El nombre Kahansi sinʼgwkhw es una expresión de la lengua Cofán.  Kahansi significa 'boa o anaconda', es una especie de serpiente que pertenece a la familia de los reptiles, tiene un cuerpo alargado de hasta 10 metros de longitud, con la piel de dibujos llamativos.  Desde la cosmovisión del pueblo Cofán es el amo de los peces. También, puede referirse a una persona sabia y poseedora de los conocimientos de medicina tradicional, cuyo dominio le permite transformarse en boa. Por otro lado, la boa puede representar seres que fueron enjaulados por las autoridades espirituales Cofán en los tiempos antiguos, por lo que se muestran como mujeres hermosas.  Sinʼgwkhw es una palabra que significa 'laguna'.",
     "Transcripcion_AFI": "Ver informe",
     "Registro_Audiovisual": "Audio Etnoeducadora Cofán, Casa del Duende Negro (Aguinda, Audio pronunciación Ega bahu tsa'u, 2022)",
-    "Registro_Audiovisual_Audio": "/media/audio/8632015010368066_Linguistico.mp3"
+    "Registro_Audiovisual_Audio": "media/audio/8632015010368066_Linguistico.mp3"
   }
 },
 {
@@ -175,7 +175,7 @@
     "Grupo_Etnohistoria": "Pueblo Cofán: Cristián Chapal, Tatiana Agüinda; José Ildefonso Chachinoy, Yamit Chapal, Miriam Ortiz, Tania Agüinda, Nixon Chapal. Fanny Chapal y otros miembros de la comunidad.</br>IGAC: Egna Márquez. ACT: Edwin Jaramillo.",
     "Rol_Dentro_Comunidad": "Mayor",
     "Registro_Audiovisual": "Audio Etnohistoria Laguna de la Piraña y el Temblón- Mayor. (Chachinoy, 2022)",
-    "Registro_Audiovisual_Audio": "/media/audio/8632015010368065_Etnohistoria.mp3"
+    "Registro_Audiovisual_Audio": "media/audio/8632015010368065_Etnohistoria.mp3"
   },
   "Aspectos_Linguisticos": {
     "Familia_Linguistica": "Aislada",
@@ -184,7 +184,7 @@
     "Significado_Origen": "El nombre Daru tuyakaen fambi sinʼgwkhw es una expresión de la lengua Cofán.  Daru significa 'piraña', es una especie de pez,  Tuyakaen significa “y”. Fambi significa “temblón”.  Desde la cosmovisión del pueblo Cofán el temblón es un ser espiritual que transmite conocimientos de protección a los abuelos.",
     "Transcripcion_AFI": "Ver informe",
     "Registro_Audiovisual": "Audio Etnoeducadora Cofán, Laguna de la Piraña y el Temblón (Aguinda, Audio Laguna de la Piraña y el Temblón Etnoeducadora, 2022)",
-    "Registro_Audiovisual_Audio": "/media/audio/8632015010368065_Linguistico.mp3"
+    "Registro_Audiovisual_Audio": "media/audio/8632015010368065_Linguistico.mp3"
   }
 },
 {
@@ -222,7 +222,7 @@
     "Grupo_Etnohistoria": "Pueblo Cofán: Cristián Chapal, Tatiana Agüinda; José Ildefonso Chachinoy, Yamit Chapal, Miriam Ortiz, Tania Agüinda, Nixon Chapal. Fanny Chapal y otros miembros de la comunidad.</br>IGAC: Egna Márquez. ACT: Edwin Jaramillo.",
     "Rol_Dentro_Comunidad": "Líder comunitario",
     "Registro_Audiovisual": "Audio Etnohistoria Bañadero de los Cerrillos. (Yamil, 2022)",
-    "Registro_Audiovisual_Audio": "/media/audio/8632015010368062_Etnohistoria.mp3"
+    "Registro_Audiovisual_Audio": "media/audio/8632015010368062_Etnohistoria.mp3"
   },
   "Aspectos_Linguisticos": {
     "Familia_Linguistica": "Aislada",
@@ -231,7 +231,7 @@
     "Significado_Origen": "El nombre Sakira unʼhuhenthi es una expresión de la lengua Cofán Sakira significa 'Cerrillo', es una especie de cerdo salvaje y unʼhuhenthi significa “bañadero”.",
     "Transcripcion_AFI": "Ver informe",
     "Registro_Audiovisual": "Audio Bañadero de los Cerrillos Etnoeducadora (Aguinda, Audio Lengua Cofán Bañadero de los Cerrillos, 2022)",
-    "Registro_Audiovisual_Audio": "/media/audio/8632015010368062_Linguistico.mp3"
+    "Registro_Audiovisual_Audio": "media/audio/8632015010368062_Linguistico.mp3"
   }
 },
 {
@@ -269,7 +269,7 @@
     "Grupo_Etnohistoria": "Pueblo Cofán: Cristián Chapal, Tatiana Agüinda; José Ildefonso Chachinoy, Yamit Chapal, Miriam Ortiz, Tania Agüinda, Nixon Chapal. Fanny Chapal y otros miembros de la comunidad.</br>IGAC: Egna Márquez. ACT: Edwin Jaramillo.",
     "Rol_Dentro_Comunidad": "Líder comunitario",
     "Registro_Audiovisual": "Audio Etnohistoria Bañadero de los Cerrillos. (Yamil, 2022)",
-    "Registro_Audiovisual_Audio": "/media/audio/8632015010368072_Etnohistoria.mp3"
+    "Registro_Audiovisual_Audio": "media/audio/8632015010368072_Etnohistoria.mp3"
   },
   "Aspectos_Linguisticos": {
     "Familia_Linguistica": "Aislada",
@@ -278,7 +278,7 @@
     "Significado_Origen": "El nombre Sakira unʼhuhenthi es una expresión de la lengua Cofán Sakira significa 'Cerrillo', es una especie de cerdo salvaje y unʼhuhenthi significa “bañadero”.",
     "Transcripcion_AFI": "Ver informe",
     "Registro_Audiovisual": "Audio Bañadero de los Cerrillos Etnoeducadora (Aguinda, Audio Lengua Cofán Bañadero de los Cerrillos, 2022)",
-    "Registro_Audiovisual_Audio": "/media/audio/8632015010368072_Linguistico.mp3"
+    "Registro_Audiovisual_Audio": "media/audio/8632015010368072_Linguistico.mp3"
   }
 },
 {
@@ -293,7 +293,7 @@
     "Trabajo_campo": "Sí",
     "Grupo_Intercultural": "Sector comunidad: Linda García, Jaime Burgos, Luís Bernardo Cano, Cristian Chapal, Weimar Salazar.",
     "Contexto_geografico": "El Cabildo indígena Villanueva hace parte del pueblo indígena Cofán, el cual se distribuye principalmente en la frontera entre Colombia y Ecuador. Se estima que 1.816 personas son autorreconocidas como pertenecientes a este pueblo según el Censo Nacional de Población y Vivienda del 2018 de Colombia. La conformación de su territorio data de épocas anteriores a la conquista (Arango y Sánchez, 2004), dónde tenían contacto con otras culturas como los Mocoa, Pastos y Sucumbíos. Cuentan con una lengua propia denominada A'ingae o Cofán, se mantiene en la mayor parte de las comunidades. Dado que no se ha podido clasificar dentro de ninguna familia lingüística, se considera una lengua aislada.</br> Según la caracterización del Ministerio del Interior se tuvo noticias de este pueblo hasta finales del siglo XVI, pues con los descubrimientos de yacimientos auríferos se conformaron encomiendas y pueblos. Posteriormente, las misiones jesuitas, franciscanas y capuchinas llegaron a la zona. Se dio inicio a actividades extractivas de caucho y quina, asociadas a prácticas crueles e injustas que condujo a la reducción considerable de su población y a la colonización del territorio por parte de poblaciones campesinas, por lo cual se vieron obligados a refugiarse en sitios alejados.  En la década de 1960 iniciaron la perforación de diversos pozos de petróleo a cargo de Texas Petroleum Company, situación que impactó de manera profunda los valores y prácticas culturales, por lo cual a partir de 1970 se han constituido seis resguardos a favor de comunidades pertenecientes a este pueblo. En la actualidad la comunidad de Villanueva avanza en la gestión del trámite correspondiente a la Constitución de Resguardo ante la Agencia Nacional de Tierras - ANT. (AMPII CANKE, 2021).</br> El cabildo Villanueva está conformado por seis globos discontinuos, sobre las jurisdicciones de los municipios de Valle del Guamuez y Orito, departamento del Putumayo al sur de Colombia, en la denominada llanura amazónica, región caracterizada por presentar altos niveles de precipitación y humedad, un clima cálido que ha permitido el desarrollo de una cobertura vegetal densa, relieve dominado por pendientes suaves que junto a las condiciones climáticas definen sistemas aluviales sometidos a inundaciones periódicas por el desborde de los ríos, que rigen ciclos y actividades de las comunidades allí presentes (IDEAM, 2010).</br> La restricción sobre su territorio ha afectado considerablemente la cultura Cofán, para quienes la educación y cultura están cimentadas en cuatro pilares: el pensamiento de los mayores, las lenguas nativas, las plantas sagradas y las normas y valores de la cultura. Son amplios conocedores del yagé, conservan el uso tradicional en contextos rituales, toma de decisiones, resolución de conflictos y tratamiento médico; las enfermedades en la cosmogonía Cofán son divididas entre las de origen físico y mágico o sobrenatural. El taita es una figura muy importante en la organización social y tiene una cercanía muy fuerte con las plantas medicinales y mágicas.</br> Debido a la colonización del territorio, han tenido que asumir prácticas agrícolas para el comercio y autoconsumo, son agricultores a pequeña escala, pescadores y cazadores-recolectores, las mujeres principalmente se dedican a la elaboración y comercialización de artesanías en semillas, fibras naturales y barro (ONIC, 2022). En las últimas décadas se han visto afectados por el conflicto armado, siendo víctimas de los grupos armados al margen de la ley; a pesar de todo, cuentan con una organización fuerte que les ha permitido consolidar su Plan de Vida en el año 2002 y más recientemente el Plan de Manejo Ambiental y Cultural del pueblo Cofán en 2021, con el fin de contribuir a la restauración, conservación y protección del territorio ancestral.",
-    "URL_Fotografia": ["/media/images/8632015010368051_01.jpg", "/media/images/8632015010368051_02.jpg"],
+    "URL_Fotografia": ["media/images/8632015010368051_01.jpg", "media/images/8632015010368051_02.jpg"],
     "Fuente": "Instituto Geográfico Agustín Codazzi-IGAC, Amazon Conservation Team Colombia-ACT. Cabildo Villanueva Asociación de Autoridades Tradicionales Mesa Permanente de trabajo por el Pueblo Cofán y Cabildos indígenas pertenecientes a los pueblos Awá, Nasa, Kichwa y Embera Chamí-AMPII CANKE",
     "Estado": "Preferente",
     "Escala_minima": "1:1000",
@@ -325,7 +325,7 @@
     "Significado_Origen": "El nombre Na'esw kuku es una expresión de la lengua Cofán. Na'esw significa 'casa', y Kuku es el nombre del espíritu malo que habita ese lugar.",
     "Transcripcion_AFI": "Ver informe",
     "Registro_Audiovisual": "Audio Lengua Cofán casa del cuco Etnoeducadora (Aguinda, Audio Lengua Cofán -Casa del cuco-Etnoeducadora.WAV, 2022)",
-    "Registro_Audiovisual_Audio": "/media/audio/8632015010368051_Linguistico.mp3"
+    "Registro_Audiovisual_Audio": "media/audio/8632015010368051_Linguistico.mp3"
   }
 },
 {
@@ -340,7 +340,7 @@
     "Trabajo_campo": "Sí",
     "Grupo_Intercultural": "Sector del río: Daniel Ojeda, Carlos Hernández, Yamid Chapal, José Luis Bravo, Estela Chachinoy, Odilia Chachinoy, María Adriana Rosero.",
     "Contexto_geografico": "El Cabildo indígena Villanueva hace parte del pueblo indígena Cofán, el cual se distribuye principalmente en la frontera entre Colombia y Ecuador. Se estima que 1.816 personas son autorreconocidas como pertenecientes a este pueblo según el Censo Nacional de Población y Vivienda del 2018 de Colombia. La conformación de su territorio data de épocas anteriores a la conquista (Arango y Sánchez, 2004), dónde tenían contacto con otras culturas como los Mocoa, Pastos y Sucumbíos. Cuentan con una lengua propia denominada A'ingae o Cofán, se mantiene en la mayor parte de las comunidades. Dado que no se ha podido clasificar dentro de ninguna familia lingüística, se considera una lengua aislada.</br> Según la caracterización del Ministerio del Interior se tuvo noticias de este pueblo hasta finales del siglo XVI, pues con los descubrimientos de yacimientos auríferos se conformaron encomiendas y pueblos. Posteriormente, las misiones jesuitas, franciscanas y capuchinas llegaron a la zona. Se dio inicio a actividades extractivas de caucho y quina, asociadas a prácticas crueles e injustas que condujo a la reducción considerable de su población y a la colonización del territorio por parte de poblaciones campesinas, por lo cual se vieron obligados a refugiarse en sitios alejados.  En la década de 1960 iniciaron la perforación de diversos pozos de petróleo a cargo de Texas Petroleum Company, situación que impactó de manera profunda los valores y prácticas culturales, por lo cual a partir de 1970 se han constituido seis resguardos a favor de comunidades pertenecientes a este pueblo. En la actualidad la comunidad de Villanueva avanza en la gestión del trámite correspondiente a la Constitución de Resguardo ante la Agencia Nacional de Tierras - ANT. (AMPII CANKE, 2021).</br> El cabildo Villanueva está conformado por seis globos discontinuos, sobre las jurisdicciones de los municipios de Valle del Guamuez y Orito, departamento del Putumayo al sur de Colombia, en la denominada llanura amazónica, región caracterizada por presentar altos niveles de precipitación y humedad, un clima cálido que ha permitido el desarrollo de una cobertura vegetal densa, relieve dominado por pendientes suaves que junto a las condiciones climáticas definen sistemas aluviales sometidos a inundaciones periódicas por el desborde de los ríos, que rigen ciclos y actividades de las comunidades allí presentes (IDEAM, 2010).</br> La restricción sobre su territorio ha afectado considerablemente la cultura Cofán, para quienes la educación y cultura están cimentadas en cuatro pilares: el pensamiento de los mayores, las lenguas nativas, las plantas sagradas y las normas y valores de la cultura. Son amplios conocedores del yagé, conservan el uso tradicional en contextos rituales, toma de decisiones, resolución de conflictos y tratamiento médico; las enfermedades en la cosmogonía Cofán son divididas entre las de origen físico y mágico o sobrenatural. El taita es una figura muy importante en la organización social y tiene una cercanía muy fuerte con las plantas medicinales y mágicas.</br> Debido a la colonización del territorio, han tenido que asumir prácticas agrícolas para el comercio y autoconsumo, son agricultores a pequeña escala, pescadores y cazadores-recolectores, las mujeres principalmente se dedican a la elaboración y comercialización de artesanías en semillas, fibras naturales y barro (ONIC, 2022). En las últimas décadas se han visto afectados por el conflicto armado, siendo víctimas de los grupos armados al margen de la ley; a pesar de todo, cuentan con una organización fuerte que les ha permitido consolidar su Plan de Vida en el año 2002 y más recientemente el Plan de Manejo Ambiental y Cultural del pueblo Cofán en 2021, con el fin de contribuir a la restauración, conservación y protección del territorio ancestral.",
-    "URL_Fotografia": ["/media/images/8632015010368060_01.jpg"],
+    "URL_Fotografia": ["media/images/8632015010368060_01.jpg"],
     "Fuente": "Instituto Geográfico Agustín Codazzi-IGAC, Amazon Conservation Team Colombia-ACT. Cabildo Villanueva Asociación de Autoridades Tradicionales Mesa Permanente de trabajo por el Pueblo Cofán y Cabildos indígenas pertenecientes a los pueblos Awá, Nasa, Kichwa y Embera Chamí-AMPII CANKE",
     "Estado": "Preferente",
     "Escala_minima": "1:1000",
@@ -363,7 +363,7 @@
     "Grupo_Etnohistoria": "Pueblo Cofán: Cristián Chapal, Tatiana Agüinda; José Ildefonso Chachinoy, Yamit Chapal, Miriam Ortiz, Tania Agüinda, Nixon Chapal. Fanny Chapal y otros miembros de la comunidad.</br>IGAC: Egna Márquez. ACT: Edwin Jaramillo.",
     "Rol_Dentro_Comunidad": "Líder comunitario",
     "Registro_Audiovisual": "Audio Etnohistoria Gallina del Río (Yamit, Audio Etnohistoria Gallina Negra, 2022)",
-    "Registro_Audiovisual_Audio": "/media/audio/8632015010368060_Etnohistoria.mp3"
+    "Registro_Audiovisual_Audio": "media/audio/8632015010368060_Etnohistoria.mp3"
   },
   "Aspectos_Linguisticos": {
     "Familia_Linguistica": "Aislada",
@@ -372,7 +372,7 @@
     "Significado_Origen": "El nombre Shukindithisw arapa kuku es una expresión de la lengua Cofán. Shukindithisw “vuelta redonda”. Arapa hace alusión a  'gallina' y Kuku es el nombre del espíritu malo que habita ese lugar.",
     "Transcripcion_AFI": "Ver informe",
     "Registro_Audiovisual": "Audio Lengua Cofán Gallina Negra Etnoeducadora",
-    "Registro_Audiovisual_Audio": "/media/audio/8632015010368060_Linguistico.mp3"
+    "Registro_Audiovisual_Audio": "media/audio/8632015010368060_Linguistico.mp3"
   }
 },
 {
@@ -387,7 +387,7 @@
     "Trabajo_campo": "Sí",
     "Grupo_Intercultural": "Sector del río: Daniel Ojeda, Carlos Hernández, Yamid Chapal, José Luis Bravo, Estela Chachinoy, Odilia Chachinoy, María Adriana Rosero.",
     "Contexto_geografico": "El Cabildo indígena Villanueva hace parte del pueblo indígena Cofán, el cual se distribuye principalmente en la frontera entre Colombia y Ecuador. Se estima que 1.816 personas son autorreconocidas como pertenecientes a este pueblo según el Censo Nacional de Población y Vivienda del 2018 de Colombia. La conformación de su territorio data de épocas anteriores a la conquista (Arango y Sánchez, 2004), dónde tenían contacto con otras culturas como los Mocoa, Pastos y Sucumbíos. Cuentan con una lengua propia denominada A'ingae o Cofán, se mantiene en la mayor parte de las comunidades. Dado que no se ha podido clasificar dentro de ninguna familia lingüística, se considera una lengua aislada.</br> Según la caracterización del Ministerio del Interior se tuvo noticias de este pueblo hasta finales del siglo XVI, pues con los descubrimientos de yacimientos auríferos se conformaron encomiendas y pueblos. Posteriormente, las misiones jesuitas, franciscanas y capuchinas llegaron a la zona. Se dio inicio a actividades extractivas de caucho y quina, asociadas a prácticas crueles e injustas que condujo a la reducción considerable de su población y a la colonización del territorio por parte de poblaciones campesinas, por lo cual se vieron obligados a refugiarse en sitios alejados.  En la década de 1960 iniciaron la perforación de diversos pozos de petróleo a cargo de Texas Petroleum Company, situación que impactó de manera profunda los valores y prácticas culturales, por lo cual a partir de 1970 se han constituido seis resguardos a favor de comunidades pertenecientes a este pueblo. En la actualidad la comunidad de Villanueva avanza en la gestión del trámite correspondiente a la Constitución de Resguardo ante la Agencia Nacional de Tierras - ANT. (AMPII CANKE, 2021).</br> El cabildo Villanueva está conformado por seis globos discontinuos, sobre las jurisdicciones de los municipios de Valle del Guamuez y Orito, departamento del Putumayo al sur de Colombia, en la denominada llanura amazónica, región caracterizada por presentar altos niveles de precipitación y humedad, un clima cálido que ha permitido el desarrollo de una cobertura vegetal densa, relieve dominado por pendientes suaves que junto a las condiciones climáticas definen sistemas aluviales sometidos a inundaciones periódicas por el desborde de los ríos, que rigen ciclos y actividades de las comunidades allí presentes (IDEAM, 2010).</br> La restricción sobre su territorio ha afectado considerablemente la cultura Cofán, para quienes la educación y cultura están cimentadas en cuatro pilares: el pensamiento de los mayores, las lenguas nativas, las plantas sagradas y las normas y valores de la cultura. Son amplios conocedores del yagé, conservan el uso tradicional en contextos rituales, toma de decisiones, resolución de conflictos y tratamiento médico; las enfermedades en la cosmogonía Cofán son divididas entre las de origen físico y mágico o sobrenatural. El taita es una figura muy importante en la organización social y tiene una cercanía muy fuerte con las plantas medicinales y mágicas.</br> Debido a la colonización del territorio, han tenido que asumir prácticas agrícolas para el comercio y autoconsumo, son agricultores a pequeña escala, pescadores y cazadores-recolectores, las mujeres principalmente se dedican a la elaboración y comercialización de artesanías en semillas, fibras naturales y barro (ONIC, 2022). En las últimas décadas se han visto afectados por el conflicto armado, siendo víctimas de los grupos armados al margen de la ley; a pesar de todo, cuentan con una organización fuerte que les ha permitido consolidar su Plan de Vida en el año 2002 y más recientemente el Plan de Manejo Ambiental y Cultural del pueblo Cofán en 2021, con el fin de contribuir a la restauración, conservación y protección del territorio ancestral.",
-    "URL_Fotografia": ["/media/images/8632015010368056_01.jpg", "/media/images/8632015010368056_02.jpg"],
+    "URL_Fotografia": ["media/images/8632015010368056_01.jpg", "media/images/8632015010368056_02.jpg"],
     "Fuente": "Instituto Geográfico Agustín Codazzi-IGAC, Amazon Conservation Team Colombia-ACT. Cabildo Villanueva Asociación de Autoridades Tradicionales Mesa Permanente de trabajo por el Pueblo Cofán y Cabildos indígenas pertenecientes a los pueblos Awá, Nasa, Kichwa y Embera Chamí-AMPII CANKE",
     "Estado": "Preferente",
     "Escala_minima": "1:1000",
@@ -410,7 +410,7 @@
     "Grupo_Etnohistoria": "Pueblo Cofán: Cristián Chapal, Tatiana Agüinda; José Ildefonso Chachinoy, Yamit Chapal, Miriam Ortiz, Tania Agüinda, Nixon Chapal. Fanny Chapal y otros miembros de la comunidad.</br>IGAC: Egna Márquez. ACT: Edwin Jaramillo.",
     "Rol_Dentro_Comunidad": "Gobernador y líder Comunitario",
     "Registro_Audiovisual": "Audio Etnohistoria Casa de la Boa y el Tigre- Pantera (Chapal Y., 2022)",
-    "Registro_Audiovisual_Audio": "/media/audio/8632015010368056_Etnohistoria.mp3"
+    "Registro_Audiovisual_Audio": "media/audio/8632015010368056_Etnohistoria.mp3"
   },
   "Aspectos_Linguisticos": {
     "Familia_Linguistica": "Aislada",
@@ -419,7 +419,7 @@
     "Significado_Origen": "El nombre Kahansi tsaʼu tuyakaen siʼan thesi tsaʼu es una expresión de la lengua Cofán. Kahansi significa “boa”. tsaʼu hace alusión a  'casa'.  tuyakaen traduce “y”. Siʼan significa “negro”, thesi significa “tigre” que es una especie de pantera negra.",
     "Transcripcion_AFI": "Ver informe",
     "Registro_Audiovisual": "Audio lengua cofán Casa de la Boa y el Tigre -Etnoeducadora (Aguinda, Audio Lengua Cofán Casa de la Boa y el Tigre-Pantera, 2022)",
-    "Registro_Audiovisual_Audio": "/media/audio/8632015010368056_Linguistico.mp3"
+    "Registro_Audiovisual_Audio": "media/audio/8632015010368056_Linguistico.mp3"
   }
 },
 {
@@ -434,7 +434,7 @@
     "Trabajo_campo": "Sí",
     "Grupo_Intercultural": "Sector del río: Daniel Ojeda, Carlos Hernández, Yamid Chapal, José Luis Bravo, Estela Chachinoy, Odilia Chachinoy, María Adriana Rosero.",
     "Contexto_geografico": "El Cabildo indígena Villanueva hace parte del pueblo indígena Cofán, el cual se distribuye principalmente en la frontera entre Colombia y Ecuador. Se estima que 1.816 personas son autorreconocidas como pertenecientes a este pueblo según el Censo Nacional de Población y Vivienda del 2018 de Colombia. La conformación de su territorio data de épocas anteriores a la conquista (Arango y Sánchez, 2004), dónde tenían contacto con otras culturas como los Mocoa, Pastos y Sucumbíos. Cuentan con una lengua propia denominada A'ingae o Cofán, se mantiene en la mayor parte de las comunidades. Dado que no se ha podido clasificar dentro de ninguna familia lingüística, se considera una lengua aislada.</br> Según la caracterización del Ministerio del Interior se tuvo noticias de este pueblo hasta finales del siglo XVI, pues con los descubrimientos de yacimientos auríferos se conformaron encomiendas y pueblos. Posteriormente, las misiones jesuitas, franciscanas y capuchinas llegaron a la zona. Se dio inicio a actividades extractivas de caucho y quina, asociadas a prácticas crueles e injustas que condujo a la reducción considerable de su población y a la colonización del territorio por parte de poblaciones campesinas, por lo cual se vieron obligados a refugiarse en sitios alejados.  En la década de 1960 iniciaron la perforación de diversos pozos de petróleo a cargo de Texas Petroleum Company, situación que impactó de manera profunda los valores y prácticas culturales, por lo cual a partir de 1970 se han constituido seis resguardos a favor de comunidades pertenecientes a este pueblo. En la actualidad la comunidad de Villanueva avanza en la gestión del trámite correspondiente a la Constitución de Resguardo ante la Agencia Nacional de Tierras - ANT. (AMPII CANKE, 2021).</br> El cabildo Villanueva está conformado por seis globos discontinuos, sobre las jurisdicciones de los municipios de Valle del Guamuez y Orito, departamento del Putumayo al sur de Colombia, en la denominada llanura amazónica, región caracterizada por presentar altos niveles de precipitación y humedad, un clima cálido que ha permitido el desarrollo de una cobertura vegetal densa, relieve dominado por pendientes suaves que junto a las condiciones climáticas definen sistemas aluviales sometidos a inundaciones periódicas por el desborde de los ríos, que rigen ciclos y actividades de las comunidades allí presentes (IDEAM, 2010).</br> La restricción sobre su territorio ha afectado considerablemente la cultura Cofán, para quienes la educación y cultura están cimentadas en cuatro pilares: el pensamiento de los mayores, las lenguas nativas, las plantas sagradas y las normas y valores de la cultura. Son amplios conocedores del yagé, conservan el uso tradicional en contextos rituales, toma de decisiones, resolución de conflictos y tratamiento médico; las enfermedades en la cosmogonía Cofán son divididas entre las de origen físico y mágico o sobrenatural. El taita es una figura muy importante en la organización social y tiene una cercanía muy fuerte con las plantas medicinales y mágicas.</br> Debido a la colonización del territorio, han tenido que asumir prácticas agrícolas para el comercio y autoconsumo, son agricultores a pequeña escala, pescadores y cazadores-recolectores, las mujeres principalmente se dedican a la elaboración y comercialización de artesanías en semillas, fibras naturales y barro (ONIC, 2022). En las últimas décadas se han visto afectados por el conflicto armado, siendo víctimas de los grupos armados al margen de la ley; a pesar de todo, cuentan con una organización fuerte que les ha permitido consolidar su Plan de Vida en el año 2002 y más recientemente el Plan de Manejo Ambiental y Cultural del pueblo Cofán en 2021, con el fin de contribuir a la restauración, conservación y protección del territorio ancestral.",
-    "URL_Fotografia": ["/media/images/8632015010368059_01.jpg", "/media/images/8632015010368059_02.jpg", "/media/images/8632015010368059_03.jpg"],
+    "URL_Fotografia": ["media/images/8632015010368059_01.jpg", "media/images/8632015010368059_02.jpg", "media/images/8632015010368059_03.jpg"],
     "Fuente": "Instituto Geográfico Agustín Codazzi-IGAC, Amazon Conservation Team Colombia-ACT. Cabildo Villanueva Asociación de Autoridades Tradicionales Mesa Permanente de trabajo por el Pueblo Cofán y Cabildos indígenas pertenecientes a los pueblos Awá, Nasa, Kichwa y Embera Chamí-AMPII CANKE",
     "Estado": "Preferente",
     "Escala_minima": "1:1000",
@@ -457,7 +457,7 @@
     "Grupo_Etnohistoria": "Pueblo Cofán: Cristián Chapal, Tatiana Agüinda; José Ildefonso Chachinoy, Yamit Chapal, Miriam Ortiz, Tania Agüinda, Nixon Chapal. Fanny Chapal y otros miembros de la comunidad.</br>IGAC: Egna Márquez. ACT: Edwin Jaramillo.",
     "Rol_Dentro_Comunidad": "Líder comunitario",
     "Registro_Audiovisual": "(Chapal Y., Audio Etnohistoria Vuelta Redonda, 2022)",
-    "Registro_Audiovisual_Audio": "/media/audio/8632015010368059_Etnohistoria.mp3"
+    "Registro_Audiovisual_Audio": "media/audio/8632015010368059_Etnohistoria.mp3"
   },
   "Aspectos_Linguisticos": {
     "Familia_Linguistica": "Aislada",
@@ -466,7 +466,7 @@
     "Significado_Origen": "El nombre Shukinʼdithi significa “Vuelta Redonda” es una expresión de la lengua Cofán.",
     "Transcripcion_AFI": "Ver informe",
     "Registro_Audiovisual": "Audio lengua cofán Vuelta redonda -Etnoeducadora",
-    "Registro_Audiovisual_Audio": "/media/audio/8632015010368059_Linguistico.mp3"
+    "Registro_Audiovisual_Audio": "media/audio/8632015010368059_Linguistico.mp3"
   }
 },
 {
@@ -481,7 +481,7 @@
     "Trabajo_campo": "Sí",
     "Grupo_Intercultural": "Sector del río: Daniel Ojeda, Carlos Hernández, Yamid Chapal, José Luis Bravo, Estela Chachinoy, Odilia Chachinoy, María Adriana Rosero.",
     "Contexto_geografico": "El Cabildo indígena Villanueva hace parte del pueblo indígena Cofán, el cual se distribuye principalmente en la frontera entre Colombia y Ecuador. Se estima que 1.816 personas son autorreconocidas como pertenecientes a este pueblo según el Censo Nacional de Población y Vivienda del 2018 de Colombia. La conformación de su territorio data de épocas anteriores a la conquista (Arango y Sánchez, 2004), dónde tenían contacto con otras culturas como los Mocoa, Pastos y Sucumbíos. Cuentan con una lengua propia denominada A'ingae o Cofán, se mantiene en la mayor parte de las comunidades. Dado que no se ha podido clasificar dentro de ninguna familia lingüística, se considera una lengua aislada.</br> Según la caracterización del Ministerio del Interior se tuvo noticias de este pueblo hasta finales del siglo XVI, pues con los descubrimientos de yacimientos auríferos se conformaron encomiendas y pueblos. Posteriormente, las misiones jesuitas, franciscanas y capuchinas llegaron a la zona. Se dio inicio a actividades extractivas de caucho y quina, asociadas a prácticas crueles e injustas que condujo a la reducción considerable de su población y a la colonización del territorio por parte de poblaciones campesinas, por lo cual se vieron obligados a refugiarse en sitios alejados.  En la década de 1960 iniciaron la perforación de diversos pozos de petróleo a cargo de Texas Petroleum Company, situación que impactó de manera profunda los valores y prácticas culturales, por lo cual a partir de 1970 se han constituido seis resguardos a favor de comunidades pertenecientes a este pueblo. En la actualidad la comunidad de Villanueva avanza en la gestión del trámite correspondiente a la Constitución de Resguardo ante la Agencia Nacional de Tierras - ANT. (AMPII CANKE, 2021).</br> El cabildo Villanueva está conformado por seis globos discontinuos, sobre las jurisdicciones de los municipios de Valle del Guamuez y Orito, departamento del Putumayo al sur de Colombia, en la denominada llanura amazónica, región caracterizada por presentar altos niveles de precipitación y humedad, un clima cálido que ha permitido el desarrollo de una cobertura vegetal densa, relieve dominado por pendientes suaves que junto a las condiciones climáticas definen sistemas aluviales sometidos a inundaciones periódicas por el desborde de los ríos, que rigen ciclos y actividades de las comunidades allí presentes (IDEAM, 2010).</br> La restricción sobre su territorio ha afectado considerablemente la cultura Cofán, para quienes la educación y cultura están cimentadas en cuatro pilares: el pensamiento de los mayores, las lenguas nativas, las plantas sagradas y las normas y valores de la cultura. Son amplios conocedores del yagé, conservan el uso tradicional en contextos rituales, toma de decisiones, resolución de conflictos y tratamiento médico; las enfermedades en la cosmogonía Cofán son divididas entre las de origen físico y mágico o sobrenatural. El taita es una figura muy importante en la organización social y tiene una cercanía muy fuerte con las plantas medicinales y mágicas.</br> Debido a la colonización del territorio, han tenido que asumir prácticas agrícolas para el comercio y autoconsumo, son agricultores a pequeña escala, pescadores y cazadores-recolectores, las mujeres principalmente se dedican a la elaboración y comercialización de artesanías en semillas, fibras naturales y barro (ONIC, 2022). En las últimas décadas se han visto afectados por el conflicto armado, siendo víctimas de los grupos armados al margen de la ley; a pesar de todo, cuentan con una organización fuerte que les ha permitido consolidar su Plan de Vida en el año 2002 y más recientemente el Plan de Manejo Ambiental y Cultural del pueblo Cofán en 2021, con el fin de contribuir a la restauración, conservación y protección del territorio ancestral.",
-    "URL_Fotografia": ["/media/images/8686515010368058_01.jpg", "/media/images/8686515010368058_02.jpg", "/media/images/8686515010368058_03.jpg"],
+    "URL_Fotografia": ["media/images/8686515010368058_01.jpg", "media/images/8686515010368058_02.jpg", "media/images/8686515010368058_03.jpg"],
     "Fuente": "Instituto Geográfico Agustín Codazzi-IGAC, Amazon Conservation Team Colombia-ACT. Cabildo Villanueva Asociación de Autoridades Tradicionales Mesa Permanente de trabajo por el Pueblo Cofán y Cabildos indígenas pertenecientes a los pueblos Awá, Nasa, Kichwa y Embera Chamí-AMPII CANKE",
     "Estado": "Preferente",
     "Escala_minima": "1:1000",
@@ -504,7 +504,7 @@
     "Grupo_Etnohistoria": "Pueblo Cofán: Cristián Chapal, Tatiana Agüinda; José Ildefonso Chachinoy, Yamit Chapal, Miriam Ortiz, Tania Agüinda, Nixon Chapal. Fanny Chapal y otros miembros de la comunidad.</br>IGAC: Egna Márquez. ACT: Edwin Jaramillo.",
     "Rol_Dentro_Comunidad": "Gobernador",
     "Registro_Audiovisual": "Audio Etnohistoria Bocana del Ceibo. (Equipo intercultural ACT, IGAC, Pueblo Cofán, 2022)",
-    "Registro_Audiovisual_Audio": "/media/audio/8686515010368058_Etnohistoria.mp3"
+    "Registro_Audiovisual_Audio": "media/audio/8686515010368058_Etnohistoria.mp3"
   },
   "Aspectos_Linguisticos": {
     "Familia_Linguistica": "Aislada",
@@ -513,7 +513,7 @@
     "Significado_Origen": "El nombre Taʼva sumʼbupa naeʼki es una expresión de la lengua Cofán, La palabra taʼva significa “Ceibo” que es una especie de árbol de tronco y ramas con espinas, ramas abiertas, hojas compuestas y trifoliadas, flores tubulares de color rojo con semillas ovaladas, que puede alcanzar hasta 20 m de altura. La palabra sumʼbupa hace alusión a “salida” es decir, una parte por la que el río pasa de un lugar a otro.</br>Finalmente, naeʼki significa “quebrada”, cuerpo de agua que corre entre la hendidura de una montaña.",
     "Transcripcion_AFI": "Ver informe",
     "Registro_Audiovisual": "Audio Lengua Cofán Bocana del Ceibo.",
-    "Registro_Audiovisual_Audio": "/media/audio/8686515010368058_Linguistico.mp3"
+    "Registro_Audiovisual_Audio": "media/audio/8686515010368058_Linguistico.mp3"
   }
 },
 {
@@ -528,7 +528,7 @@
     "Trabajo_campo": "Sí",
     "Grupo_Intercultural": "Sector del río: Daniel Ojeda, Carlos Hernández, Yamid Chapal, José Luis Bravo, Estela Chachinoy, Odilia Chachinoy, María Adriana Rosero.",
     "Contexto_geografico": "El Cabildo indígena Villanueva hace parte del pueblo indígena Cofán, el cual se distribuye principalmente en la frontera entre Colombia y Ecuador. Se estima que 1.816 personas son autorreconocidas como pertenecientes a este pueblo según el Censo Nacional de Población y Vivienda del 2018 de Colombia. La conformación de su territorio data de épocas anteriores a la conquista (Arango y Sánchez, 2004), dónde tenían contacto con otras culturas como los Mocoa, Pastos y Sucumbíos. Cuentan con una lengua propia denominada A'ingae o Cofán, se mantiene en la mayor parte de las comunidades. Dado que no se ha podido clasificar dentro de ninguna familia lingüística, se considera una lengua aislada.</br> Según la caracterización del Ministerio del Interior se tuvo noticias de este pueblo hasta finales del siglo XVI, pues con los descubrimientos de yacimientos auríferos se conformaron encomiendas y pueblos. Posteriormente, las misiones jesuitas, franciscanas y capuchinas llegaron a la zona. Se dio inicio a actividades extractivas de caucho y quina, asociadas a prácticas crueles e injustas que condujo a la reducción considerable de su población y a la colonización del territorio por parte de poblaciones campesinas, por lo cual se vieron obligados a refugiarse en sitios alejados.  En la década de 1960 iniciaron la perforación de diversos pozos de petróleo a cargo de Texas Petroleum Company, situación que impactó de manera profunda los valores y prácticas culturales, por lo cual a partir de 1970 se han constituido seis resguardos a favor de comunidades pertenecientes a este pueblo. En la actualidad la comunidad de Villanueva avanza en la gestión del trámite correspondiente a la Constitución de Resguardo ante la Agencia Nacional de Tierras - ANT. (AMPII CANKE, 2021).</br> El cabildo Villanueva está conformado por seis globos discontinuos, sobre las jurisdicciones de los municipios de Valle del Guamuez y Orito, departamento del Putumayo al sur de Colombia, en la denominada llanura amazónica, región caracterizada por presentar altos niveles de precipitación y humedad, un clima cálido que ha permitido el desarrollo de una cobertura vegetal densa, relieve dominado por pendientes suaves que junto a las condiciones climáticas definen sistemas aluviales sometidos a inundaciones periódicas por el desborde de los ríos, que rigen ciclos y actividades de las comunidades allí presentes (IDEAM, 2010).</br> La restricción sobre su territorio ha afectado considerablemente la cultura Cofán, para quienes la educación y cultura están cimentadas en cuatro pilares: el pensamiento de los mayores, las lenguas nativas, las plantas sagradas y las normas y valores de la cultura. Son amplios conocedores del yagé, conservan el uso tradicional en contextos rituales, toma de decisiones, resolución de conflictos y tratamiento médico; las enfermedades en la cosmogonía Cofán son divididas entre las de origen físico y mágico o sobrenatural. El taita es una figura muy importante en la organización social y tiene una cercanía muy fuerte con las plantas medicinales y mágicas.</br> Debido a la colonización del territorio, han tenido que asumir prácticas agrícolas para el comercio y autoconsumo, son agricultores a pequeña escala, pescadores y cazadores-recolectores, las mujeres principalmente se dedican a la elaboración y comercialización de artesanías en semillas, fibras naturales y barro (ONIC, 2022). En las últimas décadas se han visto afectados por el conflicto armado, siendo víctimas de los grupos armados al margen de la ley; a pesar de todo, cuentan con una organización fuerte que les ha permitido consolidar su Plan de Vida en el año 2002 y más recientemente el Plan de Manejo Ambiental y Cultural del pueblo Cofán en 2021, con el fin de contribuir a la restauración, conservación y protección del territorio ancestral.",
-    "URL_Fotografia": ["/media/images/8632015010368049_01.jpg"],
+    "URL_Fotografia": ["media/images/8632015010368049_01.jpg"],
     "Fuente": "Instituto Geográfico Agustín Codazzi-IGAC, Amazon Conservation Team Colombia-ACT. Cabildo Villanueva Asociación de Autoridades Tradicionales Mesa Permanente de trabajo por el Pueblo Cofán y Cabildos indígenas pertenecientes a los pueblos Awá, Nasa, Kichwa y Embera Chamí-AMPII CANKE",
     "Estado": "Preferente",
     "Escala_minima": "1:1000",
@@ -551,7 +551,7 @@
     "Grupo_Etnohistoria": "Pueblo Cofán: Cristián Chapal, Tatiana Agüinda; José Ildefonso Chachinoy, Yamit Chapal, Miriam Ortiz, Tania Agüinda, Nixon Chapal. Fanny Chapal y otros miembros de la comunidad.</br>IGAC: Egna Márquez. ACT: Edwin Jaramillo.",
     "Rol_Dentro_Comunidad": "Líder comunitario",
     "Registro_Audiovisual": "Audio etnohistoria humedales. (Chapal & Chapal, 2022)",
-    "Registro_Audiovisual_Audio": "/media/audio/8632015010368049_Etnohistoria.mp3"
+    "Registro_Audiovisual_Audio": "media/audio/8632015010368049_Etnohistoria.mp3"
   },
   "Aspectos_Linguisticos": {
     "Familia_Linguistica": "Aislada",
@@ -560,7 +560,7 @@
     "Significado_Origen": "El nombre Umʼbanisw tshipaʼkhw es una expresión de la lengua Cofán. La palabra Umʼbani significa “arriba”, desde una perspectiva horizontal del río o camino. El vocablo sw significa “de” y tshipaʼkhw hace alusión a “humedal”.",
     "Transcripcion_AFI": "Ver informe",
     "Registro_Audiovisual": "Audio Lengua Cofán Humedal de arriba. (Aguinda, Audio lengua Cofán, 2022)",
-    "Registro_Audiovisual_Audio": "/media/audio/8632015010368049_Linguistico.mp3"
+    "Registro_Audiovisual_Audio": "media/audio/8632015010368049_Linguistico.mp3"
   }
 },
 {
@@ -598,7 +598,7 @@
     "Grupo_Etnohistoria": "Pueblo Cofán: Cristián Chapal, Tatiana Agüinda; José Ildefonso Chachinoy, Yamit Chapal, Miriam Ortiz, Tania Agüinda, Nixon Chapal. Fanny Chapal y otros miembros de la comunidad.</br>IGAC: Egna Márquez. ACT: Edwin Jaramillo.",
     "Rol_Dentro_Comunidad": "Líder comunitario",
     "Registro_Audiovisual": "Audio etnohistoria humedales. (Chapal & Chapal, 2022)",
-    "Registro_Audiovisual_Audio": "/media/audio/8632015010368053_Etnohistoria.mp3"
+    "Registro_Audiovisual_Audio": "media/audio/8632015010368053_Etnohistoria.mp3"
   },
   "Aspectos_Linguisticos": {
     "Familia_Linguistica": "Aislada",
@@ -607,7 +607,7 @@
     "Significado_Origen": "El nombre Seʼtsanisw tshipaʼkhw es una expresión de la lengua Cofán. La palabra Seʼtsani significa “abajo”,</br>desde una perspectiva horizontal del río o camino. El vocablo sw significa “de” y tshipaʼkhw hace alusión a “humedal”.",
     "Transcripcion_AFI": "Ver informe",
     "Registro_Audiovisual": "Audio Lengua Cofán Humedal de Abajo. (Aguinda, 2022)",
-    "Registro_Audiovisual_Audio": "/media/audio/8632015010368053_Linguistico.mp3"
+    "Registro_Audiovisual_Audio": "media/audio/8632015010368053_Linguistico.mp3"
   }
 },
 {
@@ -645,7 +645,7 @@
     "Grupo_Etnohistoria": "Pueblo Cofán: Cristián Chapal, Tatiana Agüinda; José Ildefonso Chachinoy, Yamit Chapal, Miriam Ortiz, Tania Agüinda, Nixon Chapal. Fanny Chapal y otros miembros de la comunidad.</br>IGAC: Egna Márquez. ACT: Edwin Jaramillo.",
     "Rol_Dentro_Comunidad": "Líder comunitario",
     "Registro_Audiovisual": "Audio etnohistoria Palo del Misterio. (Yamit, Audio etnohistoria Palo del Misterio, 2022)",
-    "Registro_Audiovisual_Audio": "/media/audio/8632015010368073_Etnohistoria.mp3"
+    "Registro_Audiovisual_Audio": "media/audio/8632015010368073_Etnohistoria.mp3"
   },
   "Aspectos_Linguisticos": {
     "Familia_Linguistica": "Aislada",
@@ -654,7 +654,7 @@
     "Significado_Origen": "El nombre Ñutshia aya kiʼnihi es una expresión de la lengua Cofán. La palabra Ñutshia significa “buen”, por su parte aya significa “espiritu”. El vocablo kiʼnihi significa “árbol”.",
     "Transcripcion_AFI": "Ver informe",
     "Registro_Audiovisual": "Audio Lengua Cofán Palo del Misterio. (Aguinda, Audio lengua Cofán Palo del Misterio, 2022)",
-    "Registro_Audiovisual_Audio": "/media/audio/8632015010368073_Linguistico.mp3"
+    "Registro_Audiovisual_Audio": "media/audio/8632015010368073_Linguistico.mp3"
   }
 },
 {
@@ -692,7 +692,7 @@
     "Grupo_Etnohistoria": "Pueblo Cofán: Cristián Chapal, Tatiana Agüinda; José Ildefonso Chachinoy, Yamit Chapal, Miriam Ortiz, Tania Agüinda, Nixon Chapal. Fanny Chapal y otros miembros de la comunidad.</br>IGAC: Egna Márquez. ACT: Edwin Jaramillo.",
     "Rol_Dentro_Comunidad": "Líder comunitario",
     "Registro_Audiovisual": "Audio Taller Cofán 24m50s. (Equipo intercultural ACT, IGAC, Pueblo Cofán, 2022)",
-    "Registro_Audiovisual_Audio": "/media/audio/8632015010368061_Significado.mp3"
+    "Registro_Audiovisual_Audio": "media/audio/8632015010368061_Significado.mp3"
   },
   "Aspectos_Linguisticos": {
     "Familia_Linguistica": "Aislada",
@@ -701,7 +701,7 @@
     "Significado_Origen": "El nombre Kakamba khuʼthakhu es una expresión de la lengua Cofán. La palabra Kakamba es el nombre de una especie de ave. El vocablo khuʼthakhu significa “loma”.",
     "Transcripcion_AFI": "Ver informe",
     "Registro_Audiovisual": "Audio Lengua Cofán Loma de la Cacambra. (Aguinda, Audio lengua Cofán Loma de la Cacambra, 2022)",
-    "Registro_Audiovisual_Audio": "/media/audio/8632015010368061_Linguistico.mp3"
+    "Registro_Audiovisual_Audio": "media/audio/8632015010368061_Linguistico.mp3"
   }
 },
 {
@@ -716,7 +716,7 @@
     "Trabajo_campo": "Sí",
     "Grupo_Intercultural": "Sector comunidad: Linda García, Jaime Burgos, Luís Bernardo Cano, Cristian Chapal, Weimar Salazar.",
     "Contexto_geografico": "El Cabildo indígena Villanueva hace parte del pueblo indígena Cofán, el cual se distribuye principalmente en la frontera entre Colombia y Ecuador. Se estima que 1.816 personas son autorreconocidas como pertenecientes a este pueblo según el Censo Nacional de Población y Vivienda del 2018 de Colombia. La conformación de su territorio data de épocas anteriores a la conquista (Arango y Sánchez, 2004), dónde tenían contacto con otras culturas como los Mocoa, Pastos y Sucumbíos. Cuentan con una lengua propia denominada A'ingae o Cofán, se mantiene en la mayor parte de las comunidades. Dado que no se ha podido clasificar dentro de ninguna familia lingüística, se considera una lengua aislada.</br> Según la caracterización del Ministerio del Interior se tuvo noticias de este pueblo hasta finales del siglo XVI, pues con los descubrimientos de yacimientos auríferos se conformaron encomiendas y pueblos. Posteriormente, las misiones jesuitas, franciscanas y capuchinas llegaron a la zona. Se dio inicio a actividades extractivas de caucho y quina, asociadas a prácticas crueles e injustas que condujo a la reducción considerable de su población y a la colonización del territorio por parte de poblaciones campesinas, por lo cual se vieron obligados a refugiarse en sitios alejados.  En la década de 1960 iniciaron la perforación de diversos pozos de petróleo a cargo de Texas Petroleum Company, situación que impactó de manera profunda los valores y prácticas culturales, por lo cual a partir de 1970 se han constituido seis resguardos a favor de comunidades pertenecientes a este pueblo. En la actualidad la comunidad de Villanueva avanza en la gestión del trámite correspondiente a la Constitución de Resguardo ante la Agencia Nacional de Tierras - ANT. (AMPII CANKE, 2021).</br> El cabildo Villanueva está conformado por seis globos discontinuos, sobre las jurisdicciones de los municipios de Valle del Guamuez y Orito, departamento del Putumayo al sur de Colombia, en la denominada llanura amazónica, región caracterizada por presentar altos niveles de precipitación y humedad, un clima cálido que ha permitido el desarrollo de una cobertura vegetal densa, relieve dominado por pendientes suaves que junto a las condiciones climáticas definen sistemas aluviales sometidos a inundaciones periódicas por el desborde de los ríos, que rigen ciclos y actividades de las comunidades allí presentes (IDEAM, 2010).</br> La restricción sobre su territorio ha afectado considerablemente la cultura Cofán, para quienes la educación y cultura están cimentadas en cuatro pilares: el pensamiento de los mayores, las lenguas nativas, las plantas sagradas y las normas y valores de la cultura. Son amplios conocedores del yagé, conservan el uso tradicional en contextos rituales, toma de decisiones, resolución de conflictos y tratamiento médico; las enfermedades en la cosmogonía Cofán son divididas entre las de origen físico y mágico o sobrenatural. El taita es una figura muy importante en la organización social y tiene una cercanía muy fuerte con las plantas medicinales y mágicas.</br> Debido a la colonización del territorio, han tenido que asumir prácticas agrícolas para el comercio y autoconsumo, son agricultores a pequeña escala, pescadores y cazadores-recolectores, las mujeres principalmente se dedican a la elaboración y comercialización de artesanías en semillas, fibras naturales y barro (ONIC, 2022). En las últimas décadas se han visto afectados por el conflicto armado, siendo víctimas de los grupos armados al margen de la ley; a pesar de todo, cuentan con una organización fuerte que les ha permitido consolidar su Plan de Vida en el año 2002 y más recientemente el Plan de Manejo Ambiental y Cultural del pueblo Cofán en 2021, con el fin de contribuir a la restauración, conservación y protección del territorio ancestral.",
-    "URL_Fotografia": ["/media/images/8632015010368050_01.jpg", "/media/images/8632015010368050_02.jpg", "/media/images/8632015010368050_03.jpg", "/media/images/8632015010368050_04.jpg"],
+    "URL_Fotografia": ["media/images/8632015010368050_01.jpg", "media/images/8632015010368050_02.jpg", "media/images/8632015010368050_03.jpg", "media/images/8632015010368050_04.jpg"],
     "Fuente": "Instituto Geográfico Agustín Codazzi-IGAC, Amazon Conservation Team Colombia-ACT. Cabildo Villanueva Asociación de Autoridades Tradicionales Mesa Permanente de trabajo por el Pueblo Cofán y Cabildos indígenas pertenecientes a los pueblos Awá, Nasa, Kichwa y Embera Chamí-AMPII CANKE",
     "Estado": "Preferente",
     "Escala_minima": "1:1000",
@@ -748,7 +748,7 @@
     "Significado_Origen": "El nombre Fiʼgwkhw tsaʼu es una expresión de la lengua Cofán. La palabra Fiʼgwkhw significa “Yagé” es una especie de planta, con la cual se prepara una bebida sagrada purgante, que genera una experiencia liberadora de manera integral. A través de su uso, los abuelos y la comunidad reciben orientaciones para definir el rumbo de la comunidad. El vocablo tsaʼu significa “casa”.",
     "Transcripcion_AFI": "Ver informe",
     "Registro_Audiovisual": "Audio Audio lengua Cofan Fiʼgwkhw tsaʼu. (Aguinda, Audio Lengua Cofán Casa del Yagé, 2022)",
-    "Registro_Audiovisual_Audio": "/media/audio/8632015010368050_Linguistico.mp3"
+    "Registro_Audiovisual_Audio": "media/audio/8632015010368050_Linguistico.mp3"
   }
 },
 {
@@ -763,7 +763,7 @@
     "Trabajo_campo": "Sí",
     "Grupo_Intercultural": "Sector del río: Daniel Ojeda, Carlos Hernández, Yamid Chapal, José Luis Bravo, Estela Chachinoy, Odilia Chachinoy, María Adriana Rosero.",
     "Contexto_geografico": "El Cabildo indígena Villanueva hace parte del pueblo indígena Cofán, el cual se distribuye principalmente en la frontera entre Colombia y Ecuador. Se estima que 1.816 personas son autorreconocidas como pertenecientes a este pueblo según el Censo Nacional de Población y Vivienda del 2018 de Colombia. La conformación de su territorio data de épocas anteriores a la conquista (Arango y Sánchez, 2004), dónde tenían contacto con otras culturas como los Mocoa, Pastos y Sucumbíos. Cuentan con una lengua propia denominada A'ingae o Cofán, se mantiene en la mayor parte de las comunidades. Dado que no se ha podido clasificar dentro de ninguna familia lingüística, se considera una lengua aislada.</br> Según la caracterización del Ministerio del Interior se tuvo noticias de este pueblo hasta finales del siglo XVI, pues con los descubrimientos de yacimientos auríferos se conformaron encomiendas y pueblos. Posteriormente, las misiones jesuitas, franciscanas y capuchinas llegaron a la zona. Se dio inicio a actividades extractivas de caucho y quina, asociadas a prácticas crueles e injustas que condujo a la reducción considerable de su población y a la colonización del territorio por parte de poblaciones campesinas, por lo cual se vieron obligados a refugiarse en sitios alejados.  En la década de 1960 iniciaron la perforación de diversos pozos de petróleo a cargo de Texas Petroleum Company, situación que impactó de manera profunda los valores y prácticas culturales, por lo cual a partir de 1970 se han constituido seis resguardos a favor de comunidades pertenecientes a este pueblo. En la actualidad la comunidad de Villanueva avanza en la gestión del trámite correspondiente a la Constitución de Resguardo ante la Agencia Nacional de Tierras - ANT. (AMPII CANKE, 2021).</br> El cabildo Villanueva está conformado por seis globos discontinuos, sobre las jurisdicciones de los municipios de Valle del Guamuez y Orito, departamento del Putumayo al sur de Colombia, en la denominada llanura amazónica, región caracterizada por presentar altos niveles de precipitación y humedad, un clima cálido que ha permitido el desarrollo de una cobertura vegetal densa, relieve dominado por pendientes suaves que junto a las condiciones climáticas definen sistemas aluviales sometidos a inundaciones periódicas por el desborde de los ríos, que rigen ciclos y actividades de las comunidades allí presentes (IDEAM, 2010).</br> La restricción sobre su territorio ha afectado considerablemente la cultura Cofán, para quienes la educación y cultura están cimentadas en cuatro pilares: el pensamiento de los mayores, las lenguas nativas, las plantas sagradas y las normas y valores de la cultura. Son amplios conocedores del yagé, conservan el uso tradicional en contextos rituales, toma de decisiones, resolución de conflictos y tratamiento médico; las enfermedades en la cosmogonía Cofán son divididas entre las de origen físico y mágico o sobrenatural. El taita es una figura muy importante en la organización social y tiene una cercanía muy fuerte con las plantas medicinales y mágicas.</br> Debido a la colonización del territorio, han tenido que asumir prácticas agrícolas para el comercio y autoconsumo, son agricultores a pequeña escala, pescadores y cazadores-recolectores, las mujeres principalmente se dedican a la elaboración y comercialización de artesanías en semillas, fibras naturales y barro (ONIC, 2022). En las últimas décadas se han visto afectados por el conflicto armado, siendo víctimas de los grupos armados al margen de la ley; a pesar de todo, cuentan con una organización fuerte que les ha permitido consolidar su Plan de Vida en el año 2002 y más recientemente el Plan de Manejo Ambiental y Cultural del pueblo Cofán en 2021, con el fin de contribuir a la restauración, conservación y protección del territorio ancestral.",
-    "URL_Fotografia": ["/media/images/8632015010368047_01.jpg"],
+    "URL_Fotografia": ["media/images/8632015010368047_01.jpg"],
     "Fuente": "Instituto Geográfico Agustín Codazzi-IGAC, Amazon Conservation Team Colombia-ACT. Cabildo Villanueva Asociación de Autoridades Tradicionales Mesa Permanente de trabajo por el Pueblo Cofán y Cabildos indígenas pertenecientes a los pueblos Awá, Nasa, Kichwa y Embera Chamí-AMPII CANKE",
     "Estado": "Preferente",
     "Escala_minima": "1:1000",
@@ -786,7 +786,7 @@
     "Grupo_Etnohistoria": "Pueblo Cofán: Cristián Chapal, Tatiana Agüinda; José Ildefonso Chachinoy, Yamit Chapal, Miriam Ortiz, Tania Agüinda, Nixon Chapal. Fanny Chapal y otros miembros de la comunidad.</br>IGAC: Egna Márquez. ACT: Edwin Jaramillo.",
     "Rol_Dentro_Comunidad": "Gobernador",
     "Registro_Audiovisual": "Audio Etnohistoria Laguna del Lagarto. (Chapal C., Audio Etnohistoria Laguna de Lagarto, 2022)",
-    "Registro_Audiovisual_Audio": "/media/audio/8632015010368047_Etnohistoria.mp3"
+    "Registro_Audiovisual_Audio": "media/audio/8632015010368047_Etnohistoria.mp3"
   },
   "Aspectos_Linguisticos": {
     "Familia_Linguistica": "Aislada",
@@ -795,7 +795,7 @@
     "Significado_Origen": "El nombre Vatuva sinʼgwkhw es una expresión de la lengua Cofán. La palabra Vatuva es la denominación de una especie de lagarto. A través del su uso de ciertas sustancias del lagarto, los abuelos y la comunidad realizan remedios y curan enfermedades. El vocablo sinʼgwkhw significa “laguna”.",
     "Transcripcion_AFI": "Ver informe",
     "Registro_Audiovisual": "Audio lengua Cofan Vatuva sinʼgwkhw. (Aguinda, Audio pronunciación Laguna del Lagarto, 2022)",
-    "Registro_Audiovisual_Audio": "/media/audio/8632015010368047_Linguistico.mp3"
+    "Registro_Audiovisual_Audio": "media/audio/8632015010368047_Linguistico.mp3"
   }
 },
 {
@@ -833,7 +833,7 @@
     "Grupo_Etnohistoria": "Pueblo Cofán: Cristián Chapal, Tatiana Agüinda; José Ildefonso Chachinoy, Yamit Chapal, Miriam Ortiz, Tania Agüinda, Nixon Chapal. Fanny Chapal y otros miembros de la comunidad.</br>IGAC: Egna Márquez. ACT: Edwin Jaramillo.",
     "Rol_Dentro_Comunidad": "Gobernador",
     "Registro_Audiovisual": "Audio Etnohistoria Sitio arqueológico.",
-    "Registro_Audiovisual_Audio": "/media/audio/8632015010368077_Etnohistoria.mp3"
+    "Registro_Audiovisual_Audio": "media/audio/8632015010368077_Etnohistoria.mp3"
   },
   "Aspectos_Linguisticos": {
     "Familia_Linguistica": "Aislada",
@@ -842,7 +842,7 @@
     "Significado_Origen": "El nombre Api piyiʼkhw es una expresión de la lengua Cofán. La palabra Api significa “barranco o deslizamiento”. El vocablo piyiʼkhw significa “olla de barro”.",
     "Transcripcion_AFI": "Ver informe",
     "Registro_Audiovisual": "Audio lengua Cofán, 2022)",
-    "Registro_Audiovisual_Audio": "/media/audio/8632015010368077_Linguistico.mp3"
+    "Registro_Audiovisual_Audio": "media/audio/8632015010368077_Linguistico.mp3"
   }
 },
 {
@@ -857,7 +857,7 @@
     "Trabajo_campo": "Sí",
     "Grupo_Intercultural": "Sector de las Lagunas: Pamela Mayorga, Javier Cuellar, Carolina Bernal, Libardo Chapal, Wendy Valbuena, Carlos Chapal, Fernando Benavides, Daniel Rubio, Héctor Chapal.",
     "Contexto_geografico": "El Cabildo indígena Villanueva hace parte del pueblo indígena Cofán, el cual se distribuye principalmente en la frontera entre Colombia y Ecuador. Se estima que 1.816 personas son autorreconocidas como pertenecientes a este pueblo según el Censo Nacional de Población y Vivienda del 2018 de Colombia. La conformación de su territorio data de épocas anteriores a la conquista (Arango y Sánchez, 2004), dónde tenían contacto con otras culturas como los Mocoa, Pastos y Sucumbíos. Cuentan con una lengua propia denominada A'ingae o Cofán, se mantiene en la mayor parte de las comunidades. Dado que no se ha podido clasificar dentro de ninguna familia lingüística, se considera una lengua aislada.</br> Según la caracterización del Ministerio del Interior se tuvo noticias de este pueblo hasta finales del siglo XVI, pues con los descubrimientos de yacimientos auríferos se conformaron encomiendas y pueblos. Posteriormente, las misiones jesuitas, franciscanas y capuchinas llegaron a la zona. Se dio inicio a actividades extractivas de caucho y quina, asociadas a prácticas crueles e injustas que condujo a la reducción considerable de su población y a la colonización del territorio por parte de poblaciones campesinas, por lo cual se vieron obligados a refugiarse en sitios alejados.  En la década de 1960 iniciaron la perforación de diversos pozos de petróleo a cargo de Texas Petroleum Company, situación que impactó de manera profunda los valores y prácticas culturales, por lo cual a partir de 1970 se han constituido seis resguardos a favor de comunidades pertenecientes a este pueblo. En la actualidad la comunidad de Villanueva avanza en la gestión del trámite correspondiente a la Constitución de Resguardo ante la Agencia Nacional de Tierras - ANT. (AMPII CANKE, 2021).</br> El cabildo Villanueva está conformado por seis globos discontinuos, sobre las jurisdicciones de los municipios de Valle del Guamuez y Orito, departamento del Putumayo al sur de Colombia, en la denominada llanura amazónica, región caracterizada por presentar altos niveles de precipitación y humedad, un clima cálido que ha permitido el desarrollo de una cobertura vegetal densa, relieve dominado por pendientes suaves que junto a las condiciones climáticas definen sistemas aluviales sometidos a inundaciones periódicas por el desborde de los ríos, que rigen ciclos y actividades de las comunidades allí presentes (IDEAM, 2010).</br> La restricción sobre su territorio ha afectado considerablemente la cultura Cofán, para quienes la educación y cultura están cimentadas en cuatro pilares: el pensamiento de los mayores, las lenguas nativas, las plantas sagradas y las normas y valores de la cultura. Son amplios conocedores del yagé, conservan el uso tradicional en contextos rituales, toma de decisiones, resolución de conflictos y tratamiento médico; las enfermedades en la cosmogonía Cofán son divididas entre las de origen físico y mágico o sobrenatural. El taita es una figura muy importante en la organización social y tiene una cercanía muy fuerte con las plantas medicinales y mágicas.</br> Debido a la colonización del territorio, han tenido que asumir prácticas agrícolas para el comercio y autoconsumo, son agricultores a pequeña escala, pescadores y cazadores-recolectores, las mujeres principalmente se dedican a la elaboración y comercialización de artesanías en semillas, fibras naturales y barro (ONIC, 2022). En las últimas décadas se han visto afectados por el conflicto armado, siendo víctimas de los grupos armados al margen de la ley; a pesar de todo, cuentan con una organización fuerte que les ha permitido consolidar su Plan de Vida en el año 2002 y más recientemente el Plan de Manejo Ambiental y Cultural del pueblo Cofán en 2021, con el fin de contribuir a la restauración, conservación y protección del territorio ancestral.",
-    "URL_Fotografia": ["/media/images/8632015020368064_01.jpg"],
+    "URL_Fotografia": ["media/images/8632015020368064_01.jpg"],
     "Fuente": "Instituto Geográfico Agustín Codazzi-IGAC, Amazon Conservation Team Colombia-ACT. Cabildo Villanueva Asociación de Autoridades Tradicionales Mesa Permanente de trabajo por el Pueblo Cofán y Cabildos indígenas pertenecientes a los pueblos Awá, Nasa, Kichwa y Embera Chamí-AMPII CANKE",
     "Estado": "Preferente",
     "Escala_minima": "1:1000",
@@ -880,7 +880,7 @@
     "Grupo_Etnohistoria": "Pueblo Cofán: Cristián Chapal, Tatiana Agüinda; José Ildefonso Chachinoy, Yamit Chapal, Miriam Ortiz, Tania Agüinda, Nixon Chapal. Fanny Chapal y otros miembros de la comunidad.</br>IGAC: Egna Márquez. ACT: Edwin Jaramillo.",
     "Rol_Dentro_Comunidad": "líder comunitario",
     "Registro_Audiovisual": "Audio Etnohistoria Sitio arqueológico.",
-    "Registro_Audiovisual_Audio": "/media/audio/8632015020368064_Etnohistoria.mp3"
+    "Registro_Audiovisual_Audio": "media/audio/8632015020368064_Etnohistoria.mp3"
   },
   "Aspectos_Linguisticos": {
     "Familia_Linguistica": "Aislada",
@@ -889,7 +889,7 @@
     "Significado_Origen": "El nombre Api tanʼsitshia ande es una expresión de la lengua Cofán. La palabra Api significa “Olla de barro”.  El vocablo tanʼsitshia significa “plano” y ande significa “tierra”.",
     "Transcripcion_AFI": "Ver informe",
     "Registro_Audiovisual": "(Audio lengua Cofán Tierra de la Olla., 2022)",
-    "Registro_Audiovisual_Audio": "/media/audio/8632015020368064_Linguistico.mp3"
+    "Registro_Audiovisual_Audio": "media/audio/8632015020368064_Linguistico.mp3"
   }
 },
 {
@@ -904,7 +904,7 @@
     "Trabajo_campo": "Sí",
     "Grupo_Intercultural": "Sector de las Lagunas: Pamela Mayorga, Javier Cuellar, Carolina Bernal, Libardo Chapal, Wendy Valbuena, Carlos Chapal, Fernando Benavides, Daniel Rubio, Héctor Chapal.",
     "Contexto_geografico": "El Cabildo indígena Villanueva hace parte del pueblo indígena Cofán, el cual se distribuye principalmente en la frontera entre Colombia y Ecuador. Se estima que 1.816 personas son autorreconocidas como pertenecientes a este pueblo según el Censo Nacional de Población y Vivienda del 2018 de Colombia. La conformación de su territorio data de épocas anteriores a la conquista (Arango y Sánchez, 2004), dónde tenían contacto con otras culturas como los Mocoa, Pastos y Sucumbíos. Cuentan con una lengua propia denominada A'ingae o Cofán, se mantiene en la mayor parte de las comunidades. Dado que no se ha podido clasificar dentro de ninguna familia lingüística, se considera una lengua aislada.</br> Según la caracterización del Ministerio del Interior se tuvo noticias de este pueblo hasta finales del siglo XVI, pues con los descubrimientos de yacimientos auríferos se conformaron encomiendas y pueblos. Posteriormente, las misiones jesuitas, franciscanas y capuchinas llegaron a la zona. Se dio inicio a actividades extractivas de caucho y quina, asociadas a prácticas crueles e injustas que condujo a la reducción considerable de su población y a la colonización del territorio por parte de poblaciones campesinas, por lo cual se vieron obligados a refugiarse en sitios alejados.  En la década de 1960 iniciaron la perforación de diversos pozos de petróleo a cargo de Texas Petroleum Company, situación que impactó de manera profunda los valores y prácticas culturales, por lo cual a partir de 1970 se han constituido seis resguardos a favor de comunidades pertenecientes a este pueblo. En la actualidad la comunidad de Villanueva avanza en la gestión del trámite correspondiente a la Constitución de Resguardo ante la Agencia Nacional de Tierras - ANT. (AMPII CANKE, 2021).</br> El cabildo Villanueva está conformado por seis globos discontinuos, sobre las jurisdicciones de los municipios de Valle del Guamuez y Orito, departamento del Putumayo al sur de Colombia, en la denominada llanura amazónica, región caracterizada por presentar altos niveles de precipitación y humedad, un clima cálido que ha permitido el desarrollo de una cobertura vegetal densa, relieve dominado por pendientes suaves que junto a las condiciones climáticas definen sistemas aluviales sometidos a inundaciones periódicas por el desborde de los ríos, que rigen ciclos y actividades de las comunidades allí presentes (IDEAM, 2010).</br> La restricción sobre su territorio ha afectado considerablemente la cultura Cofán, para quienes la educación y cultura están cimentadas en cuatro pilares: el pensamiento de los mayores, las lenguas nativas, las plantas sagradas y las normas y valores de la cultura. Son amplios conocedores del yagé, conservan el uso tradicional en contextos rituales, toma de decisiones, resolución de conflictos y tratamiento médico; las enfermedades en la cosmogonía Cofán son divididas entre las de origen físico y mágico o sobrenatural. El taita es una figura muy importante en la organización social y tiene una cercanía muy fuerte con las plantas medicinales y mágicas.</br> Debido a la colonización del territorio, han tenido que asumir prácticas agrícolas para el comercio y autoconsumo, son agricultores a pequeña escala, pescadores y cazadores-recolectores, las mujeres principalmente se dedican a la elaboración y comercialización de artesanías en semillas, fibras naturales y barro (ONIC, 2022). En las últimas décadas se han visto afectados por el conflicto armado, siendo víctimas de los grupos armados al margen de la ley; a pesar de todo, cuentan con una organización fuerte que les ha permitido consolidar su Plan de Vida en el año 2002 y más recientemente el Plan de Manejo Ambiental y Cultural del pueblo Cofán en 2021, con el fin de contribuir a la restauración, conservación y protección del territorio ancestral.",
-    "URL_Fotografia": ["/media/images/8632015010368068_01.jpg"],
+    "URL_Fotografia": ["media/images/8632015010368068_01.jpg"],
     "Fuente": "Instituto Geográfico Agustín Codazzi-IGAC, Amazon Conservation Team Colombia-ACT. Cabildo Villanueva Asociación de Autoridades Tradicionales Mesa Permanente de trabajo por el Pueblo Cofán y Cabildos indígenas pertenecientes a los pueblos Awá, Nasa, Kichwa y Embera Chamí-AMPII CANKE",
     "Estado": "Preferente",
     "Escala_minima": "1:1000",
@@ -927,7 +927,7 @@
     "Grupo_Etnohistoria": "Pueblo Cofán: Cristián Chapal, Tatiana Agüinda; José Ildefonso Chachinoy, Yamit Chapal, Miriam Ortiz, Tania Agüinda, Nixon Chapal. Fanny Chapal y otros miembros de la comunidad.</br>IGAC: Egna Márquez. ACT: Edwin Jaramillo.",
     "Rol_Dentro_Comunidad": "Líder comunitario",
     "Registro_Audiovisual": "Audio Etnohistoria Río Luzón. (Chapal Y., Audio Etnohistoria Río Luzón, 2022)",
-    "Registro_Audiovisual_Audio": "/media/audio/8632015010368068_Etnohistoria.mp3"
+    "Registro_Audiovisual_Audio": "media/audio/8632015010368068_Etnohistoria.mp3"
   },
   "Aspectos_Linguisticos": {
     "Familia_Linguistica": "Aislada",
@@ -936,7 +936,7 @@
     "Significado_Origen": "El nombre Twntw naʼe es una expresión de la lengua Cofán. La palabra Twntw es la denominación de una especie de ave. El vocablo naʼe significa “río”.",
     "Transcripcion_AFI": "Ver informe",
     "Registro_Audiovisual": "Audio lengua Cofan Twntw naʼe. (Aguinda, Audio lengua Cofan Twntw naʼe, 2022)",
-    "Registro_Audiovisual_Audio": "/media/audio/8632015010368068_Linguistico.mp3"
+    "Registro_Audiovisual_Audio": "media/audio/8632015010368068_Linguistico.mp3"
   }
 },
 {
@@ -1019,7 +1019,7 @@
     "Grupo_Etnohistoria": "Pueblo Cofán: Cristián Chapal, Tatiana Agüinda; José Ildefonso Chachinoy, Yamit Chapal, Miriam Ortiz, Tania Agüinda, Nixon Chapal. Fanny Chapal y otros miembros de la comunidad.</br>IGAC: Egna Márquez. ACT: Edwin Jaramillo.",
     "Rol_Dentro_Comunidad": "Gobernador",
     "Registro_Audiovisual": "Audio Etnohistoria Casa de la Autoridad Víctor Quenama. (Chapal C., Audio Casa Victor Quenama, 2022)",
-    "Registro_Audiovisual_Audio": "/media/audio/8632015010368076_Etnohistoria.mp3"
+    "Registro_Audiovisual_Audio": "media/audio/8632015010368076_Etnohistoria.mp3"
   },
   "Aspectos_Linguisticos": {
     "Familia_Linguistica": "Aislada",
@@ -1028,7 +1028,7 @@
     "Significado_Origen": "El nombre Ateʼswchu aʼi Víctor Quenamá tsaʼu es una expresión de la lengua Cofán. La palabra Ateʼswchu significa sabedor o autoridad. El vocablo aʼi significa “Cofán” y Victor Quenama es el nombre propio de un líder y taita espiritual. El termino tsaʼu significa “casa”.",
     "Transcripcion_AFI": "Ver informe",
     "Registro_Audiovisual": "Audio lengua Cofan Casa de la Autoridad Victor Quenama. (Aguinda, Audio Lengua Cofán Casa de la Autoridad Victor Quenama )",
-    "Registro_Audiovisual_Audio": "/media/audio/8632015010368076_Linguistico.mp3"
+    "Registro_Audiovisual_Audio": "media/audio/8632015010368076_Linguistico.mp3"
   }
 },
 {
@@ -1066,7 +1066,7 @@
     "Grupo_Etnohistoria": "Pueblo Cofán: Cristián Chapal, Tatiana Agüinda; José Ildefonso Chachinoy, Yamit Chapal, Miriam Ortiz, Tania Agüinda, Nixon Chapal. Fanny Chapal y otros miembros de la comunidad.</br>IGAC: Egna Márquez. ACT: Edwin Jaramillo.",
     "Rol_Dentro_Comunidad": "Mayor",
     "Registro_Audiovisual": "Audio Etnohistoria Bañadero del Armadillo al otro lado del Río Luzón. (Chachinoy, Audio Etnohistoria Bañadero del Armadillo 1, 2022)",
-    "Registro_Audiovisual_Audio": "/media/audio/8632015010368079_Etnohistoria.mp3"
+    "Registro_Audiovisual_Audio": "media/audio/8632015010368079_Etnohistoria.mp3"
   },
   "Aspectos_Linguisticos": {
     "Familia_Linguistica": "Aislada",
@@ -1075,7 +1075,7 @@
     "Significado_Origen": "El nombre Ihi unʼhuhenthi twntw naʼe huniʼfanisw es una expresión de la lengua Cofán. La palabra Ihi significa armadillo. El vocablo unʼhuhenthi significa “bañadero”. El vocablo twntw significa “Luzón”. El término naʼe significa “río” y huniʼfanisw significa “otro lado de”.",
     "Transcripcion_AFI": "Ver informe",
     "Registro_Audiovisual": "Audio lengua Cofan Bañadero del Armadillo 1.",
-    "Registro_Audiovisual_Audio": "/media/audio/8632015010368079_Linguistico.mp3"
+    "Registro_Audiovisual_Audio": "media/audio/8632015010368079_Linguistico.mp3"
   }
 },
 {
@@ -1113,7 +1113,7 @@
     "Grupo_Etnohistoria": "Pueblo Cofán: Cristián Chapal, Tatiana Agüinda; José Ildefonso Chachinoy, Yamit Chapal, Miriam Ortiz, Tania Agüinda, Nixon Chapal. Fanny Chapal y otros miembros de la comunidad.</br>IGAC: Egna Márquez. ACT: Edwin Jaramillo.",
     "Rol_Dentro_Comunidad": "Gobernador y líder Comunitario",
     "Registro_Audiovisual": "Audio Etnohistoria Bañadero del Armadillo 2-Casa del Yagé. (Chapal & Chapal, Audio Etnohistoria Bañadero del Armadillo 2- Casa del Yagé, 2022)",
-    "Registro_Audiovisual_Audio": "/media/audio/8632015010368080_Etnohistoria.mp3"
+    "Registro_Audiovisual_Audio": "media/audio/8632015010368080_Etnohistoria.mp3"
   },
   "Aspectos_Linguisticos": {
     "Familia_Linguistica": "Aislada",
@@ -1122,7 +1122,7 @@
     "Significado_Origen": "El nombre Ihi unʼhuhenthi fiʼgwkhw tsaʼufasw es una expresión de la lengua Cofán. La palabra Ihi significa armadillo. El vocablo unʼhuhenthi significa “bañadero”. El vocablo fiʼgwkhw significa “Yagé”. El término tsaʼufasw significa “cerca”.",
     "Transcripcion_AFI": "Ver informe",
     "Registro_Audiovisual": "Audio lengua Cofan Bañadero del Armadillo 2. (Aguinda, Audio Lengua Cofán Bañadero del Armadillo 2, 2022)",
-    "Registro_Audiovisual_Audio": "/media/audio/8632015010368080_Linguistico.mp3"
+    "Registro_Audiovisual_Audio": "media/audio/8632015010368080_Linguistico.mp3"
   }
 },
 {
@@ -1160,7 +1160,7 @@
     "Grupo_Etnohistoria": "Pueblo Cofán: Cristián Chapal, Tatiana Agüinda; José Ildefonso Chachinoy, Yamit Chapal, Miriam Ortiz, Tania Agüinda, Nixon Chapal. Fanny Chapal y otros miembros de la comunidad.</br>IGAC: Egna Márquez. ACT: Edwin Jaramillo.",
     "Rol_Dentro_Comunidad": "Gobernador y líder Comunitario",
     "Registro_Audiovisual": "Audio Etnohistoria Salado del Venado. (Chapal & Chapal, Audio Etnohistoria Salado del Venado, 2022)",
-    "Registro_Audiovisual_Audio": "/media/audio/8632015010368074_Etnohistoria.mp3"
+    "Registro_Audiovisual_Audio": "media/audio/8632015010368074_Etnohistoria.mp3"
   },
   "Aspectos_Linguisticos": {
     "Familia_Linguistica": "Aislada",
@@ -1169,7 +1169,7 @@
     "Significado_Origen": "El nombre Shankhu anʼkhewthi es una expresión de la lengua Cofán. La palabra Shankhu significa venado. El vocablo anʼkhewthi significa “salado”.",
     "Transcripcion_AFI": "Ver informe",
     "Registro_Audiovisual": "Audio lengua Cofan  (Aguinda, Audio lengua Cofán, 2022)",
-    "Registro_Audiovisual_Audio": "/media/audio/8632015010368074_Linguistico.mp3"
+    "Registro_Audiovisual_Audio": "media/audio/8632015010368074_Linguistico.mp3"
   }
 },
 {
@@ -1207,7 +1207,7 @@
     "Grupo_Etnohistoria": "Pueblo Cofán: Cristián Chapal, Tatiana Agüinda; José Ildefonso Chachinoy, Yamit Chapal, Miriam Ortiz, Tania Agüinda, Nixon Chapal. Fanny Chapal y otros miembros de la comunidad.</br>IGAC: Egna Márquez. ACT: Edwin Jaramillo.",
     "Rol_Dentro_Comunidad": "Líder comunitario",
     "Registro_Audiovisual": "Audio Etnohistoria del árbol del gallinazo blanco. (Chapal Y., Audio Etnohistoria del Árbol del Galiinazo Blanco, 2022)",
-    "Registro_Audiovisual_Audio": "/media/audio/8632015010368063_Etnohistoria.mp3"
+    "Registro_Audiovisual_Audio": "media/audio/8632015010368063_Etnohistoria.mp3"
   },
   "Aspectos_Linguisticos": {
     "Familia_Linguistica": "Aislada",
@@ -1216,7 +1216,7 @@
     "Significado_Origen": "El nombre Tutua khupana kiʼnikhu es una expresión de la lengua Cofán. La palabra Tutua significa “blanco”. El vocablo khupana significa “gallinazo”. El término kiʼnikhu refiere “una especie de árbol”.",
     "Transcripcion_AFI": "Ver informe",
     "Registro_Audiovisual": "Audio lengua Cofan  (Aguinda, Audio lengua Cofán  2022)",
-    "Registro_Audiovisual_Audio": "/media/audio/8632015010368063_Linguistico.mp3"
+    "Registro_Audiovisual_Audio": "media/audio/8632015010368063_Linguistico.mp3"
   }
 },
 {
@@ -1254,7 +1254,7 @@
     "Grupo_Etnohistoria": "Pueblo Cofán: Cristián Chapal, Tatiana Agüinda; José Ildefonso Chachinoy, Yamit Chapal, Miriam Ortiz, Tania Agüinda, Nixon Chapal. Fanny Chapal y otros miembros de la comunidad.</br>IGAC: Egna Márquez. ACT: Edwin Jaramillo.",
     "Rol_Dentro_Comunidad": "Líder comunitario",
     "Registro_Audiovisual": "Audio Etnohistoria Quebrada del Churu. (Chapal Y., Audio Etnohistoria Quebrada del Churu, 2022)",
-    "Registro_Audiovisual_Audio": "/media/audio/8632015010368083_Etnohistoria.mp3"
+    "Registro_Audiovisual_Audio": "media/audio/8632015010368083_Etnohistoria.mp3"
   },
   "Aspectos_Linguisticos": {
     "Familia_Linguistica": "Aislada",
@@ -1263,7 +1263,7 @@
     "Significado_Origen": "El nombre Churu naeʼki es una expresión de la lengua Cofán. La palabra Churu denomina una especie de “caracol”. El vocablo naeʼki significa “quebrada”.",
     "Transcripcion_AFI": "Ver informe",
     "Registro_Audiovisual": "Audio lengua Cofan  (Aguinda, Audio lengua Cofán, 2022)",
-    "Registro_Audiovisual_Audio": "/media/audio/8632015010368083_Linguistico.mp3"
+    "Registro_Audiovisual_Audio": "media/audio/8632015010368083_Linguistico.mp3"
   }
 },
 {
@@ -1278,7 +1278,7 @@
     "Trabajo_campo": "Sí",
     "Grupo_Intercultural": "Sector comunidad: Linda García, Jaime Burgos, Luís Bernardo Cano, Cristian Chapal, Weimar Salazar.",
     "Contexto_geografico": "El Cabildo indígena Villanueva hace parte del pueblo indígena Cofán, el cual se distribuye principalmente en la frontera entre Colombia y Ecuador. Se estima que 1.816 personas son autorreconocidas como pertenecientes a este pueblo según el Censo Nacional de Población y Vivienda del 2018 de Colombia. La conformación de su territorio data de épocas anteriores a la conquista (Arango y Sánchez, 2004), dónde tenían contacto con otras culturas como los Mocoa, Pastos y Sucumbíos. Cuentan con una lengua propia denominada A'ingae o Cofán, se mantiene en la mayor parte de las comunidades. Dado que no se ha podido clasificar dentro de ninguna familia lingüística, se considera una lengua aislada.</br> Según la caracterización del Ministerio del Interior se tuvo noticias de este pueblo hasta finales del siglo XVI, pues con los descubrimientos de yacimientos auríferos se conformaron encomiendas y pueblos. Posteriormente, las misiones jesuitas, franciscanas y capuchinas llegaron a la zona. Se dio inicio a actividades extractivas de caucho y quina, asociadas a prácticas crueles e injustas que condujo a la reducción considerable de su población y a la colonización del territorio por parte de poblaciones campesinas, por lo cual se vieron obligados a refugiarse en sitios alejados.  En la década de 1960 iniciaron la perforación de diversos pozos de petróleo a cargo de Texas Petroleum Company, situación que impactó de manera profunda los valores y prácticas culturales, por lo cual a partir de 1970 se han constituido seis resguardos a favor de comunidades pertenecientes a este pueblo. En la actualidad la comunidad de Villanueva avanza en la gestión del trámite correspondiente a la Constitución de Resguardo ante la Agencia Nacional de Tierras - ANT. (AMPII CANKE, 2021).</br> El cabildo Villanueva está conformado por seis globos discontinuos, sobre las jurisdicciones de los municipios de Valle del Guamuez y Orito, departamento del Putumayo al sur de Colombia, en la denominada llanura amazónica, región caracterizada por presentar altos niveles de precipitación y humedad, un clima cálido que ha permitido el desarrollo de una cobertura vegetal densa, relieve dominado por pendientes suaves que junto a las condiciones climáticas definen sistemas aluviales sometidos a inundaciones periódicas por el desborde de los ríos, que rigen ciclos y actividades de las comunidades allí presentes (IDEAM, 2010).</br> La restricción sobre su territorio ha afectado considerablemente la cultura Cofán, para quienes la educación y cultura están cimentadas en cuatro pilares: el pensamiento de los mayores, las lenguas nativas, las plantas sagradas y las normas y valores de la cultura. Son amplios conocedores del yagé, conservan el uso tradicional en contextos rituales, toma de decisiones, resolución de conflictos y tratamiento médico; las enfermedades en la cosmogonía Cofán son divididas entre las de origen físico y mágico o sobrenatural. El taita es una figura muy importante en la organización social y tiene una cercanía muy fuerte con las plantas medicinales y mágicas.</br> Debido a la colonización del territorio, han tenido que asumir prácticas agrícolas para el comercio y autoconsumo, son agricultores a pequeña escala, pescadores y cazadores-recolectores, las mujeres principalmente se dedican a la elaboración y comercialización de artesanías en semillas, fibras naturales y barro (ONIC, 2022). En las últimas décadas se han visto afectados por el conflicto armado, siendo víctimas de los grupos armados al margen de la ley; a pesar de todo, cuentan con una organización fuerte que les ha permitido consolidar su Plan de Vida en el año 2002 y más recientemente el Plan de Manejo Ambiental y Cultural del pueblo Cofán en 2021, con el fin de contribuir a la restauración, conservación y protección del territorio ancestral.",
-    "URL_Fotografia": ["/media/images/8632015010368054_01.jpg"],
+    "URL_Fotografia": ["media/images/8632015010368054_01.jpg"],
     "Fuente": "Instituto Geográfico Agustín Codazzi-IGAC, Amazon Conservation Team Colombia-ACT. Cabildo Villanueva Asociación de Autoridades Tradicionales Mesa Permanente de trabajo por el Pueblo Cofán y Cabildos indígenas pertenecientes a los pueblos Awá, Nasa, Kichwa y Embera Chamí-AMPII CANKE",
     "Estado": "Preferente",
     "Escala_minima": "1:1000",
@@ -1301,7 +1301,7 @@
     "Grupo_Etnohistoria": "Pueblo Cofán: Cristián Chapal, Tatiana Agüinda; José Ildefonso Chachinoy, Yamit Chapal, Miriam Ortiz, Tania Agüinda, Nixon Chapal. Fanny Chapal y otros miembros de la comunidad.</br>IGAC: Egna Márquez. ACT: Edwin Jaramillo.",
     "Rol_Dentro_Comunidad": "Gobernador",
     "Registro_Audiovisual": "Audio Etnohistoria Quebrada Coruntamama. (Chapal C., Audio Etnohistoria Quebrada Coruntamama, 2022)",
-    "Registro_Audiovisual_Audio": "/media/audio/8632015010368054_Etnohistoria.mp3"
+    "Registro_Audiovisual_Audio": "media/audio/8632015010368054_Etnohistoria.mp3"
   },
   "Aspectos_Linguisticos": {
     "Familia_Linguistica": "Aislada",
@@ -1310,7 +1310,7 @@
     "Significado_Origen": "El nombre Twsi sambiri naeʼki es una expresión de la lengua Cofán. Las palabras Twsi sambiri denominan una especie de “pezl”. El vocablo naeʼki significa “quebrada”.",
     "Transcripcion_AFI": "Ver informe",
     "Registro_Audiovisual": "Audio lengua Cofan  (Aguinda, Audio lengua Cofán, 2022)",
-    "Registro_Audiovisual_Audio": "/media/audio/8632015010368054_Linguistico.mp3"
+    "Registro_Audiovisual_Audio": "media/audio/8632015010368054_Linguistico.mp3"
   }
 },
 {
@@ -1348,7 +1348,7 @@
     "Grupo_Etnohistoria": "Pueblo Cofán: Cristián Chapal, Tatiana Agüinda; José Ildefonso Chachinoy, Yamit Chapal, Miriam Ortiz, Tania Agüinda, Nixon Chapal. Fanny Chapal y otros miembros de la comunidad.</br>IGAC: Egna Márquez. ACT: Edwin Jaramillo.",
     "Rol_Dentro_Comunidad": "Gobernador",
     "Registro_Audiovisual": "Audio Etnohistoria Quebrada Angelito. (Chapal C., Audio Etnohistoria Quebrada Angelito, 2022)",
-    "Registro_Audiovisual_Audio": "/media/audio/8686515010368075_Etnohistoria.mp3"
+    "Registro_Audiovisual_Audio": "media/audio/8686515010368075_Etnohistoria.mp3"
   },
   "Aspectos_Linguisticos": {
     "Familia_Linguistica": "Aislada",
@@ -1357,7 +1357,7 @@
     "Significado_Origen": "El nombre Angelito naeʼki es una expresión de la lengua Cofán. La palabra “Angelito” es el nombre propio de un taita de la comunidad.  El vocablo naeʼki significa “quebrada”.",
     "Transcripcion_AFI": "Ver informe",
     "Registro_Audiovisual": "Audio lengua Cofan  (Aguinda, Audio lengua Cofán, 2022)",
-    "Registro_Audiovisual_Audio": "/media/audio/8686515010368075_Linguistico.mp3"
+    "Registro_Audiovisual_Audio": "media/audio/8686515010368075_Linguistico.mp3"
   }
 },
 {
@@ -1395,7 +1395,7 @@
     "Grupo_Etnohistoria": "Pueblo Cofán: Cristián Chapal, Tatiana Agüinda; José Ildefonso Chachinoy, Yamit Chapal, Miriam Ortiz, Tania Agüinda, Nixon Chapal. Fanny Chapal y otros miembros de la comunidad.</br>IGAC: Egna Márquez. ACT: Edwin Jaramillo.",
     "Rol_Dentro_Comunidad": "No aplica",
     "Registro_Audiovisual": "No aplica",
-    "Registro_Audiovisual_Audio": "/media/audio/8632015010368082_Significado.mp3"
+    "Registro_Audiovisual_Audio": "media/audio/8632015010368082_Significado.mp3"
   },
   "Aspectos_Linguisticos": {
     "Familia_Linguistica": "Aislada",
@@ -1404,7 +1404,7 @@
     "Significado_Origen": "El nombre Shipare naeʼki es una expresión de la lengua Cofán. La palabra Shipare significa “Raya”.  El vocablo naeʼki significa “quebrada”.",
     "Transcripcion_AFI": "Ver informe",
     "Registro_Audiovisual": "Audio Lengua Cofán Quebrada La Raya (Aguinda, Audio Lengua Cofán Quebrada La Raya, 2022)",
-    "Registro_Audiovisual_Audio": "/media/audio/8632015010368082_Linguistico.mp3"
+    "Registro_Audiovisual_Audio": "media/audio/8632015010368082_Linguistico.mp3"
   }
 },
 {
@@ -1419,7 +1419,7 @@
     "Trabajo_campo": "Sí",
     "Grupo_Intercultural": "Sector comunidad: Linda García, Jaime Burgos, Luís Bernardo Cano, Cristian Chapal, Weimar Salazar.",
     "Contexto_geografico": "El Cabildo indígena Villanueva hace parte del pueblo indígena Cofán, el cual se distribuye principalmente en la frontera entre Colombia y Ecuador. Se estima que 1.816 personas son autorreconocidas como pertenecientes a este pueblo según el Censo Nacional de Población y Vivienda del 2018 de Colombia. La conformación de su territorio data de épocas anteriores a la conquista (Arango y Sánchez, 2004), dónde tenían contacto con otras culturas como los Mocoa, Pastos y Sucumbíos. Cuentan con una lengua propia denominada A'ingae o Cofán, se mantiene en la mayor parte de las comunidades. Dado que no se ha podido clasificar dentro de ninguna familia lingüística, se considera una lengua aislada.</br> Según la caracterización del Ministerio del Interior se tuvo noticias de este pueblo hasta finales del siglo XVI, pues con los descubrimientos de yacimientos auríferos se conformaron encomiendas y pueblos. Posteriormente, las misiones jesuitas, franciscanas y capuchinas llegaron a la zona. Se dio inicio a actividades extractivas de caucho y quina, asociadas a prácticas crueles e injustas que condujo a la reducción considerable de su población y a la colonización del territorio por parte de poblaciones campesinas, por lo cual se vieron obligados a refugiarse en sitios alejados.  En la década de 1960 iniciaron la perforación de diversos pozos de petróleo a cargo de Texas Petroleum Company, situación que impactó de manera profunda los valores y prácticas culturales, por lo cual a partir de 1970 se han constituido seis resguardos a favor de comunidades pertenecientes a este pueblo. En la actualidad la comunidad de Villanueva avanza en la gestión del trámite correspondiente a la Constitución de Resguardo ante la Agencia Nacional de Tierras - ANT. (AMPII CANKE, 2021).</br> El cabildo Villanueva está conformado por seis globos discontinuos, sobre las jurisdicciones de los municipios de Valle del Guamuez y Orito, departamento del Putumayo al sur de Colombia, en la denominada llanura amazónica, región caracterizada por presentar altos niveles de precipitación y humedad, un clima cálido que ha permitido el desarrollo de una cobertura vegetal densa, relieve dominado por pendientes suaves que junto a las condiciones climáticas definen sistemas aluviales sometidos a inundaciones periódicas por el desborde de los ríos, que rigen ciclos y actividades de las comunidades allí presentes (IDEAM, 2010).</br> La restricción sobre su territorio ha afectado considerablemente la cultura Cofán, para quienes la educación y cultura están cimentadas en cuatro pilares: el pensamiento de los mayores, las lenguas nativas, las plantas sagradas y las normas y valores de la cultura. Son amplios conocedores del yagé, conservan el uso tradicional en contextos rituales, toma de decisiones, resolución de conflictos y tratamiento médico; las enfermedades en la cosmogonía Cofán son divididas entre las de origen físico y mágico o sobrenatural. El taita es una figura muy importante en la organización social y tiene una cercanía muy fuerte con las plantas medicinales y mágicas.</br> Debido a la colonización del territorio, han tenido que asumir prácticas agrícolas para el comercio y autoconsumo, son agricultores a pequeña escala, pescadores y cazadores-recolectores, las mujeres principalmente se dedican a la elaboración y comercialización de artesanías en semillas, fibras naturales y barro (ONIC, 2022). En las últimas décadas se han visto afectados por el conflicto armado, siendo víctimas de los grupos armados al margen de la ley; a pesar de todo, cuentan con una organización fuerte que les ha permitido consolidar su Plan de Vida en el año 2002 y más recientemente el Plan de Manejo Ambiental y Cultural del pueblo Cofán en 2021, con el fin de contribuir a la restauración, conservación y protección del territorio ancestral.",
-    "URL_Fotografia": ["/media/images/8632015010368052_01.jpg", "/media/images/8632015010368052_02.jpg"],
+    "URL_Fotografia": ["media/images/8632015010368052_01.jpg", "media/images/8632015010368052_02.jpg"],
     "Fuente": "Instituto Geográfico Agustín Codazzi-IGAC, Amazon Conservation Team Colombia-ACT. Cabildo Villanueva Asociación de Autoridades Tradicionales Mesa Permanente de trabajo por el Pueblo Cofán y Cabildos indígenas pertenecientes a los pueblos Awá, Nasa, Kichwa y Embera Chamí-AMPII CANKE",
     "Estado": "Preferente",
     "Escala_minima": "1:1000",
@@ -1442,7 +1442,7 @@
     "Grupo_Etnohistoria": "Pueblo Cofán: Cristián Chapal, Tatiana Agüinda; José Ildefonso Chachinoy, Yamit Chapal, Miriam Ortiz, Tania Agüinda, Nixon Chapal. Fanny Chapal y otros miembros de la comunidad.</br>IGAC: Egna Márquez. ACT: Edwin Jaramillo.",
     "Rol_Dentro_Comunidad": "Gobernador",
     "Registro_Audiovisual": "Audio significado Escuela Villa Nueva (Chapal C., Audio significado Escuela Villa Nueva, 2022)",
-    "Registro_Audiovisual_Audio": "/media/audio/8632015010368052_Etnohistoria.mp3"
+    "Registro_Audiovisual_Audio": "media/audio/8632015010368052_Etnohistoria.mp3"
   },
   "Aspectos_Linguisticos": {
     "Familia_Linguistica": "Aislada",
@@ -1451,7 +1451,7 @@
     "Significado_Origen": "El nombre Geniupa atesiemba tsa'u es una expresión de la lengua Cofán. La palabra geniupa significa “lugar en donde se da en abundancia el chiro”, es importante aclarar que el chiro es un tipo de plátano, que los abuelos cofán sembraron en ese lugar. El vocablo atesiemba significa “lugar de enseñanza- aprendizaje”. La palabra tsa'u significa “casa”.",
     "Transcripcion_AFI": "Ver informe",
     "Registro_Audiovisual": "Audio Lengua Cofán Escuela Villa Nueva (Aguinda, Audio Escuela Villa Nueva, 2022)",
-    "Registro_Audiovisual_Audio": "/media/audio/8632015010368052_Linguistico.mp3"
+    "Registro_Audiovisual_Audio": "media/audio/8632015010368052_Linguistico.mp3"
   }
 },
 {
@@ -1466,7 +1466,7 @@
     "Trabajo_campo": "Sí",
     "Grupo_Intercultural": "Sector comunidad: Linda García, Jaime Burgos, Luís Bernardo Cano, Cristian Chapal, Weimar Salazar.",
     "Contexto_geografico": "El Cabildo indígena Villanueva hace parte del pueblo indígena Cofán, el cual se distribuye principalmente en la frontera entre Colombia y Ecuador. Se estima que 1.816 personas son autorreconocidas como pertenecientes a este pueblo según el Censo Nacional de Población y Vivienda del 2018 de Colombia. La conformación de su territorio data de épocas anteriores a la conquista (Arango y Sánchez, 2004), dónde tenían contacto con otras culturas como los Mocoa, Pastos y Sucumbíos. Cuentan con una lengua propia denominada A'ingae o Cofán, se mantiene en la mayor parte de las comunidades. Dado que no se ha podido clasificar dentro de ninguna familia lingüística, se considera una lengua aislada.</br> Según la caracterización del Ministerio del Interior se tuvo noticias de este pueblo hasta finales del siglo XVI, pues con los descubrimientos de yacimientos auríferos se conformaron encomiendas y pueblos. Posteriormente, las misiones jesuitas, franciscanas y capuchinas llegaron a la zona. Se dio inicio a actividades extractivas de caucho y quina, asociadas a prácticas crueles e injustas que condujo a la reducción considerable de su población y a la colonización del territorio por parte de poblaciones campesinas, por lo cual se vieron obligados a refugiarse en sitios alejados.  En la década de 1960 iniciaron la perforación de diversos pozos de petróleo a cargo de Texas Petroleum Company, situación que impactó de manera profunda los valores y prácticas culturales, por lo cual a partir de 1970 se han constituido seis resguardos a favor de comunidades pertenecientes a este pueblo. En la actualidad la comunidad de Villanueva avanza en la gestión del trámite correspondiente a la Constitución de Resguardo ante la Agencia Nacional de Tierras - ANT. (AMPII CANKE, 2021).</br> El cabildo Villanueva está conformado por seis globos discontinuos, sobre las jurisdicciones de los municipios de Valle del Guamuez y Orito, departamento del Putumayo al sur de Colombia, en la denominada llanura amazónica, región caracterizada por presentar altos niveles de precipitación y humedad, un clima cálido que ha permitido el desarrollo de una cobertura vegetal densa, relieve dominado por pendientes suaves que junto a las condiciones climáticas definen sistemas aluviales sometidos a inundaciones periódicas por el desborde de los ríos, que rigen ciclos y actividades de las comunidades allí presentes (IDEAM, 2010).</br> La restricción sobre su territorio ha afectado considerablemente la cultura Cofán, para quienes la educación y cultura están cimentadas en cuatro pilares: el pensamiento de los mayores, las lenguas nativas, las plantas sagradas y las normas y valores de la cultura. Son amplios conocedores del yagé, conservan el uso tradicional en contextos rituales, toma de decisiones, resolución de conflictos y tratamiento médico; las enfermedades en la cosmogonía Cofán son divididas entre las de origen físico y mágico o sobrenatural. El taita es una figura muy importante en la organización social y tiene una cercanía muy fuerte con las plantas medicinales y mágicas.</br> Debido a la colonización del territorio, han tenido que asumir prácticas agrícolas para el comercio y autoconsumo, son agricultores a pequeña escala, pescadores y cazadores-recolectores, las mujeres principalmente se dedican a la elaboración y comercialización de artesanías en semillas, fibras naturales y barro (ONIC, 2022). En las últimas décadas se han visto afectados por el conflicto armado, siendo víctimas de los grupos armados al margen de la ley; a pesar de todo, cuentan con una organización fuerte que les ha permitido consolidar su Plan de Vida en el año 2002 y más recientemente el Plan de Manejo Ambiental y Cultural del pueblo Cofán en 2021, con el fin de contribuir a la restauración, conservación y protección del territorio ancestral.",
-    "URL_Fotografia": ["/media/images/8632015010368055_01.jpg", "/media/images/8632015010368055_02.jpg"],
+    "URL_Fotografia": ["media/images/8632015010368055_01.jpg", "media/images/8632015010368055_02.jpg"],
     "Fuente": "Instituto Geográfico Agustín Codazzi-IGAC, Amazon Conservation Team Colombia-ACT. Cabildo Villanueva Asociación de Autoridades Tradicionales Mesa Permanente de trabajo por el Pueblo Cofán y Cabildos indígenas pertenecientes a los pueblos Awá, Nasa, Kichwa y Embera Chamí-AMPII CANKE",
     "Estado": "Preferente",
     "Escala_minima": "1:1000",
@@ -1489,7 +1489,7 @@
     "Grupo_Etnohistoria": "Pueblo Cofán: Cristián Chapal, Tatiana Agüinda; José Ildefonso Chachinoy, Yamit Chapal, Miriam Ortiz, Tania Agüinda, Nixon Chapal. Fanny Chapal y otros miembros de la comunidad.</br>IGAC: Egna Márquez. ACT: Edwin Jaramillo.",
     "Rol_Dentro_Comunidad": "Gobernador",
     "Registro_Audiovisual": "Audio Etnohistoria Nacedero de la Abuela (Chapal C., Audio Etnohistoria Nacedero de la Abuela, 2022)",
-    "Registro_Audiovisual_Audio": "/media/audio/8632015010368055_Etnohistoria.mp3"
+    "Registro_Audiovisual_Audio": "media/audio/8632015010368055_Etnohistoria.mp3"
   },
   "Aspectos_Linguisticos": {
     "Familia_Linguistica": "Aislada",
@@ -1498,7 +1498,7 @@
     "Significado_Origen": "El nombre Tsa'khw sumbuhethi mamakhashe naeʼki es una expresión de la lengua Cofán. La palabra Tsa'khw significa “nacedero de agua”. El vocablo sumbuhethi significa “sitio donde sale el agua”. La expresión mamakhashe significa “abuela” y naeʼki es una acepción de ”quebrada”.",
     "Transcripcion_AFI": "Ver informe",
     "Registro_Audiovisual": "Audio Lengua Nacedero de la Abuela</br>(Aguinda, Audio Lengua Cofán, 2022)",
-    "Registro_Audiovisual_Audio": "/media/audio/8632015010368055_Linguistico.mp3"
+    "Registro_Audiovisual_Audio": "media/audio/8632015010368055_Linguistico.mp3"
   }
 },
 {
@@ -1536,7 +1536,7 @@
     "Grupo_Etnohistoria": "Pueblo Cofán: Cristián Chapal, Tatiana Agüinda; José Ildefonso Chachinoy, Yamit Chapal, Miriam Ortiz, Tania Agüinda, Nixon Chapal. Fanny Chapal y otros miembros de la comunidad.</br>IGAC: Egna Márquez. ACT: Edwin Jaramillo.",
     "Rol_Dentro_Comunidad": "Mayor",
     "Registro_Audiovisual": "Audio Etnohistoria Casa de las Arrieras (Chachinoy, Audio Etnohistoria Casa de las Arrieras, 2022)",
-    "Registro_Audiovisual_Audio": "/media/audio/8632015010368069_Etnohistoria.mp3"
+    "Registro_Audiovisual_Audio": "media/audio/8632015010368069_Etnohistoria.mp3"
   },
   "Aspectos_Linguisticos": {
     "Familia_Linguistica": "Aislada",
@@ -1545,7 +1545,7 @@
     "Significado_Origen": "El nombre Simakhu tsau'pa es una expresión de la lengua Cofán. La palabra simakhu significa arrieras y tsau'pa “la casa”.",
     "Transcripcion_AFI": "Ver informe",
     "Registro_Audiovisual": "Audio Lengua Cofán Casa de las Arrieras. (Aguinda, Audio Lengua Cofán Casa de las Arrieras, 2022)",
-    "Registro_Audiovisual_Audio": "/media/audio/8632015010368069_Linguistico.mp3"
+    "Registro_Audiovisual_Audio": "media/audio/8632015010368069_Linguistico.mp3"
   }
 },
 {
@@ -1560,7 +1560,7 @@
     "Trabajo_campo": "Sí",
     "Grupo_Intercultural": "Sector del río: Daniel Ojeda, Carlos Hernández, Yamid Chapal, José Luis Bravo, Estela Chachinoy, Odilia Chachinoy, María Adriana Rosero.",
     "Contexto_geografico": "El Cabildo indígena Villanueva hace parte del pueblo indígena Cofán, el cual se distribuye principalmente en la frontera entre Colombia y Ecuador. Se estima que 1.816 personas son autorreconocidas como pertenecientes a este pueblo según el Censo Nacional de Población y Vivienda del 2018 de Colombia. La conformación de su territorio data de épocas anteriores a la conquista (Arango y Sánchez, 2004), dónde tenían contacto con otras culturas como los Mocoa, Pastos y Sucumbíos. Cuentan con una lengua propia denominada A'ingae o Cofán, se mantiene en la mayor parte de las comunidades. Dado que no se ha podido clasificar dentro de ninguna familia lingüística, se considera una lengua aislada.</br> Según la caracterización del Ministerio del Interior se tuvo noticias de este pueblo hasta finales del siglo XVI, pues con los descubrimientos de yacimientos auríferos se conformaron encomiendas y pueblos. Posteriormente, las misiones jesuitas, franciscanas y capuchinas llegaron a la zona. Se dio inicio a actividades extractivas de caucho y quina, asociadas a prácticas crueles e injustas que condujo a la reducción considerable de su población y a la colonización del territorio por parte de poblaciones campesinas, por lo cual se vieron obligados a refugiarse en sitios alejados.  En la década de 1960 iniciaron la perforación de diversos pozos de petróleo a cargo de Texas Petroleum Company, situación que impactó de manera profunda los valores y prácticas culturales, por lo cual a partir de 1970 se han constituido seis resguardos a favor de comunidades pertenecientes a este pueblo. En la actualidad la comunidad de Villanueva avanza en la gestión del trámite correspondiente a la Constitución de Resguardo ante la Agencia Nacional de Tierras - ANT. (AMPII CANKE, 2021).</br> El cabildo Villanueva está conformado por seis globos discontinuos, sobre las jurisdicciones de los municipios de Valle del Guamuez y Orito, departamento del Putumayo al sur de Colombia, en la denominada llanura amazónica, región caracterizada por presentar altos niveles de precipitación y humedad, un clima cálido que ha permitido el desarrollo de una cobertura vegetal densa, relieve dominado por pendientes suaves que junto a las condiciones climáticas definen sistemas aluviales sometidos a inundaciones periódicas por el desborde de los ríos, que rigen ciclos y actividades de las comunidades allí presentes (IDEAM, 2010).</br> La restricción sobre su territorio ha afectado considerablemente la cultura Cofán, para quienes la educación y cultura están cimentadas en cuatro pilares: el pensamiento de los mayores, las lenguas nativas, las plantas sagradas y las normas y valores de la cultura. Son amplios conocedores del yagé, conservan el uso tradicional en contextos rituales, toma de decisiones, resolución de conflictos y tratamiento médico; las enfermedades en la cosmogonía Cofán son divididas entre las de origen físico y mágico o sobrenatural. El taita es una figura muy importante en la organización social y tiene una cercanía muy fuerte con las plantas medicinales y mágicas.</br> Debido a la colonización del territorio, han tenido que asumir prácticas agrícolas para el comercio y autoconsumo, son agricultores a pequeña escala, pescadores y cazadores-recolectores, las mujeres principalmente se dedican a la elaboración y comercialización de artesanías en semillas, fibras naturales y barro (ONIC, 2022). En las últimas décadas se han visto afectados por el conflicto armado, siendo víctimas de los grupos armados al margen de la ley; a pesar de todo, cuentan con una organización fuerte que les ha permitido consolidar su Plan de Vida en el año 2002 y más recientemente el Plan de Manejo Ambiental y Cultural del pueblo Cofán en 2021, con el fin de contribuir a la restauración, conservación y protección del territorio ancestral.",
-    "URL_Fotografia": ["/media/images/8632015010368057_01.jpg", "/media/images/8632015010368057_02.jpg", "/media/images/8632015010368057_03.jpg", "/media/images/8632015010368057_04.jpg"],
+    "URL_Fotografia": ["media/images/8632015010368057_01.jpg", "media/images/8632015010368057_02.jpg", "media/images/8632015010368057_03.jpg", "media/images/8632015010368057_04.jpg"],
     "Fuente": "Instituto Geográfico Agustín Codazzi-IGAC, Amazon Conservation Team Colombia-ACT. Cabildo Villanueva Asociación de Autoridades Tradicionales Mesa Permanente de trabajo por el Pueblo Cofán y Cabildos indígenas pertenecientes a los pueblos Awá, Nasa, Kichwa y Embera Chamí-AMPII CANKE",
     "Estado": "Preferente",
     "Escala_minima": "1:1000",
@@ -1583,7 +1583,7 @@
     "Grupo_Etnohistoria": "Pueblo Cofán: Cristián Chapal, Tatiana Agüinda; José Ildefonso Chachinoy, Yamit Chapal, Miriam Ortiz, Tania Agüinda, Nixon Chapal. Fanny Chapal y otros miembros de la comunidad.</br>IGAC: Egna Márquez. ACT: Edwin Jaramillo.",
     "Rol_Dentro_Comunidad": "Gobernador",
     "Registro_Audiovisual": "Audio  etnohistoria casa del Yagé (Chapal C., Audio Etnohistoria Chagra del Yagé, 2022)",
-    "Registro_Audiovisual_Audio": "/media/audio/8632015010368057_Etnohistoria.mp3"
+    "Registro_Audiovisual_Audio": "media/audio/8632015010368057_Etnohistoria.mp3"
   },
   "Aspectos_Linguisticos": {
     "Familia_Linguistica": "Aislada",
@@ -1592,7 +1592,7 @@
     "Significado_Origen": "El nombre U'fa nasipakhw es una expresión de la lengua Cofán. La palabra U'fa significa “yagé” y nasipakhw “Chagra”.",
     "Transcripcion_AFI": "Ver informe",
     "Registro_Audiovisual": "Audio Lengua Cofán Casa de las Arrieras. (Aguinda, Audio Lengua Cofán Casa de las Arrieras, 2022)",
-    "Registro_Audiovisual_Audio": "/media/audio/8632015010368057_Linguistico.mp3"
+    "Registro_Audiovisual_Audio": "media/audio/8632015010368057_Linguistico.mp3"
   }
 },
 {
@@ -1607,7 +1607,7 @@
     "Trabajo_campo": "Sí",
     "Grupo_Intercultural": "Sector del río: Daniel Ojeda, Carlos Hernández, Yamid Chapal, José Luis Bravo, Estela Chachinoy, Odilia Chachinoy, María Adriana Rosero.",
     "Contexto_geografico": "El Cabildo indígena Villanueva hace parte del pueblo indígena Cofán, el cual se distribuye principalmente en la frontera entre Colombia y Ecuador. Se estima que 1.816 personas son autorreconocidas como pertenecientes a este pueblo según el Censo Nacional de Población y Vivienda del 2018 de Colombia. La conformación de su territorio data de épocas anteriores a la conquista (Arango y Sánchez, 2004), dónde tenían contacto con otras culturas como los Mocoa, Pastos y Sucumbíos. Cuentan con una lengua propia denominada A'ingae o Cofán, se mantiene en la mayor parte de las comunidades. Dado que no se ha podido clasificar dentro de ninguna familia lingüística, se considera una lengua aislada.</br> Según la caracterización del Ministerio del Interior se tuvo noticias de este pueblo hasta finales del siglo XVI, pues con los descubrimientos de yacimientos auríferos se conformaron encomiendas y pueblos. Posteriormente, las misiones jesuitas, franciscanas y capuchinas llegaron a la zona. Se dio inicio a actividades extractivas de caucho y quina, asociadas a prácticas crueles e injustas que condujo a la reducción considerable de su población y a la colonización del territorio por parte de poblaciones campesinas, por lo cual se vieron obligados a refugiarse en sitios alejados.  En la década de 1960 iniciaron la perforación de diversos pozos de petróleo a cargo de Texas Petroleum Company, situación que impactó de manera profunda los valores y prácticas culturales, por lo cual a partir de 1970 se han constituido seis resguardos a favor de comunidades pertenecientes a este pueblo. En la actualidad la comunidad de Villanueva avanza en la gestión del trámite correspondiente a la Constitución de Resguardo ante la Agencia Nacional de Tierras - ANT. (AMPII CANKE, 2021).</br> El cabildo Villanueva está conformado por seis globos discontinuos, sobre las jurisdicciones de los municipios de Valle del Guamuez y Orito, departamento del Putumayo al sur de Colombia, en la denominada llanura amazónica, región caracterizada por presentar altos niveles de precipitación y humedad, un clima cálido que ha permitido el desarrollo de una cobertura vegetal densa, relieve dominado por pendientes suaves que junto a las condiciones climáticas definen sistemas aluviales sometidos a inundaciones periódicas por el desborde de los ríos, que rigen ciclos y actividades de las comunidades allí presentes (IDEAM, 2010).</br> La restricción sobre su territorio ha afectado considerablemente la cultura Cofán, para quienes la educación y cultura están cimentadas en cuatro pilares: el pensamiento de los mayores, las lenguas nativas, las plantas sagradas y las normas y valores de la cultura. Son amplios conocedores del yagé, conservan el uso tradicional en contextos rituales, toma de decisiones, resolución de conflictos y tratamiento médico; las enfermedades en la cosmogonía Cofán son divididas entre las de origen físico y mágico o sobrenatural. El taita es una figura muy importante en la organización social y tiene una cercanía muy fuerte con las plantas medicinales y mágicas.</br> Debido a la colonización del territorio, han tenido que asumir prácticas agrícolas para el comercio y autoconsumo, son agricultores a pequeña escala, pescadores y cazadores-recolectores, las mujeres principalmente se dedican a la elaboración y comercialización de artesanías en semillas, fibras naturales y barro (ONIC, 2022). En las últimas décadas se han visto afectados por el conflicto armado, siendo víctimas de los grupos armados al margen de la ley; a pesar de todo, cuentan con una organización fuerte que les ha permitido consolidar su Plan de Vida en el año 2002 y más recientemente el Plan de Manejo Ambiental y Cultural del pueblo Cofán en 2021, con el fin de contribuir a la restauración, conservación y protección del territorio ancestral.",
-    "URL_Fotografia": ["/media/images/8632015010368046_01.jpg"],
+    "URL_Fotografia": ["media/images/8632015010368046_01.jpg"],
     "Fuente": "Instituto Geográfico Agustín Codazzi-IGAC, Amazon Conservation Team Colombia-ACT. Cabildo Villanueva Asociación de Autoridades Tradicionales Mesa Permanente de trabajo por el Pueblo Cofán y Cabildos indígenas pertenecientes a los pueblos Awá, Nasa, Kichwa y Embera Chamí-AMPII CANKE",
     "Estado": "Preferente",
     "Escala_minima": "1:1000",
@@ -1630,7 +1630,7 @@
     "Grupo_Etnohistoria": "Pueblo Cofán: Cristián Chapal, Tatiana Agüinda; José Ildefonso Chachinoy, Yamit Chapal, Miriam Ortiz, Tania Agüinda, Nixon Chapal. Fanny Chapal y otros miembros de la comunidad.</br>IGAC: Egna Márquez. ACT: Edwin Jaramillo.",
     "Rol_Dentro_Comunidad": "Líder comunitario",
     "Registro_Audiovisual": "Audio etnohistoria cascada del Duende. (Chapal Y., Audio Etnohistoria Cascada del Duende, 2022)",
-    "Registro_Audiovisual_Audio": "/media/audio/8632015010368046_Etnohistoria.mp3"
+    "Registro_Audiovisual_Audio": "media/audio/8632015010368046_Etnohistoria.mp3"
   },
   "Aspectos_Linguisticos": {
     "Familia_Linguistica": "Aislada",
@@ -1639,7 +1639,7 @@
     "Significado_Origen": "El nombre Fathukhukhwsw kuku na'e amphihethi es una expresión de la lengua Cofán. La palabra Fathukhukhwsw significa “cascada”, kuku “duente”. La expresión na'e significa “río” y amphihethi “lugar de la caída del agua”.",
     "Transcripcion_AFI": "Ver informe",
     "Registro_Audiovisual": "Audio Lengua Cofán Cascada del Duende. (Aguinda, Audio Lengua Cofán Cascada del Duende, 2022)",
-    "Registro_Audiovisual_Audio": "/media/audio/8632015010368046_Linguistico.mp3"
+    "Registro_Audiovisual_Audio": "media/audio/8632015010368046_Linguistico.mp3"
   }
 },
 {
@@ -1654,7 +1654,7 @@
     "Trabajo_campo": "Sí",
     "Grupo_Intercultural": "Sector del río: Daniel Ojeda, Carlos Hernández, Yamid Chapal, José Luis Bravo, Estela Chachinoy, Odilia Chachinoy, María Adriana Rosero.",
     "Contexto_geografico": "El Cabildo indígena Villanueva hace parte del pueblo indígena Cofán, el cual se distribuye principalmente en la frontera entre Colombia y Ecuador. Se estima que 1.816 personas son autorreconocidas como pertenecientes a este pueblo según el Censo Nacional de Población y Vivienda del 2018 de Colombia. La conformación de su territorio data de épocas anteriores a la conquista (Arango y Sánchez, 2004), dónde tenían contacto con otras culturas como los Mocoa, Pastos y Sucumbíos. Cuentan con una lengua propia denominada A'ingae o Cofán, se mantiene en la mayor parte de las comunidades. Dado que no se ha podido clasificar dentro de ninguna familia lingüística, se considera una lengua aislada.</br> Según la caracterización del Ministerio del Interior se tuvo noticias de este pueblo hasta finales del siglo XVI, pues con los descubrimientos de yacimientos auríferos se conformaron encomiendas y pueblos. Posteriormente, las misiones jesuitas, franciscanas y capuchinas llegaron a la zona. Se dio inicio a actividades extractivas de caucho y quina, asociadas a prácticas crueles e injustas que condujo a la reducción considerable de su población y a la colonización del territorio por parte de poblaciones campesinas, por lo cual se vieron obligados a refugiarse en sitios alejados.  En la década de 1960 iniciaron la perforación de diversos pozos de petróleo a cargo de Texas Petroleum Company, situación que impactó de manera profunda los valores y prácticas culturales, por lo cual a partir de 1970 se han constituido seis resguardos a favor de comunidades pertenecientes a este pueblo. En la actualidad la comunidad de Villanueva avanza en la gestión del trámite correspondiente a la Constitución de Resguardo ante la Agencia Nacional de Tierras - ANT. (AMPII CANKE, 2021).</br> El cabildo Villanueva está conformado por seis globos discontinuos, sobre las jurisdicciones de los municipios de Valle del Guamuez y Orito, departamento del Putumayo al sur de Colombia, en la denominada llanura amazónica, región caracterizada por presentar altos niveles de precipitación y humedad, un clima cálido que ha permitido el desarrollo de una cobertura vegetal densa, relieve dominado por pendientes suaves que junto a las condiciones climáticas definen sistemas aluviales sometidos a inundaciones periódicas por el desborde de los ríos, que rigen ciclos y actividades de las comunidades allí presentes (IDEAM, 2010).</br> La restricción sobre su territorio ha afectado considerablemente la cultura Cofán, para quienes la educación y cultura están cimentadas en cuatro pilares: el pensamiento de los mayores, las lenguas nativas, las plantas sagradas y las normas y valores de la cultura. Son amplios conocedores del yagé, conservan el uso tradicional en contextos rituales, toma de decisiones, resolución de conflictos y tratamiento médico; las enfermedades en la cosmogonía Cofán son divididas entre las de origen físico y mágico o sobrenatural. El taita es una figura muy importante en la organización social y tiene una cercanía muy fuerte con las plantas medicinales y mágicas.</br> Debido a la colonización del territorio, han tenido que asumir prácticas agrícolas para el comercio y autoconsumo, son agricultores a pequeña escala, pescadores y cazadores-recolectores, las mujeres principalmente se dedican a la elaboración y comercialización de artesanías en semillas, fibras naturales y barro (ONIC, 2022). En las últimas décadas se han visto afectados por el conflicto armado, siendo víctimas de los grupos armados al margen de la ley; a pesar de todo, cuentan con una organización fuerte que les ha permitido consolidar su Plan de Vida en el año 2002 y más recientemente el Plan de Manejo Ambiental y Cultural del pueblo Cofán en 2021, con el fin de contribuir a la restauración, conservación y protección del territorio ancestral.",
-    "URL_Fotografia": ["/media/images/8632015010368048_01.jpg", "/media/images/8632015010368048_02.jpg", "/media/images/8632015010368048_03.jpg"],
+    "URL_Fotografia": ["media/images/8632015010368048_01.jpg", "media/images/8632015010368048_02.jpg", "media/images/8632015010368048_03.jpg"],
     "Fuente": "Instituto Geográfico Agustín Codazzi-IGAC, Amazon Conservation Team Colombia-ACT. Cabildo Villanueva Asociación de Autoridades Tradicionales Mesa Permanente de trabajo por el Pueblo Cofán y Cabildos indígenas pertenecientes a los pueblos Awá, Nasa, Kichwa y Embera Chamí-AMPII CANKE",
     "Estado": "Preferente",
     "Escala_minima": "1:1000",
@@ -1685,7 +1685,7 @@
     "Significado_Origen": "El nombre Kahansi tsa'u es una expresión de la lengua Cofán. EL término Kahansi significa “Boa” y tsa'u “casa”.",
     "Transcripcion_AFI": "Ver informe",
     "Registro_Audiovisual": "Audio Lengua Cofán Casa de la Boa. (Aguinda, Audio Lengua Cofán Casa de la Boa, 2022)",
-    "Registro_Audiovisual_Audio": "/media/audio/8632015010368048_Linguistico.mp3"
+    "Registro_Audiovisual_Audio": "media/audio/8632015010368048_Linguistico.mp3"
   }
 },
 {
@@ -1700,7 +1700,7 @@
     "Trabajo_campo": "Sí",
     "Grupo_Intercultural": "Sector de las Lagunas: Pamela Mayorga, Javier Cuellar, Carolina Bernal, Libardo Chapal, Wendy Valbuena, Carlos Chapal, Fernando Benavides, Daniel Rubio, Héctor Chapal.",
     "Contexto_geografico": "El Cabildo indígena Villanueva hace parte del pueblo indígena Cofán, el cual se distribuye principalmente en la frontera entre Colombia y Ecuador. Se estima que 1.816 personas son autorreconocidas como pertenecientes a este pueblo según el Censo Nacional de Población y Vivienda del 2018 de Colombia. La conformación de su territorio data de épocas anteriores a la conquista (Arango y Sánchez, 2004), dónde tenían contacto con otras culturas como los Mocoa, Pastos y Sucumbíos. Cuentan con una lengua propia denominada A'ingae o Cofán, se mantiene en la mayor parte de las comunidades. Dado que no se ha podido clasificar dentro de ninguna familia lingüística, se considera una lengua aislada.</br> Según la caracterización del Ministerio del Interior se tuvo noticias de este pueblo hasta finales del siglo XVI, pues con los descubrimientos de yacimientos auríferos se conformaron encomiendas y pueblos. Posteriormente, las misiones jesuitas, franciscanas y capuchinas llegaron a la zona. Se dio inicio a actividades extractivas de caucho y quina, asociadas a prácticas crueles e injustas que condujo a la reducción considerable de su población y a la colonización del territorio por parte de poblaciones campesinas, por lo cual se vieron obligados a refugiarse en sitios alejados.  En la década de 1960 iniciaron la perforación de diversos pozos de petróleo a cargo de Texas Petroleum Company, situación que impactó de manera profunda los valores y prácticas culturales, por lo cual a partir de 1970 se han constituido seis resguardos a favor de comunidades pertenecientes a este pueblo. En la actualidad la comunidad de Villanueva avanza en la gestión del trámite correspondiente a la Constitución de Resguardo ante la Agencia Nacional de Tierras - ANT. (AMPII CANKE, 2021).</br> El cabildo Villanueva está conformado por seis globos discontinuos, sobre las jurisdicciones de los municipios de Valle del Guamuez y Orito, departamento del Putumayo al sur de Colombia, en la denominada llanura amazónica, región caracterizada por presentar altos niveles de precipitación y humedad, un clima cálido que ha permitido el desarrollo de una cobertura vegetal densa, relieve dominado por pendientes suaves que junto a las condiciones climáticas definen sistemas aluviales sometidos a inundaciones periódicas por el desborde de los ríos, que rigen ciclos y actividades de las comunidades allí presentes (IDEAM, 2010).</br> La restricción sobre su territorio ha afectado considerablemente la cultura Cofán, para quienes la educación y cultura están cimentadas en cuatro pilares: el pensamiento de los mayores, las lenguas nativas, las plantas sagradas y las normas y valores de la cultura. Son amplios conocedores del yagé, conservan el uso tradicional en contextos rituales, toma de decisiones, resolución de conflictos y tratamiento médico; las enfermedades en la cosmogonía Cofán son divididas entre las de origen físico y mágico o sobrenatural. El taita es una figura muy importante en la organización social y tiene una cercanía muy fuerte con las plantas medicinales y mágicas.</br> Debido a la colonización del territorio, han tenido que asumir prácticas agrícolas para el comercio y autoconsumo, son agricultores a pequeña escala, pescadores y cazadores-recolectores, las mujeres principalmente se dedican a la elaboración y comercialización de artesanías en semillas, fibras naturales y barro (ONIC, 2022). En las últimas décadas se han visto afectados por el conflicto armado, siendo víctimas de los grupos armados al margen de la ley; a pesar de todo, cuentan con una organización fuerte que les ha permitido consolidar su Plan de Vida en el año 2002 y más recientemente el Plan de Manejo Ambiental y Cultural del pueblo Cofán en 2021, con el fin de contribuir a la restauración, conservación y protección del territorio ancestral.",
-    "URL_Fotografia": ["/media/images/8632015010368067_01.jpg"],
+    "URL_Fotografia": ["media/images/8632015010368067_01.jpg"],
     "Fuente": "Instituto Geográfico Agustín Codazzi-IGAC, Amazon Conservation Team Colombia-ACT. Cabildo Villanueva Asociación de Autoridades Tradicionales Mesa Permanente de trabajo por el Pueblo Cofán y Cabildos indígenas pertenecientes a los pueblos Awá, Nasa, Kichwa y Embera Chamí-AMPII CANKE",
     "Estado": "Preferente",
     "Escala_minima": "1:1000",
@@ -1723,7 +1723,7 @@
     "Grupo_Etnohistoria": "Pueblo Cofán: Cristián Chapal, Tatiana Agüinda; José Ildefonso Chachinoy, Yamit Chapal, Miriam Ortiz, Tania Agüinda, Nixon Chapal. Fanny Chapal y otros miembros de la comunidad.</br>IGAC: Egna Márquez. ACT: Edwin Jaramillo.",
     "Rol_Dentro_Comunidad": "Gobernador",
     "Registro_Audiovisual": "Tipo de recurso: </br>Audio etnohistoria Laguna de los espíritus. (Chapal C., Audio Etnohistoria Laguna de los Espíritus, 2022)",
-    "Registro_Audiovisual_Audio": "/media/audio/8632015010368067_Etnohistoria.mp3"
+    "Registro_Audiovisual_Audio": "media/audio/8632015010368067_Etnohistoria.mp3"
   },
   "Aspectos_Linguisticos": {
     "Familia_Linguistica": "Aislada",
@@ -1732,7 +1732,7 @@
     "Significado_Origen": "El nombre Aya Singwkhw es una expresión de la lengua Cofán. término Aya significa “espíritus” y Singwkhw “laguna”.",
     "Transcripcion_AFI": "Ver informe",
     "Registro_Audiovisual": "Audio Lengua Cofán Laguna de los espíritus. (Aguinda, Audio Lengua Cofán Laguna de los Espíritus, 2022)",
-    "Registro_Audiovisual_Audio": "/media/audio/8632015010368067_Linguistico.mp3"
+    "Registro_Audiovisual_Audio": "media/audio/8632015010368067_Linguistico.mp3"
   }
 }
 ]
