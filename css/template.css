@@ -6,6 +6,10 @@
     z-index: 1000;
 }
 
+a {
+    text-decoration: none;
+}
+
 .aside {
     width: 25%;    
     box-shadow: 3px 0px 9px 4px #babfb5;        
@@ -192,14 +196,14 @@
     border: 1px solid #CCCCCC;
 }
 
-.expediton__terms__list li.done a {
-    background: #F0FAF6;
-    border: 1px solid #5CBC8F;
-}
-
 .expediton__terms__list li.active a {
     border: 1px solid #3FA9F5;
     background: #fff;    
+}
+
+.expediton__terms__list li.done a {
+    background: #F0FAF6;
+    border: 1px solid #5CBC8F;
 }
 
 .expediton__terms__list li a .list__item--title-resume {
@@ -235,14 +239,14 @@
     color: #fff;
 }
 
-.expediton__terms__list ol li.done:before {
-    background: #5CBC8F;
+.expediton__terms__list ol li.active:before {
+    background: #3FA9F5;
     box-shadow: none;
     color: #fff;
 }
 
-.expediton__terms__list ol li.active:before {
-    background: #3FA9F5;
+.expediton__terms__list ol li.done:before {
+    background: #5CBC8F;
     box-shadow: none;
     color: #fff;
 }
@@ -435,7 +439,7 @@
 
 /** pills **/
 .container-info {
-    background: url(images/assets/background.svg);
+    background: url(../images/assets/background.svg);
     background-size: 100%;
     background-position: center bottom;
     background-repeat: no-repeat;
@@ -532,6 +536,13 @@
     color: #808082;
 }
 
+.swiper .imagecontainer {
+    height: 500px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
 .swiper-button-next {
     right: 50px;
 }
@@ -553,9 +564,18 @@
     line-height: normal;
 }
 
+.etnohistoria b {
+    color: #000;
+    line-height: 40px;
+}
+
+.etnohistoria .p-relative {
+    position: relative;
+}
+
 .etnohistoria::before {
     content: "";
-    background-image: url(images/assets/birdEdno.svg);
+    background-image: url(../images/assets/birdEdno.svg);
     background-size: cover;
     border-radius: 8px;
     overflow: hidden;
@@ -569,7 +589,7 @@
 
 .etnohistoria::after {
     content: "";
-    background-image: url(images/assets/mountainEdno.svg);
+    background-image: url(../images/assets/mountainEdno.svg);
     background-size: cover;
     border-radius: 8px;
     overflow: hidden;
@@ -623,9 +643,15 @@
     width: 50vw;
 }
 
+.unexpanded .etnohistoria .audio__Card .card-container {
+    position: sticky;
+    top: 100px;
+}
+
 .unexpanded .etnohistoria .audio__Card .card {
     width: 38vw;
     transition: 1s all ease;
+    position: relative;
 }
 
 .etnohistoria .audio__Card .card .card-content {
@@ -652,7 +678,7 @@
 
 .etnohistoria .audio__Card .card .card-content::after {
     content: "";
-    background-image: url(images/assets/letraE.svg);
+    background-image: url(../images/assets/letraE.svg);
     background-size: cover;
     border-radius: 8px;
     overflow: hidden;
@@ -682,7 +708,7 @@
     padding: 160px 0 80px 0;
     background-repeat: no-repeat;
     background-position: center;
-    background: url('images/assets/backgroundaspectos.svg');
+    background: url('../images/assets/backgroundaspectos.svg');
     background-size: cover;
 }
 .historical__aspects .card {
@@ -708,7 +734,7 @@
 
 .historical__aspects .card::after {
     content: "";
-    background-image: url(images/assets/feather.svg);
+    background-image: url(../images/assets/feather.svg);
     background-size: cover;
     border-radius: 8px;
     overflow: hidden;

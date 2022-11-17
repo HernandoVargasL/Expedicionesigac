@@ -288,6 +288,7 @@ function mapCofan() {
                 "content": "${Nombre_COF}"
             }
         };
+        
 
         cofanLayer.add(new esri.Graphic(datoPoint));
     }
@@ -305,6 +306,7 @@ function mapCofan() {
         map: map
     }, "HomeButton");
     homeBtn.startup();
+    
 }
 
 function gotoVerMas() {
@@ -375,6 +377,9 @@ function gotoVerMas() {
             console.log(dato);
             $("#viewDiv").hide();
             $("#includedContent").show();
+
+            var h = $('.etnohistoria .container').height();
+            $('.p-relative').height(h - 50 + 'px');
         }
     }
 }
@@ -385,7 +390,7 @@ function listCofan() {
 
     for (var i = 0; i < datosCofan.length; i++) {
         strHTML = strHTML + "<li id='listItem_" + i + "' class='list__item' id-cofan=" + dato[i].ID + ">";
-        strHTML = strHTML + "<a id='anchord'>";
+        strHTML = strHTML + "<a>";
         strHTML = strHTML + "<div class='list__item--title'>" + dato[i].Nombre_ESP + "</div>";
         strHTML = strHTML + "<div class='list__item--title-resume'>" + dato[i].Nombre_COF + "</div>";
         strHTML = strHTML + "</a>";
@@ -397,7 +402,8 @@ function listCofan() {
     /*--- list button---*/
     $(".list__item").click(function () {
         activateItemList(this.attributes["id-cofan"].value);
-    });
+        $(window).scrollTop(0);
+    });    
 
 };
 
@@ -429,6 +435,8 @@ function activateItemList(idCofan) {
     if (element.hasClass("active")) {
         element.nextAll().removeClass("active").removeClass("done");
     }
+
+    
 }
 
 /*--- toggle button ---*/
@@ -607,3 +615,50 @@ var tour1 = new Tour({
         event.stopPropagation();
     }
 });
+
+// Slider
+
+const swiper = new Swiper('.swiper', {
+    speed: 600,
+    breakpoints: {
+    // when window width is >= 320px
+        320: {
+            slidesPerView: 1,
+            spaceBetween: 10
+        },
+        // when window width is >= 480px
+        425: {
+            slidesPerView: 1,
+            spaceBetween: 10
+        },
+        // when window width is >= 640px
+        728: {
+            slidesPerView: 1,
+            spaceBetween: 20
+        }
+    },
+    parallax: true,
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+
+    // If we need pagination
+    pagination: {
+        el: '.swiper-pagination',
+    },
+
+    // Navigation arrows
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+
+    // And if we need scrollbar
+});
+
+
+
+
+
+
+
