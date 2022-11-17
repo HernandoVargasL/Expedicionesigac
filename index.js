@@ -340,6 +340,14 @@ function gotoVerMas() {
                 $("div#VideoCOFAN").show();
             }
 
+            if (dato.Aspectos_Etnicos.hasOwnProperty("Registro_Audiovisual_Audio")) {
+                var audio = document.getElementById('AudioEtnico');
+                audio.src = dato.Aspectos_Etnicos.Registro_Audiovisual_Audio;
+                audio.load();
+                audio.pause();
+            }
+
+
             $("p#VideoCOFAN_Nombre").html(dato.Nombre_COF);
 
             $("#EtnoHistoria").html(dato.Aspectos_Etnicos.Etnohistoria);
