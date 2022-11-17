@@ -325,6 +325,10 @@ function gotoVerMas() {
             $("div#ID_Cofan > p").html(dato.ID);
             $("div.content__banner__title").html(dato.Nombre_ESP);
 
+            $("#EtnoHistoria_Audio").hide();
+            $("#EtnoHistoria_Video").hide();
+            $('#EtnoHistoria_Video').removeClass('expand');
+
             if (dato.Aspectos_Linguisticos.hasOwnProperty("Registro_Audiovisual_Audio")) {
                 $("p#AudioCOFAN_Nombre").html(dato.Nombre_COF);
 
@@ -347,6 +351,14 @@ function gotoVerMas() {
                 audio.src = dato.Aspectos_Etnicos.Registro_Audiovisual_Audio;
                 audio.load();
                 audio.pause();
+
+                $("#EtnoHistoria_Audio").show();
+            }
+
+            if (dato.Aspectos_Etnicos.hasOwnProperty("Registro_Audiovisual_Video")) {
+                $('#EtnoHistoria_Video > iframe').prop('src', dato.Aspectos_Etnicos.Registro_Audiovisual_Video)
+                $("#EtnoHistoria_Video").show();
+                $('#EtnoHistoria_Video').addClass('expand');
             }
 
 
