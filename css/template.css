@@ -435,7 +435,7 @@
 
 /** pills **/
 .container-info {
-    background: url(/images/assets/background.svg);
+    background: url(images/assets/background.svg);
     background-size: 100%;
     background-position: center bottom;
     background-repeat: no-repeat;
@@ -555,7 +555,7 @@
 
 .etnohistoria::before {
     content: "";
-    background-image: url(/images/assets/birdEdno.svg);
+    background-image: url(images/assets/birdEdno.svg);
     background-size: cover;
     border-radius: 8px;
     overflow: hidden;
@@ -569,7 +569,7 @@
 
 .etnohistoria::after {
     content: "";
-    background-image: url(/images/assets/mountainEdno.svg);
+    background-image: url(images/assets/mountainEdno.svg);
     background-size: cover;
     border-radius: 8px;
     overflow: hidden;
@@ -652,7 +652,7 @@
 
 .etnohistoria .audio__Card .card .card-content::after {
     content: "";
-    background-image: url(/images/assets/letraE.svg);
+    background-image: url(images/assets/letraE.svg);
     background-size: cover;
     border-radius: 8px;
     overflow: hidden;
@@ -682,7 +682,7 @@
     padding: 160px 0 80px 0;
     background-repeat: no-repeat;
     background-position: center;
-    background: url('/images/assets/backgroundaspectos.svg');
+    background: url('images/assets/backgroundaspectos.svg');
     background-size: cover;
 }
 .historical__aspects .card {
@@ -708,7 +708,7 @@
 
 .historical__aspects .card::after {
     content: "";
-    background-image: url(/images/assets/feather.svg);
+    background-image: url(images/assets/feather.svg);
     background-size: cover;
     border-radius: 8px;
     overflow: hidden;
