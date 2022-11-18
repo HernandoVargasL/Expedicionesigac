@@ -486,39 +486,11 @@ function youtubeApearAudio() {
 
 /*--- bootstrap tour ---*/
 
-// Instance the tour
-var tour = new Tour({
-    backdrop: false, 
-    storage: false        
-  });
-  
-  tour.addSteps([
-      {
-          element: "",
-          title: "title1",
-          content: "content1"
-      },
-      {
-          element: "#2",
-          title: "title2",
-          content: "content2"
-      },
-      {
-          element: "#3",
-          title: "title3",
-          content: "content3"
-      },
-      {
-          element: "#4",
-          title: "title4",
-          content: "content4"
-      }
-  
-    ]);
 
 
 
-        // Instance the tour
+
+
 var tour1 = new Tour({
 
     steps: [
