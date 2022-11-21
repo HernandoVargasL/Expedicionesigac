@@ -10,6 +10,10 @@ a {
     text-decoration: none;
 }
 
+.main-row {
+    flex-wrap: wrap;
+}
+
 .aside {
     width: 25%;    
     box-shadow: 3px 0px 9px 4px #babfb5;        
@@ -17,7 +21,8 @@ a {
     box-shadow: 3px 0px 9px 4px #babfb5;
     position: relative;
     z-index: 100;
-    transition: all 0.5s ease;    
+    transition: all 0.5s ease;
+    position: relative;    
 }
 
 .aside.collapseAside {
@@ -28,8 +33,9 @@ a {
 }
 
 .aside__togglebutton {
-    position: fixed;
-    top: 85px;
+    position: absolute;
+    top: 40px;
+    right: -25px;
     width: 25px;
     height: 25px;
     background: #3c3c3b;
@@ -259,8 +265,8 @@ a {
 .content {
     display: flex;
     flex-wrap: wrap;
-    width: 75%;
     transition: all 0.5s ease;
+    width: 75%;
 }
 .content.collapseAside {
     width: 100%;
@@ -796,186 +802,137 @@ a {
     margin: auto;    
 }
 
-/*---- content ----*/
-@media (max-width: 768px) {
+/*intro*/
+
+.popover {
+    max-width: 350px !important;
+}
+
+.popover[class*="tour-"].orphan.main {
+    max-width: 1200px !important;
+    width: 600px;
+    display: inline-block;
+    vertical-align: middle !important;
+    border-radius: 0;
+}
+
+.tour-backdrop {
+    opacity: 0.6;
+}
+
+.modal-header {
+    padding: 15px;
+    padding-bottom: 0;
+    text-align: left;
+    display: flex;
+    justify-content: flex-end;
+    border-bottom: 0;
+}
+
+.modal-header div {
+    float: right;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 10px;
+    color: #000;
+    text-shadow: 0 1px 0 #fff;
+    opacity: .2;   
+}
+
+.popover[class*="tour-"] .popover-navigation *[data-role="prev"].disabled, .popover[class*="tour-"] .popover-navigation *[data-role="next"].disabled, .popover[class*="tour-"] .popover-navigation *[data-role="end"].disabled {
+    display: none;
+}
+
+.popover .contentP {
+    padding: 0 15px 15px;
+    align-items: center;
+    font-family: 'Gill Sans Std';
+}
+
+.popover .contentP img {
+    padding: 15px;
+    width: 150px;
+    height: 150px;
+}
+
+.popover-title {
+    background: transparent;
+    border-bottom: 0;
+}
+
+.popover h2 {
+    color: #6445E1;
+    font-size: 22px;
+}
+
+.popover .popover-content {
+    font-size: 14px;
+    color: #4c4c4c;
+}
+
+.popover .navigation {
+    padding: 15px;
+    padding-top: 10px;
+    border-top: 1px solid #e5e5e5;
+}
+
+.popover .btn {
+    background-color: #6445E1;
+    color: #fff;
+    font-size: 12px;
+    padding: 6px 12px;
+    border-radius: 5px;
+}
+
+.popover .btn[data-role="end"] {
+    border: 1px solid #6445E1;
+    color: #6445E1;
+    background-color: transparent;
+    margin-left: 20px;
+}
+
+/*---- home ----*/
+#HomeButton {
+    position: absolute;
+    top: 40px;
+    right: 20px;
+    z-index: 50;
+}
+
+
+/*---- responsive ----*/
+@media (max-width: 1024px) {
+    .main-row {
+        flex-wrap: nowrap;
+    }
     .aside {
         width: 35%;
-        background: #ffffffdb;
-        backdrop-filter: blur(5px);
-        box-shadow: 0 0 9px 4px #babfb547;
+        z-index: 100;
+        background: #fff;
     }
-
-    .aside .aside__container {
-        padding: 20px 15px;
-    }
-
-    .aside .title {
-        font-size: 20px;
-        height: auto;
-        margin-bottom: 20px;
-        text-align: center;
-    }
-
-    .expediton__terms .expedition__titles {
-        padding: 15px 10px;
-    }
-
-    .tab-content {
-        padding: 20px 10px;
-    }
-
-    .expediton__terms .expediton__terms--resume {
-        height: inherit;
-    }
-
     .content {
-        width: 65%;
-        height: 100vh;
-    }   
-
-    .content .sizer {
-        height: auto;
-    }
-
-    .content.inner {
-        overflow-x: hidden;
-        overflow-y: auto;
-        height: calc(100vh - 60px);
-    }
-    
-    .content.inner.unexpanded {
-        width: 100% !important;
-        height: 100vh;
         position: absolute;
-        right: 0;
-        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    .tour-backdrop {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .aside {
+        width: 45%;
     }
 }
 
 @media (max-width: 425px) {
     .aside {
-        width: 80%;        
+        width: 80%;
     }
 
-    .content.inner {
-        overflow-x: hidden;
-        overflow-y: auto;
-        height: calc(100vh - 60px);
-    }
-
-    .content.unexpanded {
-        width: 100% !important;
-    }
-
-    .container-portada .content__banner__title {
-        line-height: normal;
-    }
-
-    .aside .title {
-        text-align: center;
-    }
-
-    .container-portada {
-        height: auto;
-    }
-
-    .portada {
-        margin-top: 0;
-        margin-bottom: 0;        
-    }
-
-    .etnohistoria::before {
-        left: 22px;
-    }
-
-    .etnohistoria .audio__Card {
-        position: relative;
-        margin-bottom: 120px;
-        margin-right: -30px;
-    }
-
-    .etnohistoria .audio__Card .card {
-        width: 100%;
-    }
-
-    .etnohistoria .audio__Card .card .card-content::after {
-        left: 23px;
-    }
-
-    .container-info {
-        height: auto;
-        padding-top: 60px;
-        padding-bottom: 60px;
-        padding-right: 30px;
-        padding-left: 30px;
-    }
-    .slider {
-        padding: 0 30px;
-    }
-
-    .referentes {
-        overflow: auto;
-    }
-
-    .referentes .referentes__item {
-        min-width: 168px;
-        width: 168px;
-    }
-
-    .historical__aspects {
-        padding: 80px 30px;
-    }
-
-    .historical__aspects .card {
-        padding-left: 30px;
-        padding-right: 30px;
-    }
-
-    .historical__aspects .card::after {
-        width: 133px;
-        height: 152px;
-        top: -39px;
-        right: -16px;
-    }
-
-    .historical__aspects .resume {
-        margin-bottom: 30px;
-    }
-    
-    .team {
-        padding-top: 40px;
-        padding-bottom: 40px;
-        padding-left: 30px;
-        padding-right: 30px;
-    }
-
-    .team .title {
-        line-height: normal;
-        margin-bottom: 40px;
-    }
-
-    .team .justify-content-center {
-        display: block !important;
-    }
-
-    .team .credit__item {
-        padding: 0;
-        margin-bottom: 40px;
-    }
-
-    .iframeyoutube {
-        width: 100%;
-        height: 200px;
-    }
-    .iframeyoutubeaudio {
-        width: 100%;
-        height: 200px;
+    .popover[class*="tour-"].orphan.main {
+        max-width: 370px !important;
+        width: 370px;
     }
 }
-
-#HomeButton {
-    position: absolute;
-    top: 85px;
-    right: 20px;
-    z-index: 50;
-  }

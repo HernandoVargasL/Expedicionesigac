@@ -415,7 +415,24 @@ function listCofan() {
     $(".list__item").click(function () {
         activateItemList(this.attributes["id-cofan"].value);
         $(window).scrollTop(0);
-    });    
+    });
+    
+    if (window.matchMedia("(max-width: 425px)").matches) {
+        $('.list__item').click( function() {
+            $("#aside").addClass("collapseAside")
+            document.querySelector("#asideToggle img").style.transform = "rotate(180deg)";
+        })
+    }   
+
+    window.addEventListener('resize', function() {
+        if (window.matchMedia("(max-width: 425px)").matches) {
+            $('.list__item').click( function() {
+                $("#aside").addClass("collapseAside")
+                document.querySelector("#asideToggle img").style.transform = "rotate(180deg)";
+            })
+        } 
+    })
+    
 
 };
 
@@ -458,15 +475,14 @@ function functionToggle() {
     $("#contentMap").toggleClass("collapseAside");
     if ($("#aside").hasClass("collapseAside")) {
         document.querySelector("#asideToggle img").style.transform = "rotate(180deg)";
-        document.querySelector(".content").style.width = "100%";
         $(".content").removeClass("unexpanded")
 
     } else {
         document.querySelector("#asideToggle img").style.transform = "rotate(0)";
-        document.querySelector(".content").style.width = "75%";
         $(".content").addClass("unexpanded")
     }
 }
+
 
 /*--- youtube apear ---*/
 
@@ -543,31 +559,42 @@ var tour1 = new Tour({
             `
     },
     {
-      element: "#listItem_0",
-      title: "Title of Second Para",
-      content: "Click here to contact US...",
-      template: `
-        <div class='popover tour secondary'>
-        <div class='arrow'></div>
-        <div class='modal-header d-flex justify-content-between'>            
-            <h3 class='popover-title p-0'></h3>
-            <div data-role="end">×</div>
-        </div>        
-        <div class='popover-content'></div>
-        <div class='popover-navigation d-flex'>
-            <button class='btn btn-default' data-role='prev'>Anterior</button>
-            <button class='btn btn-default' data-role='next'>Siguiente</button>
-            <button class='btn btn-default' data-role='end'>Finalizar Tour</button>
-            </div>
-        </div>
-        
-            `
+        element: "#listItem_0",
+        title: "Title of Second Para",
+        content: "Click here to contact US...",
+        onShow: function (tour) {
+            if (window.matchMedia("(max-width: 425px)").matches) {
+                $("#aside").removeClass("collapseAside")
+                document.querySelector("#asideToggle img").style.transform = "rotate(180deg)";
+            }
+        },
+        template: `
+            <div class='popover tour secondary'>
+            <div class='arrow'></div>
+            <div class='modal-header d-flex justify-content-between'>            
+                <h3 class='popover-title p-0'></h3>
+                <div data-role="end">×</div>
+            </div>        
+            <div class='popover-content'></div>
+            <div class='popover-navigation d-flex'>
+                <button class='btn btn-default' data-role='prev'>Anterior</button>
+                <button class='btn btn-default' data-role='next'>Siguiente</button>
+                <button class='btn btn-default' data-role='end'>Finalizar Tour</button>
+                </div>
+            </div>        
+        `
     },
 
     {
         element: "#graphicsLayer0_layer",
         title: "Title of Second Para",
         content: "Click here to contact US...",
+        onShow: function (tour) {
+            if (window.matchMedia("(max-width: 425px)").matches) {
+                $("#aside").addClass("collapseAside")
+                document.querySelector("#asideToggle img").style.transform = "rotate(180deg)";
+            }
+        },
         template: `
         <div class='popover tour secondary'>
         <div class='arrow'></div>
@@ -577,28 +604,23 @@ var tour1 = new Tour({
         </div>        
         <div class='popover-content'></div>
         <div class='popover-navigation d-flex'>
-            <button class='btn btn-default' data-role='prev'>Anterior</button>
-            <button class='btn btn-default' data-role='next'>Siguiente</button>
+            <button id='pointsTour' class='btn btn-default' data-role='prev'>Anterior</button>
             <button class='btn btn-default' data-role='end'>Finalizar Tour</button>
             </div>
-        </div>
-        
-            `
+        </div>        
+        `
       }
     
-  ]});
-  
-  // Initialize the tour
-  tour1.init();
-  
-  // Start the tour
-  tour1.start();
+]});
 
-  $(document).on("click", "html", function(event) {
-    if ($(this).hasClass("popover")) {
-        event.stopPropagation();
-    }
-});
+  
+  
+// Initialize the tour
+tour1.init();
+
+// Start the tour
+tour1.start();
+
 
 // Slider
 
@@ -639,6 +661,9 @@ const swiper = new Swiper('.swiper', {
 
     // And if we need scrollbar
 });
+
+
+
 
 
 
