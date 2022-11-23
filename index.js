@@ -412,22 +412,25 @@ function listCofan() {
     $("#expeditonTermsList ol").html(strHTML);
 
     /*--- list button---*/
+    $(".list__item").css('cursor', 'pointer')
     $(".list__item").click(function () {
         activateItemList(this.attributes["id-cofan"].value);
         $(window).scrollTop(0);
     });
     
-    if (window.matchMedia("(max-width: 425px)").matches) {
+    if (window.matchMedia("(max-width: 768px)").matches) {
         $('.list__item').click( function() {
             $("#aside").addClass("collapseAside")
+            $(".content").removeClass("unexpanded")
             document.querySelector("#asideToggle img").style.transform = "rotate(180deg)";
         })
     }   
 
     window.addEventListener('resize', function() {
-        if (window.matchMedia("(max-width: 425px)").matches) {
+        if (window.matchMedia("(max-width: 768px)").matches) {
             $('.list__item').click( function() {
                 $("#aside").addClass("collapseAside")
+                $(".content").removeClass("unexpanded")
                 document.querySelector("#asideToggle img").style.transform = "rotate(180deg)";
             })
         } 
@@ -562,7 +565,7 @@ var tour1 = new Tour({
         element: "#listItem_0",
         title: "Title of Second Para",
         content: "Click here to contact US...",
-        onShow: function (tour) {
+        onEnd: function (tour) {
             if (window.matchMedia("(max-width: 425px)").matches) {
                 $("#aside").removeClass("collapseAside")
                 document.querySelector("#asideToggle img").style.transform = "rotate(180deg)";
@@ -592,6 +595,12 @@ var tour1 = new Tour({
         onShow: function (tour) {
             if (window.matchMedia("(max-width: 425px)").matches) {
                 $("#aside").addClass("collapseAside")
+                document.querySelector("#asideToggle img").style.transform = "rotate(180deg)";
+            }
+        },
+        onHide: function (tour) {
+            if (window.matchMedia("(max-width: 425px)").matches) {
+                $("#aside").removeClass("collapseAside")
                 document.querySelector("#asideToggle img").style.transform = "rotate(180deg)";
             }
         },

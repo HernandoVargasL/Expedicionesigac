@@ -338,6 +338,8 @@ a {
 .content .actionsPane .actionList {
     height: inherit;
     display: flex;
+    margin-left: -7.5px;
+    margin-right: -7.5px;
 }
 
 .content .actionsPane .actionList a {
@@ -348,6 +350,7 @@ a {
     border-radius: 5px;
     text-align: center;
     text-decoration: none;
+    margin: 0 7.5px;
 }
 
 /** interna **/
@@ -461,6 +464,7 @@ a {
     padding: 0;
     border-radius: 5px;
     overflow: hidden;
+    width: 50%;
 }
 
 .container-info .nav-pills {
@@ -579,6 +583,12 @@ a {
     position: relative;
 }
 
+#EtnoHistoria_Video {
+    margin-top: 20px;
+    width: 100%;
+    height: 250px;
+}
+
 .etnohistoria::before {
     content: "";
     background-image: url(../images/assets/birdEdno.svg);
@@ -646,16 +656,16 @@ a {
 .etnohistoria .audio__Card .card {
     border: 0;
     background: transparent;
-    width: 50vw;
+    width: 40vw;
 }
 
-.unexpanded .etnohistoria .audio__Card .card-container {
+.etnohistoria .audio__Card .card-container {
     position: sticky;
     top: 100px;
 }
 
 .unexpanded .etnohistoria .audio__Card .card {
-    width: 38vw;
+    width: 32vw;
     transition: 1s all ease;
     position: relative;
 }
@@ -664,7 +674,7 @@ a {
     background: #6445E1;
     color: #fff;
     text-align: center;
-    padding: 80px;
+    padding: 40px;
     border: 0;
     border-radius: 10px 0 0 10px;
     position: relative;     
@@ -709,6 +719,11 @@ a {
     font-size: 20px;
 }
 
+.etnohistoria .AudioEtnico {
+    width: 100%;
+    margin-top: 20px;
+}
+
 /** aspectos historicos **/
 .historical__aspects {
     padding: 160px 0 80px 0;
@@ -724,6 +739,7 @@ a {
     color: #58595B;
     line-height: normal;
     padding: 80px 50px;
+    width: 50%;
 }
 
 .historical__aspects .card::before {
@@ -783,6 +799,7 @@ a {
     font-size: 35px;
     opacity: 0.7;
     margin-bottom: 80px;
+    line-height: normal;
 }
 
 .team .credit__item {
@@ -905,24 +922,138 @@ a {
     .main-row {
         flex-wrap: nowrap;
     }
+
     .aside {
-        width: 35%;
+        width: 30%;
         z-index: 100;
         background: #fff;
     }
-    .content {
-        position: absolute;
-        width: 100%;
-        height: 100%;
+
+    .aside .aside__container {
+        padding: 50px 20px; 
     }
+
+    .content {
+        width: 70%;
+    }
+
+    .content.collapseAside {
+        width: 100%;
+    }
+
     .tour-backdrop {
         max-width: 100%;
+    }
+
+    .etnohistoria .audio__Card .card .card-content {
+        padding: 40px;
+    }
+
+    .etnohistoria .audio__Card .card .card-content::before {
+        width: 230px;
+        height: 230px;
+        left: -47px;
+        bottom: -47px;
+    }
+
+    .collapseAside .container-info .content__tabulador {
+        width: 50%;
+    }
+
+    .container-info .content__tabulador {
+        width: 80%;
+    }
+
+    .collapseAside .historical__aspects .card {
+        width: 80%;
+    }
+
+    .historical__aspects .card {
+        width: 80%;
+    }
+
+    .collapseAside .swiper .imagecontainer {
+        height: 400px;
+    }
+
+    .swiper .imagecontainer {
+        height: 300px;
     }
 }
 
 @media (max-width: 768px) {
     .aside {
-        width: 45%;
+        width: 45%;        
+    }
+
+    .content {        
+        width: 100%;
+        position: relative;
+    }
+
+    .content.unexpanded {
+        overflow: hidden;
+        height: 100vh;
+        position: absolute;
+    }
+
+    .content.sizer {
+        height: inherit;
+        position: relative;
+    }
+
+    .referentes {
+        overflow-y: auto;
+    }
+
+    .referentes .referentes__item {
+        width: 150px;
+        min-width: 150px;
+    }
+
+    .unexpanded .etnohistoria .audio__Card .card {
+        width: 40vw;
+    }
+
+    .etnohistoria .audio__Card .card {
+        width: 40vw;
+    }
+
+    #EtnoHistoria_Video {
+        height: 128px;
+    }
+
+    .collapseAside .container-info .content__tabulador {
+        width: 80%;
+    }
+
+    .container-info .content__tabulador {
+        width: 80%;
+    }   
+
+    .collapseAside .swiper .imagecontainer {
+        height: 320px;
+    }
+
+    .swiper .imagecontainer {
+        height: 320px;
+    }
+
+    .historical__aspects {
+        width: 80%;
+        margin: auto;
+    }
+
+    .collapseAside .historical__aspects .card {
+        width: 100%;
+    }
+
+    .historical__aspects .card {
+        width: 100%;        
+    }
+
+    .historical__aspects .card::after {
+        right: -10px;
     }
 }
 
@@ -931,8 +1062,99 @@ a {
         width: 80%;
     }
 
+    .text-center {
+        width: 100%;
+    }
+
+    .content__banner__title {
+        line-height: normal;
+    }
+
     .popover[class*="tour-"].orphan.main {
         max-width: 370px !important;
         width: 370px;
+    }
+
+    .portada {
+        width: 100%;
+    }
+
+    .etnohistoria .audio__Card {
+        position: relative;
+        right: -30px;        
+    }
+
+    .etnohistoria .audio__Card .p-relative {
+        height: inherit !important;
+    }
+
+    .etnohistoria .audio__Card .card {
+        width: 100%;
+    }
+
+    .etnohistoria .audio__Card .card .card-content::after {
+        width: 80px;
+        height: 90px;
+        bottom: -30px;
+        left: -30px;
+    }
+
+    .container-info {
+        padding-top: 40px;
+        padding-bottom: 80px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    
+    .collapseAside .container-info .content__tabulador {
+        width: 100%;
+    }
+
+    .container-info .content__tabulador {
+        width: 100%;
+    }
+
+    .container-info {
+        height: inherit;
+    }    
+
+    .slider {
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+
+    .collapseAside .swiper .imagecontainer {
+        height: 180px;
+    }
+
+    .swiper .imagecontainer {
+        height: 180px;
+    }
+
+    .historical__aspects .card {
+        padding: 80px 30px;
+    }
+
+    .historical__aspects .card::after {
+        width: 100px;
+        height: 141px;
+        position: absolute;
+        top: -80px;
+        right: -27px;
+    }
+
+    .team .title {
+        padding: 0 30px;
+    }
+
+    .team .credit__item .title {
+        height: 55px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .team .credit__item {
+        padding: 0 20px;
     }
 }

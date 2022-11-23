@@ -1271,7 +1271,11 @@ footer .footer-container .botonAcceso:hover {
     footer .footer-container .row-footer .content-footer {
         width: 100%;
         border-right: 0;
-        padding: 0;        
+        padding: 0;       
+    }
+    footer .footer-container .row-footer .content-footer.cla-a.cla-b .conatin {
+        display: flex;
+        flex-wrap: wrap;
     }
     footer .footer-container .row-footer .content-footer ul:last-child {
         border-bottom: 1px solid #fff;
