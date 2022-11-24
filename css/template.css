@@ -32,6 +32,11 @@ a {
     box-shadow: none;  
 }
 
+.aside.collapseAside .aside__togglebutton {
+    position: sticky;
+    top: 100px;
+}
+
 .aside__togglebutton {
     position: absolute;
     top: 40px;
@@ -1070,13 +1075,35 @@ a {
         line-height: normal;
     }
 
-    .popover[class*="tour-"].orphan.main {
-        max-width: 370px !important;
-        width: 370px;
+    .iframeyoutubeaudio {
+        width: 100%;
     }
 
     .portada {
         width: 100%;
+        margin-top: 0;
+    }
+
+    .iframeyoutube {
+        width: 100%;
+        height: 222px;
+    }
+
+    .iframeyoutube.expand {
+        width: 100%;
+        height: 222px;
+    }
+
+    .popover[class*="tour-"].orphan.main {
+        max-width: 370px !important;
+        width: 370px;
+    }
+    
+    .etnohistoria::before {
+        width: 80px;
+        height: 90px;
+        top: -44px;
+        left: 28px;
     }
 
     .etnohistoria .audio__Card {

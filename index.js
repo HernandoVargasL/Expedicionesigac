@@ -337,6 +337,18 @@ function gotoVerMas() {
                 audio.load();
                 audio.pause();
 
+
+
+                
+
+                
+
+
+
+
+
+
+
                 $("div#AudioCOFAN").show();
             }
 
@@ -670,6 +682,9 @@ const swiper = new Swiper('.swiper', {
 
     // And if we need scrollbar
 });
+
+
+
 
 
 
