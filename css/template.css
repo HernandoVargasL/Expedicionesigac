@@ -55,9 +55,47 @@ a {
 
 /*tabs*/
 .aside .title {
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     font-size: 25px;
-    height: 25px;
+    line-height: normal;
+    height: auto;
+}
+
+.aside .logos .d-flex {
+    align-items: center;
+    justify-content: space-between;
+}
+
+.aside .logos img {
+    margin-right: 10px;
+    height: 100%;
+    filter: grayscale(1);
+    transition: 0.2s ease;
+    opacity: 0.4;
+}
+
+.aside .logos img:hover {
+    filter: grayscale(0);
+    opacity: 1;
+    transition: 0.2s ease;
+}
+
+.aside .logos .igac {
+    width: 90px;     
+}
+
+.aside .logos .ampiicanke {
+    width: 70px;     
+}
+
+.aside .logos .act {
+    width: 60px;
+    filter: invert(1);     
+}
+
+.aside .logos .act:hover {
+    filter: grayscale(1);
+    filter: invert(1); 
 }
 
 .aside .aside__container {
@@ -180,7 +218,13 @@ a {
 
 .expediton__terms__list h2 {
     font-size: 16px;
-    color: #4067d6;
+    color: #5192D9;
+    margin-bottom: 20px;
+    font-family: 'Gill Sans Std Light';
+}
+
+.expediton__terms__list h2 b {
+    font-family: 'Gill Sans Std';
 }
 
 .expediton__terms__list ol {
