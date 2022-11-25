@@ -54,8 +54,8 @@ a {
 }
 
 /*tabs*/
-.aside  .title {
-    margin-bottom: 45px;
+.aside .title {
+    margin-bottom: 30px;
     font-size: 25px;
     height: 25px;
 }
@@ -176,6 +176,11 @@ a {
 /*expediton terms list*/
 .expediton__terms__list {
     margin-top: 30px;
+}
+
+.expediton__terms__list h2 {
+    font-size: 16px;
+    color: #4067d6;
 }
 
 .expediton__terms__list ol {
@@ -916,7 +921,7 @@ a {
 /*---- home ----*/
 #HomeButton {
     position: absolute;
-    top: 40px;
+    top: 80px;
     right: 20px;
     z-index: 50;
 }
@@ -942,7 +947,6 @@ a {
     background: #1C313A;
     width: 0%;
     height: 100%;
-    transition: 0.1s ease;
     position: relative;
     display: flex;
     align-items: center;
