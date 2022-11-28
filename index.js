@@ -21,6 +21,8 @@ var extent = {
     }
 }
 
+var swiper;
+
 $(".content").addClass("unexpanded")
 
 if (document.querySelector(".navbarigac")) {
@@ -161,6 +163,7 @@ if (document.querySelector(".nav-bar-toggle-igac")) {
 
 $(document).ready(function () {
     initMap();
+    initSwiper();
 });
 
 function initMap() {
@@ -250,7 +253,7 @@ function mapCofan() {
     });
 
     cofanLayer = new esri.layers.GraphicsLayer();
-    cofanLayer.on("click", function(){
+    cofanLayer.on("click", function () {
         popup.hide();
     })
 
@@ -285,10 +288,10 @@ function mapCofan() {
 
             "infoTemplate": {
                 "title": ["<div class='d-flex align-items-center'>" + "<div class='identificador'>" + dato.ID + "</div>" + dato.Nombre_ESP + "</div>"],
-                "content": "${Nombre_COF}" + "<img class='mt-2' src='./images/assets/drone2.jpg' alt=''>" 
+                "content": "${Nombre_COF}" + "<img class='mt-2' src='./images/assets/drone2.jpg' alt=''>"
             }
         };
-        
+
 
         cofanLayer.add(new esri.Graphic(datoPoint));
     }
@@ -306,7 +309,7 @@ function mapCofan() {
         map: map
     }, "HomeButton");
     homeBtn.startup();
-    
+
 }
 
 function gotoVerMas() {
@@ -342,82 +345,82 @@ function gotoVerMas() {
                 console.dir(audio);
 
                 audio.addEventListener(
-                "loadeddata",
-                () => {
-                    audioPlayer.querySelector(".time .length").textContent = getTimeCodeFromNum(
-                    audio.duration
-                    );
-                    audio.volume = .75;
-                },
-                false
+                    "loadeddata",
+                    () => {
+                        audioPlayer.querySelector(".time .length").textContent = getTimeCodeFromNum(
+                            audio.duration
+                        );
+                        audio.volume = .75;
+                    },
+                    false
                 );
 
                 //click on timeline to skip around
                 const timeline = audioPlayer.querySelector(".timeline");
                 timeline.addEventListener("click", e => {
-                const timelineWidth = window.getComputedStyle(timeline).width;
-                const timeToSeek = e.offsetX / parseInt(timelineWidth) * audio.duration;
-                audio.currentTime = timeToSeek;
+                    const timelineWidth = window.getComputedStyle(timeline).width;
+                    const timeToSeek = e.offsetX / parseInt(timelineWidth) * audio.duration;
+                    audio.currentTime = timeToSeek;
                 }, false);
 
                 //click volume slider to change volume
                 const volumeSlider = audioPlayer.querySelector(".controls .volume-slider");
                 volumeSlider.addEventListener('click', e => {
-                const sliderWidth = window.getComputedStyle(volumeSlider).width;
-                const newVolume = e.offsetX / parseInt(sliderWidth);
-                audio.volume = newVolume;
-                audioPlayer.querySelector(".controls .volume-percentage").style.width = newVolume * 100 + '%';
+                    const sliderWidth = window.getComputedStyle(volumeSlider).width;
+                    const newVolume = e.offsetX / parseInt(sliderWidth);
+                    audio.volume = newVolume;
+                    audioPlayer.querySelector(".controls .volume-percentage").style.width = newVolume * 100 + '%';
                 }, false)
 
                 //check audio percentage and update time accordingly
                 setInterval(() => {
-                const progressBar = audioPlayer.querySelector(".progress");
-                progressBar.style.width = audio.currentTime / audio.duration * 100 + "%";
-                audioPlayer.querySelector(".time .current").textContent = getTimeCodeFromNum(
-                    audio.currentTime
-                );
+                    const progressBar = audioPlayer.querySelector(".progress");
+                    progressBar.style.width = audio.currentTime / audio.duration * 100 + "%";
+                    audioPlayer.querySelector(".time .current").textContent = getTimeCodeFromNum(
+                        audio.currentTime
+                    );
                 }, 500);
 
                 //toggle between playing and pausing on button click
                 const playBtn = audioPlayer.querySelector(".controls .toggle-play");
                 playBtn.addEventListener(
-                "click",
-                () => {
-                    if (audio.paused) {
-                    playBtn.classList.remove("play");
-                    playBtn.classList.add("pause");
-                    audio.play();
-                    } else {
-                    playBtn.classList.remove("pause");
-                    playBtn.classList.add("play");
-                    audio.pause();
-                    }
-                },
-                false
+                    "click",
+                    () => {
+                        if (audio.paused) {
+                            playBtn.classList.remove("play");
+                            playBtn.classList.add("pause");
+                            audio.play();
+                        } else {
+                            playBtn.classList.remove("pause");
+                            playBtn.classList.add("play");
+                            audio.pause();
+                        }
+                    },
+                    false
                 );
 
                 audioPlayer.querySelector(".volume-button").addEventListener("click", () => {
-                const volumeEl = audioPlayer.querySelector(".volume-container .volume");
-                audio.muted = !audio.muted;
-                if (audio.muted) {
-                    volumeEl.classList.remove("icono-volumeMedium");
-                    volumeEl.classList.add("icono-volumeMute");
-                } else {
-                    volumeEl.classList.add("icono-volumeMedium");
-                    volumeEl.classList.remove("icono-volumeMute");
-                }
+                    const volumeEl = audioPlayer.querySelector(".volume-container .volume");
+                    audio.muted = !audio.muted;
+                    if (audio.muted) {
+                        volumeEl.classList.remove("icono-volumeMedium");
+                        volumeEl.classList.add("icono-volumeMute");
+                    } else {
+                        volumeEl.classList.add("icono-volumeMedium");
+                        volumeEl.classList.remove("icono-volumeMute");
+                    }
                 });
 
                 //turn 128 seconds into 2:08
                 function getTimeCodeFromNum(num) {
-                let seconds = parseInt(num);
-                let minutes = parseInt(seconds / 60);
-                seconds -= minutes * 60;
-                const hours = parseInt(minutes / 60);
-                minutes -= hours * 60;
+                    let seconds = parseInt(num);
+                    let minutes = parseInt(seconds / 60);
+                    seconds -= minutes * 60;
+                    const hours = parseInt(minutes / 60);
+                    minutes -= hours * 60;
 
-                if (hours === 0) return `${minutes}:${String(seconds % 60).padStart(2, 0)}`;
-                return `${String(hours).padStart(2, 0)}:${minutes}:${String(
+                    if (hours === 0) return `${minutes}:${String(seconds % 60).padStart(2, 0)}`;
+                    return `${String(hours).padStart(2, 0)}:${minutes}:${String(
                     seconds % 60
                 ).padStart(2, 0)}`;
                 }
@@ -479,14 +482,38 @@ function gotoVerMas() {
             $("#Linguistico_Categoria").html(dato.Objeto_Geografico.Categoria);
             $("#Linguistico_Subcategoria").html(dato.Objeto_Geografico.Subcategoria);
             $("#Linguistico_Elemento").html(dato.Objeto_Geografico.Elemento_generico);
-                        
+
             $("#ContextoHistorico").html(dato.Aspectos_Etnicos.Contexto);
             $("#OcupacionHistorico").html(dato.Aspectos_Etnicos.Procesos_Ocupacion);
 
-            if (dato.Objeto_Geografico.URL_Fotografia.length) {
-                $("#imageLugar").prop("src", dato.Objeto_Geografico.URL_Fotografia[0])
+            if (swiper.initialized) {
+                swiper.destroy(false, true);
+                $(".swiper-wrapper").html("");
+                $("#sliderContainer").hide();
             }
-            
+
+            if (dato.Objeto_Geografico.URL_Fotografia.length) {
+                const fotos = dato.Objeto_Geografico.URL_Fotografia;
+                let strSwipe = "";
+
+                for (let index = 0; index < fotos.length; index++) {
+                    strSwipe += "<div class='swiper-slide'>"
+                    strSwipe += "<div class='imagecontainer'>"
+                    strSwipe += "<img id='imageLugar' src='"+fotos[index]+"' alt=''></img>"
+                    strSwipe += "</div>"
+                    strSwipe += "<div class='text' data-swiper-parallax='-100'>"
+                    strSwipe += "<p>"
+                    strSwipe += "Nota: La fotografía muestra la Ñutshia bahu tsaʼu/Casa del Duende Blanco. Fuente: (Equipo intercultural ACT, IGAC, Pueblo Cofán, 2022)"
+                    strSwipe += "</p>"
+                    strSwipe += "</div>"
+                    strSwipe += "</div>"
+                }
+
+                $(".swiper-wrapper").html(strSwipe);
+                $("#sliderContainer").show();
+                initSwiper();
+            }
+
             console.log(dato);
             $("#viewDiv").hide();
             $("#includedContent").show();
@@ -508,7 +535,6 @@ function listCofan() {
         strHTML = strHTML + "<div class='list__item--title-resume'>" + dato[i].Nombre_COF + "</div>";
         strHTML = strHTML + "</a>";
         strHTML = strHTML + "</li>";
-
     }
     $("#expeditonTermsList ol").html(strHTML);
 
@@ -518,31 +544,29 @@ function listCofan() {
         activateItemList(this.attributes["id-cofan"].value);
         $(window).scrollTop(0);
     });
-    
+
     if (window.matchMedia("(max-width: 768px)").matches) {
-        $('.list__item').click( function() {
+        $('.list__item').click(function () {
             $("#aside").addClass("collapseAside")
             $(".content").removeClass("unexpanded")
             document.querySelector("#asideToggle img").style.transform = "rotate(180deg)";
         })
-    }   
+    }
 
-    window.addEventListener('resize', function() {
+    window.addEventListener('resize', function () {
         if (window.matchMedia("(max-width: 768px)").matches) {
-            $('.list__item').click( function() {
+            $('.list__item').click(function () {
                 $("#aside").addClass("collapseAside")
                 $(".content").removeClass("unexpanded")
                 document.querySelector("#asideToggle img").style.transform = "rotate(180deg)";
             })
-        } 
+        }
     })
-    
-
 };
 
 function activateItemList(idCofan) {
 
-    let element = $('*[id-cofan="'+idCofan+'"]');
+    let element = $('*[id-cofan="' + idCofan + '"]');
 
     popup.hide();
     popup.clearFeatures();
@@ -569,10 +593,11 @@ function activateItemList(idCofan) {
         element.nextAll().removeClass("active").removeClass("done");
     }
 
-    
+
 }
 
 /*--- toggle button ---*/
+
 function functionToggle() {
     let element = document.getElementById("aside");
     element.classList.toggle("collapseAside");
@@ -586,7 +611,6 @@ function functionToggle() {
         $(".content").addClass("unexpanded")
     }
 }
-
 
 /*--- youtube apear ---*/
 
@@ -606,46 +630,40 @@ function youtubeApearAudio() {
 
 /*--- bootstrap tour ---*/
 
-
-
-
-
-
 var tour1 = new Tour({
 
-    steps: [
-      {        
-        orphan: true,
-        title: "Bienvenido a Colombia Expediciones IGAC",
-        content: `<h2 clas='titleIntro'>Bienvenido a Expediciones IGAC</h2>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde eveniet quaerat perferendis omnis, dignissimos soluta repellat quo numquam possimus atque esse. Ullam perspiciatis repellendus quod officia unde pariatur debitis harum?`,
-        smartPlacement: true,
-        animation: true,
-        backdrop: true,
-        template: `<div class='popover tour main'>
-        <div class='modal-header'><div data-role="end">×</div></div>
-        <div class='d-flex contentP'>
-            <img src="images/Walkthrough_01.png" alt=""> 
-            <div class='popover-content'></div>
-        </div>
-            <div class='d-flex navigation justify-content-between'> 
-                <div class='popover-navigation p-0'>            
-                    <button class='btn' data-role='prev'>Anterior <span data-role='separator'>|</span></button>
-                    
-                    <button class='btn' data-role='next'>Siguiente</button>
-                </div>
+    steps: [{
+            orphan: true,
+            title: "Bienvenido a Colombia Expediciones IGAC",
+            content: `<h2 clas='titleIntro'>Bienvenido a Expediciones IGAC</h2>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde eveniet quaerat perferendis omnis, dignissimos soluta repellat quo numquam possimus atque esse. Ullam perspiciatis repellendus quod officia unde pariatur debitis harum?`,
+            smartPlacement: true,
+            animation: true,
+            backdrop: true,
+            template: `<div class='popover tour main'>
+                        <div class='modal-header'><div data-role="end">×</div></div>
+                        <div class='d-flex contentP'>
+                            <img src="images/Walkthrough_01.png" alt=""> 
+                            <div class='popover-content'></div>
+                        </div>
+                            <div class='d-flex navigation justify-content-between'> 
+                                <div class='popover-navigation p-0'>            
+                                    <button class='btn' data-role='prev'>Anterior <span data-role='separator'>|</span></button>
+                                    
+                                    <button class='btn' data-role='next'>Siguiente</button>
+                                </div>
 
-                <button class='btn' data-role='end'>Finalizar Tour</button>
-                </div>
-            </div>
-            `,
-    },
-    {
-      element: "#tabTable",
-      title: "Title of first para",
-      content: "E1 :- Content of my step",
-      smartPlacement: true,
-      backdrop: true,
-      template: `
+                                <button class='btn' data-role='end'>Finalizar Tour</button>
+                                </div>
+                            </div>
+                    `,
+        },
+        {
+            element: "#tabTable",
+            title: "Title of first para",
+            content: "E1 :- Content of my step",
+            smartPlacement: true,
+            backdrop: true,
+            template: `
         <div class='popover tour secondary'>
         <div class='arrow'></div>
         <div class='modal-header d-flex justify-content-between'>            
@@ -661,18 +679,18 @@ var tour1 = new Tour({
         </div>
         
             `
-    },
-    {
-        element: "#listItem_0",
-        title: "Title of Second Para",
-        content: "Click here to contact US...",
-        onEnd: function (tour) {
-            if (window.matchMedia("(max-width: 425px)").matches) {
-                $("#aside").removeClass("collapseAside")
-                document.querySelector("#asideToggle img").style.transform = "rotate(180deg)";
-            }
         },
-        template: `
+        {
+            element: "#listItem_0",
+            title: "Title of Second Para",
+            content: "Click here to contact US...",
+            onEnd: function (tour) {
+                if (window.matchMedia("(max-width: 425px)").matches) {
+                    $("#aside").removeClass("collapseAside")
+                    document.querySelector("#asideToggle img").style.transform = "rotate(180deg)";
+                }
+            },
+            template: `
             <div class='popover tour secondary'>
             <div class='arrow'></div>
             <div class='modal-header d-flex justify-content-between'>            
@@ -687,25 +705,25 @@ var tour1 = new Tour({
                 </div>
             </div>        
         `
-    },
+        },
 
-    {
-        element: "#graphicsLayer0_layer",
-        title: "Title of Second Para",
-        content: "Click here to contact US...",
-        onShow: function (tour) {
-            if (window.matchMedia("(max-width: 425px)").matches) {
-                $("#aside").addClass("collapseAside")
-                document.querySelector("#asideToggle img").style.transform = "rotate(180deg)";
-            }
-        },
-        onHide: function (tour) {
-            if (window.matchMedia("(max-width: 425px)").matches) {
-                $("#aside").removeClass("collapseAside")
-                document.querySelector("#asideToggle img").style.transform = "rotate(180deg)";
-            }
-        },
-        template: `
+        {
+            element: "#graphicsLayer0_layer",
+            title: "Title of Second Para",
+            content: "Click here to contact US...",
+            onShow: function (tour) {
+                if (window.matchMedia("(max-width: 425px)").matches) {
+                    $("#aside").addClass("collapseAside")
+                    document.querySelector("#asideToggle img").style.transform = "rotate(180deg)";
+                }
+            },
+            onHide: function (tour) {
+                if (window.matchMedia("(max-width: 425px)").matches) {
+                    $("#aside").removeClass("collapseAside")
+                    document.querySelector("#asideToggle img").style.transform = "rotate(180deg)";
+                }
+            },
+            template: `
         <div class='popover tour secondary'>
         <div class='arrow'></div>
         <div class='modal-header d-flex justify-content-between'>            
@@ -719,12 +737,11 @@ var tour1 = new Tour({
             </div>
         </div>        
         `
-      }
-    
-]});
+        }
 
-  
-  
+    ]
+});
+
 // Initialize the tour
 tour1.init();
 
@@ -732,57 +749,43 @@ tour1.init();
 tour1.start();
 
 
-// Slider
-
-const swiper = new Swiper('.swiper', {
-    speed: 600,
-    breakpoints: {
-    // when window width is >= 320px
-        320: {
-            slidesPerView: 1,
-            spaceBetween: 10
+/*--- Slider ---*/
+function initSwiper() {
+    swiper = new Swiper('.swiper', {
+        speed: 600,
+        breakpoints: {
+            // when window width is >= 320px
+            320: {
+                slidesPerView: 1,
+                spaceBetween: 10
+            },
+            // when window width is >= 480px
+            425: {
+                slidesPerView: 1,
+                spaceBetween: 10
+            },
+            // when window width is >= 640px
+            728: {
+                slidesPerView: 1,
+                spaceBetween: 20
+            }
         },
-        // when window width is >= 480px
-        425: {
-            slidesPerView: 1,
-            spaceBetween: 10
+        parallax: true,
+        // Optional parameters
+        direction: 'horizontal',
+        loop: true,
+
+        // If we need pagination
+        pagination: {
+            el: '.swiper-pagination',
         },
-        // when window width is >= 640px
-        728: {
-            slidesPerView: 1,
-            spaceBetween: 20
-        }
-    },
-    parallax: true,
-    // Optional parameters
-    direction: 'horizontal',
-    loop: true,
 
-    // If we need pagination
-    pagination: {
-        el: '.swiper-pagination',
-    },
+        // Navigation arrows
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
 
-    // Navigation arrows
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-    },
-
-    // And if we need scrollbar
-});
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        // And if we need scrollbar
+    });
+}
