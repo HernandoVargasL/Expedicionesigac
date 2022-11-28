@@ -422,21 +422,29 @@ function gotoVerMas() {
                 ).padStart(2, 0)}`;
                 }
 
-                
-
-
-
-
-
-
-
                 $("div#AudioCOFAN").show();
             }
 
             if (dato.Aspectos_Linguisticos.hasOwnProperty("Registro_Audiovisual_Video")) {
                 $("p#VideoCOFAN_Nombre").html(dato.Nombre_COF);
-                $('#iframeYoutube > iframe').prop('src', dato.Aspectos_Linguisticos.Registro_Audiovisual_Video)
-                $("div#VideoCOFAN").show();
+
+                let videoURL = dato.Aspectos_Linguisticos.Registro_Audiovisual_Video;
+                if (videoURL == undefined || videoURL == null || videoURL == "") {
+                    $("#iframeYoutube > iframe").hide();
+                    $("#iframeYoutube > video").hide();
+                    $("div#VideoCOFAN").hide();
+                } else if (videoURL.startsWith("https://")) {
+                    $('#iframeYoutube > iframe').prop('src', videoURL)
+                    $("#iframeYoutube > iframe").show();
+                    $("#iframeYoutube > video").hide();
+                    $("div#VideoCOFAN").show();
+                } else {
+                    $("#iframeYoutube > video").prop('src', videoURL);
+                    $("#iframeYoutube > iframe").hide();
+                    $("#iframeYoutube > video").show();
+                    $("div#VideoCOFAN").show();
+                }
+
             }
 
             if (dato.Aspectos_Etnicos.hasOwnProperty("Registro_Audiovisual_Audio")) {
