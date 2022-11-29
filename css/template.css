@@ -467,6 +467,13 @@ a {
     transition: 0.5s all ease;
 }
 
+.iframeyoutube .videoPlayer {
+    width: 100%;
+    height: auto;
+    max-width: 560px;
+    max-height: 315px;
+}
+
 .iframeyoutube.expand {
     max-height: 560px;
     transition: 0.5s all ease;
