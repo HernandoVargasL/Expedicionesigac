@@ -458,7 +458,6 @@ function gotoVerMas() {
                 const audio = new Audio();
 
                 audio.src = dato.Aspectos_Etnicos.Registro_Audiovisual_Audio;
-                //credit for song: Adrian kreativaweb@gmail.com
 
                 console.dir(audio);
 
@@ -521,7 +520,10 @@ function gotoVerMas() {
                     playBtn.classList.remove("pause");
                     playBtn.classList.add("play");
                     audio.pause();
+                    audio.currentTime = 0
                 });
+
+                
 
                 audioPlayer.querySelector(".volume-button").addEventListener("click", () => {
                 const volumeEl = audioPlayer.querySelector(".volume-container .volume");
