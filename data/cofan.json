@@ -10,7 +10,7 @@
     "Trabajo_campo": "Sí",
     "Grupo_Intercultural": "Sector comunidad: Linda García, Jaime Burgos, Luís Bernardo Cano, Cristian Chapal, Weimar Salazar.",
     "Contexto_geografico": "El Cabildo indígena Villanueva hace parte del pueblo indígena Cofán, el cual se distribuye principalmente en la frontera entre Colombia y Ecuador. Se estima que 1.816 personas son autorreconocidas como pertenecientes a este pueblo según el Censo Nacional de Población y Vivienda del 2018 de Colombia. La conformación de su territorio data de épocas anteriores a la conquista (Arango y Sánchez, 2004), dónde tenían contacto con otras culturas como los Mocoa, Pastos y Sucumbíos. Cuentan con una lengua propia denominada A'ingae o Cofán, se mantiene en la mayor parte de las comunidades. Dado que no se ha podido clasificar dentro de ninguna familia lingüística, se considera una lengua aislada.</br></br> Según la caracterización del Ministerio del Interior se tuvo noticias de este pueblo hasta finales del siglo XVI, pues con los descubrimientos de yacimientos auríferos se conformaron encomiendas y pueblos. Posteriormente, las misiones jesuitas, franciscanas y capuchinas llegaron a la zona. Se dio inicio a actividades extractivas de caucho y quina, asociadas a prácticas crueles e injustas que condujo a la reducción considerable de su población y a la colonización del territorio por parte de poblaciones campesinas, por lo cual se vieron obligados a refugiarse en sitios alejados.  En la década de 1960 iniciaron la perforación de diversos pozos de petróleo a cargo de Texas Petroleum Company, situación que impactó de manera profunda los valores y prácticas culturales, por lo cual a partir de 1970 se han constituido seis resguardos a favor de comunidades pertenecientes a este pueblo. En la actualidad la comunidad de Villanueva avanza en la gestión del trámite correspondiente a la Constitución de Resguardo ante la Agencia Nacional de Tierras - ANT. (AMPII CANKE, 2021).</br></br> El cabildo Villanueva está conformado por seis globos discontinuos, sobre las jurisdicciones de los municipios de Valle del Guamuez y Orito, departamento del Putumayo al sur de Colombia, en la denominada llanura amazónica, región caracterizada por presentar altos niveles de precipitación y humedad, un clima cálido que ha permitido el desarrollo de una cobertura vegetal densa, relieve dominado por pendientes suaves que junto a las condiciones climáticas definen sistemas aluviales sometidos a inundaciones periódicas por el desborde de los ríos, que rigen ciclos y actividades de las comunidades allí presentes (IDEAM, 2010).</br></br> La restricción sobre su territorio ha afectado considerablemente la cultura Cofán, para quienes la educación y cultura están cimentadas en cuatro pilares: el pensamiento de los mayores, las lenguas nativas, las plantas sagradas y las normas y valores de la cultura. Son amplios conocedores del yagé, conservan el uso tradicional en contextos rituales, toma de decisiones, resolución de conflictos y tratamiento médico; las enfermedades en la cosmogonía Cofán son divididas entre las de origen físico y mágico o sobrenatural. El taita es una figura muy importante en la organización social y tiene una cercanía muy fuerte con las plantas medicinales y mágicas.</br></br> Debido a la colonización del territorio, han tenido que asumir prácticas agrícolas para el comercio y autoconsumo, son agricultores a pequeña escala, pescadores y cazadores-recolectores, las mujeres principalmente se dedican a la elaboración y comercialización de artesanías en semillas, fibras naturales y barro (ONIC, 2022). En las últimas décadas se han visto afectados por el conflicto armado, siendo víctimas de los grupos armados al margen de la ley; a pesar de todo, cuentan con una organización fuerte que les ha permitido consolidar su Plan de Vida en el año 2002 y más recientemente el Plan de Manejo Ambiental y Cultural del pueblo Cofán en 2021, con el fin de contribuir a la restauración, conservación y protección del territorio ancestral.",
-    "URL_Fotografia": ["/media/images/8632015010368070_01.jpg"],
+    "URL_Fotografia": ["media/images/8632015010368070_01.jpg"],
     "Fuente": "Instituto Geográfico Agustín Codazzi-IGAC, Amazon Conservation Team Colombia-ACT. Cabildo Villanueva Asociación de Autoridades Tradicionales Mesa Permanente de trabajo por el Pueblo Cofán y Cabildos indígenas pertenecientes a los pueblos Awá, Nasa, Kichwa y Embera Chamí-AMPII CANKE",
     "Estado": "Preferente",
     "Escala_minima": "1:1000",
@@ -43,7 +43,7 @@
     "Transcripcion_AFI": "Ver informe",
     "Registro_Audiovisual": "Audio Etnoeducadora Cofán.</br></br>Casa del Duende Blanco.</br></br>(Aguinda, Audio pronunciación Ñutshia bahu tsaʼu, 2022)",
     "Registro_Audiovisual_Audio": "media/audio/8632015010368070_Linguistico.mp3",
-    "Registro_Audiovisual_Video": "media/video/8632015010368070_01.mp4"    
+    "Registro_Audiovisual_Video": "media/video/8632015010368070_Linguistico.mp4"    
   }
 },
 {
@@ -90,7 +90,8 @@
     "Significado_Origen": "Los abuelos Cofán a través de la espiritualidad identificaron este lugar. El nombre Ega bahu tsa'u se origina de la lengua Cofán y significa 'Casa del Duende Negro'.  Ega es un término que significa 'malo', da cuenta de una característica de maldad. Bahu es una expresión que significa 'duende' ser que habita un lugar. El duente es un ser espiritual, que trasmite conocimientos para mantener la armonía con la naturaleza. También, es conocido por ser el maestro de la música. Tsaʼu es una expresión que da cuenta de un lugar físico y espiritual habitado.",
     "Transcripcion_AFI": "Ver informe",
     "Registro_Audiovisual": "Audio Etnoeducadora Cofán.</br></br>Casa del Duende Negro.</br></br>(Aguinda, Audio pronunciación Ega bahu tsa'u, 2022)",
-    "Registro_Audiovisual_Audio": "media/audio/8632015010368071_Linguistico.mp3"
+    "Registro_Audiovisual_Audio": "media/audio/8632015010368071_Linguistico.mp3",
+    "Registro_Audiovisual_Video": "media/video/8632015010368071_Linguistico.mp4"
   }
 },
 {
@@ -137,7 +138,8 @@
     "Significado_Origen": "El nombre Kahansi sinʼgwkhw es una expresión de la lengua Cofán.  Kahansi significa 'boa o anaconda', es una especie de serpiente que pertenece a la familia de los reptiles, tiene un cuerpo alargado de hasta 10 metros de longitud, con la piel de dibujos llamativos.  Desde la cosmovisión del pueblo Cofán es el amo de los peces. También, puede referirse a una persona sabia y poseedora de los conocimientos de medicina tradicional, cuyo dominio le permite transformarse en boa. Por otro lado, la boa puede representar seres que fueron enjaulados por las autoridades espirituales Cofán en los tiempos antiguos, por lo que se muestran como mujeres hermosas.  Sinʼgwkhw es una palabra que significa 'laguna'.",
     "Transcripcion_AFI": "Ver informe",
     "Registro_Audiovisual": "Audio Etnoeducadora Cofán, Casa del Duende Negro (Aguinda, Audio pronunciación Ega bahu tsa'u, 2022)",
-    "Registro_Audiovisual_Audio": "media/audio/8632015010368066_Linguistico.mp3"
+    "Registro_Audiovisual_Audio": "media/audio/8632015010368066_Linguistico.mp3",
+    "Registro_Audiovisual_Video": "media/video/8632015010368066_Linguistico.mp4"
   }
 },
 {
@@ -184,7 +186,8 @@
     "Significado_Origen": "El nombre Daru tuyakaen fambi sinʼgwkhw es una expresión de la lengua Cofán.  Daru significa 'piraña', es una especie de pez,  Tuyakaen significa “y”. Fambi significa “temblón”.  Desde la cosmovisión del pueblo Cofán el temblón es un ser espiritual que transmite conocimientos de protección a los abuelos.",
     "Transcripcion_AFI": "Ver informe",
     "Registro_Audiovisual": "Audio Etnoeducadora Cofán, Laguna de la Piraña y el Temblón (Aguinda, Audio Laguna de la Piraña y el Temblón Etnoeducadora, 2022)",
-    "Registro_Audiovisual_Audio": "media/audio/8632015010368065_Linguistico.mp3"
+    "Registro_Audiovisual_Audio": "media/audio/8632015010368065_Linguistico.mp3",
+    "Registro_Audiovisual_Video": "media/video/8632015010368065_Linguistico.mp4"
   }
 },
 {
@@ -231,7 +234,8 @@
     "Significado_Origen": "El nombre Sakira unʼhuhenthi es una expresión de la lengua Cofán Sakira significa 'Cerrillo', es una especie de cerdo salvaje y unʼhuhenthi significa “bañadero”.",
     "Transcripcion_AFI": "Ver informe",
     "Registro_Audiovisual": "Audio Bañadero de los Cerrillos Etnoeducadora (Aguinda, Audio Lengua Cofán Bañadero de los Cerrillos, 2022)",
-    "Registro_Audiovisual_Audio": "media/audio/8632015010368062_Linguistico.mp3"
+    "Registro_Audiovisual_Audio": "media/audio/8632015010368062_Linguistico.mp3",
+    "Registro_Audiovisual_Video": "media/video/8632015010368062_Linguistico.mp4"
   }
 },
 {
@@ -372,7 +376,8 @@
     "Significado_Origen": "El nombre Shukindithisw arapa kuku es una expresión de la lengua Cofán. Shukindithisw “vuelta redonda”. Arapa hace alusión a  'gallina' y Kuku es el nombre del espíritu malo que habita ese lugar.",
     "Transcripcion_AFI": "Ver informe",
     "Registro_Audiovisual": "Audio Lengua Cofán Gallina Negra Etnoeducadora",
-    "Registro_Audiovisual_Audio": "media/audio/8632015010368060_Linguistico.mp3"
+    "Registro_Audiovisual_Audio": "media/audio/8632015010368060_Linguistico.mp3",
+    "Registro_Audiovisual_Video": "media/video/8632015010368060_Linguistico.mp4"
   }
 },
 {
@@ -419,7 +424,8 @@
     "Significado_Origen": "El nombre Kahansi tsaʼu tuyakaen siʼan thesi tsaʼu es una expresión de la lengua Cofán. Kahansi significa “boa”. tsaʼu hace alusión a  'casa'.  tuyakaen traduce “y”. Siʼan significa “negro”, thesi significa “tigre” que es una especie de pantera negra.",
     "Transcripcion_AFI": "Ver informe",
     "Registro_Audiovisual": "Audio lengua cofán Casa de la Boa y el Tigre -Etnoeducadora (Aguinda, Audio Lengua Cofán Casa de la Boa y el Tigre-Pantera, 2022)",
-    "Registro_Audiovisual_Audio": "media/audio/8632015010368056_Linguistico.mp3"
+    "Registro_Audiovisual_Audio": "media/audio/8632015010368056_Linguistico.mp3",
+    "Registro_Audiovisual_Video": "media/video/8632015010368056_Linguistico.mp4"
   }
 },
 {
@@ -466,7 +472,8 @@
     "Significado_Origen": "El nombre Shukinʼdithi significa “Vuelta Redonda” es una expresión de la lengua Cofán.",
     "Transcripcion_AFI": "Ver informe",
     "Registro_Audiovisual": "Audio lengua cofán Vuelta redonda -Etnoeducadora",
-    "Registro_Audiovisual_Audio": "media/audio/8632015010368059_Linguistico.mp3"
+    "Registro_Audiovisual_Audio": "media/audio/8632015010368059_Linguistico.mp3",
+    "Registro_Audiovisual_Video": "media/video/8632015010368059_Linguistico.mp4"
   }
 },
 {
@@ -513,7 +520,8 @@
     "Significado_Origen": "El nombre Taʼva sumʼbupa naeʼki es una expresión de la lengua Cofán, La palabra taʼva significa “Ceibo” que es una especie de árbol de tronco y ramas con espinas, ramas abiertas, hojas compuestas y trifoliadas, flores tubulares de color rojo con semillas ovaladas, que puede alcanzar hasta 20 m de altura. La palabra sumʼbupa hace alusión a “salida” es decir, una parte por la que el río pasa de un lugar a otro.</br></br>Finalmente, naeʼki significa “quebrada”, cuerpo de agua que corre entre la hendidura de una montaña.",
     "Transcripcion_AFI": "Ver informe",
     "Registro_Audiovisual": "Audio Lengua Cofán Bocana del Ceibo.",
-    "Registro_Audiovisual_Audio": "media/audio/8686515010368058_Linguistico.mp3"
+    "Registro_Audiovisual_Audio": "media/audio/8686515010368058_Linguistico.mp3",
+    "Registro_Audiovisual_Video": "media/video/8686515010368058_Linguistico.mp4"
   }
 },
 {
@@ -560,7 +568,8 @@
     "Significado_Origen": "El nombre Umʼbanisw tshipaʼkhw es una expresión de la lengua Cofán. La palabra Umʼbani significa “arriba”, desde una perspectiva horizontal del río o camino. El vocablo sw significa “de” y tshipaʼkhw hace alusión a “humedal”.",
     "Transcripcion_AFI": "Ver informe",
     "Registro_Audiovisual": "Audio Lengua Cofán Humedal de arriba. (Aguinda, Audio lengua Cofán, 2022)",
-    "Registro_Audiovisual_Audio": "media/audio/8632015010368049_Linguistico.mp3"
+    "Registro_Audiovisual_Audio": "media/audio/8632015010368049_Linguistico.mp3",
+    "Registro_Audiovisual_Video": "media/video/8632015010368049_Linguistico.mp4"
   }
 },
 {
@@ -607,7 +616,8 @@
     "Significado_Origen": "El nombre Seʼtsanisw tshipaʼkhw es una expresión de la lengua Cofán. La palabra Seʼtsani significa “abajo”,</br>desde una perspectiva horizontal del río o camino. El vocablo sw significa “de” y tshipaʼkhw hace alusión a “humedal”.",
     "Transcripcion_AFI": "Ver informe",
     "Registro_Audiovisual": "Audio Lengua Cofán Humedal de Abajo. (Aguinda, 2022)",
-    "Registro_Audiovisual_Audio": "media/audio/8632015010368053_Linguistico.mp3"
+    "Registro_Audiovisual_Audio": "media/audio/8632015010368053_Linguistico.mp3",
+    "Registro_Audiovisual_Video": "media/video/8632015010368053_Linguistico.mp4"
   }
 },
 {
@@ -654,7 +664,8 @@
     "Significado_Origen": "El nombre Ñutshia aya kiʼnihi es una expresión de la lengua Cofán. La palabra Ñutshia significa “buen”, por su parte aya significa “espiritu”. El vocablo kiʼnihi significa “árbol”.",
     "Transcripcion_AFI": "Ver informe",
     "Registro_Audiovisual": "Audio Lengua Cofán Palo del Misterio. (Aguinda, Audio lengua Cofán Palo del Misterio, 2022)",
-    "Registro_Audiovisual_Audio": "media/audio/8632015010368073_Linguistico.mp3"
+    "Registro_Audiovisual_Audio": "media/audio/8632015010368073_Linguistico.mp3",
+    "Registro_Audiovisual_Video": "media/video/8632015010368073_Linguistico.mp4"
   }
 },
 {
@@ -701,7 +712,8 @@
     "Significado_Origen": "El nombre Kakamba khuʼthakhu es una expresión de la lengua Cofán. La palabra Kakamba es el nombre de una especie de ave. El vocablo khuʼthakhu significa “loma”.",
     "Transcripcion_AFI": "Ver informe",
     "Registro_Audiovisual": "Audio Lengua Cofán Loma de la Cacambra. (Aguinda, Audio lengua Cofán Loma de la Cacambra, 2022)",
-    "Registro_Audiovisual_Audio": "media/audio/8632015010368061_Linguistico.mp3"
+    "Registro_Audiovisual_Audio": "media/audio/8632015010368061_Linguistico.mp3",
+    "Registro_Audiovisual_Video": "media/video/8632015010368061_Linguistico.mp4"
   }
 },
 {
@@ -748,7 +760,8 @@
     "Significado_Origen": "El nombre Fiʼgwkhw tsaʼu es una expresión de la lengua Cofán. La palabra Fiʼgwkhw significa “Yagé” es una especie de planta, con la cual se prepara una bebida sagrada purgante, que genera una experiencia liberadora de manera integral. A través de su uso, los abuelos y la comunidad reciben orientaciones para definir el rumbo de la comunidad. El vocablo tsaʼu significa “casa”.",
     "Transcripcion_AFI": "Ver informe",
     "Registro_Audiovisual": "Audio Audio lengua Cofan Fiʼgwkhw tsaʼu. (Aguinda, Audio Lengua Cofán Casa del Yagé, 2022)",
-    "Registro_Audiovisual_Audio": "media/audio/8632015010368050_Linguistico.mp3"
+    "Registro_Audiovisual_Audio": "media/audio/8632015010368050_Linguistico.mp3",
+    "Registro_Audiovisual_Video": "media/video/8632015010368050_Linguistico.mp4"
   }
 },
 {
@@ -795,7 +808,8 @@
     "Significado_Origen": "El nombre Vatuva sinʼgwkhw es una expresión de la lengua Cofán. La palabra Vatuva es la denominación de una especie de lagarto. A través del su uso de ciertas sustancias del lagarto, los abuelos y la comunidad realizan remedios y curan enfermedades. El vocablo sinʼgwkhw significa “laguna”.",
     "Transcripcion_AFI": "Ver informe",
     "Registro_Audiovisual": "Audio lengua Cofan Vatuva sinʼgwkhw. (Aguinda, Audio pronunciación Laguna del Lagarto, 2022)",
-    "Registro_Audiovisual_Audio": "media/audio/8632015010368047_Linguistico.mp3"
+    "Registro_Audiovisual_Audio": "media/audio/8632015010368047_Linguistico.mp3",
+    "Registro_Audiovisual_Video": "media/video/8632015010368047_Linguistico.mp4"
   }
 },
 {
@@ -842,7 +856,8 @@
     "Significado_Origen": "El nombre Api piyiʼkhw es una expresión de la lengua Cofán. La palabra Api significa “barranco o deslizamiento”. El vocablo piyiʼkhw significa “olla de barro”.",
     "Transcripcion_AFI": "Ver informe",
     "Registro_Audiovisual": "Audio lengua Cofán, 2022)",
-    "Registro_Audiovisual_Audio": "media/audio/8632015010368077_Linguistico.mp3"
+    "Registro_Audiovisual_Audio": "media/audio/8632015010368077_Linguistico.mp3",
+    "Registro_Audiovisual_Video": "media/video/8632015010368077_Linguistico.mp4"
   }
 },
 {
@@ -889,7 +904,8 @@
     "Significado_Origen": "El nombre Api tanʼsitshia ande es una expresión de la lengua Cofán. La palabra Api significa “Olla de barro”.  El vocablo tanʼsitshia significa “plano” y ande significa “tierra”.",
     "Transcripcion_AFI": "Ver informe",
     "Registro_Audiovisual": "(Audio lengua Cofán Tierra de la Olla., 2022)",
-    "Registro_Audiovisual_Audio": "media/audio/8632015020368064_Linguistico.mp3"
+    "Registro_Audiovisual_Audio": "media/audio/8632015020368064_Linguistico.mp3",
+    "Registro_Audiovisual_Video": "media/video/8632015020368064_Linguistico.mp4"
   }
 },
 {
@@ -936,7 +952,8 @@
     "Significado_Origen": "El nombre Twntw naʼe es una expresión de la lengua Cofán. La palabra Twntw es la denominación de una especie de ave. El vocablo naʼe significa “río”.",
     "Transcripcion_AFI": "Ver informe",
     "Registro_Audiovisual": "Audio lengua Cofan Twntw naʼe. (Aguinda, Audio lengua Cofan Twntw naʼe, 2022)",
-    "Registro_Audiovisual_Audio": "media/audio/8632015010368068_Linguistico.mp3"
+    "Registro_Audiovisual_Audio": "media/audio/8632015010368068_Linguistico.mp3",
+    "Registro_Audiovisual_Video": "media/video/8632015010368068_Linguistico.mp4"
   }
 },
 {
@@ -981,7 +998,7 @@
     "Estado_Vitalidad": "En peligro (Universidad Externado de Colombia-FCSH Programa Transversal de Linguistica y Ecología de las lenguas, 2010) (UNESCO, 2010)",
     "Significado_Origen": "El nombre Ateʼswchu aʼi Víctor Quenamá tsaʼu es una expresión de la lengua Cofán. La palabra Ateʼswchu significa sabedor o autoridad. El vocablo aʼi significa “Cofán” y Victor Quenama es el nombre propio de un líder y taita espiritual. El termino tsaʼu significa “casa”.",
     "Transcripcion_AFI": "Ver informe",
-    "Registro_Audiovisual": "Audio lengua Cofan Casa de la Autoridad Victor Quenama."
+    "Registro_Audiovisual": ""
   }
 },
 {
@@ -1028,7 +1045,8 @@
     "Significado_Origen": "El nombre Ateʼswchu aʼi Víctor Quenamá tsaʼu es una expresión de la lengua Cofán. La palabra Ateʼswchu significa sabedor o autoridad. El vocablo aʼi significa “Cofán” y Victor Quenama es el nombre propio de un líder y taita espiritual. El termino tsaʼu significa “casa”.",
     "Transcripcion_AFI": "Ver informe",
     "Registro_Audiovisual": "Audio lengua Cofan Casa de la Autoridad Victor Quenama. (Aguinda, Audio Lengua Cofán Casa de la Autoridad Victor Quenama )",
-    "Registro_Audiovisual_Audio": "media/audio/8632015010368076_Linguistico.mp3"
+    "Registro_Audiovisual_Audio": "media/audio/8632015010368076_Linguistico.mp3",
+    "Registro_Audiovisual_Video": "media/video/8632015010368076_Linguistico.mp4"
   }
 },
 {
@@ -1075,7 +1093,8 @@
     "Significado_Origen": "El nombre Ihi unʼhuhenthi twntw naʼe huniʼfanisw es una expresión de la lengua Cofán. La palabra Ihi significa armadillo. El vocablo unʼhuhenthi significa “bañadero”. El vocablo twntw significa “Luzón”. El término naʼe significa “río” y huniʼfanisw significa “otro lado de”.",
     "Transcripcion_AFI": "Ver informe",
     "Registro_Audiovisual": "Audio lengua Cofan Bañadero del Armadillo 1.",
-    "Registro_Audiovisual_Audio": "media/audio/8632015010368079_Linguistico.mp3"
+    "Registro_Audiovisual_Audio": "media/audio/8632015010368079_Linguistico.mp3",
+    "Registro_Audiovisual_Video": "media/video/8632015010368079_Linguistico.mp4"
   }
 },
 {
@@ -1122,7 +1141,8 @@
     "Significado_Origen": "El nombre Ihi unʼhuhenthi fiʼgwkhw tsaʼufasw es una expresión de la lengua Cofán. La palabra Ihi significa armadillo. El vocablo unʼhuhenthi significa “bañadero”. El vocablo fiʼgwkhw significa “Yagé”. El término tsaʼufasw significa “cerca”.",
     "Transcripcion_AFI": "Ver informe",
     "Registro_Audiovisual": "Audio lengua Cofan Bañadero del Armadillo 2. (Aguinda, Audio Lengua Cofán Bañadero del Armadillo 2, 2022)",
-    "Registro_Audiovisual_Audio": "media/audio/8632015010368080_Linguistico.mp3"
+    "Registro_Audiovisual_Audio": "media/audio/8632015010368080_Linguistico.mp3",
+    "Registro_Audiovisual_Video": "media/video/8632015010368080_Linguistico.mp4"
   }
 },
 {
@@ -1169,7 +1189,8 @@
     "Significado_Origen": "El nombre Shankhu anʼkhewthi es una expresión de la lengua Cofán. La palabra Shankhu significa venado. El vocablo anʼkhewthi significa “salado”.",
     "Transcripcion_AFI": "Ver informe",
     "Registro_Audiovisual": "Audio lengua Cofan  (Aguinda, Audio lengua Cofán, 2022)",
-    "Registro_Audiovisual_Audio": "media/audio/8632015010368074_Linguistico.mp3"
+    "Registro_Audiovisual_Audio": "media/audio/8632015010368074_Linguistico.mp3",
+    "Registro_Audiovisual_Video": "media/video/8632015010368074_Linguistico.mp4"
   }
 },
 {
@@ -1216,7 +1237,8 @@
     "Significado_Origen": "El nombre Tutua khupana kiʼnikhu es una expresión de la lengua Cofán. La palabra Tutua significa “blanco”. El vocablo khupana significa “gallinazo”. El término kiʼnikhu refiere “una especie de árbol”.",
     "Transcripcion_AFI": "Ver informe",
     "Registro_Audiovisual": "Audio lengua Cofan  (Aguinda, Audio lengua Cofán  2022)",
-    "Registro_Audiovisual_Audio": "media/audio/8632015010368063_Linguistico.mp3"
+    "Registro_Audiovisual_Audio": "media/audio/8632015010368063_Linguistico.mp3",
+    "Registro_Audiovisual_Video": "media/video/8632015010368063_Linguistico.mp4"
   }
 },
 {
@@ -1263,7 +1285,8 @@
     "Significado_Origen": "El nombre Churu naeʼki es una expresión de la lengua Cofán. La palabra Churu denomina una especie de “caracol”. El vocablo naeʼki significa “quebrada”.",
     "Transcripcion_AFI": "Ver informe",
     "Registro_Audiovisual": "Audio lengua Cofan  (Aguinda, Audio lengua Cofán, 2022)",
-    "Registro_Audiovisual_Audio": "media/audio/8632015010368083_Linguistico.mp3"
+    "Registro_Audiovisual_Audio": "media/audio/8632015010368083_Linguistico.mp3",
+    "Registro_Audiovisual_Video": "media/video/8632015010368083_Linguistico.mp4"
   }
 },
 {
@@ -1310,7 +1333,8 @@
     "Significado_Origen": "El nombre Twsi sambiri naeʼki es una expresión de la lengua Cofán. Las palabras Twsi sambiri denominan una especie de “pezl”. El vocablo naeʼki significa “quebrada”.",
     "Transcripcion_AFI": "Ver informe",
     "Registro_Audiovisual": "Audio lengua Cofan  (Aguinda, Audio lengua Cofán, 2022)",
-    "Registro_Audiovisual_Audio": "media/audio/8632015010368054_Linguistico.mp3"
+    "Registro_Audiovisual_Audio": "media/audio/8632015010368054_Linguistico.mp3",
+    "Registro_Audiovisual_Video": "media/video/8632015010368054_Linguistico.mp4"
   }
 },
 {
@@ -1357,7 +1381,8 @@
     "Significado_Origen": "El nombre Angelito naeʼki es una expresión de la lengua Cofán. La palabra “Angelito” es el nombre propio de un taita de la comunidad.  El vocablo naeʼki significa “quebrada”.",
     "Transcripcion_AFI": "Ver informe",
     "Registro_Audiovisual": "Audio lengua Cofan  (Aguinda, Audio lengua Cofán, 2022)",
-    "Registro_Audiovisual_Audio": "media/audio/8686515010368075_Linguistico.mp3"
+    "Registro_Audiovisual_Audio": "media/audio/8686515010368075_Linguistico.mp3",
+    "Registro_Audiovisual_Video": "media/video/8686515010368075_Linguistico.mp4"
   }
 },
 {
@@ -1404,7 +1429,8 @@
     "Significado_Origen": "El nombre Shipare naeʼki es una expresión de la lengua Cofán. La palabra Shipare significa “Raya”.  El vocablo naeʼki significa “quebrada”.",
     "Transcripcion_AFI": "Ver informe",
     "Registro_Audiovisual": "Audio Lengua Cofán Quebrada La Raya (Aguinda, Audio Lengua Cofán Quebrada La Raya, 2022)",
-    "Registro_Audiovisual_Audio": "media/audio/8632015010368082_Linguistico.mp3"
+    "Registro_Audiovisual_Audio": "media/audio/8632015010368082_Linguistico.mp3",
+    "Registro_Audiovisual_Video": "media/video/8632015010368082_Linguistico.mp4"
   }
 },
 {
