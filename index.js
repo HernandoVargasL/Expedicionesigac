@@ -396,6 +396,12 @@ function gotoVerMas() {
                 false
                 );
 
+                $('#expeditonTermsList').click(function() {
+                    playBtn.classList.remove("pause");
+                    playBtn.classList.add("play");
+                    audio.pause();
+                });
+
                 audioPlayer.querySelector(".volume-button").addEventListener("click", () => {
                 const volumeEl = audioPlayer.querySelector(".volume-container .volume");
                 audio.muted = !audio.muted;
@@ -447,11 +453,7 @@ function gotoVerMas() {
 
             }
 
-            if (dato.Aspectos_Etnicos.hasOwnProperty("Registro_Audiovisual_Audio")) {
-
-                
-
-
+            if (dato.Aspectos_Etnicos.hasOwnProperty("Registro_Audiovisual_Audio")) {                
                 const audioPlayer = document.querySelector(".audio-player2");
                 const audio = new Audio();
 
@@ -514,6 +516,12 @@ function gotoVerMas() {
                 },
                 false
                 );
+
+                $('#expeditonTermsList').click(function() {
+                    playBtn.classList.remove("pause");
+                    playBtn.classList.add("play");
+                    audio.pause();
+                });
 
                 audioPlayer.querySelector(".volume-button").addEventListener("click", () => {
                 const volumeEl = audioPlayer.querySelector(".volume-container .volume");
