@@ -400,6 +400,8 @@ function gotoVerMas() {
                     playBtn.classList.remove("pause");
                     playBtn.classList.add("play");
                     audio.pause();
+                    audio.currentTime = 0;
+                    audio.src = 0;
                 });
 
                 audioPlayer.querySelector(".volume-button").addEventListener("click", () => {
@@ -520,7 +522,8 @@ function gotoVerMas() {
                     playBtn.classList.remove("pause");
                     playBtn.classList.add("play");
                     audio.pause();
-                    audio.currentTime = 0
+                    audio.currentTime = 0;
+                    audio.src = 0;
                 });
 
                 
