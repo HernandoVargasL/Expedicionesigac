@@ -395,14 +395,7 @@ function gotoVerMas() {
                 },
                 false
                 );
-
-                $('#expeditonTermsList').click(function() {
-                    playBtn.classList.remove("pause");
-                    playBtn.classList.add("play");
-                    audio.pause();
-                    audio.currentTime = 0;
-                    audio.src = 0;
-                });
+                
 
                 audioPlayer.querySelector(".volume-button").addEventListener("click", () => {
                 const volumeEl = audioPlayer.querySelector(".volume-container .volume");
@@ -429,6 +422,13 @@ function gotoVerMas() {
                     seconds % 60
                 ).padStart(2, 0)}`;
                 }
+
+                $('#expeditonTermsList').click(function() {
+                    playBtn.classList.remove("pause");
+                    playBtn.classList.add("play");
+                    audio.pause();
+                    audio.src = '';
+                });
 
                 $("div#AudioCOFAN").show();
             }
@@ -472,7 +472,7 @@ function gotoVerMas() {
                     audio.volume = .75;
                 },
                 false
-                );
+                );                
 
                 //click on timeline to skip around
                 const timeline = audioPlayer.querySelector(".timeline");
@@ -516,17 +516,7 @@ function gotoVerMas() {
                     }
                 },
                 false
-                );
-
-                $('#expeditonTermsList').click(function() {
-                    playBtn.classList.remove("pause");
-                    playBtn.classList.add("play");
-                    audio.pause();
-                    audio.currentTime = 0;
-                    audio.src = 0;
-                });
-
-                
+                );               
 
                 audioPlayer.querySelector(".volume-button").addEventListener("click", () => {
                 const volumeEl = audioPlayer.querySelector(".volume-container .volume");
@@ -553,6 +543,13 @@ function gotoVerMas() {
                     seconds % 60
                 ).padStart(2, 0)}`;
                 }
+
+                $('#expeditonTermsList').click(function() {
+                    playBtn.classList.remove("pause");
+                    playBtn.classList.add("play");
+                    audio.pause();
+                    audio.src = '';
+                });
 
                 $("#EtnoHistoria_Audio").show();
             }
@@ -725,7 +722,10 @@ var tour1 = new Tour({
         template: `<div class='popover tour main'>
         <div class='modal-header'><div data-role="end">×</div></div>
         <div class='d-flex contentP'>
-            <img src="images/Walkthrough_01.png" alt=""> 
+            <video autoplay loop>
+                <source src="media/video_intro/DJI_0728.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
             <div class='popover-content'></div>
         </div>
             <div class='d-flex navigation justify-content-between'> 
@@ -739,29 +739,6 @@ var tour1 = new Tour({
                 </div>
             </div>
             `,
-    },
-    {
-      element: "#tabTable",
-      title: "Title of first para",
-      content: "E1 :- Content of my step",
-      smartPlacement: true,
-      backdrop: true,
-      template: `
-        <div class='popover tour secondary'>
-        <div class='arrow'></div>
-        <div class='modal-header d-flex justify-content-between'>            
-            <h3 class='popover-title p-0'></h3>
-            <div data-role="end">×</div>
-        </div>        
-        <div class='popover-content'></div>
-        <div class='popover-navigation d-flex'>
-            <button class='btn btn-default' data-role='prev'>Anterior</button>
-            <button class='btn btn-default' data-role='next'>Siguiente</button>
-            <button class='btn btn-default' data-role='end'>Finalizar Tour</button>
-            </div>
-        </div>
-        
-            `
     },
     {
         element: "#listItem_0",

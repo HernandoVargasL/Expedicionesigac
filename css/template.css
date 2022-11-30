@@ -931,10 +931,10 @@ a {
     font-family: 'Gill Sans Std';
 }
 
-.popover .contentP img {
-    padding: 15px;
-    width: 150px;
-    height: 150px;
+.popover .contentP video {
+    padding: 0 15px;
+    width: 40%;
+    height: auto;
 }
 
 .popover-title {
@@ -982,7 +982,8 @@ a {
 }
 .audio-player2, .audio-player {
     height: 50px;
-    width: 350px;
+    width: 100%;
+    max-width: 350px;
     margin: auto;
     font-family: arial;
     color: white;
@@ -1018,7 +1019,7 @@ a {
     height: 15px;
     border-radius: 10px;
     position: absolute;
-    right: 0;
+    right: -10px;
 }
 .audio-player2 .controls, .audio-player .controls {
     display: flex;
@@ -1283,6 +1284,8 @@ a {
     .portada {
         width: 100%;
         margin-top: 0;
+        padding-left: 30px;
+        padding-right: 30px;
     }
 
     .iframeyoutube {
@@ -1323,8 +1326,8 @@ a {
     .etnohistoria .audio__Card .card .card-content::after {
         width: 80px;
         height: 90px;
-        bottom: -30px;
-        left: -30px;
+        bottom: -50px;
+        left: -50px;
     }
 
     .container-info {
