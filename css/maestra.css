@@ -88,6 +88,7 @@
 
 :root {
     --main-bg-color: #353535;
+    --gray-color: #c1c1c1;
 }
 
 ::-webkit-scrollbar {
