@@ -21,6 +21,8 @@ var extent = {
     }
 }
 
+var swiper;
+
 $(".content").addClass("unexpanded")
 
 if (document.querySelector(".navbarigac")) {
@@ -160,7 +162,7 @@ if (document.querySelector(".nav-bar-toggle-igac")) {
 /*--- mapa ---*/
 
 $(document).ready(function () {
-    initMap();
+    initMap();    
 });
 
 function initMap() {
@@ -289,7 +291,6 @@ function mapCofan() {
             }
         };
         
-
         cofanLayer.add(new esri.Graphic(datoPoint));
     }
 
@@ -306,7 +307,7 @@ function mapCofan() {
         map: map
     }, "HomeButton");
     homeBtn.startup();
-    
+    initSwiper();
 }
 
 function gotoVerMas() {
@@ -396,7 +397,6 @@ function gotoVerMas() {
                 false
                 );
                 
-
                 audioPlayer.querySelector(".volume-button").addEventListener("click", () => {
                 const volumeEl = audioPlayer.querySelector(".volume-container .volume");
                 audio.muted = !audio.muted;
@@ -560,7 +560,6 @@ function gotoVerMas() {
                 $('#EtnoHistoria_Video').addClass('expand');
             }
 
-
             $("p#VideoCOFAN_Nombre").html(dato.Nombre_COF);
 
             $("#EtnoHistoria").html(dato.Aspectos_Etnicos.Etnohistoria);
@@ -581,8 +580,32 @@ function gotoVerMas() {
             $("#ContextoHistorico").html(dato.Aspectos_Etnicos.Contexto);
             $("#OcupacionHistorico").html(dato.Aspectos_Etnicos.Procesos_Ocupacion);
 
+            if (swiper.initialized) {
+                swiper.destroy(false, true);
+                $(".swiper-wrapper").html("");
+                $("#sliderContainer").hide();
+            }
+
             if (dato.Objeto_Geografico.URL_Fotografia.length) {
-                $("#imageLugar").prop("src", dato.Objeto_Geografico.URL_Fotografia[0])
+                const fotos = dato.Objeto_Geografico.URL_Fotografia;
+                let strSwipe = "";
+
+                for (let index = 0; index < fotos.length; index++) {
+                    strSwipe += "<div class='swiper-slide'>"
+                    strSwipe += "<div class='imagecontainer'>"
+                    strSwipe += "<img id='imageLugar' src='" + fotos[index] + "' alt=''></img>"
+                    strSwipe += "</div>"
+                    strSwipe += "<div class='text' data-swiper-parallax='-100'>"
+                    strSwipe += "<p>"
+                    strSwipe += "Fuente: (Equipo intercultural ACT, IGAC, Pueblo Cofán, 2022)"
+                    strSwipe += "</p>"
+                    strSwipe += "</div>"
+                    strSwipe += "</div>"
+                }
+
+                $(".swiper-wrapper").html(strSwipe);
+                $("#sliderContainer").show();
+                initSwiper();
             }
             
             console.log(dato);
@@ -606,7 +629,6 @@ function listCofan() {
         strHTML = strHTML + "<div class='list__item--title-resume'>" + dato[i].Nombre_COF + "</div>";
         strHTML = strHTML + "</a>";
         strHTML = strHTML + "</li>";
-
     }
     $("#expeditonTermsList ol").html(strHTML);
 
@@ -634,8 +656,6 @@ function listCofan() {
             })
         } 
     })
-    
-
 };
 
 function activateItemList(idCofan) {
@@ -666,11 +686,10 @@ function activateItemList(idCofan) {
     if (element.hasClass("active")) {
         element.nextAll().removeClass("active").removeClass("done");
     }
-
-    
 }
 
 /*--- toggle button ---*/
+
 function functionToggle() {
     let element = document.getElementById("aside");
     element.classList.toggle("collapseAside");
@@ -684,7 +703,6 @@ function functionToggle() {
         $(".content").addClass("unexpanded")
     }
 }
-
 
 /*--- youtube apear ---*/
 
@@ -703,11 +721,6 @@ function youtubeApearAudio() {
 }
 
 /*--- bootstrap tour ---*/
-
-
-
-
-
 
 var tour1 = new Tour({
 
@@ -768,8 +781,6 @@ var tour1 = new Tour({
     }
     
 ]});
-
-  
   
 // Initialize the tour
 tour1.init();
@@ -777,10 +788,9 @@ tour1.init();
 // Start the tour
 tour1.start();
 
-
-// Slider
-
-const swiper = new Swiper('.swiper', {
+/*--- Slider ---*/
+function initSwiper() {
+    swiper = new Swiper('.swiper', {
     speed: 600,
     breakpoints: {
     // when window width is >= 320px
@@ -817,18 +827,4 @@ const swiper = new Swiper('.swiper', {
 
     // And if we need scrollbar
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
