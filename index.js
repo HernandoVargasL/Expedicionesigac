@@ -715,41 +715,41 @@ var tour1 = new Tour({
       {        
         orphan: true,
         title: "Bienvenido a Colombia Expediciones IGAC",
-        content: `<h2 clas='titleIntro'>Bienvenido a Expediciones IGAC</h2>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde eveniet quaerat perferendis omnis, dignissimos soluta repellat quo numquam possimus atque esse. Ullam perspiciatis repellendus quod officia unde pariatur debitis harum?`,
+        content: `<div class='intro__text'><h2 clas='titleIntro'>Bienvenido a Expediciones IGAC</h2>
+            <p>Este proyecto, si bien surge de la necesidad de consolidar la base de datos de topónimos del país, durante su etapa de planificación trascendió de este aspecto meramente técnico, para darle paso a un proyecto que reconoce y reivindica el enfoque diferencial étnico en el país, específicamente a través del trabajo participativo con las comunidades indígenas desde un punto de vista lingüístico, etnohistórico y geográfico</p>
+            <p>Este proyecto no ha sido resultado de un trabajo aislado y exclusivo del IGAC, sino de la articulación con aliados estratégicos como la organización Amazon Conservation Team (ACT) y por supuesto de la participación y apoyo de las comunidades indígenas, específicamente la Asociación de Autoridades Tradicionales AMPII CANKE y la comunidad y autoridades del Cabildo Villanueva del pueblo indígena Cofán.</p>
+            <div>`,
         smartPlacement: true,
         animation: true,
         backdrop: true,
         template: `<div class='popover tour main'>
         <div class='modal-header'><div data-role="end">×</div></div>
         <div class='d-flex contentP'>
-            <video autoplay loop>
-                <source src="media/video_intro/DJI_0728.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
+            <img src="media/video_intro/DJI_0728.gif" alt="swsw">
             <div class='popover-content'></div>
         </div>
-            <div class='d-flex navigation justify-content-between'> 
-                <div class='popover-navigation p-0'>            
-                    <button class='btn' data-role='prev'>Anterior <span data-role='separator'>|</span></button>
-                    
-                    <button class='btn' data-role='next'>Siguiente</button>
-                </div>
-
-                <button class='btn' data-role='end'>Finalizar Tour</button>
-                </div>
+        <div class='d-flex navigation justify-content-between'> 
+            <div class='popover-navigation p-0'>            
+                <button class='btn' data-role='prev'>Anterior <span data-role='separator'>|</span></button>
+                
+                <button class='btn' data-role='next'>Siguiente</button>
             </div>
-            `,
+
+            <button class='btn' data-role='end'>Finalizar Tour</button>
+            </div>
+        </div>
+        `,
     },
     {
         element: "#listItem_0",
-        title: "Title of Second Para",
-        content: "Click here to contact US...",
-        onEnd: function (tour) {
-            if (window.matchMedia("(max-width: 425px)").matches) {
-                $("#aside").removeClass("collapseAside")
-                document.querySelector("#asideToggle img").style.transform = "rotate(180deg)";
-            }
-        },
+        title: "Lugares sagrados",
+        content: "“Gestión participativa de nombres geográficos desde una visión étnica y transfronteriza en la región amazónica. Estudio piloto con el Pueblo Cofán, en el municipio del Valle del Guamuéz, Comunidad Indígena Villanueva”",
+        // onEnd: function (tour) {
+        //     if (window.matchMedia("(max-width: 425px)").matches) {
+        //         $("#aside").removeClass("collapseAside")
+        //         document.querySelector("#asideToggle img").style.transform = "rotate(180deg)";
+        //     }
+        // },
         template: `
             <div class='popover tour secondary'>
             <div class='arrow'></div>
@@ -765,39 +765,7 @@ var tour1 = new Tour({
                 </div>
             </div>        
         `
-    },
-
-    {
-        element: "#graphicsLayer0_layer",
-        title: "Title of Second Para",
-        content: "Click here to contact US...",
-        onShow: function (tour) {
-            if (window.matchMedia("(max-width: 425px)").matches) {
-                $("#aside").addClass("collapseAside")
-                document.querySelector("#asideToggle img").style.transform = "rotate(180deg)";
-            }
-        },
-        onHide: function (tour) {
-            if (window.matchMedia("(max-width: 425px)").matches) {
-                $("#aside").removeClass("collapseAside")
-                document.querySelector("#asideToggle img").style.transform = "rotate(180deg)";
-            }
-        },
-        template: `
-        <div class='popover tour secondary'>
-        <div class='arrow'></div>
-        <div class='modal-header d-flex justify-content-between'>            
-            <h3 class='popover-title p-0'></h3>
-            <div data-role="end">×</div>
-        </div>        
-        <div class='popover-content'></div>
-        <div class='popover-navigation d-flex'>
-            <button id='pointsTour' class='btn btn-default' data-role='prev'>Anterior</button>
-            <button class='btn btn-default' data-role='end'>Finalizar Tour</button>
-            </div>
-        </div>        
-        `
-      }
+    }
     
 ]});
 
