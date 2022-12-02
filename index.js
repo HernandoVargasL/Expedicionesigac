@@ -752,34 +752,7 @@ var tour1 = new Tour({
             </div>
         </div>
         `,
-    },
-    {
-        element: "#listItem_0",
-        title: "Lugares sagrados",
-        content: "“Gestión participativa de nombres geográficos desde una visión étnica y transfronteriza en la región amazónica. Estudio piloto con el Pueblo Cofán, en el municipio del Valle del Guamuéz, Comunidad Indígena Villanueva”",
-        // onEnd: function (tour) {
-        //     if (window.matchMedia("(max-width: 425px)").matches) {
-        //         $("#aside").removeClass("collapseAside")
-        //         document.querySelector("#asideToggle img").style.transform = "rotate(180deg)";
-        //     }
-        // },
-        template: `
-            <div class='popover tour secondary'>
-            <div class='arrow'></div>
-            <div class='modal-header d-flex justify-content-between'>            
-                <h3 class='popover-title p-0'></h3>
-                <div data-role="end">×</div>
-            </div>        
-            <div class='popover-content'></div>
-            <div class='popover-navigation d-flex'>
-                <button class='btn btn-default' data-role='prev'>Anterior</button>
-                <button class='btn btn-default' data-role='next'>Siguiente</button>
-                <button class='btn btn-default' data-role='end'>Finalizar Tour</button>
-                </div>
-            </div>        
-        `
-    }
-    
+    },    
 ]});
   
 // Initialize the tour
