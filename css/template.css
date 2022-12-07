@@ -171,7 +171,6 @@ a {
 .tab-content ul li  {
     list-style: disc;
     font-size: 14px;
-    height: 14px;
     line-height: normal;
     margin-bottom: 8px;
 }
@@ -344,9 +343,23 @@ a {
 .content .esriPopup .sizer .contentPane {
     font-size: 13px;
     color: #808184;
-    padding-top: 10px;
-    padding-left: 30px;
+    padding-top: 20px;
+    padding-left: 20px;
     padding-right: 20px;
+}
+
+.esriPopup .contentPane .contenedor__imagen {
+    margin-top: 10px;
+    min-height: 0;
+    max-height: 110px;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.esriPopup .contentPane .contenedor__imagen img {
+    width: 100%;
 }
 
 .content .esriPopup .sizer .contentPane a {
@@ -494,12 +507,11 @@ a {
     flex-wrap: wrap;
     align-items: center;
     z-index: 10;
-    height: 500px;
+    padding: 40px 0 ;
 }
 
 .container-info .content__tabulador {
     box-shadow: 3px 3px 7px 1px #00000014;
-    padding: 0;
     border-radius: 5px;
     overflow: hidden;
     width: 50%;
@@ -538,8 +550,7 @@ a {
 .referentes {
     width: 100%;
     background: #F4F7FE;
-    margin-top: -40px;
-    padding: 40px 0 40px 0;
+    padding: 40px 0 0px 0;
     color: #808082;
     font-size: 14px;
     margin-bottom: 80px;
@@ -547,6 +558,23 @@ a {
 
 .referentes {
     text-align: center;  
+}
+
+.referentes .referentes__container {
+    overflow-x: auto;
+    padding-bottom: 40px;
+}
+
+.referentes .referentes__item {
+    width: 200px;
+    min-width: 200px;
+    border-right: 1px solid #808082;
+    padding: 0 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
 }
 
 .referentes > .title {
@@ -562,17 +590,6 @@ a {
     font-size: 16px;
 }
 
-.referentes .referentes__item {
-    width: 16%;
-    border-right: 1px solid #808082;
-    padding: 0 20px;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-}
-
 .referentes .referentes__item:last-child {
     border-right: none;
 }
@@ -582,7 +599,6 @@ a {
     font-size: 14px;
     line-height: 14px;
     font-family: 'Gill Sans Std Light';
-    text-transform: capitalize;
 }
 
 
@@ -603,7 +619,7 @@ a {
 }
 
 .swiper .imagecontainer {
-    height: 500px;
+    height: 400px;
     overflow: hidden;
     display: flex;
     align-items: center;
@@ -865,11 +881,12 @@ a {
 .team .credit__item {
     justify-content: center;
     padding: 0 100px;
+    width: 50%;
 }
 
 .team .credit__item .title {
     margin-top: 30px;
-    margin-bottom: 0;
+    margin-bottom: 10px;
     font-size: 23px;
     height: 23px;
 }

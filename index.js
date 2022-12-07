@@ -258,7 +258,7 @@ function mapCofan() {
 
     for (let idx = 0; idx < datosCofan.length; idx++) {
         const dato = datosCofan[idx];
-
+        const fotos = dato.Objeto_Geografico.URL_Fotografia;
         const datoPoint = {
             "geometry": {
                 "x": dato.Objeto_Geografico.Longitud,
@@ -287,7 +287,7 @@ function mapCofan() {
 
             "infoTemplate": {
                 "title": ["<div class='d-flex align-items-center'>" + "<div class='identificador'>" + dato.ID + "</div>" + dato.Nombre_ESP + "</div>"],
-                "content": "${Nombre_COF}" + "<img class='mt-2' src='./images/assets/drone2.jpg' alt=''>" 
+                "content": "${Nombre_COF}" + "<div class='contenedor__imagen'>" + "<img id='imageLugarPrimera' src='" + fotos[0] + "' alt=''></img>" + "</div>"
             }
         };
         
