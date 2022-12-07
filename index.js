@@ -622,16 +622,20 @@ function listCofan() {
     const dato = datosCofan;
     let strHTML = "";
 
-    for (var i = 0; i < datosCofan.length; i++) {
+    for (var i = 0; i < datosCofan.length; i++) {       
         strHTML = strHTML + "<li id='listItem_" + i + "' class='list__item' id-cofan=" + dato[i].ID + ">";
+        strHTML = strHTML + "<a class='ver__mas' onclick='verMasButton()' id='buttonVerMas_" + i + "'>" + 'Ver Más' +"</a>"; 
         strHTML = strHTML + "<a>";
         strHTML = strHTML + "<div class='list__item--title'>" + dato[i].Nombre_ESP + "</div>";
         strHTML = strHTML + "<div class='list__item--title-resume'>" + dato[i].Nombre_COF + "</div>";
         strHTML = strHTML + "</a>";
         strHTML = strHTML + "</li>";
+        
     }
     $("#expeditonTermsList ol").html(strHTML);
 
+    
+    
     /*--- list button---*/
     $(".list__item").css('cursor', 'pointer')
     $(".list__item").click(function () {
@@ -657,6 +661,12 @@ function listCofan() {
         } 
     })
 };
+
+
+/*--- Button Ver---*/
+function verMasButton() {
+    alert('esta función es independiente')
+}
 
 function activateItemList(idCofan) {
 
