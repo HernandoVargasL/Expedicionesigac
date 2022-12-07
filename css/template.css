@@ -228,6 +228,12 @@ a {
     color: #fff;
     border: none;
     font-family: 'Gill Sans Std Light';
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+.expediton__terms__list li .ver__mas:hover {
+    opacity: 1;
 }
 
 .expediton__terms__list li:last-child {
