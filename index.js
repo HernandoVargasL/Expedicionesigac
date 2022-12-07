@@ -241,7 +241,7 @@ function mapCofan() {
 
         if (popup_links) {
             popup_links = false;
-            $(".actionList").append("<a href='#' class='action vermas-link' onclick='gotoVerMas();'>&nbsp;Ver más...</a>");
+            $(".actionList").append("<a href='#' class='action vermas-link' onclick='gotoVerMapa();'>&nbsp;Ver más...</a>");
         }
 
         if (!callList) {
@@ -310,312 +310,347 @@ function mapCofan() {
     initSwiper();
 }
 
-function gotoVerMas() {
+function gotoVerMapa() {
     const graphic = popup.getSelectedFeature();
 
     for (let idx = 0; idx < datosCofan.length; idx++) {
         if (graphic.attributes.ID == datosCofan[idx].ID) {
             const dato = datosCofan[idx];
-
-            $("div#AudioCOFAN").hide();
-            $('#iframeYoutubeAudio').removeClass('expand');
-
-            $("div#VideoCOFAN").hide();
-            $('#iframeYoutube').removeClass('expand');
-
-            $("div#ID_Cofan > p").html(dato.ID);
-            $("div.content__banner__title").html(dato.Nombre_ESP);
-
-            $("#EtnoHistoria_Audio").hide();
-            $("#EtnoHistoria_Video").hide();
-            $('#EtnoHistoria_Video').removeClass('expand');
-
-            if (dato.Aspectos_Linguisticos.hasOwnProperty("Registro_Audiovisual_Audio")) {
-                $("p#AudioCOFAN_Nombre").html(dato.Nombre_COF);
-
-
-                const audioPlayer = document.querySelector(".audio-player");
-                const audio = new Audio();
-
-                audio.src = dato.Aspectos_Linguisticos.Registro_Audiovisual_Audio;
-                //credit for song: Adrian kreativaweb@gmail.com
-
-                console.dir(audio);
-
-                audio.addEventListener(
-                "loadeddata",
-                () => {
-                    audioPlayer.querySelector(".time .length").textContent = getTimeCodeFromNum(
-                    audio.duration
-                    );
-                    audio.volume = .75;
-                },
-                false
-                );
-
-                //click on timeline to skip around
-                const timeline = audioPlayer.querySelector(".timeline");
-                timeline.addEventListener("click", e => {
-                const timelineWidth = window.getComputedStyle(timeline).width;
-                const timeToSeek = e.offsetX / parseInt(timelineWidth) * audio.duration;
-                audio.currentTime = timeToSeek;
-                }, false);
-
-                //click volume slider to change volume
-                const volumeSlider = audioPlayer.querySelector(".controls .volume-slider");
-                volumeSlider.addEventListener('click', e => {
-                const sliderWidth = window.getComputedStyle(volumeSlider).width;
-                const newVolume = e.offsetX / parseInt(sliderWidth);
-                audio.volume = newVolume;
-                audioPlayer.querySelector(".controls .volume-percentage").style.width = newVolume * 100 + '%';
-                }, false)
-
-                //check audio percentage and update time accordingly
-                setInterval(() => {
-                const progressBar = audioPlayer.querySelector(".progress");
-                progressBar.style.width = audio.currentTime / audio.duration * 100 + "%";
-                audioPlayer.querySelector(".time .current").textContent = getTimeCodeFromNum(
-                    audio.currentTime
-                );
-                }, 500);
-
-                //toggle between playing and pausing on button click
-                const playBtn = audioPlayer.querySelector(".controls .toggle-play");
-                playBtn.addEventListener(
-                "click",
-                () => {
-                    if (audio.paused) {
-                    playBtn.classList.remove("play");
-                    playBtn.classList.add("pause");
-                    audio.play();
-                    } else {
-                    playBtn.classList.remove("pause");
-                    playBtn.classList.add("play");
-                    audio.pause();
-                    }
-                },
-                false
-                );
-                
-                audioPlayer.querySelector(".volume-button").addEventListener("click", () => {
-                const volumeEl = audioPlayer.querySelector(".volume-container .volume");
-                audio.muted = !audio.muted;
-                if (audio.muted) {
-                    volumeEl.classList.remove("icono-volumeMedium");
-                    volumeEl.classList.add("icono-volumeMute");
-                } else {
-                    volumeEl.classList.add("icono-volumeMedium");
-                    volumeEl.classList.remove("icono-volumeMute");
-                }
-                });
-
-                //turn 128 seconds into 2:08
-                function getTimeCodeFromNum(num) {
-                let seconds = parseInt(num);
-                let minutes = parseInt(seconds / 60);
-                seconds -= minutes * 60;
-                const hours = parseInt(minutes / 60);
-                minutes -= hours * 60;
-
-                if (hours === 0) return `${minutes}:${String(seconds % 60).padStart(2, 0)}`;
-                return `${String(hours).padStart(2, 0)}:${minutes}:${String(
-                    seconds % 60
-                ).padStart(2, 0)}`;
-                }
-
-                $('#expeditonTermsList').click(function() {
-                    playBtn.classList.remove("pause");
-                    playBtn.classList.add("play");
-                    audio.pause();
-                    audio.src = '';
-                });
-
-                $("div#AudioCOFAN").show();
-            }
-
-            if (dato.Aspectos_Linguisticos.hasOwnProperty("Registro_Audiovisual_Video")) {
-                $("p#VideoCOFAN_Nombre").html(dato.Nombre_COF);
-
-                let videoURL = dato.Aspectos_Linguisticos.Registro_Audiovisual_Video;
-                if (videoURL == undefined || videoURL == null || videoURL == "") {
-                    $("#iframeYoutube > iframe").hide();
-                    $("#iframeYoutube > video").hide();
-                    $("div#VideoCOFAN").hide();
-                } else if (videoURL.startsWith("https://")) {
-                    $('#iframeYoutube > iframe').prop('src', videoURL)
-                    $("#iframeYoutube > iframe").show();
-                    $("#iframeYoutube > video").hide();
-                    $("div#VideoCOFAN").show();
-                } else {
-                    $("#iframeYoutube > video").prop('src', videoURL);
-                    $("#iframeYoutube > iframe").hide();
-                    $("#iframeYoutube > video").show();
-                    $("div#VideoCOFAN").show();
-                }
-
-            }
-
-            if (dato.Aspectos_Etnicos.hasOwnProperty("Registro_Audiovisual_Audio")) {                
-                const audioPlayer = document.querySelector(".audio-player2");
-                const audio = new Audio();
-
-                audio.src = dato.Aspectos_Etnicos.Registro_Audiovisual_Audio;
-
-                console.dir(audio);
-
-                audio.addEventListener(
-                "loadeddata",
-                () => {
-                    audioPlayer.querySelector(".time .length").textContent = getTimeCodeFromNum(
-                    audio.duration
-                    );
-                    audio.volume = .75;
-                },
-                false
-                );                
-
-                //click on timeline to skip around
-                const timeline = audioPlayer.querySelector(".timeline");
-                timeline.addEventListener("click", e => {
-                const timelineWidth = window.getComputedStyle(timeline).width;
-                const timeToSeek = e.offsetX / parseInt(timelineWidth) * audio.duration;
-                audio.currentTime = timeToSeek;
-                }, false);
-
-                //click volume slider to change volume
-                const volumeSlider = audioPlayer.querySelector(".controls .volume-slider");
-                volumeSlider.addEventListener('click', e => {
-                const sliderWidth = window.getComputedStyle(volumeSlider).width;
-                const newVolume = e.offsetX / parseInt(sliderWidth);
-                audio.volume = newVolume;
-                audioPlayer.querySelector(".controls .volume-percentage").style.width = newVolume * 100 + '%';
-                }, false)
-
-                //check audio percentage and update time accordingly
-                setInterval(() => {
-                const progressBar = audioPlayer.querySelector(".progress");
-                progressBar.style.width = audio.currentTime / audio.duration * 100 + "%";
-                audioPlayer.querySelector(".time .current").textContent = getTimeCodeFromNum(
-                    audio.currentTime
-                );
-                }, 500);
-
-                //toggle between playing and pausing on button click
-                const playBtn = audioPlayer.querySelector(".controls .toggle-play");
-                playBtn.addEventListener(
-                "click",
-                () => {
-                    if (audio.paused) {
-                    playBtn.classList.remove("play");
-                    playBtn.classList.add("pause");
-                    audio.play();
-                    } else {
-                    playBtn.classList.remove("pause");
-                    playBtn.classList.add("play");
-                    audio.pause();
-                    }
-                },
-                false
-                );               
-
-                audioPlayer.querySelector(".volume-button").addEventListener("click", () => {
-                const volumeEl = audioPlayer.querySelector(".volume-container .volume");
-                audio.muted = !audio.muted;
-                if (audio.muted) {
-                    volumeEl.classList.remove("icono-volumeMedium");
-                    volumeEl.classList.add("icono-volumeMute");
-                } else {
-                    volumeEl.classList.add("icono-volumeMedium");
-                    volumeEl.classList.remove("icono-volumeMute");
-                }
-                });
-
-                //turn 128 seconds into 2:08
-                function getTimeCodeFromNum(num) {
-                let seconds = parseInt(num);
-                let minutes = parseInt(seconds / 60);
-                seconds -= minutes * 60;
-                const hours = parseInt(minutes / 60);
-                minutes -= hours * 60;
-
-                if (hours === 0) return `${minutes}:${String(seconds % 60).padStart(2, 0)}`;
-                return `${String(hours).padStart(2, 0)}:${minutes}:${String(
-                    seconds % 60
-                ).padStart(2, 0)}`;
-                }
-
-                $('#expeditonTermsList').click(function() {
-                    playBtn.classList.remove("pause");
-                    playBtn.classList.add("play");
-                    audio.pause();
-                    audio.src = '';
-                });
-
-                $("#EtnoHistoria_Audio").show();
-            }
-
-            if (dato.Aspectos_Etnicos.hasOwnProperty("Registro_Audiovisual_Video")) {
-                $('#EtnoHistoria_Video > iframe').prop('src', dato.Aspectos_Etnicos.Registro_Audiovisual_Video)
-                $("#EtnoHistoria_Video").show();
-                $('#EtnoHistoria_Video').addClass('expand');
-            }
-
-            $("p#VideoCOFAN_Nombre").html(dato.Nombre_COF);
-
-            $("#EtnoHistoria").html(dato.Aspectos_Etnicos.Etnohistoria);
-            $("#GrupoCofan").html(dato.Aspectos_Etnicos.Grupo_Etnohistoria);
-
-            $("#EtnoHistoria_Credito").html(dato.Aspectos_Etnicos.Registro_Audiovisual);
-
-            $("#Significado").html(dato.Aspectos_Linguisticos.Significado_Origen);
-            $("#Motivacion").html(dato.Objeto_Geografico.Motivacion);
-
-            $("#Linguistico_Familia").html(dato.Aspectos_Linguisticos.Familia_Linguistica);
-            $("#Linguistico_Tipo").html(dato.Objeto_Geografico.Tipo_nombre);
-            $("#Linguistico_Lengua").html(dato.Aspectos_Linguisticos.Lengua);
-            $("#Linguistico_Categoria").html(dato.Objeto_Geografico.Categoria);
-            $("#Linguistico_Subcategoria").html(dato.Objeto_Geografico.Subcategoria);
-            $("#Linguistico_Elemento").html(dato.Objeto_Geografico.Elemento_generico);
-                        
-            $("#ContextoHistorico").html(dato.Aspectos_Etnicos.Contexto);
-            $("#OcupacionHistorico").html(dato.Aspectos_Etnicos.Procesos_Ocupacion);
-
-            if (swiper.initialized) {
-                swiper.destroy(false, true);
-                $(".swiper-wrapper").html("");
-                $("#sliderContainer").hide();
-            }
-
-            if (dato.Objeto_Geografico.URL_Fotografia.length) {
-                const fotos = dato.Objeto_Geografico.URL_Fotografia;
-                let strSwipe = "";
-
-                for (let index = 0; index < fotos.length; index++) {
-                    strSwipe += "<div class='swiper-slide'>"
-                    strSwipe += "<div class='imagecontainer'>"
-                    strSwipe += "<img id='imageLugar' src='" + fotos[index] + "' alt=''></img>"
-                    strSwipe += "</div>"
-                    strSwipe += "<div class='text' data-swiper-parallax='-100'>"
-                    strSwipe += "<p>"
-                    strSwipe += "Fuente: (Equipo intercultural ACT, IGAC, Pueblo Cofán, 2022)"
-                    strSwipe += "</p>"
-                    strSwipe += "</div>"
-                    strSwipe += "</div>"
-                }
-
-                $(".swiper-wrapper").html(strSwipe);
-                $("#sliderContainer").show();
-                initSwiper();
-            }
-            
-            console.log(dato);
-            $("#viewDiv").hide();
-            $("#includedContent").show();
-
-            var h = $('.etnohistoria .container').height();
-            $('.p-relative').height(h - 50 + 'px');
+            gotoVerMas(dato);
         }
     }
+}
+
+/*--- Button Ver---*/
+function gotoVerLista(button) {
+    console.log(button);
+
+    for (let idx = 0; idx < datosCofan.length; idx++) {
+        if (button.getAttribute('id-cofan') == datosCofan[idx].ID) {
+            const dato = datosCofan[idx];
+            gotoVerMas(dato);
+        }
+    }
+}
+
+function gotoVerMas(dato) {
+
+    $("div#AudioCOFAN").hide();
+    $('#iframeYoutubeAudio').removeClass('expand');
+
+    $("div#VideoCOFAN").hide();
+    $('#iframeYoutube').removeClass('expand');
+
+    $("div#ID_Cofan > p").html(dato.ID);
+    $("div.content__banner__title").html(dato.Nombre_ESP);
+
+    $("#EtnoHistoria_Audio").hide();
+    $("#EtnoHistoria_Video").hide();
+    $('#EtnoHistoria_Video').removeClass('expand');
+
+    if (dato.Aspectos_Linguisticos.hasOwnProperty("Registro_Audiovisual_Audio")) {
+        $("p#AudioCOFAN_Nombre").html(dato.Nombre_COF);
+
+
+        const audioPlayer = document.querySelector(".audio-player");
+        const audio = new Audio();
+
+        audio.src = dato.Aspectos_Linguisticos.Registro_Audiovisual_Audio;
+        //credit for song: Adrian kreativaweb@gmail.com
+        console.dir(audio);
+
+        audio.addEventListener(
+            "loadeddata",
+            () => {
+                audioPlayer.querySelector(".time .length").textContent = getTimeCodeFromNum(
+                    audio.duration
+                );
+                audio.volume = .75;
+            },
+            false
+        );
+
+        //click on timeline to skip around
+        const timeline = audioPlayer.querySelector(".timeline");
+        timeline.addEventListener("click", e => {
+            const timelineWidth = window.getComputedStyle(timeline).width;
+            const timeToSeek = e.offsetX / parseInt(timelineWidth) * audio.duration;
+            audio.currentTime = timeToSeek;
+        }, false);
+
+        //click volume slider to change volume
+        const volumeSlider = audioPlayer.querySelector(".controls .volume-slider");
+        volumeSlider.addEventListener('click', e => {
+            const sliderWidth = window.getComputedStyle(volumeSlider).width;
+            const newVolume = e.offsetX / parseInt(sliderWidth);
+            audio.volume = newVolume;
+            audioPlayer.querySelector(".controls .volume-percentage").style.width = newVolume * 100 + '%';
+        }, false);
+
+        //check audio percentage and update time accordingly
+        setInterval(() => {
+            const progressBar = audioPlayer.querySelector(".progress");
+            progressBar.style.width = audio.currentTime / audio.duration * 100 + "%";
+            audioPlayer.querySelector(".time .current").textContent = getTimeCodeFromNum(
+                audio.currentTime
+            );
+        }, 500);
+
+        //toggle between playing and pausing on button click
+        const playBtn = audioPlayer.querySelector(".controls .toggle-play");
+        playBtn.addEventListener(
+            "click",
+            () => {
+                if (audio.paused) {
+                    playBtn.classList.remove("play");
+                    playBtn.classList.add("pause");
+                    audio.play();
+                } else {
+                    playBtn.classList.remove("pause");
+                    playBtn.classList.add("play");
+                    audio.pause();
+                }
+            },
+            false
+        );
+
+        audioPlayer.querySelector(".volume-button").addEventListener("click", () => {
+            const volumeEl = audioPlayer.querySelector(".volume-container .volume");
+            audio.muted = !audio.muted;
+            if (audio.muted) {
+                volumeEl.classList.remove("icono-volumeMedium");
+                volumeEl.classList.add("icono-volumeMute");
+            } else {
+                volumeEl.classList.add("icono-volumeMedium");
+                volumeEl.classList.remove("icono-volumeMute");
+            }
+        });
+
+        //turn 128 seconds into 2:08
+        function getTimeCodeFromNum(num) {
+            let seconds = parseInt(num);
+            let minutes = parseInt(seconds / 60);
+            seconds -= minutes * 60;
+            const hours = parseInt(minutes / 60);
+            minutes -= hours * 60;
+
+            if (hours === 0)
+                return `${minutes}:${String(seconds % 60).padStart(2, 0)}`;
+            return `${String(hours).padStart(2, 0)}:${minutes}:${String(
+                seconds % 60
+            ).padStart(2, 0)}`;
+        }
+
+        $('#expeditonTermsList').click(function () {
+            playBtn.classList.remove("pause");
+            playBtn.classList.add("play");
+            audio.pause();
+            audio.src = '';
+        });
+
+        $("div#AudioCOFAN").show();
+    }
+
+    if (dato.Aspectos_Linguisticos.hasOwnProperty("Registro_Audiovisual_Video")) {
+        $("p#VideoCOFAN_Nombre").html(dato.Nombre_COF);
+
+        let videoURL = dato.Aspectos_Linguisticos.Registro_Audiovisual_Video;
+        if (videoURL == undefined || videoURL == null || videoURL == "") {
+            $("#iframeYoutube > iframe").hide();
+            $("#iframeYoutube > video").hide();
+            $("div#VideoCOFAN").hide();
+        } else if (videoURL.startsWith("https://")) {
+            $('#iframeYoutube > iframe').prop('src', videoURL);
+            $("#iframeYoutube > iframe").show();
+            $("#iframeYoutube > video").hide();
+            $("div#VideoCOFAN").show();
+        } else {
+            $("#iframeYoutube > video").prop('src', videoURL);
+            $("#iframeYoutube > iframe").hide();
+            $("#iframeYoutube > video").show();
+            $("div#VideoCOFAN").show();
+        }
+
+    }
+
+    if (dato.Aspectos_Etnicos.hasOwnProperty("Registro_Audiovisual_Audio")) {
+        const audioPlayer = document.querySelector(".audio-player2");
+        const audio = new Audio();
+
+        audio.src = dato.Aspectos_Etnicos.Registro_Audiovisual_Audio;
+
+        console.dir(audio);
+
+        audio.addEventListener(
+            "loadeddata",
+            () => {
+                audioPlayer.querySelector(".time .length").textContent = getTimeCodeFromNum(
+                    audio.duration
+                );
+                audio.volume = .75;
+            },
+            false
+        );
+
+        //click on timeline to skip around
+        const timeline = audioPlayer.querySelector(".timeline");
+        timeline.addEventListener("click", e => {
+            const timelineWidth = window.getComputedStyle(timeline).width;
+            const timeToSeek = e.offsetX / parseInt(timelineWidth) * audio.duration;
+            audio.currentTime = timeToSeek;
+        }, false);
+
+        //click volume slider to change volume
+        const volumeSlider = audioPlayer.querySelector(".controls .volume-slider");
+        volumeSlider.addEventListener('click', e => {
+            const sliderWidth = window.getComputedStyle(volumeSlider).width;
+            const newVolume = e.offsetX / parseInt(sliderWidth);
+            audio.volume = newVolume;
+            audioPlayer.querySelector(".controls .volume-percentage").style.width = newVolume * 100 + '%';
+        }, false);
+
+        //check audio percentage and update time accordingly
+        setInterval(() => {
+            const progressBar = audioPlayer.querySelector(".progress");
+            progressBar.style.width = audio.currentTime / audio.duration * 100 + "%";
+            audioPlayer.querySelector(".time .current").textContent = getTimeCodeFromNum(
+                audio.currentTime
+            );
+        }, 500);
+
+        //toggle between playing and pausing on button click
+        const playBtn = audioPlayer.querySelector(".controls .toggle-play");
+        playBtn.addEventListener(
+            "click",
+            () => {
+                if (audio.paused) {
+                    playBtn.classList.remove("play");
+                    playBtn.classList.add("pause");
+                    audio.play();
+                } else {
+                    playBtn.classList.remove("pause");
+                    playBtn.classList.add("play");
+                    audio.pause();
+                }
+            },
+            false
+        );
+
+        audioPlayer.querySelector(".volume-button").addEventListener("click", () => {
+            const volumeEl = audioPlayer.querySelector(".volume-container .volume");
+            audio.muted = !audio.muted;
+            if (audio.muted) {
+                volumeEl.classList.remove("icono-volumeMedium");
+                volumeEl.classList.add("icono-volumeMute");
+            } else {
+                volumeEl.classList.add("icono-volumeMedium");
+                volumeEl.classList.remove("icono-volumeMute");
+            }
+        });
+
+        //turn 128 seconds into 2:08
+        function getTimeCodeFromNum(num) {
+            let seconds = parseInt(num);
+            let minutes = parseInt(seconds / 60);
+            seconds -= minutes * 60;
+            const hours = parseInt(minutes / 60);
+            minutes -= hours * 60;
+
+            if (hours === 0)
+                return `${minutes}:${String(seconds % 60).padStart(2, 0)}`;
+            return `${String(hours).padStart(2, 0)}:${minutes}:${String(
+                seconds % 60
+            ).padStart(2, 0)}`;
+        }
+
+        $('#expeditonTermsList').click(function () {
+            playBtn.classList.remove("pause");
+            playBtn.classList.add("play");
+            audio.pause();
+            audio.src = '';
+        });
+
+        $("#EtnoHistoria_Audio").show();
+    }
+
+    if (dato.Aspectos_Etnicos.hasOwnProperty("Registro_Audiovisual_Video")) {
+        let videoURL = dato.Aspectos_Etnicos.Registro_Audiovisual_Video;
+        if (videoURL == undefined || videoURL == null || videoURL == "") {
+            $("#EtnoHistoria_Video > iframe").hide();
+            $("#EtnoHistoria_Video > video").hide();
+            $("#EtnoHistoria_Video").removeClass('expand');
+        } else if (videoURL.startsWith("https://")) {
+            $('#EtnoHistoria_Video > iframe').prop('src', videoURL);
+            $("#EtnoHistoria_Video > iframe").show();
+            $("#EtnoHistoria_Video > video").hide();
+            $("#EtnoHistoria_Video").addClass('expand');
+        } else {
+            $("#EtnoHistoria_Video > video").prop('src', videoURL);
+            $("#EtnoHistoria_Video > iframe").hide();
+            $("#EtnoHistoria_Video > video").show();
+            $("#EtnoHistoria_Video").addClass('expand');
+        }
+    }
+
+    $("p#VideoCOFAN_Nombre").html(dato.Nombre_COF);
+
+    $("#EtnoHistoria").html(dato.Aspectos_Etnicos.Etnohistoria);
+    $("#GrupoCofan").html(dato.Aspectos_Etnicos.Grupo_Etnohistoria);
+
+    $("#EtnoHistoria_Credito").html(dato.Aspectos_Etnicos.Registro_Audiovisual);
+
+    $("#Significado").html(dato.Aspectos_Linguisticos.Significado_Origen);
+    $("#Motivacion").html(dato.Objeto_Geografico.Motivacion);
+
+    $("#Linguistico_Familia").html(dato.Aspectos_Linguisticos.Familia_Linguistica);
+    $("#Linguistico_Tipo").html(dato.Objeto_Geografico.Tipo_nombre);
+    $("#Linguistico_Lengua").html(dato.Aspectos_Linguisticos.Lengua);
+    $("#Linguistico_Categoria").html(dato.Objeto_Geografico.Categoria);
+    $("#Linguistico_Subcategoria").html(dato.Objeto_Geografico.Subcategoria);
+    $("#Linguistico_Elemento").html(dato.Objeto_Geografico.Elemento_generico);
+
+    $("#ContextoHistorico").html(dato.Aspectos_Etnicos.Contexto);
+    $("#OcupacionHistorico").html(dato.Aspectos_Etnicos.Procesos_Ocupacion);
+
+    if (swiper.initialized) {
+        swiper.destroy(false, true);
+        $(".swiper-wrapper").html("");
+        $("#sliderContainer").hide();
+    }
+
+    if (dato.Objeto_Geografico.URL_Fotografia.length) {
+        const fotos = dato.Objeto_Geografico.URL_Fotografia;
+        let strSwipe = "";
+
+        for (let index = 0; index < fotos.length; index++) {
+            strSwipe += "<div class='swiper-slide'>";
+            strSwipe += "<div class='imagecontainer'>";
+            strSwipe += "<img id='imageLugar' src='" + fotos[index] + "' alt=''></img>";
+            strSwipe += "</div>";
+            strSwipe += "<div class='text' data-swiper-parallax='-100'>";
+            strSwipe += "<p>";
+            strSwipe += "Fuente: (Equipo intercultural ACT, IGAC, Pueblo Cofán, 2022)";
+            strSwipe += "</p>";
+            strSwipe += "</div>";
+            strSwipe += "</div>";
+        }
+
+        $(".swiper-wrapper").html(strSwipe);
+        $("#sliderContainer").show();
+        initSwiper();
+    }
+
+    const videos = document.querySelectorAll("video");
+    for (video of videos) {
+        video.pause();
+    }
+
+    console.log(dato);
+    $("#viewDiv").hide();
+    $("#includedContent").show();
+
+    var h = $('.etnohistoria .container').height();
+    $('.p-relative').height(h - 50 + 'px');
 }
 
 function listCofan() {
@@ -623,8 +658,8 @@ function listCofan() {
     let strHTML = "";
 
     for (var i = 0; i < datosCofan.length; i++) {       
-        strHTML = strHTML + "<li id='listItem_" + i + "' class='list__item' id-cofan=" + dato[i].ID + ">";
-        strHTML = strHTML + "<a class='ver__mas' onclick='verMasButton()' id='buttonVerMas_" + i + "'>" + 'Ver Más' +"</a>"; 
+        strHTML = strHTML + "<li id='listItem_" + i + "' class='list__item' id-cofan='" + dato[i].ID + "'>";
+        strHTML = strHTML + "<a class='ver__mas' onclick='gotoVerLista(this)' id-cofan='" + dato[i].ID + "'>" + 'Ver más...' +"</a>"; 
         strHTML = strHTML + "<a>";
         strHTML = strHTML + "<div class='list__item--title'>" + dato[i].Nombre_ESP + "</div>";
         strHTML = strHTML + "<div class='list__item--title-resume'>" + dato[i].Nombre_COF + "</div>";
@@ -634,8 +669,6 @@ function listCofan() {
     }
     $("#expeditonTermsList ol").html(strHTML);
 
-    
-    
     /*--- list button---*/
     $(".list__item").css('cursor', 'pointer')
     $(".list__item").click(function () {
@@ -660,12 +693,6 @@ function listCofan() {
             })
         } 
     })
-};
-
-
-/*--- Button Ver---*/
-function verMasButton() {
-    alert('esta función es independiente')
 }
 
 function activateItemList(idCofan) {
