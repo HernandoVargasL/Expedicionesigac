@@ -644,6 +644,7 @@ a {
     padding: 80px 30px;
     color: #58595B;
     line-height: normal;
+    min-height: 470px;
 }
 
 .etnohistoria b {
