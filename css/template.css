@@ -209,7 +209,25 @@ a {
     counter-increment: custom;
     display: flex;
     align-items: center;   
-    margin-bottom: 8px;        
+    margin-bottom: 8px;
+    position: relative;        
+}
+
+.expediton__terms__list li .ver__mas {
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    width: fit-content;
+    padding: 5px 5px 0px;
+    font-size: 10px;
+    line-height: 7px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    background: #3faaf5;
+    color: #fff;
+    border: none;
+    font-family: 'Gill Sans Std Light';
 }
 
 .expediton__terms__list li:last-child {
@@ -228,9 +246,17 @@ a {
     border: 1px solid #CCCCCC;
 }
 
+.expediton__terms__list li.active a:first-child {
+    background: #3FA9F5; 
+}
+
 .expediton__terms__list li.active a {
     border: 1px solid #3FA9F5;
     background: #fff;    
+}
+
+.expediton__terms__list li.done a:first-child {
+    background: #5CBC8F;
 }
 
 .expediton__terms__list li.done a {
