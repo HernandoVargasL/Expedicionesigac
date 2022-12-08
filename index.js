@@ -575,6 +575,7 @@ function gotoVerMas(dato) {
 
     if (dato.Aspectos_Etnicos.hasOwnProperty("Registro_Audiovisual_Video")) {
         let videoURL = dato.Aspectos_Etnicos.Registro_Audiovisual_Video;
+        $("#EtnoHistoria_Video").show();
         if (videoURL == undefined || videoURL == null || videoURL == "") {
             $("#EtnoHistoria_Video > iframe").hide();
             $("#EtnoHistoria_Video > video").hide();
@@ -585,11 +586,14 @@ function gotoVerMas(dato) {
             $("#EtnoHistoria_Video > video").hide();
             $("#EtnoHistoria_Video").addClass('expand');
         } else {
-            $("#EtnoHistoria_Video > video").prop('src', videoURL);
+            $("#EtnoHistoria_Video > video source").prop('src', videoURL);
             $("#EtnoHistoria_Video > iframe").hide();
-            $("#EtnoHistoria_Video > video").show();
+            $("#EtnoHistoria_Video").hide();
+            $("#EtnoHistoria_Video > video").show().clone().appendTo('.card-content').addClass('videoIn');
             $("#EtnoHistoria_Video").addClass('expand');
         }
+    } else {
+        $(".videoIn ").hide();
     }
 
     $("p#VideoCOFAN_Nombre").html(dato.Nombre_COF);
@@ -658,12 +662,12 @@ function listCofan() {
     let strHTML = "";
 
     for (var i = 0; i < datosCofan.length; i++) {       
-        strHTML = strHTML + "<li id='listItem_" + i + "' class='list__item' id-cofan='" + dato[i].ID + "'>";
-        strHTML = strHTML + "<a class='ver__mas' onclick='gotoVerLista(this)' id-cofan='" + dato[i].ID + "'>" + 'Ver más...' +"</a>"; 
+        strHTML = strHTML + "<li id='listItem_" + i + "' class='list__item' id-cofan='" + dato[i].ID + "'>";        
         strHTML = strHTML + "<a>";
         strHTML = strHTML + "<div class='list__item--title'>" + dato[i].Nombre_ESP + "</div>";
         strHTML = strHTML + "<div class='list__item--title-resume'>" + dato[i].Nombre_COF + "</div>";
         strHTML = strHTML + "</a>";
+        strHTML = strHTML + "<a class='ver__mas' onclick='gotoVerLista(this)' id-cofan='" + dato[i].ID + "'>" + '<i class="fa fa-chevron-right"></i>' +"</a>"; 
         strHTML = strHTML + "</li>";
         
     }

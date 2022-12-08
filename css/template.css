@@ -207,29 +207,43 @@ a {
 
 .expediton__terms__list li {
     counter-increment: custom;
+    padding-left: 10px;
     display: flex;
-    align-items: center;   
+    flex-wrap: wrap;  
     margin-bottom: 8px;
     position: relative;        
 }
 
 .expediton__terms__list li .ver__mas {
-    position: absolute;
-    right: 5px;
-    bottom: 5px;
-    width: fit-content;
-    padding: 5px 10px;
-    font-size: 10px;
-    line-height: 7px;
-    height: 20px;
+    width: 5%;
+    padding: 10px 0 8px;
     display: flex;
+    justify-content: center;
     align-items: center;
-    background: #3faaf5;
-    color: #fff;
-    border: none;
-    font-family: 'Gill Sans Std Light';
-    opacity: 0.6;
-    cursor: pointer;
+    border-radius: 0 10px 10px 0;
+    border-left: 0;
+}
+
+.expediton__terms__list li .ver__mas .fa {
+    font-size: 0.8rem;
+}
+
+.expediton__terms__list li.active .ver__mas .fa {
+    border-left: 0;
+    color: #3FA9F5;
+}
+
+.expediton__terms__list li.done .ver__mas .fa {
+    border-left: 0;
+    color: #5CBC8F;
+}
+
+.expediton__terms__list li.active .ver__mas {
+    border-left: 0;
+}
+
+.expediton__terms__list li.done .ver__mas {
+    border-left: 0;
 }
 
 .expediton__terms__list li .ver__mas:hover {
@@ -246,23 +260,14 @@ a {
     line-height: 16px;
     padding: 10px 30px 8px;
     background: #fff;
-    width: 100%;
-    margin-left: -12px;
-    border-radius: 10px;
+    width: 95%;
+    border-radius: 10px 0 0 10px;
     border: 1px solid #CCCCCC;
-}
-
-.expediton__terms__list li.active a:first-child {
-    background: #3FA9F5; 
 }
 
 .expediton__terms__list li.active a {
     border: 1px solid #3FA9F5;
     background: #fff;    
-}
-
-.expediton__terms__list li.done a:first-child {
-    background: #5CBC8F;
 }
 
 .expediton__terms__list li.done a {
@@ -281,6 +286,9 @@ a {
 }
 
 .expediton__terms__list ol li:before {
+    position: absolute;
+    top: calc(50% - 12px);
+    left: 0;
     content: counter(custom) " ";
     display: flex;
     justify-content: center;
@@ -689,6 +697,12 @@ a {
 }
 
 #EtnoHistoria_Video {
+    margin-top: 20px;
+    width: 100%;
+    height: 250px;
+}
+
+.videoIn {
     margin-top: 20px;
     width: 100%;
     height: 250px;
