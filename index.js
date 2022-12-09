@@ -323,13 +323,20 @@ function gotoVerMapa() {
 
 /*--- Button Ver---*/
 function gotoVerLista(button) {
-    console.log(button);
+    let idCofan = button.getAttribute('id-cofan')
 
     for (let idx = 0; idx < datosCofan.length; idx++) {
-        if (button.getAttribute('id-cofan') == datosCofan[idx].ID) {
+        if (idCofan == datosCofan[idx].ID) {
             const dato = datosCofan[idx];
             gotoVerMas(dato);
         }
+    }
+
+    let element = $('*[id-cofan="'+idCofan+'"]');
+
+    element.parent().toggleClass("active").prevAll().removeClass("active").addClass("done");
+    if (element.parent().hasClass("active")) {
+        element.parent().nextAll().removeClass("active").removeClass("done");
     }
 }
 
@@ -357,8 +364,6 @@ function gotoVerMas(dato) {
 
         audio.src = dato.Aspectos_Linguisticos.Registro_Audiovisual_Audio;
         //credit for song: Adrian kreativaweb@gmail.com
-        console.dir(audio);
-
         audio.addEventListener(
             "loadeddata",
             () => {
@@ -478,8 +483,6 @@ function gotoVerMas(dato) {
         const audio = new Audio();
 
         audio.src = dato.Aspectos_Etnicos.Registro_Audiovisual_Audio;
-
-        console.dir(audio);
 
         audio.addEventListener(
             "loadeddata",
@@ -662,15 +665,15 @@ function listCofan() {
     let strHTML = "";
 
     for (var i = 0; i < datosCofan.length; i++) {       
-        strHTML = strHTML + "<li id='listItem_" + i + "' class='list__item' id-cofan='" + dato[i].ID + "'>";        
-        strHTML = strHTML + "<a>";
+        strHTML = strHTML + "<li id='listItem_" + i + "'>";
+        strHTML = strHTML + "<a class='list__item' id-cofan='" + dato[i].ID + "'>";
         strHTML = strHTML + "<div class='list__item--title'>" + dato[i].Nombre_ESP + "</div>";
         strHTML = strHTML + "<div class='list__item--title-resume'>" + dato[i].Nombre_COF + "</div>";
         strHTML = strHTML + "</a>";
         strHTML = strHTML + "<a class='ver__mas' onclick='gotoVerLista(this)' id-cofan='" + dato[i].ID + "'>" + '<i class="fa fa-chevron-right"></i>' +"</a>"; 
         strHTML = strHTML + "</li>";
-        
     }
+
     $("#expeditonTermsList ol").html(strHTML);
 
     /*--- list button---*/
@@ -700,9 +703,6 @@ function listCofan() {
 }
 
 function activateItemList(idCofan) {
-
-    let element = $('*[id-cofan="'+idCofan+'"]');
-
     popup.hide();
     popup.clearFeatures();
 
@@ -723,9 +723,11 @@ function activateItemList(idCofan) {
         }
     }
 
-    element.toggleClass("active").prevAll().removeClass("active").addClass("done");
-    if (element.hasClass("active")) {
-        element.nextAll().removeClass("active").removeClass("done");
+    let element = $('*[id-cofan="'+idCofan+'"]');
+
+    element.parent().toggleClass("active").prevAll().removeClass("active").addClass("done");
+    if (element.parent().hasClass("active")) {
+        element.parent().nextAll().removeClass("active").removeClass("done");
     }
 }
 
