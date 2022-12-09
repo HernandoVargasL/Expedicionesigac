@@ -1,6 +1,7 @@
 var esri;
 var map;
-var cofanLayer;
+var geoLayerCofan;
+// var cofanLayer;
 
 var homeBtn;
 var popup;
@@ -192,12 +193,12 @@ function mapCofan() {
         attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
     }).addTo(map);
 
-    // L.tileLayer('Ortofoto/{z}/{x}/{y}.png', {
-    //   minZoom: 12,
-    //   maxZoom: 19,
-    //   tms: false,
-    //   attribution: 'Instituto Geográfico Agustín Codazzi'
-    // }).addTo(map);
+    L.tileLayer('Ortofoto/{z}/{x}/{y}.png', {
+      minZoom: 12,
+      maxZoom: 19,
+      tms: false,
+      attribution: 'Instituto Geográfico Agustín Codazzi'
+    }).addTo(map);
 
     const geoDatosCofan = [];
 
@@ -211,7 +212,8 @@ function mapCofan() {
                 "ID": dato.ID,
                 "ID_Nombre_Geografico": dato.ID_Nombre_Geografico,
                 "Nombre_COF": dato.Nombre_COF,
-                "Nombre_ESP": dato.Nombre_ESP
+                "Nombre_ESP": dato.Nombre_ESP,
+                "fotos": fotos
             },
             "geometry": {
                 "type": "Point",
@@ -225,12 +227,34 @@ function mapCofan() {
         type: "FeatureCollection"
     };
 
-    let geoLayer = L.geoJson(geoJSON_Cofan, {
-        // Por cada elemento le asigna el popup
+    geoLayerCofan = L.geoJson(geoJSON_Cofan, {
         onEachFeature: function (feature, layer) {
-            if (feature.properties) {
-                popupEvento(feature, layer);
+
+
+            //"title": ["<div class='d-flex align-items-center'>" + "<div class='identificador'>" + dato.ID + "</div>" + dato.Nombre_ESP + "</div>"],
+            //             "content": "${Nombre_COF}" + "<div class='contenedor__imagen'>" + "<img id='imageLugarPrimera' src='" + fotos[0] + "' alt=''></img>" + "</div>"
+
+            let divInfo = document.createElement('div');
+            let strHTML = "<div class='d-flex align-items-center'>" + "<div class='identificador'>" + feature.properties.ID + "</div>" + feature.properties.Nombre_ESP + "</div>"
+            strHTML += "</br>" + feature.properties.Nombre_COF + "</br>"
+            if (feature.properties.fotos[0]) {
+                strHTML += "<div class='contenedor__imagen'><img id='imageLugarPrimera' src='" + feature.properties.fotos[0] + "' alt=''></img></div>"
             }
+            strHTML += "</br>";
+            divInfo.innerHTML = strHTML;
+
+            let verMasBtn = document.createElement('a');
+            verMasBtn.innerHTML = "Ver más...";
+            verMasBtn.className = 'action vermas-link';
+            verMasBtn.onclick = async () => {
+                gotoVerMapa(feature);
+            }
+
+            let btnDiv = document.createElement('div')
+            btnDiv.append(divInfo);
+            btnDiv.append(verMasBtn);
+            layer.bindPopup( btnDiv ).openPopup();
+
         },
         // Le asigna los iconos a cada elemento
         pointToLayer: function (feature, latlng) {
@@ -243,7 +267,7 @@ function mapCofan() {
         }
     });
 
-    map.addLayer(geoLayer);
+    map.addLayer(geoLayerCofan);
 
     // popup = new esri.Popup({
     //     titleInBody: false
@@ -335,11 +359,32 @@ function iconFeature(urlIcon) {
     });
 }
 
-function gotoVerMapa() {
-    const graphic = popup.getSelectedFeature();
+function popupEvento(feature, layer) {
+    var ID = feature.properties.ID;
+    var Nombre_ESP = feature.properties.Nombre_ESP;
+    var Nombre_COF = feature.properties.Nombre_COF;
 
+    layer.on({
+        click: function (e) {
+
+            // var popup = L.popup()
+            //     .setContent("I am a standalone popup.");
+
+            // marker.bindPopup(popup).openPopup();
+
+
+            $("#feature-title").html(ID + "<b>" + Nombre_ESP + "</b>");
+            $("#feature-info").html(Nombre_COF);
+
+            $('.nav-tabs a[href="#feature-info"]').tab('show');
+            $("#modalSplash").modal("show");
+        }
+    });
+}
+
+function gotoVerMapa(feature) {
     for (let idx = 0; idx < datosCofan.length; idx++) {
-        if (graphic.attributes.ID == datosCofan[idx].ID) {
+        if (feature.properties.ID == datosCofan[idx].ID) {
             const dato = datosCofan[idx];
             gotoVerMas(dato);
         }
@@ -727,26 +772,48 @@ function listCofan() {
     })
 }
 
-function activateItemList(idCofan) {
-    popup.hide();
-    popup.clearFeatures();
+// function activateItemList(idCofan) {
+//     popup.hide();
+//     popup.clearFeatures();
 
+//     if ($("#includedContent").is(":visible")) {
+//         $("#includedContent").hide();
+//         $("#viewDiv").show();
+//     }
+
+//     for (let idx = 0; idx < cofanLayer.graphics.length; idx++) {
+//         if (cofanLayer.graphics[idx].attributes.ID == idCofan) {
+//             const graphic = cofanLayer.graphics[idx];
+//             callList = true;
+
+//             popup.setFeatures([graphic]);
+//             popup.show(graphic.geometry);
+
+//             map.centerAndZoom(graphic.geometry, 16);
+//         }
+//     }
+
+//     let element = $('*[id-cofan="' + idCofan + '"]');
+
+//     element.parent().toggleClass("active").prevAll().removeClass("active").addClass("done");
+//     if (element.parent().hasClass("active")) {
+//         element.parent().nextAll().removeClass("active").removeClass("done");
+//     }
+// }
+
+function activateItemList(idCofan) {
     if ($("#includedContent").is(":visible")) {
         $("#includedContent").hide();
         $("#viewDiv").show();
     }
 
-    for (let idx = 0; idx < cofanLayer.graphics.length; idx++) {
-        if (cofanLayer.graphics[idx].attributes.ID == idCofan) {
-            const graphic = cofanLayer.graphics[idx];
+    geoLayerCofan.eachLayer(function(featureElement) {
+        if (featureElement.feature.properties.ID == idCofan) {
+            map.setView(featureElement.getLatLng(), 19);
             callList = true;
-
-            popup.setFeatures([graphic]);
-            popup.show(graphic.geometry);
-
-            map.centerAndZoom(graphic.geometry, 16);
+            featureElement.fire('click');
         }
-    }
+    });
 
     let element = $('*[id-cofan="' + idCofan + '"]');
 
