@@ -15,21 +15,21 @@ a {
 }
 
 .aside {
-    width: 25%;    
-    box-shadow: 3px 0px 9px 4px #babfb5;        
+    width: 25%;
+    box-shadow: 3px 0px 9px 4px #babfb5;
     z-index: 1;
     box-shadow: 3px 0px 9px 4px #babfb5;
     position: relative;
     z-index: 100;
     transition: all 0.5s ease;
-    position: relative;    
+    position: relative;
 }
 
 .aside.collapseAside {
     width: 0;
     transform: translate(-100%);
     transition: all 0.5s ease;
-    box-shadow: none;  
+    box-shadow: none;
 }
 
 .aside.collapseAside .aside__togglebutton {
@@ -96,21 +96,21 @@ a {
 }
 
 .aside .logos .igac {
-    width: 90px;     
+    width: 90px;
 }
 
 .aside .logos .ampiicanke {
-    width: 70px;     
+    width: 70px;
 }
 
 .aside .logos .act {
     width: 60px;
-    filter: invert(1);     
+    filter: invert(1);
 }
 
 .aside .logos .act:hover {
     filter: grayscale(1);
-    filter: invert(1); 
+    filter: invert(1);
 }
 
 .aside .aside__container {
@@ -138,16 +138,16 @@ a {
 }
 
 .aside .aside__container .nav-tabs .nav-item:last-child {
-    border-radius: 0 .25rem 0 0;    
+    border-radius: 0 .25rem 0 0;
 }
 
-.aside .aside__container .nav-tabs .nav-link {    
+.aside .aside__container .nav-tabs .nav-link {
     border: none;
     color: #58595B;
     font-size: 13px;
     line-height: normal;
     text-align: center;
-    padding: 15px 0;    
+    padding: 15px 0;
 }
 
 .aside .aside__container .nav-tabs .nav-link.active {
@@ -160,15 +160,15 @@ a {
     padding: 40px 20px;
     width: 100%;
     background: #F2EFE9;
-    border-radius: 0 0 .25rem .25rem;   
+    border-radius: 0 0 .25rem .25rem;
 }
 
 .tab-content ul {
     padding-left: 20px;
-    margin-bottom: 0;   
+    margin-bottom: 0;
 }
 
-.tab-content ul li  {
+.tab-content ul li {
     list-style: disc;
     font-size: 14px;
     line-height: normal;
@@ -209,9 +209,9 @@ a {
     counter-increment: custom;
     padding-left: 10px;
     display: flex;
-    flex-wrap: wrap;  
+    flex-wrap: wrap;
     margin-bottom: 8px;
-    position: relative;        
+    position: relative;
 }
 
 .expediton__terms__list li .ver__mas {
@@ -267,7 +267,7 @@ a {
 
 .expediton__terms__list li.active a {
     border: 1px solid #3FA9F5;
-    background: #fff;    
+    background: #fff;
 }
 
 .expediton__terms__list li.done a {
@@ -324,7 +324,7 @@ a {
 }
 
 .expediton__terms__list ol li:first-child {
-  counter-reset: custom;
+    counter-reset: custom;
 }
 
 /*content*/
@@ -334,6 +334,7 @@ a {
     transition: all 0.5s ease;
     width: 75%;
 }
+
 .content.collapseAside {
     width: 100%;
     transition: all 0.5s ease;
@@ -447,7 +448,7 @@ a {
     border-radius: 40px;
     background: #3595E0;
     color: #fff;
-    margin-bottom: 25px;    
+    margin-bottom: 25px;
 }
 
 .container-portada .content__banner p {
@@ -482,7 +483,7 @@ a {
     padding: 5px 10px;
 }
 
-.content__banner .content__banner__context .icon{
+.content__banner .content__banner__context .icon {
     width: 20px;
     margin-right: 7px;
 }
@@ -510,10 +511,10 @@ a {
 }
 
 .iframeyoutube iframe {
-	height: 100%;
-	left: 0;
-	top: 0;
-	width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    width: 100%;
 }
 
 .iframeyoutubeaudio {
@@ -531,10 +532,10 @@ a {
 }
 
 .iframeyoutubeaudio iframe {
-	height: 100%;
-	left: 0;
-	top: 0;
-	width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    width: 100%;
 }
 
 /** pills **/
@@ -547,7 +548,7 @@ a {
     flex-wrap: wrap;
     align-items: center;
     z-index: 10;
-    padding: 40px 0 ;
+    padding: 40px 0;
 }
 
 .container-info .content__tabulador {
@@ -597,7 +598,7 @@ a {
 }
 
 .referentes {
-    text-align: center;  
+    text-align: center;
 }
 
 .referentes .referentes__container {
@@ -617,7 +618,7 @@ a {
     justify-content: center;
 }
 
-.referentes > .title {
+.referentes>.title {
     color: #3595E0;
     font-size: 16px;
     text-transform: uppercase;
@@ -642,8 +643,9 @@ a {
 }
 
 
-/** referentes **/ 
-.swiper-button-next, .swiper-button-prev {
+/** referentes **/
+.swiper-button-next,
+.swiper-button-prev {
     position: absolute;
     top: calc(50% - 10px);
     z-index: 1000;
@@ -675,7 +677,7 @@ a {
 }
 
 .swiper-pagination .swiper-pagination-bullet {
-    background: #d4d4d4;    
+    background: #d4d4d4;
     width: 7px;
     height: 7px;
     display: block;
@@ -687,7 +689,7 @@ a {
     background: #3596e0 !important;
 }
 
-/** slider **/ 
+/** slider **/
 .slider .text p {
     font-size: 14px;
     margin-top: 15px;
@@ -709,7 +711,8 @@ a {
     left: 50px;
 }
 
-.swiper-button-next:after, .swiper-button-prev:after {
+.swiper-button-next:after,
+.swiper-button-prev:after {
     font-size: 15px;
     color: #808082;
 }
@@ -797,7 +800,7 @@ a {
     top: 0;
     margin-top: 60px;
     padding-right: 0;
-    padding-left: 0;          
+    padding-left: 0;
 }
 
 .etnohistoria .audio__Card {
@@ -832,7 +835,7 @@ a {
     padding: 40px;
     border: 0;
     border-radius: 10px 0 0 10px;
-    position: relative;     
+    position: relative;
 }
 
 .etnohistoria .audio__Card .card .card-content::before {
@@ -891,6 +894,7 @@ a {
     background: url('../images/assets/backgroundaspectos.svg');
     background-size: cover;
 }
+
 .historical__aspects .card {
     border: 0;
     background: #F4F7FE;
@@ -932,7 +936,7 @@ a {
     margin-bottom: 30px;
 }
 
-.historical__aspects  .title {
+.historical__aspects .title {
     font-size: 35px;
     margin-bottom: 25px;
     line-height: 35px;
@@ -976,7 +980,7 @@ a {
 
 .team .credit__item .icon {
     width: 80px;
-    margin: auto;    
+    margin: auto;
 }
 
 /*intro*/
@@ -990,7 +994,7 @@ a {
     width: 400px;
     vertical-align: middle !important;
     border-radius: 0;
-    top: calc(25% - 60px)!important;
+    top: calc(25% - 60px) !important;
 }
 
 .tour-backdrop {
@@ -1017,14 +1021,16 @@ a {
     line-height: 10px;
     color: #000;
     text-shadow: 0 1px 0 #fff;
-    opacity: .2;   
+    opacity: .2;
 }
 
 .popover[class*="tour-"] .popover-navigation {
     justify-content: space-between;
 }
 
-.popover[class*="tour-"] .popover-navigation *[data-role="prev"].disabled, .popover[class*="tour-"] .popover-navigation *[data-role="next"].disabled, .popover[class*="tour-"] .popover-navigation *[data-role="end"].disabled {
+.popover[class*="tour-"] .popover-navigation *[data-role="prev"].disabled,
+.popover[class*="tour-"] .popover-navigation *[data-role="next"].disabled,
+.popover[class*="tour-"] .popover-navigation *[data-role="end"].disabled {
     display: none;
 }
 
@@ -1098,7 +1104,9 @@ a {
     right: 20px;
     z-index: 50;
 }
-.audio-player2, .audio-player {
+
+.audio-player2,
+.audio-player {
     height: 50px;
     width: 100%;
     max-width: 350px;
@@ -1109,17 +1117,22 @@ a {
     grid-template-rows: 6px auto;
     padding-top: 5px;
 }
+
 .audio-player2 {
     margin-top: 20px;
 }
-.audio-player2 .timeline, .audio-player .timeline {
+
+.audio-player2 .timeline,
+.audio-player .timeline {
     background: #e7e7e7;
     width: 100%;
     position: relative;
     cursor: pointer;
     border-radius: 0.25rem;
 }
-.audio-player2 .timeline .progress, .audio-player .timeline .progress {
+
+.audio-player2 .timeline .progress,
+.audio-player .timeline .progress {
     background: #1C313A;
     width: 0%;
     height: 100%;
@@ -1129,7 +1142,8 @@ a {
     overflow: visible;
 }
 
-.audio-player2 .timeline .progress::after, .audio-player .timeline .progress::after {
+.audio-player2 .timeline .progress::after,
+.audio-player .timeline .progress::after {
     content: '';
     background: #1C313A;
     width: 15px;
@@ -1138,12 +1152,16 @@ a {
     position: absolute;
     right: -10px;
 }
-.audio-player2 .controls, .audio-player .controls {
+
+.audio-player2 .controls,
+.audio-player .controls {
     display: flex;
     justify-content: space-between;
     margin-top: 15px;
 }
-.audio-player2 .controls > *, .audio-player .controls > * {
+
+.audio-player2 .controls>*,
+.audio-player .controls>* {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1152,7 +1170,8 @@ a {
     border-radius: 50px;
 }
 
-.audio-player2 .controls .toggle-play.play, .audio-player .controls .toggle-play.play {
+.audio-player2 .controls .toggle-play.play,
+.audio-player .controls .toggle-play.play {
     width: 20px;
     height: 20px;
     position: relative;
@@ -1160,7 +1179,8 @@ a {
     justify-content: center;
 }
 
-.audio-player2 .controls .toggle-play.play::after, .audio-player .controls .toggle-play.play::after {
+.audio-player2 .controls .toggle-play.play::after,
+.audio-player .controls .toggle-play.play::after {
     content: '';
     cursor: pointer;
     position: absolute;
@@ -1172,7 +1192,8 @@ a {
     border-left: 9px solid #1C313A;
 }
 
-.audio-player2 .controls .toggle-play.pause, .audio-player .controls .toggle-play.pause {
+.audio-player2 .controls .toggle-play.pause,
+.audio-player .controls .toggle-play.pause {
     height: 10px;
     width: 20px;
     cursor: pointer;
@@ -1181,46 +1202,63 @@ a {
     align-items: center;
     justify-content: center;
 }
-.audio-player2 .controls .toggle-play.pause:before, .audio-player .controls .toggle-play.pause:before {
+
+.audio-player2 .controls .toggle-play.pause:before,
+.audio-player .controls .toggle-play.pause:before {
     background: #1C313A;
     content: "";
     height: 10px;
     width: 3px;
     margin-right: 1.5px;
 }
-.audio-player2 .controls .toggle-play.pause:after, .audio-player .controls .toggle-play.pause:after {
+
+.audio-player2 .controls .toggle-play.pause:after,
+.audio-player .controls .toggle-play.pause:after {
     margin-left: 1.5px;
     background: #1C313A;
     content: "";
     height: 10px;
     width: 3px;
 }
-.audio-player2 .controls .time, .audio-player .controls .time {
+
+.audio-player2 .controls .time,
+.audio-player .controls .time {
     display: flex;
     background: transparent;
 }
-.audio-player2 .controls .time > *, .audio-player .controls .time > * {
+
+.audio-player2 .controls .time>*,
+.audio-player .controls .time>* {
     padding: 2px;
     color: #1C313A;
 }
-.audio-player2 .controls .time > * {
+
+.audio-player2 .controls .time>* {
     color: #fff;
 }
-.audio-player2 .controls .volume-container, .audio-player .controls .volume-container {
+
+.audio-player2 .controls .volume-container,
+.audio-player .controls .volume-container {
     cursor: pointer;
     position: relative;
     z-index: 2;
     width: 20px;
 }
-.audio-player2 .controls .volume-container .volume-button, .audio-player .controls .volume-container .volume-button {
+
+.audio-player2 .controls .volume-container .volume-button,
+.audio-player .controls .volume-container .volume-button {
     height: 26px;
     display: flex;
     align-items: center;
 }
-.audio-player2 .controls .volume-container .volume-button .fa-volume-up::before, .audio-player .controls .volume-container .volume-button .fa-volume-up::before {
+
+.audio-player2 .controls .volume-container .volume-button .fa-volume-up::before,
+.audio-player .controls .volume-container .volume-button .fa-volume-up::before {
     color: #1C313A;
 }
-.audio-player2 .controls .volume-container .volume-slider, .audio-player .controls .volume-container .volume-slider {
+
+.audio-player2 .controls .volume-container .volume-slider,
+.audio-player .controls .volume-container .volume-slider {
     position: absolute;
     left: 0px;
     top: 20px;
@@ -1230,12 +1268,16 @@ a {
     background: #e7e7e7;
     transition: 0.25s;
 }
-.audio-player2 .controls .volume-container .volume-slider .volume-percentage, .audio-player .controls .volume-container .volume-slider .volume-percentage {
+
+.audio-player2 .controls .volume-container .volume-slider .volume-percentage,
+.audio-player .controls .volume-container .volume-slider .volume-percentage {
     background: #3596e0;
     height: 100%;
     width: 75%;
 }
-.audio-player2 .controls .volume-container:hover .volume-slider, .audio-player .controls .volume-container:hover .volume-slider {
+
+.audio-player2 .controls .volume-container:hover .volume-slider,
+.audio-player .controls .volume-container:hover .volume-slider {
     left: -123px;
     width: 120px;
 }
@@ -1245,7 +1287,7 @@ a {
 @media (min-width: 1440px) {
     .container-info {
         min-height: 400px;
-    }    
+    }
 }
 
 @media (max-width: 1024px) {
@@ -1260,7 +1302,7 @@ a {
     }
 
     .aside .aside__container {
-        padding: 50px 20px; 
+        padding: 50px 20px;
     }
 
     .content {
@@ -1313,10 +1355,10 @@ a {
 
 @media (max-width: 768px) {
     .aside {
-        width: 45%;        
+        width: 45%;
     }
 
-    .content {        
+    .content {
         width: 100%;
         position: relative;
     }
@@ -1338,7 +1380,7 @@ a {
 
     .referentes .referentes__item {
         width: 150px;
-        min-width: 150px;        
+        min-width: 150px;
     }
 
     .unexpanded .etnohistoria .audio__Card .card {
@@ -1359,7 +1401,7 @@ a {
 
     .container-info .content__tabulador {
         width: 80%;
-    }   
+    }
 
     .collapseAside .swiper .imagecontainer {
         height: 320px;
@@ -1379,7 +1421,7 @@ a {
     }
 
     .historical__aspects .card {
-        width: 100%;        
+        width: 100%;
     }
 
     .historical__aspects .card::after {
@@ -1425,7 +1467,7 @@ a {
         max-width: 370px !important;
         width: 370px;
     }
-    
+
     .etnohistoria::before {
         width: 80px;
         height: 90px;
@@ -1435,7 +1477,7 @@ a {
 
     .etnohistoria .audio__Card {
         position: relative;
-        right: -30px;        
+        right: -30px;
     }
 
     .etnohistoria .audio__Card .p-relative {
@@ -1459,7 +1501,7 @@ a {
         padding-left: 30px;
         padding-right: 30px;
     }
-    
+
     .collapseAside .container-info .content__tabulador {
         width: 100%;
     }
@@ -1470,7 +1512,7 @@ a {
 
     .container-info {
         height: inherit;
-    }    
+    }
 
     .slider {
         padding-right: 30px;
@@ -1520,4 +1562,22 @@ a {
         width: 100%;
         margin-bottom: 20px;
     }
+}
+
+.leaflet-control-zoomhome a {
+    font: bold 18px "Lucida Console", Monaco, monospace;
+}
+
+a.leaflet-control-zoomhome-in,
+a.leaflet-control-zoomhome-out {
+    font-size: 1.5em;
+    line-height: 26px;
+}
+
+.zoomhome-img {
+    margin: auto;
+    vertical-align: middle;
+    display: inline-block;
+    height: 0.95em;
+    width: 0.95em;
 }

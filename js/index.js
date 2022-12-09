@@ -182,9 +182,11 @@ function mapCofan() {
         zoomControl: false
     }).setView([0.5157925555333345, -76.82112693786623], 14);
 
-    L.control.zoom({
-        position: 'bottomright'
-    }).addTo(map);
+    const zoomHome = L.Control.zoomHome({
+        position: 'bottomright',
+        imageSource: 'dist/images/home-solid.png'
+    });
+    zoomHome.addTo(map);
 
     map.setMaxBounds(bounds);
 
@@ -194,10 +196,10 @@ function mapCofan() {
     }).addTo(map);
 
     L.tileLayer('Ortofoto/{z}/{x}/{y}.png', {
-      minZoom: 12,
-      maxZoom: 19,
-      tms: false,
-      attribution: 'Instituto Geográfico Agustín Codazzi'
+        minZoom: 12,
+        maxZoom: 19,
+        tms: false,
+        attribution: 'Instituto Geográfico Agustín Codazzi'
     }).addTo(map);
 
     const geoDatosCofan = [];
@@ -229,14 +231,9 @@ function mapCofan() {
 
     geoLayerCofan = L.geoJson(geoJSON_Cofan, {
         onEachFeature: function (feature, layer) {
-
-
-            //"title": ["<div class='d-flex align-items-center'>" + "<div class='identificador'>" + dato.ID + "</div>" + dato.Nombre_ESP + "</div>"],
-            //             "content": "${Nombre_COF}" + "<div class='contenedor__imagen'>" + "<img id='imageLugarPrimera' src='" + fotos[0] + "' alt=''></img>" + "</div>"
-
             let divInfo = document.createElement('div');
-            let strHTML = "<div class='d-flex align-items-center'>" + "<div class='identificador'>" + feature.properties.ID + "</div>" + feature.properties.Nombre_ESP + "</div>"
-            strHTML += "</br>" + feature.properties.Nombre_COF + "</br>"
+            let strHTML = "<div class='d-flex align-items-center'>" + "<div class='identificador'>" + feature.properties.ID + "</div>" + feature.properties.Nombre_ESP + "</div>";
+            strHTML += "</br>" + feature.properties.Nombre_COF + "</br>";
             if (feature.properties.fotos[0]) {
                 strHTML += "<div class='contenedor__imagen'><img id='imageLugarPrimera' src='" + feature.properties.fotos[0] + "' alt=''></img></div>"
             }
@@ -253,7 +250,7 @@ function mapCofan() {
             let btnDiv = document.createElement('div')
             btnDiv.append(divInfo);
             btnDiv.append(verMasBtn);
-            layer.bindPopup( btnDiv ).openPopup();
+            layer.bindPopup(btnDiv).openPopup();
 
         },
         // Le asigna los iconos a cada elemento
@@ -807,7 +804,7 @@ function activateItemList(idCofan) {
         $("#viewDiv").show();
     }
 
-    geoLayerCofan.eachLayer(function(featureElement) {
+    geoLayerCofan.eachLayer(function (featureElement) {
         if (featureElement.feature.properties.ID == idCofan) {
             map.setView(featureElement.getLatLng(), 19);
             callList = true;
