@@ -1,4 +1,4 @@
-[{
+var datosCofan = [{
   "ID": 1,
   "ID_Nombre_Geografico": "8632015010368070",
   "Nombre_COF": "Ñutshia bahu tsaʼu",
@@ -1761,4 +1761,4 @@
     "Registro_Audiovisual_Audio": "media/audio/8632015010368067_Linguistico.mp3"
   }
 }
-]
+];

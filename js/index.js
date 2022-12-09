@@ -7,7 +7,6 @@ var popup;
 var popup_init = null;
 var popup_links = true;
 
-var datosCofan;
 var callList = false;
 
 var extent = {
@@ -210,19 +209,8 @@ function initMap() {
 }
 
 function initMap2() {
-    $.ajax({
-        url: "data/cofan.json",
-        type: 'GET',
-        success: function (data) {
-            datosCofan = data;
-            mapCofan();
-            listCofan();
-        },
-        timeout: 20000,
-        error: function (err) {
-
-        }
-    });
+    mapCofan();
+    listCofan();
 }
 
 function mapCofan() {
