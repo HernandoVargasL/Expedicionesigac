@@ -7,20 +7,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Expediciones IGAC - Pueblo Cofán</title>
     <link rel="icon" href="images/favicon.ico">
-    <link rel="stylesheet" href="assets/font-awesome/all.min.css">    
+    <link rel="stylesheet" href="assets/font-awesome/all.min.css">
     <link rel="stylesheet" href="assets/bootstrap/bootstrap.min.css">
     <!-- swiper-->
-    <link rel="stylesheet" href="assets/swiper/package/swiper.min.css"/>
+    <link rel="stylesheet" href="assets/swiper/package/swiper.min.css" />
 
     <!-- bootstrap tour-->
 
-    <link rel="stylesheet"
-        href="assets/bootstraptour/bootstraptour-standalone.css" />
+    <link rel="stylesheet" href="assets/bootstraptour/bootstraptour-standalone.css" />
     <script src="assets/jquery/jquery.min.js"></script>
     <script src="assets/bootstraptour/bootstrap-tour-standalone.min.js">
     </script>
 
-    
+    <link rel="stylesheet" href="dist/leaflet.css" />
+    <script src="dist/leaflet.js"></script>
 
     <link rel="stylesheet" href="https://js.arcgis.com/3.36/esri/css/esri.css">
 
@@ -50,7 +50,9 @@
                 <div class="title">
                     Expedición COFAN, 2022
                     <div class="sub__title">
-                        “Gestión participativa de nombres geográficos desde una visión étnica y transfronteriza en la región amazónica. Estudio piloto con el Pueblo Cofán, en el municipio del Valle del Guamuéz, Comunidad Indígena Villanueva”
+                        “Gestión participativa de nombres geográficos desde una visión étnica y transfronteriza en la
+                        región amazónica. Estudio piloto con el Pueblo Cofán, en el municipio del Valle del Guamuéz,
+                        Comunidad Indígena Villanueva”
                     </div>
                 </div>
                 <div class="logos">
@@ -61,10 +63,10 @@
                         </a>
                         <a href="https://mesapermanentecofan.org.co/">
                             <img src="images/iconos/ampiicanke.jpeg" alt="" class="ampiicanke">
-                        </a>                         
+                        </a>
                         <a href="https://www.amazonteam.org/act-colombia-permanencia-esal/">
                             <img src="images/iconos/amazon-logo.png" alt="" class="act">
-                        </a>                        
+                        </a>
                     </div>
                 </div>
                 <div id="expeditonTermsList" class="expediton__terms__list">
@@ -147,10 +149,10 @@
 
                         </div>
                     </div>
-                </div>      
+                </div>
             </div>
         </aside>
-        <div id="contentMap" class="content">            
+        <div id="contentMap" class="content">
             <div id="viewDiv">
                 <div id="HomeButton"></div>
             </div>
@@ -187,29 +189,29 @@
                             <div id="iframeYoutubeAudio" class="iframeyoutubeaudio">
                                 <div class="audio-player">
                                     <div class="timeline">
-                                    <div class="progress"></div>
+                                        <div class="progress"></div>
                                     </div>
                                     <div class="controls">
-                                    <div class="play-container">
-                                        <div class="toggle-play play">
-                                    </div>
-                                    </div>
-                                    <div class="time">
-                                        <div class="current">0:00</div>
-                                        <div class="divideraudio">/</div>
-                                        <div class="length"></div>
-                                    </div>
-                                    <div class="volume-container">
-                                        <div class="volume-button">
-                                            <div class="volume icono-volumeMedium">
-                                                <i class="fas fa-volume-up"></i>
+                                        <div class="play-container">
+                                            <div class="toggle-play play">
                                             </div>
                                         </div>
-                                        
-                                        <div class="volume-slider">
-                                        <div class="volume-percentage"></div>
+                                        <div class="time">
+                                            <div class="current">0:00</div>
+                                            <div class="divideraudio">/</div>
+                                            <div class="length"></div>
                                         </div>
-                                    </div>
+                                        <div class="volume-container">
+                                            <div class="volume-button">
+                                                <div class="volume icono-volumeMedium">
+                                                    <i class="fas fa-volume-up"></i>
+                                                </div>
+                                            </div>
+
+                                            <div class="volume-slider">
+                                                <div class="volume-percentage"></div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -217,7 +219,7 @@
                                 <video width="560" height="315" controls autoplay="false" style="display: none;">
                                     <source src="" type="video/mp4">
                                     Your browser does not support the video tag.
-                                  </video>
+                                </video>
                                 <iframe src="" title="YouTube video player" frameborder="0"
                                     allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                     allowfullscreen style="display: none;"></iframe>
@@ -261,34 +263,35 @@
                                         <div id="EtnoHistoria_Audio" style="display: none;">
                                             <div class="audio-player2">
                                                 <div class="timeline">
-                                                <div class="progress"></div>
+                                                    <div class="progress"></div>
                                                 </div>
                                                 <div class="controls">
-                                                <div class="play-container">
-                                                    <div class="toggle-play play">
-                                                </div>
-                                                </div>
-                                                <div class="time">
-                                                    <div class="current">0:00</div>
-                                                    <div class="divideraudio">/</div>
-                                                    <div class="length"></div>
-                                                </div>
-                                                <div class="volume-container">
-                                                    <div class="volume-button">
-                                                        <div class="volume icono-volumeMedium">
-                                                            <i class="fas fa-volume-up"></i>
+                                                    <div class="play-container">
+                                                        <div class="toggle-play play">
                                                         </div>
                                                     </div>
-                                                    
-                                                    <div class="volume-slider">
-                                                    <div class="volume-percentage"></div>
+                                                    <div class="time">
+                                                        <div class="current">0:00</div>
+                                                        <div class="divideraudio">/</div>
+                                                        <div class="length"></div>
+                                                    </div>
+                                                    <div class="volume-container">
+                                                        <div class="volume-button">
+                                                            <div class="volume icono-volumeMedium">
+                                                                <i class="fas fa-volume-up"></i>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="volume-slider">
+                                                            <div class="volume-percentage"></div>
+                                                        </div>
                                                     </div>
                                                 </div>
-                                                </div>
                                             </div>
-                                        </div>                                        
+                                        </div>
                                         <div id="EtnoHistoria_Video" class="iframeyoutube">
-                                            <video width="560" height="315" controls autoplay="false" style="display: none;">
+                                            <video width="560" height="315" controls autoplay="false"
+                                                style="display: none;">
                                                 <source src="" type="video/mp4">
                                                 Your browser does not support the video tag.
                                             </video>
@@ -298,8 +301,8 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>                            
-                        </div>                        
+                            </div>
+                        </div>
                     </div>
                 </section>
                 <div class="container-info">
@@ -325,8 +328,8 @@
                                 pueblo. Tsaʼu es una expresión que da cuenta de un lugar físico y espiritual para
                                 habitar.
                             </div>
-                            <div id="Motivacion" class="tab-pane " role="tabpanel"
-                                aria-labelledby="pills-profile-tab">...</div>
+                            <div id="Motivacion" class="tab-pane " role="tabpanel" aria-labelledby="pills-profile-tab">
+                                ...</div>
                         </div>
                     </div>
                 </div>
@@ -374,7 +377,7 @@
                             <div id="Linguistico_Familia" class="sub-title">
                                 Aislada
                             </div>
-                        </div>                        
+                        </div>
                         <div class="referentes__item text-center">
                             <div class="title">
                                 Lengua:
@@ -390,7 +393,7 @@
                             <div class="sub-title">
                                 En peligro
                             </div>
-                        </div> 
+                        </div>
                         <div class="referentes__item text-center">
                             <div class="title">
                                 Época:
@@ -398,8 +401,8 @@
                             <div class="sub-title">
                                 Descubrimiento y Conquista. 
                             </div>
-                        </div>            
-                        
+                        </div>
+
                     </div>
                 </section>
                 <section class="slider col-12" id="sliderContainer" style="display: none;">
@@ -458,7 +461,11 @@
                                     Pueblo Cofán
                                 </div>
                                 <div class="subtitle">
-                                    Cristian Chapal, Weimar Salazar, Libardo Chapal, Wendy Valbuena, Carlos Chapal, Fernando Benavides, Daniel Rubio, Héctor Chapal, Yamid Chapal, José Luis Bravo, Estela Chachinoy, Odilia Chachinoy, María Adriana Rosero, Cristián Chapal, Tatiana Agüinda; José Ildefonso Chachinoy, Yamit Chapal, Miriam Ortiz, Tania Agüinda, Nixon Chapal, Fanny Chapal.  
+                                    Cristian Chapal, Weimar Salazar, Libardo Chapal, Wendy Valbuena, Carlos Chapal,
+                                    Fernando Benavides, Daniel Rubio, Héctor Chapal, Yamid Chapal, José Luis Bravo,
+                                    Estela Chachinoy, Odilia Chachinoy, María Adriana Rosero, Cristián Chapal, Tatiana
+                                    Agüinda; José Ildefonso Chachinoy, Yamit Chapal, Miriam Ortiz, Tania Agüinda, Nixon
+                                    Chapal, Fanny Chapal. 
                                 </div>
                             </div>
                             <div class="credit__item text-center">
@@ -469,12 +476,14 @@
                                     ACT
                                 </div>
                                 <div class="subtitle">
-                                    Linda García, Jaime Burgos, Javier Cuellar, Carlos Hernández, Edwin Jaramillo, Luís Bernardo Cano. 
+                                    Linda García, Jaime Burgos, Javier Cuellar, Carlos Hernández, Edwin Jaramillo, Luís
+                                    Bernardo Cano. 
                                 </div>
                                 <div class="title">
                                     IGAC
                                 </div>
-                                Pamela Mayorga, Egna Márquez, Daniel Ojeda, Carolina Bernal, José Gregorio Rincón Albarracín, Hernando Vargas, Pablo Méndez.
+                                Pamela Mayorga, Egna Márquez, Daniel Ojeda, Carolina Bernal, José Gregorio Rincón
+                                Albarracín, Hernando Vargas, Pablo Méndez.
                             </div>
                         </div>
                     </div>
@@ -495,8 +504,6 @@
 
     <script src="data/cofan.js"></script>
     <script src="js/index.js"></script>
-
-
 
 </body>
 
