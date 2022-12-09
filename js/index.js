@@ -167,6 +167,7 @@ $(document).ready(function () {
 function initMap() {
     require([
         "esri/map",
+        "esri/layers/VectorTileLayer",
 
         "esri/graphic",
         "esri/graphicsUtils",
@@ -180,6 +181,7 @@ function initMap() {
         "dojo/dom", "dojo/on", "dojo/domReady!"
     ], function (
         __Map,
+        __VectorTileLayer,
         __Graphic,
         __graphicsUtils,
         __Extent,
@@ -191,6 +193,7 @@ function initMap() {
         __on
     ) {
         esri.Map = __Map;
+        esri.VectorTileLayer = __VectorTileLayer;
 
         esri.Graphic = __Graphic;
         esri.graphicsUtils = __graphicsUtils;
@@ -282,19 +285,22 @@ function mapCofan() {
         cofanLayer.add(new esri.Graphic(datoPoint));
     }
 
-
     map = new esri.Map("viewDiv", {
-        basemap: "topo-vector",
         extent: new esri.Extent(extent),
         infoWindow: popup,
         minZoom: 12
     });
-    map.addLayer(cofanLayer);
 
+    var tileLayer = new esri.VectorTileLayer("https://tiles.arcgis.com/tiles/RVvWzU3lgJISqdke/arcgis/rest/services/Mapa_base_topografico/VectorTileServer/resources/styles/root.json");
+    map.addLayer(tileLayer);
+    
     homeBtn = new esri.HomeButton({
         map: map
     }, "HomeButton");
     homeBtn.startup();
+
+    map.addLayer(cofanLayer);
+    
     initSwiper();
 }
 
