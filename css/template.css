@@ -644,11 +644,47 @@ a {
 
 /** referentes **/ 
 .swiper-button-next, .swiper-button-prev {
+    position: absolute;
+    top: calc(50% - 10px);
+    z-index: 1000;
     width: 30px !important;
     height: 30px;
     border-radius: 20px;
     background: #fff;
     opacity: 0.8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.swiper-button-next::before {
+    content: "\f054";
+    font-family: "Font Awesome 5 Pro";
+    font-weight: 900;
+}
+
+.swiper-button-prev::before {
+    content: "\f053";
+    font-family: "Font Awesome 5 Pro";
+    font-weight: 900;
+}
+
+.swiper-pagination {
+    display: flex;
+    justify-content: center;
+}
+
+.swiper-pagination .swiper-pagination-bullet {
+    background: #d4d4d4;    
+    width: 7px;
+    height: 7px;
+    display: block;
+    border-radius: 7px;
+    margin: 0 3px;
+}
+
+.swiper-pagination .swiper-pagination-bullet-active {
+    background: #3596e0 !important;
 }
 
 /** slider **/ 
