@@ -161,141 +161,178 @@ if (document.querySelector(".nav-bar-toggle-igac")) {
 /*--- mapa ---*/
 
 $(document).ready(function () {
-    initMap();    
+    initMap();
 });
 
 function initMap() {
-    require([
-        "esri/map",
-
-        "esri/graphic",
-        "esri/graphicsUtils",
-        "esri/geometry/Extent",
-
-        "esri/dijit/HomeButton",
-        "esri/dijit/Popup",
-        "esri/dijit/PopupTemplate",
-
-        "dojo/dom-construct",
-        "dojo/dom", "dojo/on", "dojo/domReady!"
-    ], function (
-        __Map,
-        __Graphic,
-        __graphicsUtils,
-        __Extent,
-        __HomeButton,
-        __Popup,
-        __PopupTemplate,
-        __domConstruct,
-        __dom,
-        __on
-    ) {
-        esri.Map = __Map;
-
-        esri.Graphic = __Graphic;
-        esri.graphicsUtils = __graphicsUtils;
-        esri.Extent = __Extent;
-
-        esri.HomeButton = __HomeButton;
-        esri.Popup = __Popup;
-        esri.PopupTemplate = __PopupTemplate;
-
-        esri.domConstruct = __domConstruct;
-        esri.dom = __dom;
-        esri.on = __on;
-
-        initMap2();
-    });
-}
-
-function initMap2() {
     mapCofan();
     listCofan();
 }
 
 function mapCofan() {
 
-    popup = new esri.Popup({
-        titleInBody: false
-    }, esri.domConstruct.create("div"));
+    var southWest = L.latLng(0.48450846193740993, -76.85923576354982),
+        northEast = L.latLng(0.5470764953539818, -76.78301811218262),
+        bounds = L.latLngBounds(southWest, northEast);
 
+    map = L.map('viewDiv', {
+        maxZoom: 19,
+        minZoom: 13,
+        zoomControl: false
+    }).setView([0.5157925555333345, -76.82112693786623], 14);
 
-    popup.on("show", function () {
-        popup.pagingInfo = true;
-        popup.pagingControls = true;
+    L.control.zoom({
+        position: 'bottomright'
+    }).addTo(map);
 
-        $(".titleButton.maximize").addClass("hidden")
-        $("a.action.zoomTo > span").html("Acercar");
+    map.setMaxBounds(bounds);
 
-        if (popup_links) {
-            popup_links = false;
-            $(".actionList").append("<a href='#' class='action vermas-link' onclick='gotoVerMapa();'>&nbsp;Ver más...</a>");
-        }
+    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 19,
+        attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+    }).addTo(map);
 
-        if (!callList) {
-            let ID = popup.getSelectedFeature().attributes.ID;
-            activateItemList(ID);
-        }
-        callList = false;
-    });
+    // L.tileLayer('Ortofoto/{z}/{x}/{y}.png', {
+    //   minZoom: 12,
+    //   maxZoom: 19,
+    //   tms: false,
+    //   attribution: 'Instituto Geográfico Agustín Codazzi'
+    // }).addTo(map);
 
-    cofanLayer = new esri.layers.GraphicsLayer();
-    cofanLayer.on("click", function(){
-        popup.hide();
-    })
+    const geoDatosCofan = [];
 
     for (let idx = 0; idx < datosCofan.length; idx++) {
         const dato = datosCofan[idx];
         const fotos = dato.Objeto_Geografico.URL_Fotografia;
-        const datoPoint = {
-            "geometry": {
-                "x": dato.Objeto_Geografico.Longitud,
-                "y": dato.Objeto_Geografico.Latitud,
-                "spatialReference": {
-                    "wkid": 4326
-                }
-            },
 
-            "attributes": {
+        geoDatosCofan.push({
+            "type": "Feature",
+            "properties": {
                 "ID": dato.ID,
                 "ID_Nombre_Geografico": dato.ID_Nombre_Geografico,
                 "Nombre_COF": dato.Nombre_COF,
-                "Nombre_ESP": dato.Nombre_ESP,
+                "Nombre_ESP": dato.Nombre_ESP
             },
-
-            "symbol": {
-                "angle": 0,
-                "xoffset": 0,
-                "yoffset": 0,
-                "type": "esriPMS",
-                "url": "images/numeros/" + (idx + 1) + ".png",
-                "width": 30,
-                "height": 30
-            },
-
-            "infoTemplate": {
-                "title": ["<div class='d-flex align-items-center'>" + "<div class='identificador'>" + dato.ID + "</div>" + dato.Nombre_ESP + "</div>"],
-                "content": "${Nombre_COF}" + "<div class='contenedor__imagen'>" + "<img id='imageLugarPrimera' src='" + fotos[0] + "' alt=''></img>" + "</div>"
+            "geometry": {
+                "type": "Point",
+                "coordinates": [dato.Objeto_Geografico.Longitud, dato.Objeto_Geografico.Latitud]
             }
-        };
-        
-        cofanLayer.add(new esri.Graphic(datoPoint));
+        });
     }
 
+    const geoJSON_Cofan = {
+        features: [...geoDatosCofan],
+        type: "FeatureCollection"
+    };
 
-    map = new esri.Map("viewDiv", {
-        basemap: "topo-vector",
-        extent: new esri.Extent(extent),
-        infoWindow: popup,
-        minZoom: 12
+    let geoLayer = L.geoJson(geoJSON_Cofan, {
+        // Por cada elemento le asigna el popup
+        onEachFeature: function (feature, layer) {
+            if (feature.properties) {
+                popupEvento(feature, layer);
+            }
+        },
+        // Le asigna los iconos a cada elemento
+        pointToLayer: function (feature, latlng) {
+            var IconoUsar = iconFeature("images/numeros/" + feature.properties.ID + ".png");
+
+            // Devuelve el marcador por cada elemento
+            return L.marker(latlng, {
+                icon: IconoUsar
+            });
+        }
     });
-    map.addLayer(cofanLayer);
 
-    homeBtn = new esri.HomeButton({
-        map: map
-    }, "HomeButton");
-    homeBtn.startup();
+    map.addLayer(geoLayer);
+
+    // popup = new esri.Popup({
+    //     titleInBody: false
+    // }, esri.domConstruct.create("div"));
+
+    // popup.on("show", function () {
+    //     popup.pagingInfo = true;
+    //     popup.pagingControls = true;
+
+    //     $(".titleButton.maximize").addClass("hidden")
+    //     $("a.action.zoomTo > span").html("Acercar");
+
+    //     if (popup_links) {
+    //         popup_links = false;
+    //         $(".actionList").append("<a href='#' class='action vermas-link' onclick='gotoVerMapa();'>&nbsp;Ver más...</a>");
+    //     }
+
+    //     if (!callList) {
+    //         let ID = popup.getSelectedFeature().attributes.ID;
+    //         activateItemList(ID);
+    //     }
+    //     callList = false;
+    // });
+
+    // cofanLayer = new esri.layers.GraphicsLayer();
+    // cofanLayer.on("click", function(){
+    //     popup.hide();
+    // })
+
+    // for (let idx = 0; idx < datosCofan.length; idx++) {
+    //     const dato = datosCofan[idx];
+    //     const fotos = dato.Objeto_Geografico.URL_Fotografia;
+    //     const datoPoint = {
+    //         "geometry": {
+    //             "x": dato.Objeto_Geografico.Longitud,
+    //             "y": dato.Objeto_Geografico.Latitud,
+    //             "spatialReference": {
+    //                 "wkid": 4326
+    //             }
+    //         },
+
+    //         "attributes": {
+    //             "ID": dato.ID,
+    //             "ID_Nombre_Geografico": dato.ID_Nombre_Geografico,
+    //             "Nombre_COF": dato.Nombre_COF,
+    //             "Nombre_ESP": dato.Nombre_ESP,
+    //         },
+
+    //         "symbol": {
+    //             "angle": 0,
+    //             "xoffset": 0,
+    //             "yoffset": 0,
+    //             "type": "esriPMS",
+    //             "url": "images/numeros/" + (idx + 1) + ".png",
+    //             "width": 30,
+    //             "height": 30
+    //         },
+
+    //         "infoTemplate": {
+    //             "title": ["<div class='d-flex align-items-center'>" + "<div class='identificador'>" + dato.ID + "</div>" + dato.Nombre_ESP + "</div>"],
+    //             "content": "${Nombre_COF}" + "<div class='contenedor__imagen'>" + "<img id='imageLugarPrimera' src='" + fotos[0] + "' alt=''></img>" + "</div>"
+    //         }
+    //     };
+
+    //     cofanLayer.add(new esri.Graphic(datoPoint));
+    // }
+
+    // map = new esri.Map("viewDiv", {
+    //     basemap: "topo-vector",
+    //     extent: new esri.Extent(extent),
+    //     infoWindow: popup,
+    //     minZoom: 12
+    // });
+    // map.addLayer(cofanLayer);
+
+    // homeBtn = new esri.HomeButton({
+    //     map: map
+    // }, "HomeButton");
+    // homeBtn.startup();
     initSwiper();
+}
+
+function iconFeature(urlIcon) {
+    return L.icon({
+        iconUrl: urlIcon,
+        iconSize: [32, 32],
+        iconAnchor: [32, 32],
+        popupAnchor: [-3, -24]
+    });
 }
 
 function gotoVerMapa() {
@@ -320,7 +357,7 @@ function gotoVerLista(button) {
         }
     }
 
-    let element = $('*[id-cofan="'+idCofan+'"]');
+    let element = $('*[id-cofan="' + idCofan + '"]');
 
     element.parent().toggleClass("active").prevAll().removeClass("active").addClass("done");
     if (element.parent().hasClass("active")) {
@@ -652,13 +689,13 @@ function listCofan() {
     const dato = datosCofan;
     let strHTML = "";
 
-    for (var i = 0; i < datosCofan.length; i++) {       
+    for (var i = 0; i < datosCofan.length; i++) {
         strHTML = strHTML + "<li id='listItem_" + i + "'>";
         strHTML = strHTML + "<a class='list__item' id-cofan='" + dato[i].ID + "'>";
         strHTML = strHTML + "<div class='list__item--title'>" + dato[i].Nombre_ESP + "</div>";
         strHTML = strHTML + "<div class='list__item--title-resume'>" + dato[i].Nombre_COF + "</div>";
         strHTML = strHTML + "</a>";
-        strHTML = strHTML + "<a class='ver__mas' onclick='gotoVerLista(this)' id-cofan='" + dato[i].ID + "'>" + '<i class="fa fa-chevron-right"></i>' +"</a>"; 
+        strHTML = strHTML + "<a class='ver__mas' onclick='gotoVerLista(this)' id-cofan='" + dato[i].ID + "'>" + '<i class="fa fa-chevron-right"></i>' + "</a>";
         strHTML = strHTML + "</li>";
     }
 
@@ -670,23 +707,23 @@ function listCofan() {
         activateItemList(this.attributes["id-cofan"].value);
         $(window).scrollTop(0);
     });
-    
+
     if (window.matchMedia("(max-width: 768px)").matches) {
-        $('.list__item').click( function() {
+        $('.list__item').click(function () {
             $("#aside").addClass("collapseAside")
             $(".content").removeClass("unexpanded")
             document.querySelector("#asideToggle img").style.transform = "rotate(180deg)";
         })
-    }   
+    }
 
-    window.addEventListener('resize', function() {
+    window.addEventListener('resize', function () {
         if (window.matchMedia("(max-width: 768px)").matches) {
-            $('.list__item').click( function() {
+            $('.list__item').click(function () {
                 $("#aside").addClass("collapseAside")
                 $(".content").removeClass("unexpanded")
                 document.querySelector("#asideToggle img").style.transform = "rotate(180deg)";
             })
-        } 
+        }
     })
 }
 
@@ -711,7 +748,7 @@ function activateItemList(idCofan) {
         }
     }
 
-    let element = $('*[id-cofan="'+idCofan+'"]');
+    let element = $('*[id-cofan="' + idCofan + '"]');
 
     element.parent().toggleClass("active").prevAll().removeClass("active").addClass("done");
     if (element.parent().hasClass("active")) {
@@ -755,8 +792,7 @@ function youtubeApearAudio() {
 
 var tour1 = new Tour({
 
-    steps: [
-      {        
+    steps: [{
         orphan: true,
         title: "Bienvenido a Colombia Expediciones IGAC",
         content: `<div class='intro__text'><h2 clas='titleIntro'>Bienvenido a Expediciones IGAC</h2>
@@ -783,9 +819,9 @@ var tour1 = new Tour({
             </div>
         </div>
         `,
-    },    
-]});
-  
+    }, ]
+});
+
 // Initialize the tour
 tour1.init();
 
@@ -795,40 +831,40 @@ tour1.start();
 /*--- Slider ---*/
 function initSwiper() {
     swiper = new Swiper('.swiper', {
-    speed: 600,
-    breakpoints: {
-    // when window width is >= 320px
-        320: {
-            slidesPerView: 1,
-            spaceBetween: 10
+        speed: 600,
+        breakpoints: {
+            // when window width is >= 320px
+            320: {
+                slidesPerView: 1,
+                spaceBetween: 10
+            },
+            // when window width is >= 480px
+            425: {
+                slidesPerView: 1,
+                spaceBetween: 10
+            },
+            // when window width is >= 640px
+            728: {
+                slidesPerView: 1,
+                spaceBetween: 20
+            }
         },
-        // when window width is >= 480px
-        425: {
-            slidesPerView: 1,
-            spaceBetween: 10
+        parallax: true,
+        // Optional parameters
+        direction: 'horizontal',
+        loop: true,
+
+        // If we need pagination
+        pagination: {
+            el: '.swiper-pagination',
         },
-        // when window width is >= 640px
-        728: {
-            slidesPerView: 1,
-            spaceBetween: 20
-        }
-    },
-    parallax: true,
-    // Optional parameters
-    direction: 'horizontal',
-    loop: true,
 
-    // If we need pagination
-    pagination: {
-        el: '.swiper-pagination',
-    },
+        // Navigation arrows
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
 
-    // Navigation arrows
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-    },
-
-    // And if we need scrollbar
-});
+        // And if we need scrollbar
+    });
 }
