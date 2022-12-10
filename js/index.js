@@ -27,7 +27,7 @@ if (document.querySelector(".navbarigac")) {
         <li>
             <a class='inicio' href='index.html'>Pueblo Cofan</a>
         </li>
-        <li>
+        <li class='d-none'>
             <a class='dropdownToggle' href='#'>Acerca de</a>
             <ul class='dropDown'>
             </ul>

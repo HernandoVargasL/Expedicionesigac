@@ -1,9 +1,9 @@
 .navbarigac {
-    z-index: 1000;
+    z-index: 10000;
 }
 
 .footer {
-    z-index: 1000;
+    z-index: 10000;
 }
 
 a {
@@ -338,6 +338,84 @@ a {
 .content.collapseAside {
     width: 100%;
     transition: all 0.5s ease;
+}
+
+/*pop up offline*/
+.leaflet-popup {
+    min-width: 270px;
+}
+
+.leaflet-popup .leaflet-popup-content-wrapper {
+    border-top: 5px solid #5192D9;
+    border-radius: 5px;
+}
+
+.leaflet-container a.leaflet-popup-close-button {
+    width: inherit;
+    top: 24px;
+}
+
+.leaflet-container a.leaflet-popup-close-button span {
+    margin: 20px 20px 0;
+    font-size: 25px;
+}
+
+.leaflet-popup .leaflet-popup-content {
+    font-size: 13px;
+    margin: inherit;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    color: #808184;
+    width: inherit !important;
+}
+
+.leaflet-popup .identificador {
+    height: 25px;
+    width: 25px;
+    max-height: 25px;
+    min-width: 25px;
+    min-height: 25px;
+    max-width: 25px;
+    border-radius: 25px;
+    background: #5192D9;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    line-height: 12px;
+    margin-right: 5px;
+}
+
+.leaflet-popup .align-items-center {
+    color: #5192D9;
+    padding-right: 20px;
+}
+
+.leaflet-popup .contenedor__imagen {
+    margin-top: 10px;
+    min-height: 0;
+    max-height: 110px;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.leaflet-popup .vermas-link {
+    border: 2px solid #5192D9;
+    padding: 7px;
+    width: 100%;
+    margin-right: 0;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
 }
 
 
@@ -745,6 +823,11 @@ a {
     margin-top: 20px;
     width: 100%;
     height: 250px;
+    display: none;
+}
+
+.videoIn:last-child {
+    display: block;
 }
 
 .etnohistoria::before {
@@ -1227,6 +1310,14 @@ a {
     background: transparent;
 }
 
+.audio-player2 .controls .time .current {
+    display: none;
+}
+
+.audio-player2 .controls .time .divideraudio {
+    display: none;
+}
+
 .audio-player2 .controls .time>*,
 .audio-player .controls .time>* {
     padding: 2px;
@@ -1243,6 +1334,11 @@ a {
     position: relative;
     z-index: 2;
     width: 20px;
+}
+
+.audio-player2 .controls .volume-container .icono-volumeMedium {
+    display: flex;
+    align-items: center;
 }
 
 .audio-player2 .controls .volume-container .volume-button,
@@ -1395,6 +1491,10 @@ a {
         height: 128px;
     }
 
+    .videoIn {
+        height: 128px;
+    }
+
     .collapseAside .container-info .content__tabulador {
         width: 80%;
     }
@@ -1432,6 +1532,7 @@ a {
 @media (max-width: 425px) {
     .aside {
         width: 80%;
+        z-index: 1000;
     }
 
     .text-center {
@@ -1493,6 +1594,10 @@ a {
         height: 90px;
         bottom: -50px;
         left: -50px;
+    }
+
+    .videoIn {
+        height: 160px;
     }
 
     .container-info {
