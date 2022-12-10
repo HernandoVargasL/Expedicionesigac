@@ -172,11 +172,6 @@ function mapCofan() {
 
     map.setMaxBounds(bounds);
 
-    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-        maxZoom: 19,
-        attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-    }).addTo(map);
-
     L.tileLayer('Ortofoto/{z}/{x}/{y}.png', {
         minZoom: 12,
         maxZoom: 19,
