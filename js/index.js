@@ -1,25 +1,7 @@
-var esri;
 var map;
 var geoLayerCofan;
-// var cofanLayer;
-
-var homeBtn;
-var popup;
-var popup_init = null;
-var popup_links = true;
 
 var callList = false;
-
-var extent = {
-    "xmin": -8556103.703298075,
-    "ymin": 55035.7288282962,
-    "xmax": -8548073.038013654,
-    "ymax": 59526.40424016861,
-    "spatialReference": {
-        "wkid": 102100,
-        "latestWkid": 3857
-    }
-}
 
 var swiper;
 
@@ -266,84 +248,6 @@ function mapCofan() {
 
     map.addLayer(geoLayerCofan);
 
-    // popup = new esri.Popup({
-    //     titleInBody: false
-    // }, esri.domConstruct.create("div"));
-
-    // popup.on("show", function () {
-    //     popup.pagingInfo = true;
-    //     popup.pagingControls = true;
-
-    //     $(".titleButton.maximize").addClass("hidden")
-    //     $("a.action.zoomTo > span").html("Acercar");
-
-    //     if (popup_links) {
-    //         popup_links = false;
-    //         $(".actionList").append("<a href='#' class='action vermas-link' onclick='gotoVerMapa();'>&nbsp;Ver más...</a>");
-    //     }
-
-    //     if (!callList) {
-    //         let ID = popup.getSelectedFeature().attributes.ID;
-    //         activateItemList(ID);
-    //     }
-    //     callList = false;
-    // });
-
-    // cofanLayer = new esri.layers.GraphicsLayer();
-    // cofanLayer.on("click", function(){
-    //     popup.hide();
-    // })
-
-    // for (let idx = 0; idx < datosCofan.length; idx++) {
-    //     const dato = datosCofan[idx];
-    //     const fotos = dato.Objeto_Geografico.URL_Fotografia;
-    //     const datoPoint = {
-    //         "geometry": {
-    //             "x": dato.Objeto_Geografico.Longitud,
-    //             "y": dato.Objeto_Geografico.Latitud,
-    //             "spatialReference": {
-    //                 "wkid": 4326
-    //             }
-    //         },
-
-    //         "attributes": {
-    //             "ID": dato.ID,
-    //             "ID_Nombre_Geografico": dato.ID_Nombre_Geografico,
-    //             "Nombre_COF": dato.Nombre_COF,
-    //             "Nombre_ESP": dato.Nombre_ESP,
-    //         },
-
-    //         "symbol": {
-    //             "angle": 0,
-    //             "xoffset": 0,
-    //             "yoffset": 0,
-    //             "type": "esriPMS",
-    //             "url": "images/numeros/" + (idx + 1) + ".png",
-    //             "width": 30,
-    //             "height": 30
-    //         },
-
-    //         "infoTemplate": {
-    //             "title": ["<div class='d-flex align-items-center'>" + "<div class='identificador'>" + dato.ID + "</div>" + dato.Nombre_ESP + "</div>"],
-    //             "content": "${Nombre_COF}" + "<div class='contenedor__imagen'>" + "<img id='imageLugarPrimera' src='" + fotos[0] + "' alt=''></img>" + "</div>"
-    //         }
-    //     };
-
-    //     cofanLayer.add(new esri.Graphic(datoPoint));
-    // }
-
-    // map = new esri.Map("viewDiv", {
-    //     basemap: "topo-vector",
-    //     extent: new esri.Extent(extent),
-    //     infoWindow: popup,
-    //     minZoom: 12
-    // });
-    // map.addLayer(cofanLayer);
-
-    // homeBtn = new esri.HomeButton({
-    //     map: map
-    // }, "HomeButton");
-    // homeBtn.startup();
     initSwiper();
 }
 
@@ -744,7 +648,7 @@ function listCofan() {
     $("#expeditonTermsList ol").html(strHTML);
 
     /*--- list button---*/
-    $(".list__item").css('cursor', 'pointer')
+    $(".list__item").css('cursor', 'pointer');
     $(".list__item").click(function () {
         activateItemList(this.attributes["id-cofan"].value);
         $(window).scrollTop(0);
@@ -755,7 +659,7 @@ function listCofan() {
             $("#aside").addClass("collapseAside")
             $(".content").removeClass("unexpanded")
             document.querySelector("#asideToggle img").style.transform = "rotate(180deg)";
-        })
+        });
     }
 
     window.addEventListener('resize', function () {
@@ -764,39 +668,10 @@ function listCofan() {
                 $("#aside").addClass("collapseAside")
                 $(".content").removeClass("unexpanded")
                 document.querySelector("#asideToggle img").style.transform = "rotate(180deg)";
-            })
+            });
         }
-    })
+    });
 }
-
-// function activateItemList(idCofan) {
-//     popup.hide();
-//     popup.clearFeatures();
-
-//     if ($("#includedContent").is(":visible")) {
-//         $("#includedContent").hide();
-//         $("#viewDiv").show();
-//     }
-
-//     for (let idx = 0; idx < cofanLayer.graphics.length; idx++) {
-//         if (cofanLayer.graphics[idx].attributes.ID == idCofan) {
-//             const graphic = cofanLayer.graphics[idx];
-//             callList = true;
-
-//             popup.setFeatures([graphic]);
-//             popup.show(graphic.geometry);
-
-//             map.centerAndZoom(graphic.geometry, 16);
-//         }
-//     }
-
-//     let element = $('*[id-cofan="' + idCofan + '"]');
-
-//     element.parent().toggleClass("active").prevAll().removeClass("active").addClass("done");
-//     if (element.parent().hasClass("active")) {
-//         element.parent().nextAll().removeClass("active").removeClass("done");
-//     }
-// }
 
 function activateItemList(idCofan) {
     if ($("#includedContent").is(":visible")) {
